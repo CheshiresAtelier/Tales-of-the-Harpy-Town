@@ -1,0 +1,39 @@
+﻿{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Fish",
+			"Entries": {
+				"{{ModId}}_Arapaima": "{{ModId}}_Arapaima/60/mixed/60/180/600 2600/spring/rainy/690 .4 685 .1/1/.45/.1/0",
+				"{{ModId}}_BlackPacu": "{{ModId}}_BlackPacu/30/mixed/30/43/600 1600/spring summer/sunny/690 .4 685 .1/1/.50/.1/0",
+				"{{ModId}}_GoldenDorado": "{{ModId}}_GoldenDorado/75/mixed/20/39/600 1600/summer winter/both/690 .4 685 .1/1/.50/.1/0",
+				"{{ModId}}_PacuPeva": "{{ModId}}_PacuPeva/45/mixed/6/10/600 2600/summer fall/rainy/690 .4 685 .1/1/.50/.1/0",
+				"{{ModId}}_Piranha": "{{ModId}}_Piranha/40/mixed/8/12/600 1600/fall/both/690 .4 685 .1/1/.50/.1/0",
+				"{{ModId}}_Surubim": "{{ModId}}_Surubim/40/mixed/50/80/1700 2600/spring summer fall/both/690 .4 685 .1/1/.50/.1/0",
+				"{{ModId}}_Traira": "{{ModId}}_Traira/35/mixed/16/47/600 1600/winter/sunny/690 .4 685 .1/1/.50/.1/0",
+				"{{ModId}}_Tucunare": "{{ModId}}_Tucunare/78/mixed/12/36/600 1600/spring/both/690 .4 685 .1/1/.50/.1/0",
+				"{{ModId}}_PinkRiverDolphin": "{{ModId}}_PinkRiverDolphin/92/mixed/78/108/2000 2600/spring summer/both/690 .15/4/.1/.1/8/false",
+				"{{ModId}}_CommonSnook": "{{ModId}}_CommonSnook/59/mixed/12/36/600 1200/summer/both/690 .15/1/.50/.1/false",
+				"{{ModId}}_Croaker": "{{ModId}}_Croaker/23/mixed/5/20/2000 2600/winter/both/690 .15/1/.50/.1/false",
+				"{{ModId}}_BlackGrouper": "{{ModId}}_BlackGrouper/49/mixed/24/60/600 1200/spring summer/both/690 .15/1/.50/.1/false",
+				"{{ModId}}_Dogfish": "{{ModId}}_Dogfish/47/mixed/24/60/600 2600/fall/both/690 .15/1/.50/.1/false",
+				"{{ModId}}_Salema": "{{ModId}}_Salema/39/mixed/24/60/600 2600/spring summer/sunny/690 .15/1/.50/.1/false",
+				"{{ModId}}_SmoothWeakfish": "{{ModId}}_SmoothWeakfish/71/mixed/13/35/600 1200/winter/both/690 .15/1/.50/.1/false",
+				"{{ModId}}_AtlanticMoonfish": "{{ModId}}_AtlanticMoonfish/85/mixed/9/23/600 2600/spring/both/690 .15/1/.50/.1/5/false",
+				"{{ModId}}_Mackerel": "{{ModId}}_Mackerel/17/mixed/8/12/600 1200/winter/both/690 .15/1/.50/.1/false",
+				"{{ModId}}_Barracuda": "{{ModId}}_Barracuda/76/mixed/20/78/600 2600/fall/both/690 .15/1/.30/.1/5/false",
+				"{{ModId}}_Needlefish": "{{ModId}}_Needlefish/10/sinker/2/60/1200 2600/spring summer/both/690 .15/1/.30/.1/false",
+				"{{ModId}}_Cobia": "{{ModId}}_Cobia/73/mixed/33/78/1200 2600/summer fall/both/690 .15/1/.30/.1/false",
+				"{{ModId}}_NamoradoSandperch": "{{ModId}}_NamoradoSandperch/34/mixed/15/47/600 2600/summer fall/rainy/690 .15/1/.30/.1/false",
+				"{{ModId}}_DolphinFish": "{{ModId}}_DolphinFish/86/mixed/30/55/600 2600/summer/sunny/690 .15/1/.30/.1/5/false",
+				"{{ModId}}_YellowtailAmberjack": "{{ModId}}_YellowtailAmberjack/69/mixed/31/98/900 1700/spring summer/sunny/690 .15/1/.30/.1/false",
+				"{{ModId}}_Monkfish": "{{ModId}}_Monkfish/39/sinker/24/48/1800 2600/fall winter/both/690 .15/1/.30/.1/false",
+				"{{ModId}}_Guitarfish": "{{ModId}}_Guitarfish/87/sinker/10/30/1800 2600/fall/rainy/690 .15/1/.30/.1/false",
+				"{{ModId}}_Opah": "{{ModId}}_Opah/86/mixed/16/79/600 1400/winter/sunny/690 .15/1/.30/.1/false",
+				"{{ModId}}_Pufferkitty": "{{ModId}}_Pufferkitty/95/mixed/10/25/600 2600/spring summer/both/690 .15/1/.30/.1/8/false",
+				"{{ModId}}_Titanoboa": "{{ModId}}_Titanoboa/100/mixed/450/600/600 2600/fall winter/both/690 .15/1/.30/.1/8/false",
+				"{{ModId}}_Oarfish": "{{ModId}}_Oarfish/96/sinker/120/432/600 2600/fall winter/both/690 .15/1/.30/.1/8/false"
+			}
+		}
+	]
+}

@@ -1,0 +1,138 @@
+{
+    "Changes": [
+        {
+            "LogName": "Lumisteria Bundle Assets",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/assets/Tilesheets/Bundles/CheshiresAtelier.THTexpansion_SpringBundleIcon, Mods/{{ModId}}/assets/Tilesheets/Bundles/CheshiresAtelier.THTexpansion_SummerBundleIcon, Mods/{{ModId}}/assets/Tilesheets/Bundles/CheshiresAtelier.THTexpansion_FallBundleIcon, Mods/{{ModId}}/assets/Tilesheets/Bundles/CheshiresAtelier.THTexpansion_WinterBundleIcon",
+            "FromFile": "assets/Tilesheets/Bundles/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "THT expansion Witches bundle",
+            "Action": "EditData",
+            "Target": "UnlockableBundles/Bundles",
+            "Entries": {
+                "CheshiresAtelier.THTexpansion_VeraBundle": {
+                    "Location": "CheshiresAtelier.THTexpansion_THTWitchesHouse2",
+                    "ShopPosition": "12, 31",
+                    "ShopType": "CCBundle",
+                    "BundleIconAsset": "Mods/{{ModId}}/assets/Tilesheets/Bundles/CheshiresAtelier.THTexpansion_SpringBundleIcon",
+                    "BundleSlots": 4,
+                    "ShopEvent": "carpentry",
+                    "BundleCompletedActions": [
+                        "AddMail All {{ModId}}_Bundle1Mail"
+                    ],
+                    "DrawQuestionMark": false,
+                    "Price": {
+                        "(O)CheshiresAtelier.THTexpansion_Abutilon": 1,
+                        "(O)CheshiresAtelier.THTexpansion_SugarCane": 1,
+                        "(O)CheshiresAtelier.THTexpansion_Guarana": 1,
+                        "(O)CheshiresAtelier.THTexpansion_BurrGherkin": 1
+                    },
+                    "BundleReward": {
+                        "(BC)CheshiresAtelier.THTexpansion_BouquetMaker": 1
+                    },
+                    "EditMap": "Maps/CheshiresAtelier.THTexpansion_THTVerasBedroom",
+                    "EditMapPosition": "6, 20",
+                    "EditMapMode": "Replace",
+                    "InstantShopRemoval": true
+                }
+            }
+        },
+        {
+            "LogName": "THT expansion Witches bundle 2",
+            "Action": "EditData",
+            "Target": "UnlockableBundles/Bundles",
+            "Entries": {
+                "CheshiresAtelier.THTexpansion_SolBundle": {
+                    "Location": "CheshiresAtelier.THTexpansion_THTWitchesHouse2",
+                    "ShopPosition": "30, 7",
+                    "ShopType": "CCBundle",
+                    "BundleIconAsset": "Mods/{{ModId}}/assets/Tilesheets/Bundles/CheshiresAtelier.THTexpansion_SummerBundleIcon",
+                    "BundleSlots": 4,
+                    "ShopEvent": "carpentry",
+                    "BundleCompletedActions": [
+                        "AddMail All {{ModId}}_Bundle2Mail"
+                    ],
+                    "DrawQuestionMark": false,
+                    "Price": {
+                        "(O)CheshiresAtelier.THTexpansion_Acai": 1,
+                        "(O)CheshiresAtelier.THTexpansion_BlackBeans": 1,
+                        "(O)CheshiresAtelier.THTexpansion_PrincessFlower": 1,
+                        "(O)CheshiresAtelier.THTexpansion_Cupuassu": 1
+                    },
+                    "BundleReward": {
+                        "(BC)CheshiresAtelier.THTexpansion_Perfumaker": 1
+                    },
+                    "EditMap": "Maps/CheshiresAtelier.THTexpansion_THTSolsBedroom",
+                    "EditMapPosition": "19, 0",
+                    "EditMapMode": "Replace",
+                    "InstantShopRemoval": true
+                }
+            }
+        },
+        {
+            "LogName": "THT expansion Witches bundle 3",
+            "Action": "EditData",
+            "Target": "UnlockableBundles/Bundles",
+            "Entries": {
+                "CheshiresAtelier.THTexpansion_NarcisoBundle": {
+                    "Location": "CheshiresAtelier.THTexpansion_THTWitchesHouse2",
+                    "ShopPosition": "34, 28",
+                    "ShopType": "CCBundle",
+                    "BundleIconAsset": "Mods/{{ModId}}/assets/Tilesheets/Bundles/CheshiresAtelier.THTexpansion_FallBundleIcon",
+                    "BundleSlots": 4,
+                    "ShopEvent": "carpentry",
+                    "BundleCompletedActions": [
+                        "AddMail All {{ModId}}_Bundle3Mail"
+                    ],
+                    "DrawQuestionMark": false,
+                    "Price": {
+                        "(O)CheshiresAtelier.THTexpansion_HolidayCactus": 1,
+                        "(O)CheshiresAtelier.THTexpansion_FlameVine": 1,
+                        "(O)CheshiresAtelier.THTexpansion_BlackEyedPeas": 1,
+                        "(O)CheshiresAtelier.THTexpansion_Cassava": 1
+                    },
+                    "BundleReward": {
+                        "(BC)CheshiresAtelier.THTexpansion_Chocolatier": 1
+                    },
+                    "EditMap": "Maps/CheshiresAtelier.THTexpansion_THTNarcisosBedroom",
+                    "EditMapPosition": "22, 20",
+                    "EditMapMode": "Replace",
+                    "InstantShopRemoval": true
+                }
+            }
+        },
+        {
+            "LogName": "THT expansion Witches bundle 4",
+            "Action": "EditData",
+            "Target": "UnlockableBundles/Bundles",
+            "Entries": {
+                "CheshiresAtelier.THTexpansion_BiancaBundle": {
+                    "Location": "CheshiresAtelier.THTexpansion_THTWitchesHouse2",
+                    "ShopPosition": "9, 7",
+                    "ShopType": "CCBundle",
+                    "BundleIconAsset": "Mods/{{ModId}}/assets/Tilesheets/Bundles/CheshiresAtelier.THTexpansion_WinterBundleIcon",
+                    "BundleSlots": 4,
+                    "ShopEvent": "carpentry",
+                    "BundleCompletedActions": [
+                        "AddMail All {{ModId}}_Bundle4Mail"
+                    ],
+                    "DrawQuestionMark": false,
+                    "Price": {
+                        "(O)CheshiresAtelier.THTexpansion_PindoRamaDwarfMorningGlory": 1,
+                        "(O)CheshiresAtelier.THTexpansion_WildRosemary": 1,
+                        "(O)CheshiresAtelier.THTexpansion_Snowflake": 1,
+                        "(O)CheshiresAtelier.THTexpansion_CattleaOrchid": 1
+                    },
+                    "BundleReward": {
+                        "(BC)CheshiresAtelier.THTexpansion_PamperingMachine": 1
+                    },
+                    "EditMap": "Maps/CheshiresAtelier.THTexpansion_THTBiancasBedroom",
+                    "EditMapPosition": "0, 0",
+                    "EditMapMode": "Replace",
+                    "InstantShopRemoval": true
+                }
+            }
+        }
+    ]
+}

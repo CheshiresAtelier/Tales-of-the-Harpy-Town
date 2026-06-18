@@ -1,0 +1,2354 @@
+{
+	"Changes": [
+		{
+			"LogName": "Load Chocolatier sprite sheet",
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/assets/Items/Machines/{{ModId}}_Chocolatier",
+			"FromFile": "assets/Items/Machines/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Add chocolatier",
+			"Action": "EditData",
+			"Target": "Data/BigCraftables",
+			"Entries": {
+				"{{ModId}}_Chocolatier": {
+					"Name": "{{ModId}}_Chocolatier",
+					"DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_M2}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_M2Desc}}!",
+					"Texture": "Mods/{{ModId}}/assets/Items/Machines/{{ModId}}_Chocolatier",
+					"SpriteIndex": 0
+				}
+			}
+		},
+		{
+			"LogName": "Add chocolatier rules",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"Entries": {
+				"(BC){{ModId}}_Chocolatier": {
+					"OutputRules": [
+						//Milk chocolate
+						{
+							"Id": "{{ModId}}_MilkToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_MilkInput",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)186",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_MilkChocolateOutput",
+									"ItemId": "(O){{ModId}}_MilkChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//White chocolate
+						{
+							"Id": "{{ModId}}_CacaoButterToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CacaoButterInput",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_CacaoButter",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_WhiteChocolateOutput",
+									"ItemId": "(O){{ModId}}_WhiteChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Bitter chocolate
+						{
+							"Id": "{{ModId}}_CacaoToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CacaoInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_PindoRamaCacao",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_BitterChocolateOutput",
+									"ItemId": "(O){{ModId}}_BitterChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Ruby chocolate
+						{
+							"Id": "{{ModId}}_MelonToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_MelonInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)254",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_RubyChocolateOutput",
+									"ItemId": "(O){{ModId}}_RubyChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Strawberry Chocolate
+						{
+							"Id": "{{ModId}}_StrawberryToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_StrawberryInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)400",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_StrawberryChocolateOutput",
+									"ItemId": "(O){{ModId}}_StrawberryChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Brigadeiro
+						{
+							"Id": "{{ModId}}_CondensedMilkToBrigadeiro",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CondensedMilkInput",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_CondensedMilk",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_BrigadeiroOutput",
+									"ItemId": "(O){{ModId}}_Brigadeiro",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Peanut Chocolate
+						{
+							"Id": "{{ModId}}_PeanutToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_PeanutInput",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_WildPeanut",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PeanutChocolateOutput",
+									"ItemId": "(O){{ModId}}_PeanutChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Mocaccino
+						{
+							"Id": "{{ModId}}_CoffeeToMocaccino",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CoffeeInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)395",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_MocaccinoOutput",
+									"ItemId": "(O){{ModId}}_Mocaccino",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Mocaccino 2
+						{
+							"Id": "{{ModId}}_CoffeeToMocaccino2",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CoffeeInputChocolate2",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)253",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_MocaccinoOutput2",
+									"ItemId": "(O){{ModId}}_Mocaccino",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Chocolate cake
+						{
+							"Id": "{{ModId}}_FlourToChocolateCake",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_FlourInput",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)246",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_ChocoCakeOutput",
+									"ItemId": "(O)220",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Chocolate cookies
+						{
+							"Id": "{{ModId}}_CookiesToChocolateCookies",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CookiesInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)223",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_ChocoCookiesOutput",
+									"ItemId": "(O){{ModId}}_ChocolateCookies",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Chocolate ice cream
+						{
+							"Id": "{{ModId}}_IceCreamToChocolateIceCream",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_IceCreamInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)233",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_ChocoIceCreamOutput",
+									"ItemId": "(O){{ModId}}_ChocolateIceCream",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Chocolate honey bread
+						{
+							"Id": "{{ModId}}_HoneyToChocolateHoneyBread",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_HoneyInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)340",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_ChocolateHoneyBreadOutput",
+									"ItemId": "(O){{ModId}}_ChocolateHoneyBread",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Spicy chocolate
+						{
+							"Id": "{{ModId}}_PepperToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_PepperInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)260",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_SpicyChocolateOutput",
+									"ItemId": "(O){{ModId}}_SpicyChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Ancient chocolate
+						{
+							"Id": "{{ModId}}_AncientFruitToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_AncientFruitInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)454",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_AncientChocolateOutput",
+									"ItemId": "(O){{ModId}}_AncientChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Starfruit chocolate
+						{
+							"Id": "{{ModId}}_StarfruitToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_StarfruitInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)268",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_StarfruitChocolateOutput",
+									"ItemId": "(O){{ModId}}_StarfruitChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Apple chocolate
+						{
+							"Id": "{{ModId}}_AppleToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_AppleInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)613",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_AppleChocolateOutput",
+									"ItemId": "(O){{ModId}}_AppleChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Blackberry chocolate
+						{
+							"Id": "{{ModId}}_BlackberryToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_BlackberryInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)410",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_BlackberryChocolateOutput",
+									"ItemId": "(O){{ModId}}_BlackberryChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Pomegranate chocolate
+						{
+							"Id": "{{ModId}}_PomegranateToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_PomegranateInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)637",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PomegranateChocolateOutput",
+									"ItemId": "(O){{ModId}}_PomegranateChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Chocottone
+						{
+							"Id": "{{ModId}}_BreadToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_BreadInput",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)216",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_ChocottoneOutput",
+									"ItemId": "(O){{ModId}}_Chocottone",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Apricot Chocolate
+						{
+							"Id": "{{ModId}}_ApricotToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_ApricotInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)634",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_ApricotChocolateOutput",
+									"ItemId": "(O){{ModId}}_ApricotChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Banana Fondue
+						{
+							"Id": "{{ModId}}_BananaToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_BananaInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)91",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_BananaFondueOutput",
+									"ItemId": "(O){{ModId}}_BananaFondue",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Blueberry chocolate
+						{
+							"Id": "{{ModId}}_BlueberryToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_BlueberryInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)258",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_BlueberryChocolateOutput",
+									"ItemId": "(O){{ModId}}_BlueberryChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Coconut chocolate
+						{
+							"Id": "{{ModId}}_CoconutToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CoconutInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)88",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_CoconutChocolateOutput",
+									"ItemId": "(O){{ModId}}_CoconutChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Caramel Chocolate
+						{
+							"Id": "{{ModId}}_SugarToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_SugarInput",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)245",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_CaramelChocolateOutput",
+									"ItemId": "(O){{ModId}}_CaramelChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Caramel Chocolate 2
+						{
+							"Id": "{{ModId}}_CaramelToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CaramelInput",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_Caramel",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_CaramelChocolateOutput2",
+									"ItemId": "(O){{ModId}}_CaramelChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Orange Chocolate
+						{
+							"Id": "{{ModId}}_OrangeToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_OrangeInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)635",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_OrangeChocolateOutput",
+									"ItemId": "(O){{ModId}}_OrangeChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Black forest
+						{
+							"Id": "{{ModId}}_CherryChocolateToBlackForest",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CherryChocolateInput",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_CherryChocolate",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_BlackForestOutput",
+									"ItemId": "(O){{ModId}}_BlackForestChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Red Velvet Chocolate
+						{
+							"Id": "{{ModId}}_CranberryToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CranberryInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)282",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_RedVelvetChocolateOutput",
+									"ItemId": "(O){{ModId}}_RedVelvetChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Pumpkin Chocolate
+						{
+							"Id": "{{ModId}}_PumpkinToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_PumpkinInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)276",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PumpkinChocolateOutput",
+									"ItemId": "(O){{ModId}}_PumpkinChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Green Tea Chocolate
+						{
+							"Id": "{{ModId}}_GreenTeaToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_GreenTeaInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)614",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GreenTeaChocolateOutput",
+									"ItemId": "(O){{ModId}}_GreenTeaChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Marble Chocolate
+						{
+							"Id": "{{ModId}}_ChocolateToMarbleChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_ChocolateInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_WhiteChocolate",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_MarbleChocolateOutput",
+									"ItemId": "(O){{ModId}}_MarbleChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//maple
+						{
+							"Id": "{{ModId}}_MapleSyrupToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_MapleSyrupInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)724",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_MapleChocolateOutput",
+									"ItemId": "(O){{ModId}}_MapleSyrupChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//peach
+						{
+							"Id": "{{ModId}}_PeachToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_PeachInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)636",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PeachChocolateOutput",
+									"ItemId": "(O){{ModId}}_PeachChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//pie
+						{
+							"Id": "{{ModId}}_TortillaToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_TortillaInput",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)229",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_ChocolatePieOutput",
+									"ItemId": "(O){{ModId}}_ChocolatePie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//dulce de leche
+						{
+							"Id": "{{ModId}}_DulceDeLecheToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_DulceDeLecheInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_DulceDeLeche",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_DulceDeLecheChocolateOutput",
+									"ItemId": "(O){{ModId}}_DulceDeLecheChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//coffee bean
+						{
+							"Id": "{{ModId}}_CoffeeBeanToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CoffeeBeanInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)433",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_EspressoChocolateOutput",
+									"ItemId": "(O){{ModId}}_EspressoChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//fairy rose
+						{
+							"Id": "{{ModId}}_FairyRoseToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_FairyRoseInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)595",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_FairyRoseChocolateOutput",
+									"ItemId": "(O){{ModId}}_FairyRoseChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//grape
+						{
+							"Id": "{{ModId}}_GrapeToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_GrapeInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)398",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GrapeChocolateOutput",
+									"ItemId": "(O){{ModId}}_GrapeChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//mango
+						{
+							"Id": "{{ModId}}_MangoToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_MangoInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)834",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_MangoChocolateOutput",
+									"ItemId": "(O){{ModId}}_MangoChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						},
+						//Hazelnut
+						{
+							"Id": "{{ModId}}_HazelnutToChocolate",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_HazelnutInputChocolate",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)408",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_HazelnutChocolateOutput",
+									"ItemId": "(O){{ModId}}_HazelnutChocolate",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 2
+						}
+					],
+					"AdditionalConsumedItems": [
+						{
+							"ItemId": "(O){{ModId}}_ChocoPowder",
+							"RequiredCount": 1
+						}
+					]
+				}
+			}
+		},
+		//
+		//Chocolates
+		//
+		{
+			"LogName": "Load Chocolates",
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+			"FromFile": "assets/Items/Artisan Goods/{{TargetWithoutPath}}.png"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_MilkChocolate": {
+					"Name": "{{ModId}}_MilkChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate1}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate1Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1390,
+					"Edibility": 65,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 0,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_MilkChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_WhiteChocolate": {
+					"Name": "{{ModId}}_WhiteChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate2}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate2Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1390,
+					"Edibility": 65,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 1,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_WhiteChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_BitterChocolate": {
+					"Name": "{{ModId}}_BitterChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate3}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate3Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1390,
+					"Edibility": 65,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 2,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_BitterChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_RubyChocolate": {
+					"Name": "{{ModId}}_RubyChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate4}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate4Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1500,
+					"Edibility": 65,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					],
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 3
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_RubyChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_StrawberryChocolate": {
+					"Name": "{{ModId}}_StrawberryChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate5}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate5Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1200,
+					"Edibility": 65,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 4,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_StrawberryChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_PeanutChocolate": {
+					"Name": "{{ModId}}_PeanutChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate6}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate6Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1200,
+					"Edibility": 65,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 5,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_PeanutChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Mocaccino": {
+					"Name": "{{ModId}}_Mocaccino",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate7}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate7Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1200,
+					"Edibility": 65,
+					"IsDrink": true,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 6,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_Mocaccino",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_ChocolateIceCream": {
+					"Name": "{{ModId}}_ChocolateIceCream",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate8}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate8Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1200,
+					"Edibility": 65,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 7,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_ChocolateIceCream",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_ChocolateCookies": {
+					"Name": "{{ModId}}_ChocolateCookies",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate9}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate9Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1340,
+					"Edibility": 65,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 8,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_ChocolateCookies",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_CherryChocolate": {
+					"Name": "{{ModId}}_CherryChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate10}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate10Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1280,
+					"Edibility": 65,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 9,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_CherryChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_ChocolateHoneyBread": {
+					"Name": "{{ModId}}_ChocolateHoneyBread",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate11}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate11Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1300,
+					"Edibility": 65,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 10,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_ChocolateHoneyBread",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_SpicyChocolate": {
+					"Name": "{{ModId}}_SpicyChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate12}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate12Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1240,
+					"Edibility": 65,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 11,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_SpicyChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_AncientChocolate": {
+					"Name": "{{ModId}}_AncientChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate13}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate13Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1750,
+					"Edibility": 65,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 12,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_AncientChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_AppleChocolate": {
+					"Name": "{{ModId}}_AppleChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate14}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate14Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1300,
+					"Edibility": 65,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 13,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_AppleChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_BlackberryChocolate": {
+					"Name": "{{ModId}}_BlackberryChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate15}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate15Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1220,
+					"Edibility": 65,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 14,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_BlackberryChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_PomegranateChocolate": {
+					"Name": "{{ModId}}_PomegranateChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate16}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate16Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1340,
+					"Edibility": 65,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 15,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_PomegranateChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Chocottone": {
+					"Name": "{{ModId}}_Chocottone",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate17}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate17Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2000,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 16,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_Chocottone",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_ApricotChocolate": {
+					"Name": "{{ModId}}_ApricotChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate18}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate18Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1250,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 17,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_ApricotChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		//
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_BananaFondue": {
+					"Name": "{{ModId}}_BananaFondue",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate19}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate19Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1350,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 18,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_BananaFondue",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_BlueberryChocolate": {
+					"Name": "{{ModId}}_BlueberryChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate20}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate20Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1250,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 19,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_BlueberryChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_CoconutChocolate": {
+					"Name": "{{ModId}}_CoconutChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate21}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate21Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1250,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 20,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_CoconutChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_CaramelChocolate": {
+					"Name": "{{ModId}}_CaramelChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate22}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate22Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1000,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 21,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_CaramelChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_OrangeChocolate": {
+					"Name": "{{ModId}}_OrangeChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate23}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate23Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1300,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 22,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_OrangeChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_BlackForestChocolate": {
+					"Name": "{{ModId}}_BlackForestChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate24}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate24Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2300,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 23,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_BlackForestChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_RedVelvetChocolate": {
+					"Name": "{{ModId}}_RedVelvetChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate25}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate25Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1275,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 24,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_RedVelvetChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_PumpkinChocolate": {
+					"Name": "{{ModId}}_PumpkinChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate26}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate26Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1520,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 25,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_PumpkinChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_GreenTeaChocolate": {
+					"Name": "{{ModId}}_GreenTeaChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate27}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate27Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1300,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 26,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_GreenTeaChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_MarbleChocolate": {
+					"Name": "{{ModId}}_MarbleChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate28}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate28Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2000,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 27,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_MarbleChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_MapleSyrupChocolate": {
+					"Name": "{{ModId}}_MapleSyrupChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate29}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate29Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1400,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 28,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_MapleSyrupChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_PeachChocolate": {
+					"Name": "{{ModId}}_PeachChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate30}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate30Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1340,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 29,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_PeachChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_ChocolatePie": {
+					"Name": "{{ModId}}_ChocolatePie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate31}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate31Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1250,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 30,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_ChocolatePie",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_EspressoChocolate": {
+					"Name": "{{ModId}}_EspressoChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate32}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate32Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1215,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 31,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_EspressoChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_DulceDeLecheChocolate": {
+					"Name": "{{ModId}}_DulceDeLecheChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate33}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate33Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1300,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 32,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_DulceDeLecheChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_FairyRoseChocolate": {
+					"Name": "{{ModId}}_FairyRoseChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate34}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate34Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1490,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 33,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_FairyRoseChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_GrapeChocolate": {
+					"Name": "{{ModId}}_GrapeChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate35}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate35Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1280,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 34,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_GrapeChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_MangoChocolate": {
+					"Name": "{{ModId}}_MangoChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate36}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate36Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1330,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 35,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_MangoChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_HazelnutChocolate": {
+					"Name": "{{ModId}}_HazelnutChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate37}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate37Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1290,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 36,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_HazelnutChocolate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_StarfruitChocolate": {
+					"Name": "{{ModId}}_StarfruitChocolate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate38}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Chocolate38Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1950,
+					"Edibility": 85,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_ChocolatesSprites",
+					"SpriteIndex": 37,
+					"ContextTags": [
+						"tht_chocolate_item",
+						"chocolate_item",
+						"food_sweet"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_StarfruitChocolate",
+					"Delimiter": " "
+				}
+			]
+		}
+	]
+}

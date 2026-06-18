@@ -1,0 +1,23 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "THTjoja.1": "{{i18n:CheshiresAtelier.THTexpansion_MapString1}}",
+                "THTjoja.2": "{{i18n:CheshiresAtelier.THTexpansion_MapString2}}",
+                "THTjoja.3": "{{i18n:CheshiresAtelier.THTexpansion_MapString3}}",
+                "THTjoja.4": "{{i18n:CheshiresAtelier.THTexpansion_MapString4}}",
+                "THTjoja.5": "{{i18n:CheshiresAtelier.THTexpansion_MapString5}}",
+                "THTjoja.6": "{{i18n:CheshiresAtelier.THTexpansion_MapString6}}",
+                "THTjoja.7": "{{i18n:CheshiresAtelier.THTexpansion_MapString7}}",
+                "THTjoja.8": "{{i18n:CheshiresAtelier.THTexpansion_MapString8}}",
+                "THTjoja.9": "{{i18n:CheshiresAtelier.THTexpansion_MapString9}}",
+                "THTjoja.10": "{{i18n:CheshiresAtelier.THTexpansion_MapString10}}",
+                "THTwitchesHouse.1": "{{i18n:CheshiresAtelier.THTexpansion_MapString11}}",
+                "THTwitchesHouse.2": "{{i18n:CheshiresAtelier.THTexpansion_MapString12}}",
+                "THTwitchesHouse.3": "{{i18n:CheshiresAtelier.THTexpansion_MapString13}}"
+            }
+        }
+    ]
+}

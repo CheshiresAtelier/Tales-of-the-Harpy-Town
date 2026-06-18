@@ -1,0 +1,40 @@
+{
+    "Changes": [
+        {
+            "LogName": "Aquarium data",
+            "Action": "EditData",
+            "Target": "Data/AquariumFish",
+            "Entries": {
+                "{{ModId}}_Arapaima": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_ArapaimaAquarium",
+                "{{ModId}}_BlackPacu": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_BlackPacuAquarium",
+                "{{ModId}}_GoldenDorado": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_GoldenDoradoAquarium",
+                "{{ModId}}_PacuPeva": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_PacuPevaAquarium",
+                "{{ModId}}_Piranha": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_PiranhaAquarium",
+                "{{ModId}}_Surubim": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_SurubimAquarium",
+                "{{ModId}}_Traira": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_TrairaAquarium",
+                "{{ModId}}_Tucunare": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_TucunareAquarium",
+                "{{ModId}}_PinkRiverDolphin": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_PinkRiverDolphinAquarium",
+                "{{ModId}}_CommonSnook": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_CommonSnookAquarium",
+                "{{ModId}}_Croaker": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_CroakerAquarium",
+                "{{ModId}}_BlackGrouper": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_BlackGrouperAquarium",
+                "{{ModId}}_Dogfish": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_DogfishAquarium",
+                "{{ModId}}_Salema": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_SalemaAquarium",
+                "{{ModId}}_SmoothWeakfish": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_SmoothWeakfishAquarium",
+                "{{ModId}}_AtlanticMoonfish": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_AtlanticMoonfishAquarium",
+                "{{ModId}}_Mackerel": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_MackerelAquarium",
+                "{{ModId}}_Barracuda": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_BarracudaAquarium",
+                "{{ModId}}_Needlefish": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_NeedlefishAquarium",
+                "{{ModId}}_Cobia": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_CobiaAquarium",
+                "{{ModId}}_NamoradoSandperch": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_NamoradoSandperchAquarium",
+                "{{ModId}}_DolphinFish": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_DolphinFishAquarium",
+                "{{ModId}}_YellowtailAmberjack": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_YellowtailAmberjackAquarium",
+                "{{ModId}}_Monkfish": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_MonkfishAquarium",
+                "{{ModId}}_Guitarfish": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_GuitarfishAquarium",
+                "{{ModId}}_Opah": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_OpahAquarium",
+                "{{ModId}}_Pufferkitty": "0/fish/////Mods\\{{ModId}}\\Fish\\{{ModId}}_PufferkittyAquarium",
+                "{{ModId}}_Titanoboa": "0/eel/////Mods\\{{ModId}}\\Fish\\{{ModId}}_TitanoboaAquarium",
+                "{{ModId}}_Oarfish": "0/eel/////Mods\\{{ModId}}\\Fish\\{{ModId}}_OarfishAquarium"
+            }
+        }
+    ]
+}

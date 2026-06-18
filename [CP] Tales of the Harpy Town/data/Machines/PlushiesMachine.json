@@ -1,0 +1,2500 @@
+{
+	"Changes": [
+		{
+			"LogName": "Load Plushies machine sprite sheet",
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/assets/Items/Machines/{{ModId}}_PlushiesMachine",
+			"FromFile": "assets/Items/Machines/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Add Plushie Machine",
+			"Action": "EditData",
+			"Target": "Data/BigCraftables",
+			"Entries": {
+				"{{ModId}}_PlushiesMachine": {
+					"Name": "{{ModId}}_PlushiesMachine",
+					"DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_M7}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_M7Desc}}!",
+					"Texture": "Mods/{{ModId}}/assets/Items/Machines/{{ModId}}_PlushiesMachine",
+					"SpriteIndex": 0
+				}
+			}
+		},
+		{
+			"LogName": "Load Plushies",
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+			"FromFile": "assets/Items/Artisan Goods/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Add Plushies machine rules",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"Entries": {
+				"(BC){{ModId}}_PlushiesMachine": {
+					"OutputRules": [
+						{
+							"Id": "{{ModId}}_MineralToPlush",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_QuartzInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)80",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput",
+									"ItemId": "(O){{ModId}}_WhiteKittyPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush1",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_EarthCrystalInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)86",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput1",
+									"ItemId": "(O){{ModId}}_BrownPuppyPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush2",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_FrozenTearInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)84",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput2",
+									"ItemId": "(O){{ModId}}_SnowBunnyPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush3",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_FireQuartzInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)82",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput3",
+									"ItemId": "(O){{ModId}}_WildFoxPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush4",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_EmeraldInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)60",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput4",
+									"ItemId": "(O){{ModId}}_HarveyPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush5",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_AquamarineInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)62",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput5",
+									"ItemId": "(O){{ModId}}_EmilyPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush6",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_RubyInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)64",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput6",
+									"ItemId": "(O){{ModId}}_ElliottPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush7",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_AmethystInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)66",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput7",
+									"ItemId": "(O){{ModId}}_AbigailPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush8",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_TopazInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)68",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput8",
+									"ItemId": "(O){{ModId}}_PennyPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush9",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_JadeInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)70",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput9",
+									"ItemId": "(O){{ModId}}_ShanePlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush10",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_DiamondInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)72",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput10",
+									"ItemId": "(O){{ModId}}_PrincessPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush11",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_PSInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)74",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput11",
+									"ItemId": "(O){{ModId}}_UnicornPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush12",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_TigerseyeInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)562",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput12",
+									"ItemId": "(O){{ModId}}_SamPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush13",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_OpalInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)564",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput13",
+									"ItemId": "(O){{ModId}}_BiancaPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush14",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_FireOpalInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)565",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput14",
+									"ItemId": "(O){{ModId}}_LucaoPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush15",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_AlamiteInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)538",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput15",
+									"ItemId": "(O){{ModId}}_AlienPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush16",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_BixiteInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)539",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput16",
+									"ItemId": "(O){{ModId}}_LeandroPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush17",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_BaryteInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)540",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput17",
+									"ItemId": "(O){{ModId}}_CapybaraPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush18",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_AeriniteInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)541",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput18",
+									"ItemId": "(O){{ModId}}_JulietaPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush19",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CalciteInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)542",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput19",
+									"ItemId": "(O){{ModId}}_ChickenPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush20",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_DolomiteInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)543",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput20",
+									"ItemId": "(O){{ModId}}_SandyPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush21",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_EsperiteInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)544",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput21",
+									"ItemId": "(O){{ModId}}_ClintPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush22",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_FluorapatiteInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)545",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput22",
+									"ItemId": "(O){{ModId}}_BebelPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush23",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_GeminiteInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)546",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput23",
+									"ItemId": "(O){{ModId}}_AlexPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush24",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_HelviteInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)547",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput24",
+									"ItemId": "(O){{ModId}}_VeraPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush25",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_JamboriteInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)548",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput25",
+									"ItemId": "(O){{ModId}}_BernardoPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush26",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_JagoiteInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)549",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput26",
+									"ItemId": "(O){{ModId}}_SolPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush27",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_MudstoneInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)574",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput27",
+									"ItemId": "(O){{ModId}}_CarlotaPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush28",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_KyaniteInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)550",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput28",
+									"ItemId": "(O){{ModId}}_AdriannoPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush29",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_LunariteInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)551",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput29",
+									"ItemId": "(O){{ModId}}_JosePlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush30",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_MalachiteInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)552",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput30",
+									"ItemId": "(O){{ModId}}_MaviPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush31",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_NeptuniteInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)553",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput31",
+									"ItemId": "(O){{ModId}}_GabiPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush32",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_LemonStoneInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)554",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput32",
+									"ItemId": "(O){{ModId}}_AnahiPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush33",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_NekoiteInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)555",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput33",
+									"ItemId": "(O){{ModId}}_FlamingoPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush34",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_OrpimentInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)556",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput34",
+									"ItemId": "(O){{ModId}}_NarcisoPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush35",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_PetrifiedSlimeInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)557",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput35",
+									"ItemId": "(O){{ModId}}_SlimePlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush36",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_ThunderEggInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)558",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput36",
+									"ItemId": "(O){{ModId}}_DragonPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush37",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_PyriteInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)559",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput37",
+									"ItemId": "(O){{ModId}}_AlamandaPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush38",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_InputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)560",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput38",
+									"ItemId": "(O){{ModId}}_MermaidPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush39",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_GhostCrystalInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)561",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput39",
+									"ItemId": "(O){{ModId}}_GhostPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush40",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_JasperInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)563",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput40",
+									"ItemId": "(O){{ModId}}_FranciscoPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush41",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CelestineInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)566",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput41",
+									"ItemId": "(O){{ModId}}_AngelPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush42",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_MarbleInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)567",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput42",
+									"ItemId": "(O){{ModId}}_OwlPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush43",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_SandstoneInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)568",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput43",
+									"ItemId": "(O){{ModId}}_CaramelDogPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush44",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_GraniteInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)569",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput44",
+									"ItemId": "(O){{ModId}}_HarpyPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush45",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_BasaltInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)570",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput45",
+									"ItemId": "(O){{ModId}}_GreyKittyPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush46",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_LimestoneInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)571",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput46",
+									"ItemId": "(O){{ModId}}_LilicaPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush47",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_SoapstoneInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)572",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput47",
+									"ItemId": "(O){{ModId}}_KaiquePlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush48",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_HematiteInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)573",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput48",
+									"ItemId": "(O){{ModId}}_CacauPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush49",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_ObsidianInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)575",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput49",
+									"ItemId": "(O){{ModId}}_SebastianPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush50",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_SlateInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)576",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput50",
+									"ItemId": "(O){{ModId}}_FihPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush51",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_FairyStoneInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)577",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput51",
+									"ItemId": "(O){{ModId}}_FairyPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush52",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_StarShardsInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)578",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput52",
+									"ItemId": "(O){{ModId}}_MaruPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush53",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CopperInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)334",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput53",
+									"ItemId": "(O){{ModId}}_LeahPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush54",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_IronInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)335",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput54",
+									"ItemId": "(O){{ModId}}_RobotPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush55",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_GoldInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)336",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput55",
+									"ItemId": "(O){{ModId}}_HaleyPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToPlush56",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_IridiumInputPlush",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)337",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PlushOutput56",
+									"ItemId": "(O){{ModId}}_WitchPlushie",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						}
+						//
+						//
+						//
+					],
+					"AdditionalConsumedItems": [
+						{
+							"ItemId": "(O)428",
+							"RequiredCount": 1
+						}
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_WhiteKittyPlushie": {
+					"Name": "{{ModId}}_WhiteKittyPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie1}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie1Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1775,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 0,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_BrownPuppyPlushie": {
+					"Name": "{{ModId}}_BrownPuppyPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie2}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie2Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1800,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 1,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_SnowBunnyPlushie": {
+					"Name": "{{ModId}}_SnowBunnyPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie3}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie3Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1850,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 2,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_WildFoxPlushie": {
+					"Name": "{{ModId}}_WildFoxPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie4}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie4Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1875,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 3,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_HarveyPlushie": {
+					"Name": "{{ModId}}_HarveyPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie5}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie5Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2000,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 4,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_EmilyPlushie": {
+					"Name": "{{ModId}}_EmilyPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie6}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie6Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1930,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 5,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_ElliottPlushie": {
+					"Name": "{{ModId}}_ElliottPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie7}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie7Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2000,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 6,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_AbigailPlushie": {
+					"Name": "{{ModId}}_AbigailPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie8}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie8Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1850,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 7,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_PennyPlushie": {
+					"Name": "{{ModId}}_PennyPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie9}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie9Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1830,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 8,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_PrincessPlushie": {
+					"Name": "{{ModId}}_PrincessPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie10}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie10Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1950,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 9,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_ShanePlushie": {
+					"Name": "{{ModId}}_ShanePlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie11}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie11Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2500,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 10,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_UnicornPlushie": {
+					"Name": "{{ModId}}_UnicornPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie12}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie12Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 3750,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 11,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_SamPlushie": {
+					"Name": "{{ModId}}_SamPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie13}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie13Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2025,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 12,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_BiancaPlushie": {
+					"Name": "{{ModId}}_BiancaPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie14}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie14Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1900,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 13,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_LucaoPlushie": {
+					"Name": "{{ModId}}_LucaoPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie15}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie15Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1875,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 14,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_AlienPlushie": {
+					"Name": "{{ModId}}_AlienPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie16}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie16Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2050,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 15,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_LeandroPlushie": {
+					"Name": "{{ModId}}_LeandroPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie17}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie17Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2050,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 16,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_CapybaraPlushie": {
+					"Name": "{{ModId}}_CapybaraPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie18}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie18Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1800,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 17,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_JulietaPlushie": {
+					"Name": "{{ModId}}_JulietaPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie19}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie19Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1875,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 18,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_ChickenPlushie": {
+					"Name": "{{ModId}}_ChickenPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie20}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie20Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1825,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 19,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_SandyPlushie": {
+					"Name": "{{ModId}}_SandyPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie21}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie21Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2050,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 20,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_ClintPlushie": {
+					"Name": "{{ModId}}_ClintPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie22}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie22Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1850,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 21,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_BebelPlushie": {
+					"Name": "{{ModId}}_BebelPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie23}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie23Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1950,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 22,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_AlexPlushie": {
+					"Name": "{{ModId}}_AlexPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie24}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie24Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1900,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 23,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_VeraPlushie": {
+					"Name": "{{ModId}}_VeraPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie25}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie25Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2200,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 24,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_BernardoPlushie": {
+					"Name": "{{ModId}}_BernardoPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie26}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie26Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1900,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 25,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_SolPlushie": {
+					"Name": "{{ModId}}_SolPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie27}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie27Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1865,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 26,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_CarlotaPlushie": {
+					"Name": "{{ModId}}_CarlotaPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie28}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie28Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1775,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 27,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_AdriannoPlushie": {
+					"Name": "{{ModId}}_AdriannoPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie29}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie29Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2000,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 28,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_JosePlushie": {
+					"Name": "{{ModId}}_JosePlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie30}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie30Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1950,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 29,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_MaviPlushie": {
+					"Name": "{{ModId}}_MaviPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie31}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie31Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1850,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 30,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_GabiPlushie": {
+					"Name": "{{ModId}}_GabiPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie32}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie32Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1900,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 31,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_AnahiPlushie": {
+					"Name": "{{ModId}}_AnahiPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie33}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie33Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1950,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 32,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_FlamingoPlushie": {
+					"Name": "{{ModId}}_FlamingoPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie34}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie34Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1830,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 33,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_NarcisoPlushie": {
+					"Name": "{{ModId}}_NarcisoPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie35}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie35Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1830,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 34,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_SlimePlushie": {
+					"Name": "{{ModId}}_SlimePlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie36}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie36Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1870,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 35,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_DragonPlushie": {
+					"Name": "{{ModId}}_DragonPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie37}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie37Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1850,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 36,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_AlamandaPlushie": {
+					"Name": "{{ModId}}_AlamandaPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie38}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie38Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1870,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 37,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_MermaidPlushie": {
+					"Name": "{{ModId}}_MermaidPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie39}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie39Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1970,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 38,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_GhostPlushie": {
+					"Name": "{{ModId}}_GhostPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie40}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie40Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1950,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 39,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_FranciscoPlushie": {
+					"Name": "{{ModId}}_FranciscoPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie41}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie41Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1900,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 40,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_AngelPlushie": {
+					"Name": "{{ModId}}_AngelPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie42}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie42Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1875,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 41,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_OwlPlushie": {
+					"Name": "{{ModId}}_OwlPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie43}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie43Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1860,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 42,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_CaramelDogPlushie": {
+					"Name": "{{ModId}}_CaramelDogPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie44}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie44Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1810,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 43,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_HarpyPlushie": {
+					"Name": "{{ModId}}_HarpyPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie45}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie45Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1825,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 44,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_GreyKittyPlushie": {
+					"Name": "{{ModId}}_GreyKittyPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie46}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie46Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1925,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 45,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_LilicaPlushie": {
+					"Name": "{{ModId}}_LilicaPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie47}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie47Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1765,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 46,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_KaiquePlushie": {
+					"Name": "{{ModId}}_KaiquePlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie48}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie48Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1870,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 47,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_CacauPlushie": {
+					"Name": "{{ModId}}_CacauPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie49}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie49Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1900,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 48,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_SebastianPlushie": {
+					"Name": "{{ModId}}_SebastianPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie50}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie50Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1950,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 49,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_FihPlushie": {
+					"Name": "{{ModId}}_FihPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie51}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie51Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1835,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 50,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_FairyPlushie": {
+					"Name": "{{ModId}}_FairyPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie52}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie52Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2000,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 51,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_MaruPlushie": {
+					"Name": "{{ModId}}_MaruPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie53}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie53Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2250,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 52,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_LeahPlushie": {
+					"Name": "{{ModId}}_LeahPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie54}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie54Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1810,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 53,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_RobotPlushie": {
+					"Name": "{{ModId}}_RobotPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie55}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie55Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1870,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 54,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_HaleyPlushie": {
+					"Name": "{{ModId}}_HaleyPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie56}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie56Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2000,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 55,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_WitchPlushie": {
+					"Name": "{{ModId}}_WitchPlushie",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Plushie57}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Plushie57Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2750,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PlushiesSprites",
+					"SpriteIndex": 56,
+					"ContextTags": [
+						"tht_plush_item",
+						"plushie_item"
+					]
+				}
+			}
+		}
+	]
+}

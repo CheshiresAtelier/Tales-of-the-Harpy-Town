@@ -1,0 +1,62 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "{{ModID}}_THTdebrisCidaRequest": "{{i18n: CheshiresAtelier.THTexpansion_THTdebrisCidaRequest}}",
+                "{{ModID}}_THTdebrisCidaAlmostDone": "{{i18n: CheshiresAtelier.THTexpansion_THTdebrisCidaAlmostDone}}",
+                "{{ModID}}_Bundle1Mail": "{{i18n: CheshiresAtelier.THTexpansion_MailBundle1Done}} %item object 428 5 %%[#]{{i18n: CheshiresAtelier.THTexpansion_MailBundle1Done2}}",
+                "{{ModID}}_Bundle2Mail": "{{i18n: CheshiresAtelier.THTexpansion_MailBundle2Done}} %item object {{ModId}}_CerealAlcohol 5 %%[#]{{i18n: CheshiresAtelier.THTexpansion_MailBundle2Done2}}",
+                "{{ModID}}_Bundle3Mail": "{{i18n: CheshiresAtelier.THTexpansion_MailBundle3Done}} %item object {{ModId}}_ChocoPowder 5 %%[#]{{i18n: CheshiresAtelier.THTexpansion_MailBundle3Done2}}",
+                "{{ModID}}_Bundle4Mail": "{{i18n: CheshiresAtelier.THTexpansion_MailBundle4Done}} %item object 336 1 %%[#]{{i18n: CheshiresAtelier.THTexpansion_MailBundle4Done2}}",
+                "{{ModID}}_JoseMovedIn": "{{i18n: CheshiresAtelier.THTexpansion_JoseAndHisFamilyMovedInMail}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_THTdebrisCidaRequest_Trigger": {
+                    "Id": "{{ModID}}_THTdebrisCidaRequest_Trigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT All 112",
+                    "Actions": [
+                        "AddMail All {{ModID}}_THTdebrisCidaRequest now"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "CheshiresAtelier.THTexpansion_THTDebrisQuestDone": {
+                    "Id": "CheshiresAtelier.THTexpansion_THTDebrisQuestDone",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_SPECIAL_ORDER_COMPLETE All CheshiresAtelier.THTexpansion_DebrisInitialQuest",
+                    "Actions": [
+                        "AddMail All CheshiresAtelier.THTexpansion_THTdebrisCidaAlmostDone now"
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "NPCs Recipe Mail",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "{{ModId}}_PrincessCooking": "{{i18n:CheshiresAtelier.THTexpansion_MailPrincessRecipe}}%item cookingRecipe %%[#]{{i18n:CheshiresAtelier.THTexpansion_PrincessRecipe}}",
+                "{{ModId}}_CidaCooking": "{{i18n:CheshiresAtelier.THTexpansion_MailCidaRecipe}}%item cookingRecipe %%[#]{{i18n:CheshiresAtelier.THTexpansion_CidaRecipe}}",
+                "{{ModId}}_BebelCooking": "{{i18n:CheshiresAtelier.THTexpansion_MailBebelRecipe}}%item cookingRecipe %%[#]{{i18n:CheshiresAtelier.THTexpansion_BebelRecipe}}",
+                "{{ModId}}_AnahiCooking": "{{i18n:CheshiresAtelier.THTexpansion_MailAnahiRecipe}}%item cookingRecipe %%[#]{{i18n:CheshiresAtelier.THTexpansion_AnahiRecipe}}",
+                "{{ModId}}_MayaraCooking": "{{i18n:CheshiresAtelier.THTexpansion_MailMayaraRecipe}}%item cookingRecipe %%[#]{{i18n:CheshiresAtelier.THTexpansion_MayaraRecipe}}",
+                "{{ModId}}_FranciscoCooking": "{{i18n:CheshiresAtelier.THTexpansion_MailFranciscoRecipe}}%item cookingRecipe %%[#]{{i18n:CheshiresAtelier.THTexpansion_FranciscoRecipe}}",
+                "{{ModId}}_AdriannoCooking": "{{i18n:CheshiresAtelier.THTexpansion_MailAdriannoRecipe}}%item cookingRecipe %%[#]{{i18n:CheshiresAtelier.THTexpansion_AdriannoRecipe}}",
+                "{{ModId}}_JulietaCooking": "{{i18n:CheshiresAtelier.THTexpansion_MailJuRecipe}}%item cookingRecipe %%[#]{{i18n:CheshiresAtelier.THTexpansion_JuRecipe}}",
+                "{{ModId}}_CameliaCooking": "{{i18n:CheshiresAtelier.THTexpansion_MailCameliaRecipe}}%item cookingRecipe %%[#]{{i18n:CheshiresAtelier.THTexpansion_CameliaRecipe}}",
+                "{{ModId}}_LeviCooking": "{{i18n:CheshiresAtelier.THTexpansion_MailLeviRecipe}}%item cookingRecipe %%[#]{{i18n:CheshiresAtelier.THTexpansion_LeviRecipe}}"
+            }
+        }
+    ]
+}

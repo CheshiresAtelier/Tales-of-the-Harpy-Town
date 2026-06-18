@@ -1,0 +1,106 @@
+﻿{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"TargetField": [
+				"CheshiresAtelier.THTexpansion_THTsecretPlace2",
+				"Fish"
+			],
+			"Entries": {
+				"{{ModId}}_Arapaima": {
+					"Id": "{{ModId}}_Arapaima",
+					"ItemId": "(O){{ModId}}_Arapaima",
+					"Condition": "LOCATION_Season Here Spring, WEATHER Here Rainy"
+				},
+				"{{ModId}}_BlackPacu": {
+					"Id": "{{ModId}}_BlackPacu",
+					"ItemId": "(O){{ModId}}_BlackPacu",
+					"Condition": "LOCATION_Season Here Spring Summer, WEATHER Here Sun"
+				},
+				"{{ModId}}_GoldenDorado": {
+					"Id": "{{ModId}}_GoldenDorado",
+					"ItemId": "(O){{ModId}}_GoldenDorado",
+					"Condition": "LOCATION_Season Here Summer Winter"
+				},
+				"{{ModId}}_PacuPeva": {
+					"Id": "{{ModId}}_PacuPeva",
+					"ItemId": "(O){{ModId}}_PacuPeva",
+					"Condition": "LOCATION_Season Here Summer Fall, WEATHER Here Rainy"
+				},
+				"{{ModId}}_Piranha": {
+					"Id": "{{ModId}}_Piranha",
+					"ItemId": "(O){{ModId}}_Piranha",
+					"Condition": "LOCATION_Season Here Fall"
+				},
+				"{{ModId}}_Surubim": {
+					"Id": "{{ModId}}_Surubim",
+					"ItemId": "(O){{ModId}}_Surubim",
+					"Condition": "LOCATION_Season Here Spring Summer Fall"
+				},
+				"{{ModId}}_Traira": {
+					"Id": "{{ModId}}_Traira",
+					"ItemId": "(O){{ModId}}_Traira",
+					"Condition": "LOCATION_Season Here Winter, WEATHER Here Sun"
+				},
+				"{{ModId}}_Tucunare": {
+					"Id": "{{ModId}}_Tucunare",
+					"ItemId": "(O){{ModId}}_Tucunare",
+					"Condition": "LOCATION_Season Here Spring"
+				},
+				"{{ModId}}_PinkRiverDolphin": {
+					"Id": "{{ModId}}_PinkRiverDolphin",
+					"ItemId": "(O){{ModId}}_PinkRiverDolphin",
+					"Condition": "LOCATION_Season Here Spring Summer",
+					"IsBossFish": true
+				},
+				"{{ModId}}_Titanoboa": {
+					"Id": "{{ModId}}_Titanoboa",
+					"ItemId": "(O){{ModId}}_Titanoboa",
+					"Condition": "LOCATION_Season Here Fall Winter",
+					"IsBossFish": true
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"TargetField": [
+				"CheshiresAtelier.THTexpansion_THTbackwoods",
+				"Fish"
+			],
+			"Entries": {
+				"{{ModId}}_Arapaima": {
+					"Id": "{{ModId}}_Arapaima",
+					"ItemId": "(O){{ModId}}_Arapaima",
+					"Condition": "LOCATION_Season Here Spring, WEATHER Here Rainy"
+				},
+				"{{ModId}}_BlackPacu": {
+					"Id": "{{ModId}}_BlackPacu",
+					"ItemId": "(O){{ModId}}_BlackPacu",
+					"Condition": "LOCATION_Season Here Spring Summer, WEATHER Here Sun"
+				},
+				"{{ModId}}_PacuPeva": {
+					"Id": "{{ModId}}_PacuPeva",
+					"ItemId": "(O){{ModId}}_PacuPeva",
+					"Condition": "LOCATION_Season Here Summer Fall, WEATHER Here Rainy"
+				},
+				"{{ModId}}_Piranha": {
+					"Id": "{{ModId}}_Piranha",
+					"ItemId": "(O){{ModId}}_Piranha",
+					"Condition": "LOCATION_Season Here Fall"
+				},
+				"{{ModId}}_Surubim": {
+					"Id": "{{ModId}}_Surubim",
+					"ItemId": "(O){{ModId}}_Surubim",
+					"Condition": "LOCATION_Season Here Spring Summer Fall"
+				},
+				"{{ModId}}_Traira": {
+					"Id": "{{ModId}}_Traira",
+					"ItemId": "(O){{ModId}}_Traira",
+					"Condition": "LOCATION_Season Here Winter, WEATHER Here Sun"
+				}
+			}
+		}
+	]
+}

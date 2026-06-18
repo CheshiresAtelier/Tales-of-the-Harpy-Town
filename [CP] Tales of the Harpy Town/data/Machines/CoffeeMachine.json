@@ -1,0 +1,2551 @@
+{
+    "Changes": [
+        {
+            "LogName": "Load coffee machine sprite sheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/assets/Items/Machines/{{ModId}}_CoffeeMachine",
+            "FromFile": "assets/Items/Machines/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Add coffee machine",
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "{{ModId}}_CoffeeMachine": {
+                    "Name": "{{ModId}}_CoffeeMachine",
+                    "DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_M9}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_M9Desc}}",
+                    "Texture": "Mods/{{ModId}}/assets/Items/Machines/{{ModId}}_CoffeeMachine",
+                    "SpriteIndex": 0
+                }
+            }
+        },
+        {
+            "LogName": "Add coffee maker rules",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "Entries": {
+                "(BC){{ModId}}_CoffeeMachine": {
+                    "OutputRules": [
+                        {
+                            "Id": "{{ModId}}_MilkToLatte",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_MilkInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)184",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_LatteOutput",
+                                    "ItemId": "(O){{ModId}}_Latte",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_MilkToLatte2",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_LargeMilkInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)186",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_LatteOutput",
+                                    "ItemId": "(O){{ModId}}_Latte",
+                                    "MinStack": 3
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee1",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_DulceDeLecheInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_DulceDeLeche",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput1",
+                                    "ItemId": "(O){{ModId}}_DulceDeLatte",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee2",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_FlanInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_CondensedMilkFlan",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput2",
+                                    "ItemId": "(O){{ModId}}_FlanCappuccino",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee3",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_IceCreamInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)233",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput3",
+                                    "ItemId": "(O){{ModId}}_Affogato",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee4",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_CookiesInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)223",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput4",
+                                    "ItemId": "(O){{ModId}}_CookieChipsCappuccino",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee5",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_PinkCakeInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)221",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput5",
+                                    "ItemId": "(O){{ModId}}_PinkCakeUnicorn",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee6",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_ChocoCakeInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)220",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput6",
+                                    "ItemId": "(O){{ModId}}_BrowniesCoffee",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee7",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_CaramelInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Caramel",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput7",
+                                    "ItemId": "(O){{ModId}}_SaltyCaramelLatte",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee8",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_PacoquinhaInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Pacoquinha",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput8",
+                                    "ItemId": "(O){{ModId}}_PacocaLatte",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee9",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_BlueberryInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)258",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput9",
+                                    "ItemId": "(O){{ModId}}_BlueSkyLatte",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee10",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_PumpkinInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)276",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput10",
+                                    "ItemId": "(O){{ModId}}_PumpkinSpiceLatte",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee11",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_MelonInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)254",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput11",
+                                    "ItemId": "(O){{ModId}}_PinkLatte",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee12",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_AncientFruitInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)454",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput12",
+                                    "ItemId": "(O){{ModId}}_StarryNightLatte",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee13",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_AppleInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)613",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput13",
+                                    "ItemId": "(O){{ModId}}_CrispyAppleLatte",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee14",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_ApricotInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)634",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput14",
+                                    "ItemId": "(O){{ModId}}_ApricotCoffee",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee15",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_BananaInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)91",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput15",
+                                    "ItemId": "(O){{ModId}}_BananaCappuccino",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee16",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_BlackberryInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)410",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput16",
+                                    "ItemId": "(O){{ModId}}_BlackberryPolkaDotsCoffee",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee17",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_CherryInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)638",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput17",
+                                    "ItemId": "(O){{ModId}}_CherrySyrupCappuccino",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee18",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_CoconutInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)88",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput18",
+                                    "ItemId": "(O){{ModId}}_CloudCoffee",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee19",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_CranberryInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)282",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput19",
+                                    "ItemId": "(O){{ModId}}_FuzzyCranberryCoffee",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee20",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_CrystalFruitInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)414",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput20",
+                                    "ItemId": "(O){{ModId}}_IcedCrystalFruitAffogato",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee21",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_GrapeInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)398",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput21",
+                                    "ItemId": "(O){{ModId}}_SparklingGrapeLatte",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee22",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_HotPepperInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)260",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput22",
+                                    "ItemId": "(O){{ModId}}_SpicyLatte",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee23",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_MangoInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)834",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput23",
+                                    "ItemId": "(O){{ModId}}_CreamyMangoLatte",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee24",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_OrangeInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)635",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput24",
+                                    "ItemId": "(O){{ModId}}_BumbleCoffee",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee25",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_PeachInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)636",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput25",
+                                    "ItemId": "(O){{ModId}}_PeachEspresso",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee26",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_PineappleInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)832",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput26",
+                                    "ItemId": "(O){{ModId}}_PineappleSweetCoffee",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee27",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_PomegranateInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)637",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput27",
+                                    "ItemId": "(O){{ModId}}_PomegranateAffogato",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee28",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_PowdermelonInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)Powdermelon",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput28",
+                                    "ItemId": "(O){{ModId}}_IcedPowdermelonAffogato",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee29",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_RhubarbInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)252",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput29",
+                                    "ItemId": "(O){{ModId}}_RhubarbCoffee",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee30",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_SalmonberryInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)296",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput30",
+                                    "ItemId": "(O){{ModId}}_PinkSalmonberryLatte",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee31",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_SpiceberryInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)396",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput31",
+                                    "ItemId": "(O){{ModId}}_SpicyBerryLatte",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee32",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_StarfruitInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)268",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput32",
+                                    "ItemId": "(O){{ModId}}_SuperstarLatte",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee33",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_StrawberryInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)400",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput33",
+                                    "ItemId": "(O){{ModId}}_StrawberryCappuccino",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        },
+                        //
+                        {
+                            "Id": "{{ModId}}_ObjToCoffee34",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_PlumInputCoffee",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)406",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CoffeeOutput34",
+                                    "ItemId": "(O){{ModId}}_WildPlumFrappuccino",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 100
+                        }
+                    ],
+                    "AdditionalConsumedItems": [
+                        {
+                            "ItemId": "(O)395",
+                            "RequiredCount": 1
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Load coffees",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+            "FromFile": "assets/Items/Artisan Goods/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Latte": {
+                    "Name": "{{ModId}}_Latte",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee1}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee1Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 475,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 0,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 2,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_sand"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_DulceDeLatte": {
+                    "Name": "{{ModId}}_DulceDeLatte",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee2}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee2Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 450,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 1,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 1,
+                                "FishingLevel": 0,
+                                "MiningLevel": 1,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_dark_yellow"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_FlanCappuccino": {
+                    "Name": "{{ModId}}_FlanCappuccino",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee3}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee3Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 500,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 2,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 1,
+                                "FishingLevel": 1,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_sand"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Affogato": {
+                    "Name": "{{ModId}}_Affogato",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee4}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee4Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 470,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 3,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 1,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 1,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_sand"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_CookieChipsCappuccino": {
+                    "Name": "{{ModId}}_CookieChipsCappuccino",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee5}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee5Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 490,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 4,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 1,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 1,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_sand"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_PinkCakeUnicorn": {
+                    "Name": "{{ModId}}_PinkCakeUnicorn",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee6}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee6Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 830,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 5,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 1,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 1,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_pink"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_BrowniesCoffee": {
+                    "Name": "{{ModId}}_BrowniesCoffee",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee7}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee7Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 550,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 6,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 1,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 1,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_brown"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_SaltyCaramelLatte": {
+                    "Name": "{{ModId}}_SaltyCaramelLatte",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee8}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee8Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 400,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 7,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 1,
+                                "FishingLevel": 0,
+                                "MiningLevel": 1,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_brown"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_PacocaLatte": {
+                    "Name": "{{ModId}}_PacocaLatte",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee9}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee9Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 440,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 8,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 2,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_sand"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_BlueSkyLatte": {
+                    "Name": "{{ModId}}_BlueSkyLatte",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee10}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee10Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 400,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 9,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 1,
+                                "MiningLevel": 1,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_blue"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_PumpkinSpiceLatte": {
+                    "Name": "{{ModId}}_PumpkinSpiceLatte",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee11}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee11Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 670,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 10,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 1,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 1,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_copper"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_PinkLatte": {
+                    "Name": "{{ModId}}_PinkLatte",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee12}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee12Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 600,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 11,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 1,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 1,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_pink"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_StarryNightLatte": {
+                    "Name": "{{ModId}}_StarryNightLatte",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee13}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee13Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 900,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 12,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 1,
+                                "LuckLevel": 1,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_blue"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_CrispyAppleLatte": {
+                    "Name": "{{ModId}}_CrispyAppleLatte",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee14}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee14Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 450,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 13,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 1,
+                                "FishingLevel": 1,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_red"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_ApricotCoffee": {
+                    "Name": "{{ModId}}_ApricotCoffee",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee15}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee15Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 400,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 14,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 1,
+                                "MiningLevel": 1,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_orange"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_BananaCappuccino": {
+                    "Name": "{{ModId}}_BananaCappuccino",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee16}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee16Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 500,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 15,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 2,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_yellow"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_BlackberryPolkaDotsCoffee": {
+                    "Name": "{{ModId}}_BlackberryPolkaDotsCoffee",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee17}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee17Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 370,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 16,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 1,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 1,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_purple"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_CherrySyrupCappuccino": {
+                    "Name": "{{ModId}}_CherrySyrupCappuccino",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee18}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee18Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 430,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 17,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 1,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 1,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_red"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_CloudCoffee": {
+                    "Name": "{{ModId}}_CloudCoffee",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee19}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee19Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 450,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 18,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 1,
+                                "MiningLevel": 0,
+                                "LuckLevel": 1,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_brown"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_FuzzyCranberryCoffee": {
+                    "Name": "{{ModId}}_FuzzyCranberryCoffee",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee20}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee20Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 425,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 19,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 1,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 1,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_red"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_IcedCrystalFruitAffogato": {
+                    "Name": "{{ModId}}_IcedCrystalFruitAffogato",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee21}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee21Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 425,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 20,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 1,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 1,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_cyan"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_SparklingGrapeLatte": {
+                    "Name": "{{ModId}}_SparklingGrapeLatte",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee22}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee22Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 430,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 21,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 1,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 1,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_purple"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_SpicyLatte": {
+                    "Name": "{{ModId}}_SpicyLatte",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee23}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee23Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 390,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 22,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 1,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 1,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_red"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_CreamyMangoLatte": {
+                    "Name": "{{ModId}}_CreamyMangoLatte",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee24}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee24Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 480,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 23,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 2,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_yellow"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_BumbleCoffee": {
+                    "Name": "{{ModId}}_BumbleCoffee",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee25}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee25Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 450,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 24,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 1,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 1,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_orange"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_PeachEspresso": {
+                    "Name": "{{ModId}}_PeachEspresso",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee26}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee26Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 490,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 25,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 1,
+                                "ForagingLevel": 1,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_salmon"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_PineappleSweetCoffee": {
+                    "Name": "{{ModId}}_PineappleSweetCoffee",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee27}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee27Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 650,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 26,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 1,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 1,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_yellow"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_PomegranateAffogato": {
+                    "Name": "{{ModId}}_PomegranateAffogato",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee28}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee28Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 490,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 27,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 1,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 1,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_dark_pink"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_IcedPowdermelonAffogato": {
+                    "Name": "{{ModId}}_IcedPowdermelonAffogato",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee29}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee29Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 650,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 28,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 1,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 1,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_cyan"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_RhubarbCoffee": {
+                    "Name": "{{ModId}}_RhubarbCoffee",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee30}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee30Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 570,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 29,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 1,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 1,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_red"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_PinkSalmonberryLatte": {
+                    "Name": "{{ModId}}_PinkSalmonberryLatte",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee31}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee31Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 355,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 30,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 2,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_salmon"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_SpicyBerryLatte": {
+                    "Name": "{{ModId}}_SpicyBerryLatte",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee32}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee32Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 430,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 31,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 1,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 1,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_red"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_SuperstarLatte": {
+                    "Name": "{{ModId}}_SuperstarLatte",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee33}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee33Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 1100,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 32,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 1,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 1,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_yellow"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_StrawberryCappuccino": {
+                    "Name": "{{ModId}}_StrawberryCappuccino",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee34}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee34Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 470,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 33,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 1,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 1,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_red"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_WildPlumFrappuccino": {
+                    "Name": "{{ModId}}_WildPlumFrappuccino",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Coffee35}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_Coffee35Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 430,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_CoffeesSprites",
+                    "SpriteIndex": 34,
+                    "Buffs": [
+                        {
+                            "Duration": 500,
+                            "CustomAttributes": {
+                                "CombatLevel": 0,
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 1,
+                                "LuckLevel": 1,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0,
+                                "AttackMultiplier": 0,
+                                "Immunity": 0,
+                                "KnockbackMultiplier": 0,
+                                "WeaponSpeedMultiplier": 0,
+                                "CriticalChanceMultiplier": 0,
+                                "CriticalPowerMultiplier": 0,
+                                "WeaponPrecisionMultiplier": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "tht_coffee_item",
+                        "coffee_item",
+                        "food_breakfast",
+                        "color_purple"
+                    ]
+                }
+            }
+        }
+    ]
+}

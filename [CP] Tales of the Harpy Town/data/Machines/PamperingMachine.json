@@ -1,0 +1,2131 @@
+{
+	"Changes": [
+		{
+			"LogName": "Load Pampering machine sprite sheet",
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/assets/Items/Machines/{{ModId}}_PamperingMachine",
+			"FromFile": "assets/Items/Machines/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Add Pampering Machine",
+			"Action": "EditData",
+			"Target": "Data/BigCraftables",
+			"Entries": {
+				"{{ModId}}_PamperingMachine": {
+					"Name": "{{ModId}}_PamperingMachine",
+					"DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_M4}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_M4Desc}}!",
+					"Texture": "Mods/{{ModId}}/assets/Items/Machines/{{ModId}}_PamperingMachine",
+					"SpriteIndex": 0
+				}
+			}
+		},
+		{
+			"LogName": "Load Gifts",
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+			"FromFile": "assets/Items/Artisan Goods/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Add pampering machine rules",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"Entries": {
+				"(BC){{ModId}}_PamperingMachine": {
+					"OutputRules": [
+						{
+							"Id": "{{ModId}}_MineralToGift",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_QuartzInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)80",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput",
+									"ItemId": "(O){{ModId}}_QuartzGlasses",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift1",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_EarthCrystalInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)86",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput1",
+									"ItemId": "(O){{ModId}}_EarthCrystalSpinningTop",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift2",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_FrozenTearInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)84",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput2",
+									"ItemId": "(O){{ModId}}_FrozenTearContactLens",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift3",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_FireQuartzInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)82",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput3",
+									"ItemId": "(O){{ModId}}_FireQuartzSunglasses",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift4",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_EmeraldInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)60",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput4",
+									"ItemId": "(O){{ModId}}_EmeraldLocketNecklace",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift5",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_AquamarineInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)62",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput5",
+									"ItemId": "(O){{ModId}}_AquamarineFan",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift6",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_RubyInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)64",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput6",
+									"ItemId": "(O){{ModId}}_RubyCup",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift7",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_AmethystInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)66",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput7",
+									"ItemId": "(O){{ModId}}_AmethystUmbrella",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift8",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_TopazInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)68",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput8",
+									"ItemId": "(O){{ModId}}_TopazYobaCross",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift9",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_JadeInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)70",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput9",
+									"ItemId": "(O){{ModId}}_JadeHairClip",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift10",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_DiamondInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)72",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput10",
+									"ItemId": "(O){{ModId}}_DiamondHeel",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift11",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_PSInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)74",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput11",
+									"ItemId": "(O){{ModId}}_CarnivalMask",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift12",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_TigerseyeInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)562",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput12",
+									"ItemId": "(O){{ModId}}_TigerseyeClaws",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift13",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_OpalInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)564",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput13",
+									"ItemId": "(O){{ModId}}_OpalSword",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift14",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_FireOpalInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)565",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput14",
+									"ItemId": "(O){{ModId}}_FireOpalSyringe",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift15",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_AlamiteInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)538",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput15",
+									"ItemId": "(O){{ModId}}_AlamiteGlowingStick",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift16",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_BixiteInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)539",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput16",
+									"ItemId": "(O){{ModId}}_BixiteBilliardBall",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift17",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_BaryteInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)540",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput17",
+									"ItemId": "(O){{ModId}}_BaryteTeaSet",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift18",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_AeriniteInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)541",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput18",
+									"ItemId": "(O){{ModId}}_AeriniteLantern",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift19",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CalciteInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)542",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput19",
+									"ItemId": "(O){{ModId}}_CalciteTiara",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift20",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_DolomiteInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)543",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput20",
+									"ItemId": "(O){{ModId}}_DolomitePendant",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift21",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_EsperiteInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)544",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput21",
+									"ItemId": "(O){{ModId}}_EsperiteKey",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift22",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_FluorapatiteInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)545",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput22",
+									"ItemId": "(O){{ModId}}_FluorapatiteGrillz",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift23",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_GeminiteInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)546",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput23",
+									"ItemId": "(O){{ModId}}_GeminiteBracelet",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift24",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_HelviteInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)547",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput24",
+									"ItemId": "(O){{ModId}}_HelvitePurse",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift25",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_JamboriteInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)548",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput25",
+									"ItemId": "(O){{ModId}}_JamboriteInkPen",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift26",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_JagoiteInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)549",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput26",
+									"ItemId": "(O){{ModId}}_JagoiteOrnament",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift27",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_MudstoneInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)574",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput27",
+									"ItemId": "(O){{ModId}}_MudstoneWaterFilter",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift28",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_KyaniteInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)550",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput28",
+									"ItemId": "(O){{ModId}}_KyaniteScissor",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift29",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_LunariteInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)551",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput29",
+									"ItemId": "(O){{ModId}}_LunariteEarrings",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift30",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_MalachiteInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)552",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput30",
+									"ItemId": "(O){{ModId}}_MalachiteCuia",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift31",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_NeptuniteInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)553",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput31",
+									"ItemId": "(O){{ModId}}_NeptuniteKnife",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift32",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_LemonStoneInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)554",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput32",
+									"ItemId": "(O){{ModId}}_LemonStoneGoggles",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift33",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_NekoiteInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)555",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput33",
+									"ItemId": "(O){{ModId}}_NekoiteHairBrush",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift34",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_OrpimentInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)556",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput34",
+									"ItemId": "(O){{ModId}}_OrpimentMask",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift35",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_PetrifiedSlimeInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)557",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput35",
+									"ItemId": "(O){{ModId}}_PetrifiedSlimeHourglass",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift36",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_ThunderEggInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)558",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput36",
+									"ItemId": "(O){{ModId}}_ThunderEggAromaticCandle",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift37",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_PyriteInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)559",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput37",
+									"ItemId": "(O){{ModId}}_PyriteChimes",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift38",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_InputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)560",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput38",
+									"ItemId": "(O){{ModId}}_OceanStoneHandMirror",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift39",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_GhostCrystalInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)561",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput39",
+									"ItemId": "(O){{ModId}}_GhostCrystalPorcelainDoll",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift40",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_JasperInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)563",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput40",
+									"ItemId": "(O){{ModId}}_JasperDice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift41",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CelestineInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)566",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput41",
+									"ItemId": "(O){{ModId}}_CelestineVeil",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift42",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_MarbleInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)567",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput42",
+									"ItemId": "(O){{ModId}}_MarbleStatue",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift43",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_SandstoneInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)568",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput43",
+									"ItemId": "(O){{ModId}}_SandstoneSundial",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift44",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_GraniteInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)569",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput44",
+									"ItemId": "(O){{ModId}}_GraniteJar",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift45",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_BasaltInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)570",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput45",
+									"ItemId": "(O){{ModId}}_BasaltLighter",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift46",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_LimestoneInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)571",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput46",
+									"ItemId": "(O){{ModId}}_LimestoneNecklace",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift47",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_SoapstoneInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)572",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput47",
+									"ItemId": "(O){{ModId}}_SoapstoneMagnifyingGlass",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift48",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_HematiteInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)573",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput48",
+									"ItemId": "(O){{ModId}}_HematiteBell",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift49",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_ObsidianInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)575",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput49",
+									"ItemId": "(O){{ModId}}_ObsidianDagger",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift50",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_SlateInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)576",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput50",
+									"ItemId": "(O){{ModId}}_SlateGravestone",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift51",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_FairyStoneInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)577",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput51",
+									"ItemId": "(O){{ModId}}_FairyStoneWand",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						},
+						//
+						{
+							"Id": "{{ModId}}_MineralToGift52",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_StarShardsInputGift",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)578",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_GiftOutput52",
+									"ItemId": "(O){{ModId}}_CelestialMusicBox",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 3
+						}
+						//
+						//
+						//
+					],
+					"AdditionalConsumedItems": [
+						{
+							"ItemId": "(O)336",
+							"RequiredCount": 1
+						}
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_QuartzGlasses": {
+					"Name": "{{ModId}}_QuartzGlasses",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift1}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift1Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1775,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 0
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_EarthCrystalSpinningTop": {
+					"Name": "{{ModId}}_EarthCrystalSpinningTop",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift2}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift2Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1800,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 1
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_FrozenTearContactLens": {
+					"Name": "{{ModId}}_FrozenTearContactLens",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift3}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift3Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1850,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 2
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_FireQuartzSunglasses": {
+					"Name": "{{ModId}}_FireQuartzSunglasses",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift4}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift4Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1875,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 3
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_EmeraldLocketNecklace": {
+					"Name": "{{ModId}}_EmeraldLocketNecklace",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift5}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift5Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2000,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 4
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_AquamarineFan": {
+					"Name": "{{ModId}}_AquamarineFan",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift6}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift6Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1930,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 5
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_RubyCup": {
+					"Name": "{{ModId}}_RubyCup",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift7}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift7Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2000,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 6
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_AmethystUmbrella": {
+					"Name": "{{ModId}}_AmethystUmbrella",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift8}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift8Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1850,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 7
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_TopazYobaCross": {
+					"Name": "{{ModId}}_TopazYobaCross",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift9}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift9Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1830,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 8
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_JadeHairclip": {
+					"Name": "{{ModId}}_JadeHairclip",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift10}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift10Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1950,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 9
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_DiamondHeel": {
+					"Name": "{{ModId}}_DiamondHeel",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift11}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift11Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2500,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 10
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_CarnivalMask": {
+					"Name": "{{ModId}}_CarnivalMask",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift12}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift12Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 3750,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 11
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Love"
+					],
+					"Value": "{{ModId}}_CarnivalMask",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_TigerseyeClaws": {
+					"Name": "{{ModId}}_TigerseyeClaws",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift13}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift13Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2025,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 12
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_OpalSword": {
+					"Name": "{{ModId}}_OpalSword",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift14}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift14Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1900,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 13
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_FireOpalSyringe": {
+					"Name": "{{ModId}}_FireOpalSyringe",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift15}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift15Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1875,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 14
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_AlamiteGlowingStick": {
+					"Name": "{{ModId}}_AlamiteGlowingStick",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift16}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift16Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2050,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 15
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_BixiteBilliardBall": {
+					"Name": "{{ModId}}_BixiteBilliardBall",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift17}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift17Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2050,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 16
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_BaryteTeaSet": {
+					"Name": "{{ModId}}_BaryteTeaSet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift18}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift18Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1800,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 17
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_AeriniteLantern": {
+					"Name": "{{ModId}}_AeriniteLantern",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift19}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift19Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1875,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 18
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_CalciteTiara": {
+					"Name": "{{ModId}}_CalciteTiara",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift20}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift20Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1825,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 19
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_DolomitePendant": {
+					"Name": "{{ModId}}_DolomitePendant",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift21}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift21Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2050,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 20
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_EsperiteKey": {
+					"Name": "{{ModId}}_EsperiteKey",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift22}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift22Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1850,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 21
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_FluorapatiteGrillz": {
+					"Name": "{{ModId}}_FluorapatiteGrillz",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift23}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift23Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1950,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 22
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_GeminiteBracelet": {
+					"Name": "{{ModId}}_GeminiteBracelet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift24}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift24Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1900,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 23
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_HelvitePurse": {
+					"Name": "{{ModId}}_HelvitePurse",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift25}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift25Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2200,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 24
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_JamboriteInkPen": {
+					"Name": "{{ModId}}_JamboriteInkPen",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift26}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift26Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1900,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 25
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_JagoiteOrnament": {
+					"Name": "{{ModId}}_JagoiteOrnament",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift27}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift27Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1865,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 26
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_MudstoneWaterFilter": {
+					"Name": "{{ModId}}_MudstoneWaterFilter",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift28}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift28Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1775,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 27
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_KyaniteScissor": {
+					"Name": "{{ModId}}_KyaniteScissor",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift29}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift29Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2000,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 28
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_LunariteEarrings": {
+					"Name": "{{ModId}}_LunariteEarrings",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift30}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift30Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1950,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 29
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_MalachiteCuia": {
+					"Name": "{{ModId}}_MalachiteCuia",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift31}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift31Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1850,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 30
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_NeptuniteKnife": {
+					"Name": "{{ModId}}_NeptuniteKnife",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift32}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift32Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1900,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 31
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_LemonStoneGoggles": {
+					"Name": "{{ModId}}_LemonStoneGoggles",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift33}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift33Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1950,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 32
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_NekoiteHairBrush": {
+					"Name": "{{ModId}}_NekoiteHairBrush",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift34}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift34Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1830,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 33
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_OrpimentMask": {
+					"Name": "{{ModId}}_OrpimentMask",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift35}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift35Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1830,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 34
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_PetrifiedSlimeHourglass": {
+					"Name": "{{ModId}}_PetrifiedSlimeHourglass",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift36}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift36Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1870,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 35
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_ThunderEggAromaticCandle": {
+					"Name": "{{ModId}}_ThunderEggAromaticCandle",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift37}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift37Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1850,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 36
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_PyriteChimes": {
+					"Name": "{{ModId}}_PyriteChimes",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift38}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift38Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1870,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 37
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_OceanStoneHandMirror": {
+					"Name": "{{ModId}}_OceanStoneHandMirror",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift39}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift39Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1970,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 38
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_GhostCrystalPorcelainDoll": {
+					"Name": "{{ModId}}_GhostCrystalPorcelainDoll",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift40}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift40Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1950,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 39
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_JasperDice": {
+					"Name": "{{ModId}}_JasperDice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift41}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift41Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1900,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 40
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_CelestineVeil": {
+					"Name": "{{ModId}}_CelestineVeil",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift42}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift42Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1875,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 41
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_MarbleStatue": {
+					"Name": "{{ModId}}_MarbleStatue",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift43}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift43Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1860,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 42
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_SandstoneSundial": {
+					"Name": "{{ModId}}_SandstoneSundial",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift44}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift44Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1810,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 43
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_GraniteJar": {
+					"Name": "{{ModId}}_GraniteJar",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift45}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift45Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1825,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 44
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_BasaltLighter": {
+					"Name": "{{ModId}}_BasaltLighter",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift46}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift46Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1925,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 45
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_LimestoneNecklace": {
+					"Name": "{{ModId}}_LimestoneNecklace",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift47}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift47Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1765,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 46
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_SoapstoneMagnifyingGlass": {
+					"Name": "{{ModId}}_SoapstoneMagnifyingGlass",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift48}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift48Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1870,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 47
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_HematiteBell": {
+					"Name": "{{ModId}}_HematiteBell",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift49}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift49Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1900,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 48
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_ObsidianDagger": {
+					"Name": "{{ModId}}_ObsidianDagger",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift50}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift50Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1950,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 49
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_SlateGravestone": {
+					"Name": "{{ModId}}_SlateGravestone",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift51}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift51Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1835,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 50
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_FairyStoneWand": {
+					"Name": "{{ModId}}_FairyStoneWand",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift52}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift52Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2000,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 51
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_CelestialMusicBox": {
+					"Name": "{{ModId}}_CelestialMusicBox",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Gift53}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Gift53Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2250,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_GiftSprites",
+					"SpriteIndex": 52
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1169 @@
+{
+	"Changes": [
+		{
+			"LogName": "Load Bouquet Maker sprite sheet",
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/assets/Items/Machines/{{ModId}}_BouquetMaker",
+			"FromFile": "assets/Items/Machines/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Add Bouquet maker",
+			"Action": "EditData",
+			"Target": "Data/BigCraftables",
+			"Entries": {
+				"{{ModId}}_BouquetMaker": {
+					"Name": "{{ModId}}_BouquetMaker",
+					"DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_M3}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_M3Desc}}",
+					"Texture": "Mods/{{ModId}}/assets/Items/Machines/{{ModId}}_BouquetMaker",
+					"SpriteIndex": 0
+				}
+			}
+		},
+		{
+			"LogName": "Add bouquet maker rules",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"Entries": {
+				"(BC){{ModId}}_BouquetMaker": {
+					"OutputRules": [
+						//SweetPea
+						{
+							"Id": "{{ModId}}_SweetPeaToBouquet",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_SweetPeaInputBouquet",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)402",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_SweetPeaBouquetOutput",
+									"ItemId": "(O){{ModId}}_SweetPeaBouquet",
+									"MinStack": 1
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						//Crocus
+						{
+							"Id": "{{ModId}}_CrocusToBouquet",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CrocusInputBouquet",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)418",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_CrocusBouquetOutput",
+									"ItemId": "(O){{ModId}}_CrocusBouquet",
+									"MinStack": 1
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						//Tulip
+						{
+							"Id": "{{ModId}}_TulipToBouquet",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_TulipInputBouquet",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)591",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_TulipBouquetOutput",
+									"ItemId": "(O){{ModId}}_TulipBouquet",
+									"MinStack": 1
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						//Blue Jazz
+						{
+							"Id": "{{ModId}}_BlueJazzToBouquet",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_BlueJazzInputBouquet",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)597",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_BlueJazzBouquetOutput",
+									"ItemId": "(O){{ModId}}_BlueJazzBouquet",
+									"MinStack": 1
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						//Summer Spangle
+						{
+							"Id": "{{ModId}}_SummerSpangleToBouquet",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_SummerSpangleInputBouquet",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)593",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_SummerSpangleBouquetOutput",
+									"ItemId": "(O){{ModId}}_SummerSpangleBouquet",
+									"MinStack": 1
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						//Poppy
+						{
+							"Id": "{{ModId}}_PoppyToBouquet",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_PoppyInputBouquet",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)376",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PoppyBouquetOutput",
+									"ItemId": "(O){{ModId}}_PoppyBouquet",
+									"MinStack": 1
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						//Sunflower
+						{
+							"Id": "{{ModId}}_SunflowerToBouquet",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_SunflowerInputBouquet",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)421",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_SunflowerBouquetOutput",
+									"ItemId": "(O){{ModId}}_SunflowerBouquet",
+									"MinStack": 1
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						//fairy rose
+						{
+							"Id": "{{ModId}}_FairyRoseToBouquet",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_FairyRoseInputBouquet",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)595",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_BouquetOutput",
+									"ItemId": "(O)458",
+									"MinStack": 1
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						//Cactus Flower
+						{
+							"Id": "{{ModId}}_CactusFlowerToBouquet",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CactusInputBouquet",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)90",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_CactusFlowerBouquetOutput",
+									"ItemId": "(O){{ModId}}_CactusFlowerBouquet",
+									"MinStack": 1
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						//Sunflower
+						{
+							"Id": "{{ModId}}_AbutilonToBouquet",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_AbutilonInputBouquet",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_Abutilon",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_AbutilonBouquetOutput",
+									"ItemId": "(O){{ModId}}_AbutilonBouquet",
+									"MinStack": 1
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						//Orchid
+						{
+							"Id": "{{ModId}}_OrchidToBouquet",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_OrchidInputBouquet",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_CattleaOrchid",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_OrchidBouquetOutput",
+									"ItemId": "(O){{ModId}}_OrchidBouquet",
+									"MinStack": 1
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						//Flame vine
+						{
+							"Id": "{{ModId}}_FlameVineToBouquet",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_FlameVineInputBouquet",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_FlameVine",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_FlameVineBouquetOutput",
+									"ItemId": "(O){{ModId}}_FlameVineBouquet",
+									"MinStack": 1
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						//Holiday Cactus
+						{
+							"Id": "{{ModId}}_HolidayCactusToBouquet",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_HolidayCactusInputBouquet",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_HolidayCactus",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_HolidayCactusBouquetOutput",
+									"ItemId": "(O){{ModId}}_HolidayCactusBouquet",
+									"MinStack": 1
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						//Morning Glory
+						{
+							"Id": "{{ModId}}_MorningGloryToBouquet",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_MorningGloryInputBouquet",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_PindoRamaDwarfMorningGlory",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_MorningGloryBouquetOutput",
+									"ItemId": "(O){{ModId}}_PindoRamaDwarfMorningGloryBouquet",
+									"MinStack": 1
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						//Princess Flower
+						{
+							"Id": "{{ModId}}_PrincessFlowerToBouquet",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_PrincessFlowerInputBouquet",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_PrincessFlower",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_PrincessFlowerBouquetOutput",
+									"ItemId": "(O){{ModId}}_PrincessFlowerBouquet",
+									"MinStack": 1
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						//Snowflake
+						{
+							"Id": "{{ModId}}_SnowflakeToBouquet",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_SnowflakeInputBouquet",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_Snowflake",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_SnowflakeBouquetOutput",
+									"ItemId": "(O){{ModId}}_SnowflakeBouquet",
+									"MinStack": 1
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						//Daffodil
+						{
+							"Id": "{{ModId}}_DaffodilToBouquet",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_DaffodilInputBouquet",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)18",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_DaffodilBouquetOutput",
+									"ItemId": "(O){{ModId}}_DaffodilBouquet",
+									"MinStack": 1
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						//Dandelion
+						{
+							"Id": "{{ModId}}_DandelionToBouquet",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_DandelionInputBouquet",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)22",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_DandelionBouquetOutput",
+									"ItemId": "(O){{ModId}}_DandelionBouquet",
+									"MinStack": 1
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						//CrystalRose
+						{
+							"Id": "{{ModId}}_CrystalRoseToBouquet",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CrystalRoseInputBouquet",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_CrystalRose",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_CrystalRoseBouquetOutput",
+									"ItemId": "(O){{ModId}}_CrystalRoseBouquet",
+									"MinStack": 1
+								}
+							],
+							"MinutesUntilReady": 10
+						},
+						//Cosmo Flower
+						{
+							"Id": "{{ModId}}_CosmoFlowerToBouquet",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CosmoFlowerInputBouquet",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_CosmoFlower",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_CosmoFlowerBouquetOutput",
+									"ItemId": "(O){{ModId}}_CosmoFlowerBouquet",
+									"MinStack": 1
+								}
+							],
+							"MinutesUntilReady": 10
+						}
+					],
+					"AdditionalConsumedItems": [
+						{
+							"ItemId": "(O)428",
+							"RequiredCount": 1
+						}
+					]
+				}
+			}
+		},
+		{
+			"LogName": "Load Bouquets",
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+			"FromFile": "assets/Items/Artisan Goods/{{TargetWithoutPath}}.png"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_SweetPeaBouquet": {
+					"Name": "{{ModId}}_SweetPeaBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet1}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet1Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 620,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 0,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_SweetPeaBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_CrocusBouquet": {
+					"Name": "{{ModId}}_CrocusBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet2}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet2Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 650,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 1,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_CrocusBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_TulipBouquet": {
+					"Name": "{{ModId}}_TulipBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet3}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet3Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 560,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 2,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_TulipBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_BlueJazzBouquet": {
+					"Name": "{{ModId}}_BlueJazzBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet4}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet4Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 620,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 3,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_BlueJazzBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_SummerSpangleBouquet": {
+					"Name": "{{ModId}}_SummerSpangleBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet5}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet5Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 740,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 4,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_SummerSpangleBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_PoppyBouquet": {
+					"Name": "{{ModId}}_PoppyBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet6}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet6Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 890,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 5,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Hate"
+					],
+					"Value": "{{ModId}}_PoppyBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_SunflowerBouquet": {
+					"Name": "{{ModId}}_SunflowerBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet7}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet7Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 710,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 6,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_SunflowerBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_CactusFlowerBouquet": {
+					"Name": "{{ModId}}_CactusFlowerBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet8}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet8Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 695,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 7,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_CactusFlowerBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_AbutilonBouquet": {
+					"Name": "{{ModId}}_AbutilonBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet9}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet9Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 920,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 8,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_AbutilonBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_CattleaOrchidBouquet": {
+					"Name": "{{ModId}}_CattleaOrchidBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet10}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet10Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 980,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 9,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_CattleaOrchidBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_FlameVineBouquet": {
+					"Name": "{{ModId}}_FlameVineBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet11}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet11Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 560,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 10,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_FlameVineBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_HolidayCactusBouquet": {
+					"Name": "{{ModId}}_HolidayCactusBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet12}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet12Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 620,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 11,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_HolidayCactusBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_PindoRamaDwarfMorningGloryBouquet": {
+					"Name": "{{ModId}}_PindoRamaDwarfMorningGloryBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet13}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet13Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 530,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 12,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_PindoRamaDwarfMorningGloryBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_PrincessFlowerBouquet": {
+					"Name": "{{ModId}}_PrincessFlowerBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet14}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet14Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 620,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 13,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_PrincessFlowerBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_SnowflakeBouquet": {
+					"Name": "{{ModId}}_SnowflakeBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet15}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet15Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 620,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 14,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_SnowflakeBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_DaffodilBouquet": {
+					"Name": "{{ModId}}_DaffodilBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet16}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet16Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 560,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 15,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_DaffodilBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_DandelionBouquet": {
+					"Name": "{{ModId}}_DandelionBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet17}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet17Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 590,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 16,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_DandelionBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_CrystalRoseBouquet": {
+					"Name": "{{ModId}}_CrystalRoseBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet18}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet18Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 920,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 17,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_CrystalRoseBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_CosmoFlowerBouquet": {
+					"Name": "{{ModId}}_CosmoFlowerBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet19}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet19Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 830,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 18,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_CosmoFlowerBouquet",
+					"Delimiter": " "
+				}
+			]
+		}
+	]
+}

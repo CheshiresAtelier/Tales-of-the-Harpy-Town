@@ -1,0 +1,21 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_AdriannoDumped": {
+                    "MarkActionApplied": false,
+                    "Id": "{{ModId}}_AdriannoDumped",
+                    "Trigger": "Spiderbuttons.BETAS_GenderChanged",
+                    "Condition": "PLAYER_NPC_RELATIONSHIP Current {{ModId}}_Adrianno Married, PLAYER_GENDER Current Female",
+                    "Actions": [
+                        "IncrementStat SwappedGenders",
+                        "spacechase0.SpaceCore_PlayEvent {{ModId}}_EventAdriannoDumped false",
+                        "Spiderbuttons.BETAS_ChangeRelationship {{ModID}}_Adrianno friendly false 3"
+                    ]
+                }
+            }
+        }
+    ]
+}

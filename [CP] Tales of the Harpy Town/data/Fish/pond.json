@@ -1,0 +1,1589 @@
+﻿{
+	"Changes": [
+		{
+			"LogName": "Fish Pond Data Arapaima",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_Arapaima": {
+					"Id": "id_(o){{ModId}}_Arapaima",
+					"RequiredTags": [
+						"id_(o){{ModId}}_Arapaima"
+					],
+					"SpawnTime": 5,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 10,
+							"Chance": 0.4,
+							"ItemID": "{{ModId}}_Coxinha", // Coxinha
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 10,
+							"Chance": 1.0,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O){{ModId}}_Guarana 5" // Guarana
+						],
+						"5": [
+							"(O){{ModId}}_Acai 3" // Acai
+						],
+						"7": [
+							"(O){{ModId}}_SugarCaneLiquor" // Sugar Cane Liquor
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Black Pacu",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_BlackPacu": {
+					"Id": "id_(o){{ModId}}_BlackPacu",
+					"RequiredTags": [
+						"id_(o){{ModId}}_BlackPacu"
+					],
+					"SpawnTime": 5,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 10,
+							"Chance": 0.4,
+							"ItemID": "{{ModId}}_Brigadeiro", // Brigadeiro
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 10,
+							"Chance": 1.0,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O){{ModId}}_Guarana 5" // Guarana
+						],
+						"5": [
+							"(O){{ModId}}_Mandacaru 3" // Mandacaru
+						],
+						"7": [
+							"(O){{ModId}}_GuaraCola" // GuaraCola
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Golden Dorado",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_GoldenDorado": {
+					"Id": "id_(o){{ModId}}_GoldenDorado",
+					"RequiredTags": [
+						"id_(o){{ModId}}_GoldenDorado"
+					],
+					"SpawnTime": 5,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 10,
+							"Chance": 0.4,
+							"ItemID": "421", // Sunflower
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 10,
+							"Chance": 1.0,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)157 5" // White Algae
+						],
+						"5": [
+							"(O)268 3" // Starfruit
+						],
+						"7": [
+							"(O)303" // Pale Ale
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Pacu Peva",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_PacuPeva": {
+					"Id": "id_(o){{ModId}}_PacuPeva",
+					"RequiredTags": [
+						"id_(o){{ModId}}_PacuPeva"
+					],
+					"SpawnTime": 5,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 10,
+							"Chance": 0.4,
+							"ItemID": "904", // Banana
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 10,
+							"Chance": 1.0,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)296 5" // Salmonberry
+						],
+						"5": [
+							"(O)268 3" // Starfruit
+						],
+						"7": [
+							"(O)610" // Radish
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Piranha",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_Piranha": {
+					"Id": "id_(o){{ModId}}_Piranha",
+					"RequiredTags": [
+						"id_(o){{ModId}}_Piranha"
+					],
+					"SpawnTime": 5,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 10,
+							"Chance": 0.4,
+							"ItemID": "904", // Banana
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 10,
+							"Chance": 1.0,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)397 5" // Sea Urchin
+						],
+						"5": [
+							"(O)213 3" // Fish Taco
+						],
+						"7": [
+							"(O){{ModId}}_Coxinha" // Coxinha
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Surubim",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_Surubim": {
+					"Id": "id_(o){{ModId}}_Surubim",
+					"RequiredTags": [
+						"id_(o){{ModId}}_Surubim"
+					],
+					"SpawnTime": 5,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 10,
+							"Chance": 0.4,
+							"ItemID": "{{ModId}}_Beijinho", // Beijinho
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 10,
+							"Chance": 1.0,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)718 5" // Cockle
+						],
+						"5": [
+							"(O)372 3" // Clam
+						],
+						"7": [
+							"(O)394" // Rainbow Shell
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data traira",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_Traira": {
+					"Id": "id_(o){{ModId}}_Traira",
+					"RequiredTags": [
+						"id_(o){{ModId}}_Traira"
+					],
+					"SpawnTime": 5,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 10,
+							"Chance": 0.4,
+							"ItemID": "{{ModId}}_Abutilon", // Abutilon
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 10,
+							"Chance": 1.0,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)720 5" // Shrimp
+						],
+						"5": [
+							"(O)719 3" // Mussel
+						],
+						"7": [
+							"(O)721" // Snail
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data tucunare",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_Tucunare": {
+					"Id": "id_(o){{ModId}}_Tucunare",
+					"RequiredTags": [
+						"id_(o){{ModId}}_Tucunare"
+					],
+					"SpawnTime": 5,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 10,
+							"Chance": 0.4,
+							"ItemID": "{{ModId}}_Guarana", // Guarana
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 10,
+							"Chance": 1.0,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)719 5" // Mussel
+						],
+						"5": [
+							"(O)717 3" // Crab
+						],
+						"7": [
+							"(O)206" // Pizza
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Pink River Dolphin",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_PinkRiverDolphin": {
+					"Id": "id_(o){{ModId}}_PinkRiverDolphin",
+					"RequiredTags": [
+						"id_(o){{ModId}}_PinkRiverDolphin"
+					],
+					"SpawnTime": 5,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 0,
+							"Chance": 0.4,
+							"ItemID": "{{ModId}}_PartyKit", // Party Kit
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 0,
+							"Chance": 1.0,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": null,
+					"MaxPopulation": 1,
+					"WaterColor": [
+						{
+							"Id": "{{ModId}}_PinkRiverDolphinWatercolor",
+							"Color": "CopyFromInput",
+							"MinPopulation": 1,
+							"MinUnlockedPopulationGate": 0
+						}
+					]
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Atlantic Moonfish",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_AtlanticMoonfish": {
+					"Id": "id_(o){{ModId}}_AtlanticMoonfish",
+					"RequiredTags": [
+						"id_(o){{ModId}}_AtlanticMoonfish"
+					],
+					"SpawnTime": 3,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "394", // Rainbow Shell
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "393", // Coral
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "372", // Clam
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.7,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)393 3" // Coral
+						],
+						"5": [
+							"(O)372 2" // Clam
+						],
+						"7": [
+							"(O)394" // Rainbow Shell
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Barracuda",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_Barracuda": {
+					"Id": "id_(o){{ModId}}_Barracuda",
+					"RequiredTags": [
+						"id_(o){{ModId}}_Barracuda"
+					],
+					"SpawnTime": 4,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.02,
+							"ItemID": "227", // Sashimi
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "72", // Diamond
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "152", // Seaweed
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "719", // Mussel
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.68,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)719 5" // Mussel
+						],
+						"5": [
+							"(O)152 2" // Seaweed
+						],
+						"7": [
+							"(O)397" // Sea Urchin
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Black Grouper",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_BlackGrouper": {
+					"Id": "id_(o){{ModId}}_BlackGrouper",
+					"RequiredTags": [
+						"id_(o){{ModId}}_BlackGrouper"
+					],
+					"SpawnTime": 4,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "397", // Sea Urchin
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "718", // Cockle
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "372", // Clam
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.7,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)372 3" // Clam
+						],
+						"5": [
+							"(O)718 2" // Cockle
+						],
+						"7": [
+							"(O)397" // Sea Urchin
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Cobia",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_Cobia": {
+					"Id": "id_(o){{ModId}}_Cobia",
+					"RequiredTags": [
+						"id_(o){{ModId}}_Cobia"
+					],
+					"SpawnTime": 3,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "717", // Crab
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "393", // Coral
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "152", // Seaweed
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.7,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)152 5" // Seaweed
+						],
+						"5": [
+							"(O)393 2" // Coral
+						],
+						"7": [
+							"(O)394" // Rainbow Shell
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Common Snook",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_CommonSnook": {
+					"Id": "id_(o){{ModId}}_CommonSnook",
+					"RequiredTags": [
+						"id_(o){{ModId}}_CommonSnook"
+					],
+					"SpawnTime": 3,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "717", // Crab
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "720", // Shrimp
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "719", // Mussel
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.7,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)719 3" // Mussel
+						],
+						"5": [
+							"(O)720 2" // Shrimp
+						],
+						"7": [
+							"(O)717" // Crab
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Croaker",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_Croaker": {
+					"Id": "id_(o){{ModId}}_Croaker",
+					"RequiredTags": [
+						"id_(o){{ModId}}_Croaker"
+					],
+					"SpawnTime": 3,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "718", // Cockle
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "372", // Clam
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "153", // Green Algae
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.7,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)153 5" // Green Algae
+						],
+						"5": [
+							"(O)372 2" // Clam
+						],
+						"7": [
+							"(O)718" // Cockle
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Dogfish",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_Dogfish": {
+					"Id": "id_(o){{ModId}}_Dogfish",
+					"RequiredTags": [
+						"id_(o){{ModId}}_Dogfish"
+					],
+					"SpawnTime": 5,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "727", // Chowder
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "397", // Sea Urchin
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "372", // Clam
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.7,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)372 5" // Clam
+						],
+						"5": [
+							"(O)397 2" // Sea Urchin
+						],
+						"7": [
+							"(O)727" // Chowder
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Dolphin Fish",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_DolphinFish": {
+					"Id": "id_(o){{ModId}}_DolphinFish",
+					"RequiredTags": [
+						"id_(o){{ModId}}_DolphinFish"
+					],
+					"SpawnTime": 4,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "732", // Crab Cakes
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "394", // Rainbow Shell
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "719", // Mussel
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.7,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)719 5" // Mussel
+						],
+						"5": [
+							"(O)394 2" // Rainbow Shell
+						],
+						"7": [
+							"(O)732" // Crab Cakes
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Guitarfish",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_Guitarfish": {
+					"Id": "id_(o){{ModId}}_Guitarfish",
+					"RequiredTags": [
+						"id_(o){{ModId}}_Guitarfish"
+					],
+					"SpawnTime": 3,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "397", // Sea Urchin
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "393", // Coral
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "152", // Seaweed
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.7,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)152 5" // Seaweed
+						],
+						"5": [
+							"(O)393 2" // Coral
+						],
+						"7": [
+							"(O)397" // Sea Urchin
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Mackerel",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_Mackerel": {
+					"Id": "id_(o){{ModId}}_Mackerel",
+					"RequiredTags": [
+						"id_(o){{ModId}}_Mackerel"
+					],
+					"SpawnTime": 2,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "153", // Green Algae
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "152", // Seaweed
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "685", // Bait
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.7,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)152 5" // Seaweed
+						],
+						"5": [
+							"(O)153 2" // Green Algae
+						],
+						"7": [
+							"(O)685 5" // Bait
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Monkfish",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_Monkfish": {
+					"Id": "id_(o){{ModId}}_Monkfish",
+					"RequiredTags": [
+						"id_(o){{ModId}}_Monkfish"
+					],
+					"SpawnTime": 4,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "243", // Miner's Treat
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "154", // Sea Cucumber
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "153", // Green Algae
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.7,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)153 5" // Green Algae
+						],
+						"5": [
+							"(O)154 2" // Sea Cucumber
+						],
+						"7": [
+							"(O)243" // Miner's Treat
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Namorado Sandperch",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_NamoradoSandperch": {
+					"Id": "id_(o){{ModId}}_NamoradoSandperch",
+					"RequiredTags": [
+						"id_(o){{ModId}}_NamoradoSandperch"
+					],
+					"SpawnTime": 3,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "372", // Clam
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "720", // Shrimp
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "719", // Mussel
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.7,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)719 5" // Mussel
+						],
+						"5": [
+							"(O)720 2" // Shrimp
+						],
+						"7": [
+							"(O)372" // Clam
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Needlefish",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_Needlefish": {
+					"Id": "id_(o){{ModId}}_Needlefish",
+					"RequiredTags": [
+						"id_(o){{ModId}}_Needlefish"
+					],
+					"SpawnTime": 3,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "730", // Lobster Bisque
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "718", // Cockle
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "152", // Seaweed
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.7,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)152 5" // Seaweed
+						],
+						"5": [
+							"(O)718 2" // Cockle
+						],
+						"7": [
+							"(O)730" // Lobster Bisque
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Oarfish",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_Oarfish": {
+					"Id": "id_(o){{ModId}}_Oarfish",
+					"RequiredTags": [
+						"id_(o){{ModId}}_Oarfish"
+					],
+					"SpawnTime": 5,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "74", // Prismatic Shard
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "243", // Miner's Treat
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "152", // Seaweed
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.7,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)152 5" // Seaweed
+						],
+						"5": [
+							"(O)535 2" // Geode
+						],
+						"7": [
+							"(O)243" // Miner's Treat
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Opah",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_Opah": {
+					"Id": "id_(o){{ModId}}_Opah",
+					"RequiredTags": [
+						"id_(o){{ModId}}_Opah"
+					],
+					"SpawnTime": 4,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "728", // Fish Stew
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "397", // Sea Urchin
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "719", // Mussel
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.7,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)719 5" // Mussel
+						],
+						"5": [
+							"(O)397 2" // Sea Urchin
+						],
+						"7": [
+							"(O)728" // Fish Stew
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Pufferkitty",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_Pufferkitty": {
+					"Id": "id_(o){{ModId}}_Pufferkitty",
+					"RequiredTags": [
+						"id_(o){{ModId}}_Pufferkitty"
+					],
+					"SpawnTime": 4,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "213", // Fish Taco
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "184", // Milk
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "152", // Seaweed
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.7,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)152 3" // Seaweed
+						],
+						"5": [
+							"(O)184 2" // Milk
+						],
+						"7": [
+							"(O)213" // Fish Taco
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Salema",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_Salema": {
+					"Id": "id_(o){{ModId}}_Salema",
+					"RequiredTags": [
+						"id_(o){{ModId}}_Salema"
+					],
+					"SpawnTime": 3,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "153", // Green Algae
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "152", // Seaweed
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "719", // Mussel
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.7,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)719 5" // Mussel
+						],
+						"5": [
+							"(O)152 2" // Seaweed
+						],
+						"7": [
+							"(O)153" // Green Algae
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Smooth Weakfish",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_SmoothWeakfish": {
+					"Id": "id_(o){{ModId}}_SmoothWeakfish",
+					"RequiredTags": [
+						"id_(o){{ModId}}_SmoothWeakfish"
+					],
+					"SpawnTime": 3,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "718", // Cockle
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "372", // Clam
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "157", // White Algae
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.7,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)157 5" // White Algae
+						],
+						"5": [
+							"(O)372 2" // Clam
+						],
+						"7": [
+							"(O)718" // Cockle
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Titanoboa",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_Titanoboa": {
+					"Id": "id_(o){{ModId}}_Titanoboa",
+					"RequiredTags": [
+						"id_(o){{ModId}}_Titanoboa"
+					],
+					"SpawnTime": 5,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "442", // Duck Feather
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "384", // Gold Ore
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "382", // Coal
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.7,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)382 5" // Coal
+						],
+						"5": [
+							"(O)384 2" // Gold Ore
+						],
+						"7": [
+							"(O)442" // Duck Feather
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Yellowtail Amberjack",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_YellowtailAmberjack": {
+					"Id": "id_(o){{ModId}}_YellowtailAmberjack",
+					"RequiredTags": [
+						"id_(o){{ModId}}_YellowtailAmberjack"
+					],
+					"SpawnTime": 4,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "720", // Shrimp
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "378", // Copper Ore
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "388", // Wood
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.7,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)388 5" // Wood
+						],
+						"5": [
+							"(O)378 2" // Copper Ore
+						],
+						"7": [
+							"(O)720" // Shrimp
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Mackerel",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_Mackerel": {
+					"Id": "id_(o){{ModId}}_Mackerel",
+					"RequiredTags": [
+						"id_(o){{ModId}}_Mackerel"
+					],
+					"SpawnTime": 3,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "228", // Maki Roll
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "372", // Clam
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "152", // Seaweed
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.7,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)152 5" // Seaweed
+						],
+						"5": [
+							"(O)372 2" // Clam
+						],
+						"7": [
+							"(O)228" // Maki Roll
+						]
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Fish Pond Data Monkfish",
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Entries": {
+				"id_(o){{ModId}}_Monkfish": {
+					"Id": "id_(o){{ModId}}_Monkfish",
+					"RequiredTags": [
+						"id_(o){{ModId}}_Monkfish"
+					],
+					"SpawnTime": 5,
+					"ProducedItems": [
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.05,
+							"ItemID": "265", // Seafoam Pudding
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.1,
+							"ItemID": "394", // Rainbow Shell
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.15,
+							"ItemID": "393", // Coral
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
+							"Chance": 0.7,
+							"ItemID": "812", // Roe
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						}
+					],
+					"PopulationGates": {
+						"3": [
+							"(O)393 5" // Coral
+						],
+						"5": [
+							"(O)394 2" // Rainbow Shell
+						],
+						"7": [
+							"(O)265" // Seafoam Pudding
+						]
+					}
+				}
+			}
+		}
+	]
+}

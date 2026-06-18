@@ -1,0 +1,1191 @@
+{
+	"Changes": [
+		{
+			"LogName": "Load Juices machine sprite sheet",
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/assets/Items/Machines/{{ModId}}_GourmetFruitJuiceMaker",
+			"FromFile": "assets/Items/Machines/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Add Juice Machine",
+			"Action": "EditData",
+			"Target": "Data/BigCraftables",
+			"Entries": {
+				"{{ModId}}_JuicesMachine": {
+					"Name": "{{ModId}}_JuicesMachine",
+					"DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_M8}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_M8Desc}}!",
+					"Texture": "Mods/{{ModId}}/assets/Items/Machines/{{ModId}}_GourmetFruitJuiceMaker",
+					"SpriteIndex": 0
+				}
+			}
+		},
+		{
+			"LogName": "Load Juices",
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+			"FromFile": "assets/Items/Artisan Goods/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Add juices machine rules",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"Entries": {
+				"(BC){{ModId}}_JuicesMachine": {
+					"OutputRules": [
+						{
+							"Id": "{{ModId}}_FruitToJuice",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_OrangeInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)635",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput",
+									"ItemId": "(O){{ModId}}_OrangeJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice1",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_GrapeInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)398",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput1",
+									"ItemId": "(O){{ModId}}_GrapeJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice2",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_AncientFruitInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)454",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput2",
+									"ItemId": "(O){{ModId}}_AncientFruitJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice3",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_AppleInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)613",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput3",
+									"ItemId": "(O){{ModId}}_AppleJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice4",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_ApricotInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)634",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput4",
+									"ItemId": "(O){{ModId}}_ApricotJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice5",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_BananaInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)91",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput5",
+									"ItemId": "(O){{ModId}}_BananaJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice6",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_BlackberryInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)410",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput6",
+									"ItemId": "(O){{ModId}}_BlackberryJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice7",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_BlueberryInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)258",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput7",
+									"ItemId": "(O){{ModId}}_BlueberryJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice8",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CactusInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)90",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput8",
+									"ItemId": "(O){{ModId}}_CactusJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice9",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CherryInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)638",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput9",
+									"ItemId": "(O){{ModId}}_CherryJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice10",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CoconutInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)88",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput10",
+									"ItemId": "(O){{ModId}}_CoconutWater",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice11",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CrystalFruitInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)414",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput11",
+									"ItemId": "(O){{ModId}}_CrystalFruitJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice12",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_PepperInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)260",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput12",
+									"ItemId": "(O){{ModId}}_HotPepperJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice13",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_MangoInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)834",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput13",
+									"ItemId": "(O){{ModId}}_MangoJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice14",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_MelonInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)254",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput14",
+									"ItemId": "(O){{ModId}}_MelonJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice15",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_PeachInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)636",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput15",
+									"ItemId": "(O){{ModId}}_PeachJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice16",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_PineappleInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)832",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput16",
+									"ItemId": "(O){{ModId}}_PineappleJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice17",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_PomegranateInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)637",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput17",
+									"ItemId": "(O){{ModId}}_PomegranateJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice18",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_PowdermelonInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)Powdermelon",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput18",
+									"ItemId": "(O){{ModId}}_PowdermelonJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice19",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_RhubarbInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)252",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput19",
+									"ItemId": "(O){{ModId}}_RhubarbJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice20",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_SalmonberryInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)296",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput20",
+									"ItemId": "(O){{ModId}}_SalmonberryJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice21",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_SpiceberryInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)396",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput21",
+									"ItemId": "(O){{ModId}}_SpiceberryJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice22",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_StarfruitInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)268",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput22",
+									"ItemId": "(O){{ModId}}_StarfruitJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice23",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_StrawberryInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)400",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput23",
+									"ItemId": "(O){{ModId}}_StrawberryJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice24",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_PlumInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)406",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput24",
+									"ItemId": "(O){{ModId}}_PlumJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice25",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_GuaranaInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_Guarana",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput25",
+									"ItemId": "(O){{ModId}}_GuaranaJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice26",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CupuassuInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_Cupuassu",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput26",
+									"ItemId": "(O){{ModId}}_CupuassuJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice27",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_JatobaInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_Jatoba",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput27",
+									"ItemId": "(O){{ModId}}_JatobaJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice28",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_GuavaInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_Guava",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput28",
+									"ItemId": "(O){{ModId}}_GuavaJuice",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						},
+						{
+							"Id": "{{ModId}}_FruitToJuice29",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_CranberryInputJuice",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)282",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_JuiceOutput29",
+									"ItemId": "(O)612",
+									"MinStack": 1
+								}
+							],
+							"DaysUntilReady": 1
+						}
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_OrangeJuice": {
+					"Name": "{{ModId}}_OrangeJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice1}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice1Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 500,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 0
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_GrapeJuice": {
+					"Name": "{{ModId}}_GrapeJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice2}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice2Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 400,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 1
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_AncientFruitJuice": {
+					"Name": "{{ModId}}_AncientFruitJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice3}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice3Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 2750,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 2
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_AppleJuice": {
+					"Name": "{{ModId}}_AppleJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice4}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice4Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 500,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 3
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_ApricotJuice": {
+					"Name": "{{ModId}}_ApricotJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice5}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice5Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 250,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 4
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_BananaJuice": {
+					"Name": "{{ModId}}_BananaJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice6}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice6Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 750,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 5
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_BlackberryJuice": {
+					"Name": "{{ModId}}_BlackberryJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice7}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice7Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 100,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 6
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_BlueberryJuice": {
+					"Name": "{{ModId}}_BlueberryJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice8}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice8Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 250,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 7
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_CactusJuice": {
+					"Name": "{{ModId}}_CactusJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice9}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice9Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 375,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 8
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_CherryJuice": {
+					"Name": "{{ModId}}_CherryJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice10}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice10Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 400,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 9
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_CoconutWater": {
+					"Name": "{{ModId}}_CoconutWater",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice11}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice11Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 500,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 10
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_CrystalFruitJuice": {
+					"Name": "{{ModId}}_CrystalFruitJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice12}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice12Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 750,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 11
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_HotPepperJuice": {
+					"Name": "{{ModId}}_HotPepperJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice13}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice13Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 200,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 12
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_MangoJuice": {
+					"Name": "{{ModId}}_MangoJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice14}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice14Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 650,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 13
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_MelonJuice": {
+					"Name": "{{ModId}}_MelonJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice15}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice15Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1250,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 14
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_PeachJuice": {
+					"Name": "{{ModId}}_PeachJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice16}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice16Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 700,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 15
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_PineappleJuice": {
+					"Name": "{{ModId}}_PineappleJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice17}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice17Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1500,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 16
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_PomegranateJuice": {
+					"Name": "{{ModId}}_PomegranateJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice18}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice18Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 700,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 17
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_PowdermelonJuice": {
+					"Name": "{{ModId}}_PowdermelonJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice19}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice19Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 300,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 18
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_RhubarbJuice": {
+					"Name": "{{ModId}}_RhubarbJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice20}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice20Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 1100,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 19
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_SalmonberryJuice": {
+					"Name": "{{ModId}}_SalmonberryJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice21}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice21Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 25,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 20
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_SpiceberryJuice": {
+					"Name": "{{ModId}}_SpiceberryJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice22}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice22Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 400,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 21
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_StarfruitJuice": {
+					"Name": "{{ModId}}_StarfruitJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice23}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice23Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 3750,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 22
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_StrawberryJuice": {
+					"Name": "{{ModId}}_StrawberryJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice24}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice24Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 600,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 23
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_PlumJuice": {
+					"Name": "{{ModId}}_PlumJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice25}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice25Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 400,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 24
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_GuaranaJuice": {
+					"Name": "{{ModId}}_GuaranaJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice26}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice26Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 450,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 25
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_CupuassuJuice": {
+					"Name": "{{ModId}}_CupuassuJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice27}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice27Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 300,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 26
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_JatobaJuice": {
+					"Name": "{{ModId}}_JatobaJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice28}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice28Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 600,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 27
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_GuavaJuice": {
+					"Name": "{{ModId}}_GuavaJuice",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice29}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_FruitJuice29Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 675,
+					"IsDrink": true,
+					"Edibility": 50,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_JuicesSprites",
+					"SpriteIndex": 28
+				}
+			}
+		}
+	]
+}

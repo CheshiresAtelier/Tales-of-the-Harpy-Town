@@ -1,0 +1,146 @@
+{
+    "Changes": [
+        {
+            "LogName": "Load Can machine sprite sheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/assets/Items/Machines/{{ModId}}_CanMachine",
+            "FromFile": "assets/Items/Machines/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Add Can Machine",
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "{{ModId}}_CanMachine": {
+                    "Name": "{{ModId}}_CanMachine",
+                    "DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_M6}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_M6Desc}}",
+                    "Texture": "Mods/{{ModId}}/assets/Items/Machines/{{ModId}}_CanMachine",
+                    "SpriteIndex": 0
+                }
+            }
+        },
+        {
+            "LogName": "Add Can machine rules",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "Entries": {
+                "(BC){{ModId}}_CanMachine": {
+                    "OutputRules": [
+                        {
+                            "Id": "{{ModId}}_BugMeatToCannedMeat",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_BugMeatInput",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)874",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_CannedMeatOutput",
+                                    "ItemId": "(O){{ModId}}_CannedMeat",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 50
+                        },
+                        {
+                            "Id": "{{ModId}}_BeanToBeanHotpot",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_BeanInput",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)188",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_BeanHotpotOutput",
+                                    "ItemId": "(O)207",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 50
+                        },
+                        {
+                            "Id": "{{ModId}}_MilkToPowderedMilk1",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_MilkInput",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)184",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_PowderedMilkOutput",
+                                    "ItemId": "(O){{ModId}}_PowderedMilk",
+                                    "MinStack": 1
+                                }
+                            ],
+                            "MinutesUntilReady": 50
+                        },
+                        {
+                            "Id": "{{ModId}}_MilkToPowderedMilk2",
+                            "Triggers": [
+                                {
+                                    "Id": "{{ModId}}_MilkInput2",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)186",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_PowderedMilkOutput",
+                                    "ItemId": "(O){{ModId}}_PowderedMilk",
+                                    "MinStack": 3
+                                }
+                            ],
+                            "MinutesUntilReady": 50
+                        }
+                    ],
+                    "AdditionalConsumedItems": [
+                        {
+                            "ItemId": "(O)335",
+                            "RequiredCount": 1
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Load Powdered Milk",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PowderedMilk",
+            "FromFile": "assets/Items/Artisan Goods/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_PowderedMilk": {
+                    "Name": "{{ModId}}_PowderedMilk",
+                    "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_AG11}}",
+                    "Description": "{{i18n: CheshiresAtelier.THTexpansion_AG11Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 300,
+                    "Edibility": -300,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PowderedMilk",
+                    "SpriteIndex": 0,
+                    "ContextTags": [
+                        "tht_powderedmilk_item",
+                        "powderedmilk_item"
+                    ]
+                }
+            }
+        },
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Shadow Brute",
+                        6
+                    ],
+                    "Value": "{{ModId}}_CannedMeat .25",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Grub",
+                        6
+                    ],
+                    "Value": "{{ModId}}_CannedMeat .5",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Fly",
+                        6
+                    ],
+                    "Value": "{{ModId}}_CannedMeat .10",
+                    "Delimiter": " "
+                }
+            ]
+        }
+    ]
+}

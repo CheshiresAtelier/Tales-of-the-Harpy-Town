@@ -1,0 +1,113 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Update": "OnLocationChange",
+            "Entries": {
+                "CheshiresAtelier.THTexpansion_DebrisInitialQuest": {
+                    "Name": "{{i18n:CheshiresAtelier.THTexpansion_QuestTitle01}}",
+                    "Requester": "CheshiresAtelier.THTexpansion_Cida",
+                    "Duration": "Month",
+                    "Repeatable": "False",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:CheshiresAtelier.THTexpansion_QuestDesc01}}",
+                    "ItemRemovedOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "RequiredTags": "event_CheshiresAtelier.THTexpansion_THTstairsDebrisQuest",
+                    "Objectives": [
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:CheshiresAtelier.THTexpansion_QuestDesc02}}",
+                            "RequiredCount": "1000",
+                            "Data": {
+                                "AcceptedContextTags": "item_wood",
+                                "DropBox": "{{ModId}}_THTBackwoodsStairs",
+                                "DropBoxGameLocation": "{{ModId}}_THTBackwoodsStairs",
+                                "DropBoxIndicatorLocation": "18 13"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:CheshiresAtelier.THTexpansion_QuestDesc03}}",
+                            "RequiredCount": "500",
+                            "Data": {
+                                "AcceptedContextTags": "item_stone",
+                                "DropBox": "{{ModId}}_THTBackwoodsStairs",
+                                "DropBoxGameLocation": "{{ModId}}_THTBackwoodsStairs",
+                                "DropBoxIndicatorLocation": "18 13"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:CheshiresAtelier.THTexpansion_QuestDesc04}}",
+                            "RequiredCount": "15",
+                            "Data": {
+                                "AcceptedContextTags": "item_iron_bar",
+                                "DropBox": "{{ModId}}_THTBackwoodsStairs",
+                                "DropBoxGameLocation": "{{ModId}}_THTBackwoodsStairs",
+                                "DropBoxIndicatorLocation": "18 13"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "{{ModID}}_THTdebrisCidaAlmostDone",
+                                "NoLetter": "True",
+                                "Host": "True"
+                            }
+                        },
+                        {
+                            "Type": "Friendship",
+                            "Data": {}
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "THT Backwoods DropBox",
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_THTBackwoodsStairs",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 18,
+                        "Y": 13
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "DropBox {{ModId}}_THTBackwoodsStairs"
+                    }
+                }
+            ]
+        },
+        //Editmap
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModID}}_THTBackwoodsStairs",
+            "PatchMode": "Replace",
+            "FromFile": "assets/maps/{{ModID}}_THTBackwoodsStairs01.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 7,
+                "Height": 8
+            },
+            "ToArea": {
+                "X": 23,
+                "Y": 0,
+                "Width": 7,
+                "Height": 8
+            },
+            "When": {
+                "HasSeenEvent: CurrentPlayer |contains=CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone": "true"
+            }
+        }
+        //yaaaay it worked! :D
+    ]
+}

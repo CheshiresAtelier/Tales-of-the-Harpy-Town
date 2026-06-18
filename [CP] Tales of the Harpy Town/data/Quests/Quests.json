@@ -1,0 +1,190 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        "CheshiresAtelier.THTexpansion_Quest1": "Location/{{i18n: CheshiresAtelier.THTexpansion_QuestTitle02}}/{{i18n: CheshiresAtelier.THTexpansion_QuestDesc0102}}/{{ModId}}_THTBackwoodsStairs/-1/15000/-1/false"
+      }
+    },
+    //Special orders
+    {
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Update": "OnLocationChange",
+      "Entries": {
+        "CheshiresAtelier.THTexpansion_RestoreAnAbandonedHouse": {
+          "Name": "{{i18n:CheshiresAtelier.THTexpansion_QuestTitle03}}",
+          "Requester": "CheshiresAtelier.THTexpansion_Francisco",
+          "Duration": "Month",
+          "Repeatable": "False",
+          "OrderType": "",
+          "SpecialRule": "",
+          "Text": "{{i18n:CheshiresAtelier.THTexpansion_QuestDesc05}}",
+          "ItemRemovedOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "RequiredTags": "event_CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone",
+          "Objectives": [
+            {
+              "Type": "Donate",
+              "Text": "{{i18n:CheshiresAtelier.THTexpansion_QuestDesc06}}",
+              "RequiredCount": "100",
+              "Data": {
+                "AcceptedContextTags": "item_clay",
+                "DropBox": "CheshiresAtelier.THTexpansion_NatanaelsDropbox",
+                "DropBoxGameLocation": "CheshiresAtelier.THTexpansion_THTtown",
+                "DropBoxIndicatorLocation": "28 56"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "{{i18n:CheshiresAtelier.THTexpansion_QuestDesc07}}",
+              "RequiredCount": "500",
+              "Data": {
+                "AcceptedContextTags": "item_stone",
+                "DropBox": "CheshiresAtelier.THTexpansion_NatanaelsDropbox",
+                "DropBoxGameLocation": "CheshiresAtelier.THTexpansion_THTtown",
+                "DropBoxIndicatorLocation": "28 56"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "{{i18n:CheshiresAtelier.THTexpansion_QuestDesc08}}",
+              "RequiredCount": "50",
+              "Data": {
+                "AcceptedContextTags": "item_iron_bar",
+                "DropBox": "CheshiresAtelier.THTexpansion_NatanaelsDropbox",
+                "DropBoxGameLocation": "CheshiresAtelier.THTexpansion_THTtown",
+                "DropBoxIndicatorLocation": "28 56"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "{{ModID}}_JoseMovedIn",
+                "NoLetter": "True",
+                "Host": "True"
+              }
+            },
+            {
+              "Type": "Friendship",
+              "Data": {}
+            }
+          ]
+        }
+      }
+    },
+    //Dropboxes :)
+    {
+      "LogName": "Mayara's DropBox",
+      "Action": "EditMap",
+      "Target": "Maps/CheshiresAtelier.THTexpansion_THTAnahisHouse",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 33,
+            "Y": 15
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "DropBox CheshiresAtelier.THTexpansion_MayarasDropbox"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Duda's DropBox",
+      "Action": "EditMap",
+      "Target": "Maps/CheshiresAtelier.THTexpansion_THTEmiliasHouse2",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 23
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "DropBox CheshiresAtelier.THTexpansion_DudasDropbox"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Camelia's DropBox",
+      "Action": "EditMap",
+      "Target": "Maps/CheshiresAtelier.THTexpansion_THTEmiliasHouse2",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 15,
+            "Y": 14
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "DropBox CheshiresAtelier.THTexpansion_CameliasDropbox"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Valdemar's DropBox",
+      "Action": "EditMap",
+      "Target": "Maps/CheshiresAtelier.THTexpansion_THTbeach",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 7,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "DropBox CheshiresAtelier.THTexpansion_ValdemarsDropbox"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Natanael's DropBox",
+      "Action": "EditMap",
+      "Target": "Maps/CheshiresAtelier.THTexpansion_THTtown",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 28,
+            "Y": 56
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "DropBox CheshiresAtelier.THTexpansion_NatanaelsDropbox"
+          }
+        }
+      ]
+    },
+    //Map edits
+    {
+      "LogName": "Natanael's quest editmap",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModID}}_THTsecretPlace2",
+      "PatchMode": "Replace",
+      "FromFile": "assets/maps/{{ModID}}_THTJosesHouse.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 18,
+        "Height": 26
+      },
+      "ToArea": {
+        "X": 21,
+        "Y": 17,
+        "Width": 18,
+        "Height": 26
+      },
+      "When": {
+        "HasSeenEvent: CurrentPlayer |contains=CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone": "true"
+      }
+    }
+  ]
+}

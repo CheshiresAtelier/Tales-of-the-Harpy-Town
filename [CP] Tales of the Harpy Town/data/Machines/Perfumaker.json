@@ -1,0 +1,3809 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load Perfumaker sprite sheet",
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/assets/Items/Machines/{{ModId}}_Perfumaker",
+      "FromFile": "assets/Items/Machines/{{TargetWithoutPath}}.png"
+    },
+    {
+      "LogName": "Add perfumaker",
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "{{ModId}}_Perfumaker": {
+          "Name": "{{ModId}}_Perfumaker",
+          "DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_M1}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_M1Desc}}!",
+          "Texture": "Mods/{{ModId}}/assets/Items/Machines/{{ModId}}_Perfumaker",
+          "SpriteIndex": 0
+        }
+      }
+    },
+    {
+      "LogName": "Add perfumaker rules",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "Entries": {
+        "(BC){{ModId}}_Perfumaker": {
+          "OutputRules": [
+            {
+              "Id": "{{ModId}}_AncientFruitToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_AncientFruitInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)454",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_MysticAncientFruitPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_MysticAncientFruitPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_AppleToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_AppleInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)613",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_FunApplePerfumeOutput",
+                  "ItemId": "(O){{ModId}}_FunApplePerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_BananaToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_BananaInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)91",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_SugaryBananaPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_SugaryBananaPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_BlackberryToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_BlackberryInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)410",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_SimpleBlackberryPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_SimpleBlackberryPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_BlueberryToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_BlueberryInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)258",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_FruityBlueberryPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_FruityBlueberryPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_CactusToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_CactusInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)90",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_RefreshingCactusPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_RefreshingCactusPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_CherryToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_CherryInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)638",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_KawaiiCherryPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_KawaiiCherryPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_CoconutToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_CoconutInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)88",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_BoldCoconutPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_BoldCoconutPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_CranberryToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_CranberryInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)282",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_GracefulCranberryPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_GracefulCranberryPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_CrystalFruitToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_CrystalFruitInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)414",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_CrystalineCrystalFruitPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_CrystalineCrystalFruitPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_GrapeToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_GrapeInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)398",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_CoolGrapePerfumeOutput",
+                  "ItemId": "(O){{ModId}}_CoolGrapePerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_HotPepperToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_HotPepperInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)260",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_SpicyHotPepperPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_SpicyHotPepperPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_MangoToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_MangoInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)834",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_TropicalMangoPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_TropicalMangoPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_MelonToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_MelonInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)254",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_SummeryMelonPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_SummeryMelonPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_OrangeToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_OrangeInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)635",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_CitricOrangePerfumeOutput",
+                  "ItemId": "(O){{ModId}}_CitricOrangePerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_PeachToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_PeachInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)636",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_FuzzyPeachPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_FuzzyPeachPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_PineappleToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_PineappleInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)832",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_FreshPineapplePerfumeOutput",
+                  "ItemId": "(O){{ModId}}_FreshPineapplePerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_PomegranateToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_PomegranateInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)637",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_FemininePomegranatePerfumeOutput",
+                  "ItemId": "(O){{ModId}}_FemininePomegranatePerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_PowdermelonToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_PowdermelonInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)Powdermelon",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_FreezingPowdermelonPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_FreezingPowdermelonPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_RhubarbToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_RhubarbInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)252",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_WeirdRhubarbPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_WeirdRhubarbPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_SalmonberryToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_SalmonberryInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)296",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_CommonSalmonberryPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_CommonSalmonberryPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_SpiceBerryToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_SpiceBerryInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)396",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_HotSpiceBerryPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_HotSpiceBerryPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_StarfruitToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_StarfruitInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)268",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_RichStarfruitPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_RichStarfruitPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_StrawberryToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_StrawberryInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)400",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_RomanticStrawberryPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_RomanticStrawberryPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_PlumToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_PlumInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)406",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_SerenePlumPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_SerenePlumPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_AbutilonToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_AbutilonInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O){{ModId}}_Abutilon",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_FabulousAbutilonPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_FabulousAbutilonPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_AcaiToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_AcaiInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O){{ModId}}_Acai",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_DifferentAcaiPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_DifferentAcaiPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_HolidayCactusToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_HolidayCactusInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O){{ModId}}_HolidayCactus",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_AdorableHolidayCactusPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_AdorableHolidayCactusPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_PrincessFlowerToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_PrincessFlowerInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O){{ModId}}_PrincessFlower",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_FragrantPrincessFlowerPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_FragrantPrincessFlowerPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_CrystalRoseToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_CrystalRoseInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O){{ModId}}_CrystalRose",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_PearlyCrystalRosePerfumeOutput",
+                  "ItemId": "(O){{ModId}}_PearlyCrystalRosePerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_RosemaryToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_RosemaryInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O){{ModId}}_WildRosemary",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_ProtectiveRosemaryPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_ProtectiveRosemaryPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_FlameVineToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_FlameVineInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O){{ModId}}_FlameVine",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_EtherealFlameVinePerfumeOutput",
+                  "ItemId": "(O){{ModId}}_EtherealFlameVinePerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_SweetPeaToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_SweetPeaInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)402",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_SweetSweetPeaPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_SweetSweetPeaPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_CrocusToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_CrocusInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)418",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_WintryCrocusPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_WintryCrocusPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_TulipToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_TulipInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)591",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_CuteTulipPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_CuteTulipPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_BlueJazzToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_BlueJazzInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)597",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_EnchantingBlueJazzPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_EnchantingBlueJazzPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_SummerSpangleToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_SummerSpangleInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)593",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_GlimmerySummerSpanglePerfumeOutput",
+                  "ItemId": "(O){{ModId}}_GlimmerySummerSpanglePerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_PoppyToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_PoppyInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)376",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_MacabrePoppyPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_MacabrePoppyPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_SunflowerToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_SunflowerInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)421",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_SolarSunflowerPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_SolarSunflowerPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_FairyRoseToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_FairyRoseInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)595",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_MagicalFairyRosePerfumeOutput",
+                  "ItemId": "(O){{ModId}}_MagicalFairyRosePerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_HoneyToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_HoneyInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)340",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_CuriousHoneyPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_CuriousHoneyPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_SweetGemBerryToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_SweetGemBerryInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)417",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_HoneyedSweetGemBerryPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_HoneyedSweetGemBerryPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_PumpkinToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_PumpkinInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)276",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_ScaryPumpkinPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_ScaryPumpkinPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_CocoaToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_CocoaInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O){{ModId}}_PindoRamaCocoa",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_PerfectChocolatePerfumeOutput",
+                  "ItemId": "(O){{ModId}}_PerfectChocolatePerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_GuavaToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_GuavaInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O){{ModId}}_Guava",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_SquishyGuavaPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_SquishyGuavaPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_MoricheToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_MoricheInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O){{ModId}}_Moriche",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_DelicateMorichePerfumeOutput",
+                  "ItemId": "(O){{ModId}}_DelicateMorichePerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_JatobaToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_JatobaInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O){{ModID}}_Jatoba",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_AuthenticJatobaPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_AuthenticJatobaPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_CoffeeToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_CoffeeInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)433",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_EnergeticCoffeePerfumeOutput",
+                  "ItemId": "(O){{ModId}}_EnergeticCoffeePerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_GingerToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_GingerInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)829",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_StrongGingerPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_StrongGingerPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_HardwoodToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_HardwoodInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)709",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_ManlyHardwoodPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_ManlyHardwoodPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_PinkCakeToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_PinkCakeInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)221",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_CharmingPinkCakePerfumeOutput",
+                  "ItemId": "(O){{ModId}}_CharmingPinkCakePerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_PumpkinPieToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_PumpkinPieInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)608",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_PlayfulPumpkinPiePerfumeOutput",
+                  "ItemId": "(O){{ModId}}_PlayfulPumpkinPiePerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_CookiesToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_CookiesInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)223",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_DeliciousCookiePerfumeOutput",
+                  "ItemId": "(O){{ModId}}_DeliciousCookiePerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_BrigadeiroToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_BrigadeiroInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O){{ModID}}_Brigadeiro",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_TinyBrigadeiroPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_TinyBrigadeiroPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_IceCreamToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_IceCreamInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)233",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_BeautifulIceCreamPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_BeautifulIceCreamPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_SugarToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_SugarInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)245",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_CaptivatingCaramelPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_CaptivatingCaramelPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_DulceDeLecheToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_DulceDeLecheInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O){{ModId}}_DulceDeLeche",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_InspiringDulceDeLechePerfumeOutput",
+                  "ItemId": "(O){{ModId}}_InspiringDulceDeLechePerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_CondensedMilkToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_CondensedMilkInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O){{ModId}}_CondensedMilk",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_VibrantCondensedMilkPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_VibrantCondensedMilkPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_GreenTeaToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_GreenTeaInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)614",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_ExquisiteGreenTeaPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_ExquisiteGreenTeaPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_DaffodilToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_DaffodilInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)18",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_NiceDaffodilPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_NiceDaffodilPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_MorningGloryToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_MorningGloryInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O){{ModId}}_PindoRamaDwarfMorningGlory",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_SmallMorningGloryPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_SmallPindoRamaDwarfMorningGloryPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_SnowflakeToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_SnowflakeInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O){{ModId}}_Snowflake",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_SoftSnowflakePerfumeOutput",
+                  "ItemId": "(O){{ModId}}_SoftSnowflakePerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            },
+            {
+              "Id": "{{ModId}}_OrchidToPerfume",
+              "Triggers": [
+                {
+                  "Id": "{{ModId}}_OrchidInput",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O){{ModId}}_CattleaOrchid",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_ColorfulCattleaOrchidPerfumeOutput",
+                  "ItemId": "(O){{ModId}}_ColorfulCattleaOrchidPerfume",
+                  "MinStack": 1
+                }
+              ],
+              "DaysUntilReady": 10
+            }
+          ],
+          "AdditionalConsumedItems": [
+            {
+              "ItemId": "(O){{ModId}}_CerealAlcohol",
+              "RequiredCount": 1
+            }
+          ]
+        }
+      }
+    },
+    //
+    //Perfumes
+    //
+    //Ancient fruit
+    {
+      "LogName": "Load Perfumes",
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+      "FromFile": "assets/Items/Artisan Goods/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_MysticAncientFruitPerfume": {
+          "Name": "{{ModId}}_MysticAncientFruitPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume1}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume1Desc}}",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 4250,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 0,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_dark_blue",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_MysticAncientFruitPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Apple
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_FunApplePerfume": {
+          "Name": "{{ModId}}_FunApplePerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume2}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume2Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2000,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 1,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_red",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_FunApplePerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Apricot
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_PleasantApricotPerfume": {
+          "Name": "{{ModId}}_PleasantApricotPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume3}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume3Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1750,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 2,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_orange",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_PleasantApricotPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Banana
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_SugaryBananaPerfume": {
+          "Name": "{{ModId}}_SugaryBananaPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume4}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume4Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2250,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 3,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_yellow",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_SugaryBananaPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Blackberry
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_SimpleBlackberryPerfume": {
+          "Name": "{{ModId}}_SimpleBlackberryPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume5}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume5Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1600,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 4,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_purple",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_SimpleBlackberryPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Blueberry
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_FruityBlueberryPerfume": {
+          "Name": "{{ModId}}_FruityBlueberryPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume6}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume6Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1750,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 5,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_blue",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_FruityBlueberryPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Cactus
+    //Did this all wrong oh my god fuck my life I'm so stupid
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_RefreshingCactusFruitPerfume": {
+          "Name": "{{ModId}}_RefreshingCactusFruitPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume14}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume14Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1875,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 6,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_green",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_RefreshingCactusFruitPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Cherry
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_KawaiiCherryPerfume": {
+          "Name": "{{ModId}}_KawaiiCherryPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume7}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume7Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1900,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 7,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_red",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_KawaiiCherryPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Coconut
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_BoldCoconutPerfume": {
+          "Name": "{{ModId}}_BoldCoconutPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume8}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume8Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2000,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 8,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_white",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_BoldCoconutPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Cranberries
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_GracefulCranberryPerfume": {
+          "Name": "{{ModId}}_GracefulCranberryPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume9}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume9Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1875,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 9,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_dark_red",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_GracefulCranberryPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Crystal fruit
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_CrystalineCrystalFruitPerfume": {
+          "Name": "{{ModId}}_CrystalineCrystalFruitPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume10}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume10Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2250,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 10,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_blue",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_CrystalineCrystalFruitPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Grape
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_CoolGrapePerfume": {
+          "Name": "{{ModId}}_CoolGrapePerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume42}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume42Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1900,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 11,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_purple",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_CoolGrapePerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Hot pepper
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_SpicyHotPepperPerfume": {
+          "Name": "{{ModId}}_SpicyHotPepperPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume11}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume11Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1900,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 12,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_dark_red",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_SpicyHotPepperPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Mango
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_TropicalMangoPerfume": {
+          "Name": "{{ModId}}_TropicalMangoPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume12}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume12Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2150,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 13,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_orange",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_TropicalMangoPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Melon
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_SummeryMelonPerfume": {
+          "Name": "{{ModId}}_SummeryMelonPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume13}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume13Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2750,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 14,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_salmon",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_SummeryMelonPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Orange
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_CitricOrangePerfume": {
+          "Name": "{{ModId}}_CitricOrangePerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume15}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume15Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2000,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 15,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_orange",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_CitricOrangePerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Peach
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_FuzzyPeachPerfume": {
+          "Name": "{{ModId}}_FuzzyPeachPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume16}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume16Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2200,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 16,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_salmon",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_FuzzyPeachPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Pinneapple
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_FreshPineapplePerfume": {
+          "Name": "{{ModId}}_FreshPineapplePerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume17}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume17Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 3000,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 17,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_yellow",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_FreshPineapplePerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Pomegranate
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_FemininePomegranatePerfume": {
+          "Name": "{{ModId}}_FemininePomegranatePerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume18}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume18Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2200,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 18,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_dark_red",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_FemininePomegranatePerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Powdermelon
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_FreezingPowdermelonPerfume": {
+          "Name": "{{ModId}}_FreezingPowdermelonPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume19}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume19Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1800,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 19,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_blue",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_FreezingPowdermelonPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Rhubarb
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_WeirdRhubarbPerfume": {
+          "Name": "{{ModId}}_WeirdRhubarbPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume20}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume20Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2600,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 20,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_dark_red",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_WeirdRhubarbPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Salmonberry
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_CommonSalmonberryPerfume": {
+          "Name": "{{ModId}}_CommonSalmonberryPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume21}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume21Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1525,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 21,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_dark_red",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Neutral"
+          ],
+          "Value": "{{ModId}}_CommonSalmonberryPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //spice berry
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_HotSpiceBerryPerfume": {
+          "Name": "{{ModId}}_HotSpiceBerryPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume22}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume22Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1900,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 22,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_dark_red",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_HotSpiceBerryPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //starfruit
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_RichStarfruitPerfume": {
+          "Name": "{{ModId}}_RichStarfruitPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume23}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume23Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 5250,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 23,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_blue",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_RichStarfruitPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //strawberry
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_RomanticStrawberryPerfume": {
+          "Name": "{{ModId}}_RomanticStrawberryPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume25}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume25Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2100,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 24,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_red",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_RomanticStrawberryPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Plum
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_SerenePlumPerfume": {
+          "Name": "{{ModId}}_SerenePlumPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume26}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume26Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1900,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 25,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_dark_purple",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_SerenePlumPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Abutilon
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_FabulousAbutilonPerfume": {
+          "Name": "{{ModId}}_FabulousAbutilonPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume27}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume27Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1850,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 26,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_orange",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_FabulousAbutilonPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Açaí
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_DifferentAcaiPerfume": {
+          "Name": "{{ModId}}_DifferentAcaiPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume28}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume28Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1600,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 27,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_dark_purple",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_DifferentAcaiPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Holiday Cactus
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_AdorableHolidayCactusPerfume": {
+          "Name": "{{ModId}}_AdorableHolidayCactusPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume29}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume29Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1750,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 28,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_dark_pink",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_AdorableHolidayCactusPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Princess Flower
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_FragrantPrincessFlowerPerfume": {
+          "Name": "{{ModId}}_FragrantPrincessFlowerPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume30}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume30Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1725,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 29,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_pink",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_FragrantPrincessFlowerPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Crystal rose
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_PearlyCrystalRosePerfume": {
+          "Name": "{{ModId}}_PearlyCrystalRosePerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume31}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume31Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2200,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 30,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_white",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_PearlyCrystalRosePerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Rosemary
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_ProtectiveRosemaryPerfume": {
+          "Name": "{{ModId}}_ProtectiveRosemaryPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume32}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume32Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2250,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 31,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_green",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_ProtectiveRosemaryPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Flame vine
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_EtherealFlameVinePerfume": {
+          "Name": "{{ModId}}_EtherealFlameVinePerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume34}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume34Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1650,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 32,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_orange",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_EtherealFlameVinePerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Sweet pea
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_SweetSweetPeaPerfume": {
+          "Name": "{{ModId}}_SweetSweetPeaPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume35}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume35Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1650,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 33,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_dark_purple",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_SweetSweetPeaPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Crocus
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_WintryCrocusPerfume": {
+          "Name": "{{ModId}}_WintryCrocusPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume36}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume36Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1800,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 34,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_purple",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_WintryCrocusPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Tulip
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_CuteTulipPerfume": {
+          "Name": "{{ModId}}_CuteTulipPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume37}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume37Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1650,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 35,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_dark_red",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_CuteTulipPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Blue jazz
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_EnchantingBlueJazzPerfume": {
+          "Name": "{{ModId}}_EnchantingBlueJazzPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume38}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume38Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1750,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 36,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_dark_blue",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_EnchantingBlueJazzPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Summer spangle
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_GlimmerySummerSpanglePerfume": {
+          "Name": "{{ModId}}_GlimmerySummerSpanglePerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume39}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume39Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1950,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 37,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_orange",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_GlimmerySummerSpanglePerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Poppy
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_MacabrePoppyPerfume": {
+          "Name": "{{ModId}}_MacabrePoppyPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume40}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume40Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2200,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 38,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_orange",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Dislike"
+          ],
+          "Value": "{{ModId}}_MacabrePoppyPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Sunflower
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_SolarSunflowerPerfume": {
+          "Name": "{{ModId}}_SolarSunflowerPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume41}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume41Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1900,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 39,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_yellow",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_SolarSunflowerPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Fairy rose
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_MagicalFairyRosePerfume": {
+          "Name": "{{ModId}}_MagicalFairyRosePerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume43}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume43Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2950,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 40,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_dark_purple",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_MagicalFairyRosePerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Honey
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_CuriousHoneyPerfume": {
+          "Name": "{{ModId}}_CuriousHoneyPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume44}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume44Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2000,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 41,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_yellow",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_CuriousHoneyPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Sweet gem berry
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_HoneyedSweetGemBerryPerfume": {
+          "Name": "{{ModId}}_HoneyedSweetGemBerryPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume45}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume45Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 16500,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 42,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_orange",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Love"
+          ],
+          "Value": "{{ModId}}_HoneyedSweetGemBerryPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Pumpkin
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_ScaryPumpkinPerfume": {
+          "Name": "{{ModId}}_ScaryPumpkinPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume46}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume46Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 3100,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 43,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_orange",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_ScaryPumpkinPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Pindó rama cocoa
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_PerfectChocolatePerfume": {
+          "Name": "{{ModId}}_PerfectChocolatePerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume47}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume47Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2250,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 44,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_brown",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_PerfectChocolatePerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Guava
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_SquishyGuavaPerfume": {
+          "Name": "{{ModId}}_SquishyGuavaPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume48}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume48Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2175,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 45,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_salmon",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_SquishyGuavaPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Moriche
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_DelicateMorichePerfume": {
+          "Name": "{{ModId}}_DelicateMorichePerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume49}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume49Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2100,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 46,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_orange",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_DelicateMorichePerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Jatobá
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_AuthenticJatobaPerfume": {
+          "Name": "{{ModId}}_AuthenticJatobaPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume50}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume50Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2100,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 47,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_brown",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_AuthenticJatobaPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Coffee
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_EnergeticCoffeePerfume": {
+          "Name": "{{ModId}}_EnergeticCoffeePerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume51}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume51Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1575,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 48,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_brown",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_EnergeticCoffeePerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Ginger
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_StrongGingerPerfume": {
+          "Name": "{{ModId}}_StrongGingerPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume52}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume52Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1800,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 49,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_orange",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_StrongGingerPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Hardwood
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_ManlyHardwoodPerfume": {
+          "Name": "{{ModId}}_ManlyHardwoodPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume53}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume53Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1575,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 50,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_brown",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_ManlyHardwoodPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Pink Cake
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_CharmingPinkCakePerfume": {
+          "Name": "{{ModId}}_CharmingPinkCakePerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume54}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume54Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 3900,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 51,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_pink",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_CharmingPinkCakePerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //
+    //Pumpkin Pie
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_PlayfulPumpkinPiePerfume": {
+          "Name": "{{ModId}}_PlayfulPumpkinPiePerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume55}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume55Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 3425,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 52,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_orange",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_PlayfulPumpkinPiePerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //cookies
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_DeliciousCookiePerfume": {
+          "Name": "{{ModId}}_DeliciousCookiePerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume56}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume56Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2250,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 53,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_brown",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_DeliciousCookiePerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //brigadeiro
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_TinyBrigadeiroPerfume": {
+          "Name": "{{ModId}}_TinyBrigadeiroPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume57}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume57Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1900,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 54,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_brown",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_TinyBrigadeiroPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Ice cream
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_BeautifulIceCreamPerfume": {
+          "Name": "{{ModId}}_BeautifulIceCreamPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume58}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume58Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1900,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 55,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_green",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_BeautifulIceCreamPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //caramel
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_CaptivatingCaramelPerfume": {
+          "Name": "{{ModId}}_CaptivatingCaramelPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume59}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume59Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1750,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 56,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_brown",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_CaptivatingCaramelPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //dulce de leche
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_InspiringDulceDeLechePerfume": {
+          "Name": "{{ModId}}_InspiringDulceDeLechePerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume60}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume60Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2000,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 57,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_brown",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_InspiringDulceDeLechePerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //condensed milk
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_VibrantCondensedMilkPerfume": {
+          "Name": "{{ModId}}_VibrantCondensedMilkPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume61}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume61Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2000,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 58,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_yellow",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_VibrantCondensedMilkPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Green tea
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_ExquisiteGreenTeaPerfume": {
+          "Name": "{{ModId}}_ExquisiteGreenTeaPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume62}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume62Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2000,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 59,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_green",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_ExquisiteGreenTeaPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Daffodil
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_NiceDaffodilPerfume": {
+          "Name": "{{ModId}}_NiceDaffodilPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume63}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume63Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1650,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 60,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_yellow",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_NiceDaffodilPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Pindo Rama Dwarf Morning Glory
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_SmallPindoRamaDwarfMorningGloryPerfume": {
+          "Name": "{{ModId}}_SmallPindoRamaDwarfMorningGloryPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume64}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume64Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1600,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 61,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_dark_blue",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_SmallPindoRamaDwarfMorningGloryPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Cattleya Orchid
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_ColorfulCattleaOrchidPerfume": {
+          "Name": "{{ModId}}_ColorfulCattleaOrchidPerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume65}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume65Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 3250,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 62,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_dark_red",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_ColorfulCattleaOrchidPerfume",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //Snowflake
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_SoftSnowflakePerfume": {
+          "Name": "{{ModId}}_SoftSnowflakePerfume",
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Perfume66}}",
+          "Description": "{{i18n: CheshiresAtelier.THTexpansion_Perfume66Desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2700,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_PerfumesSprites",
+          "SpriteIndex": 63,
+          "CanBeGivenAsGift": true,
+          "ContextTags": [
+            "color_white",
+            "perfume_item"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "{{ModId}}_SoftSnowflakePerfume",
+          "Delimiter": " "
+        }
+      ]
+    }
+  ]
+}
