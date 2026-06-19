@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="left-down" width="40" height="40" tilewidth="16" tileheight="16" infinite="0" nextlayerid="16" nextobjectid="36">
+<map version="1.10" tiledversion="1.12.1" orientation="orthogonal" renderorder="left-down" width="40" height="40" tilewidth="16" tileheight="16" infinite="0" nextlayerid="16" nextobjectid="39">
  <properties>
   <property name="AmbientLight" value="95 95 95"/>
  </properties>
@@ -81,76 +81,76 @@
   <image source="walls_and_floors.png" width="256" height="688"/>
  </tileset>
  <tileset firstgid="9753" name="CheshiresAtelier.THTexpansion_GuavaTree" tilewidth="16" tileheight="16" tilecount="135" columns="27">
-  <image source="../Trees/CheshiresAtelier.THTexpansion_GuavaTree.png" width="432" height="80"/>
+  <image source="CheshiresAtelier.THTexpansion_GuavaTree.png" width="432" height="80"/>
  </tileset>
  <tileset firstgid="9888" name="CheshiresAtelier.THTexpansion_JabuticabaTree" tilewidth="16" tileheight="16" tilecount="135" columns="27">
-  <image source="../Trees/CheshiresAtelier.THTexpansion_JabuticabaTree.png" width="432" height="80"/>
+  <image source="CheshiresAtelier.THTexpansion_JabuticabaTree.png" width="432" height="80"/>
  </tileset>
  <tileset firstgid="10023" name="CheshiresAtelier.THTexpansion_JatobaTree" tilewidth="16" tileheight="16" tilecount="135" columns="27">
-  <image source="../Trees/CheshiresAtelier.THTexpansion_JatobaTree.png" width="432" height="80"/>
+  <image source="CheshiresAtelier.THTexpansion_JatobaTree.png" width="432" height="80"/>
  </tileset>
  <tileset firstgid="10158" name="CheshiresAtelier.THTexpansion_MorichePalmTree" tilewidth="16" tileheight="16" tilecount="135" columns="27">
-  <image source="../Trees/CheshiresAtelier.THTexpansion_MorichePalmTree.png" width="432" height="80"/>
+  <image source="CheshiresAtelier.THTexpansion_MorichePalmTree.png" width="432" height="80"/>
  </tileset>
  <tileset firstgid="10293" name="CheshiresAtelier.THTexpansion_PalmOilTree" tilewidth="16" tileheight="16" tilecount="135" columns="27">
-  <image source="../Trees/CheshiresAtelier.THTexpansion_PalmOilTree.png" width="432" height="80"/>
+  <image source="CheshiresAtelier.THTexpansion_PalmOilTree.png" width="432" height="80"/>
  </tileset>
  <tileset firstgid="10428" name="CheshiresAtelier.THTexpansion_AbutilonCrop" tilewidth="16" tileheight="16" tilecount="16" columns="8">
-  <image source="../Crops/CheshiresAtelier.THTexpansion_AbutilonCrop.png" width="128" height="32"/>
+  <image source="CheshiresAtelier.THTexpansion_AbutilonCrop.png" width="128" height="32"/>
  </tileset>
  <tileset firstgid="10444" name="CheshiresAtelier.THTexpansion_AcaiCrop" tilewidth="16" tileheight="16" tilecount="16" columns="8">
-  <image source="../Crops/CheshiresAtelier.THTexpansion_AcaiCrop.png" width="128" height="32"/>
+  <image source="CheshiresAtelier.THTexpansion_AcaiCrop.png" width="128" height="32"/>
  </tileset>
  <tileset firstgid="10460" name="CheshiresAtelier.THTexpansion_BlackBeansCrop" tilewidth="16" tileheight="16" tilecount="16" columns="8">
-  <image source="../Crops/CheshiresAtelier.THTexpansion_BlackBeansCrop.png" width="128" height="32"/>
+  <image source="CheshiresAtelier.THTexpansion_BlackBeansCrop.png" width="128" height="32"/>
  </tileset>
  <tileset firstgid="10476" name="CheshiresAtelier.THTexpansion_BlackEyedPeasCrop" tilewidth="16" tileheight="16" tilecount="16" columns="8">
-  <image source="../Crops/CheshiresAtelier.THTexpansion_BlackEyedPeasCrop.png" width="128" height="32"/>
+  <image source="CheshiresAtelier.THTexpansion_BlackEyedPeasCrop.png" width="128" height="32"/>
  </tileset>
  <tileset firstgid="10492" name="CheshiresAtelier.THTexpansion_BurrGherkinCrop" tilewidth="16" tileheight="16" tilecount="16" columns="8">
-  <image source="../Crops/CheshiresAtelier.THTexpansion_BurrGherkinCrop.png" width="128" height="32"/>
+  <image source="CheshiresAtelier.THTexpansion_BurrGherkinCrop.png" width="128" height="32"/>
  </tileset>
  <tileset firstgid="10508" name="CheshiresAtelier.THTexpansion_CassavaCrop" tilewidth="16" tileheight="16" tilecount="16" columns="8">
-  <image source="../Crops/CheshiresAtelier.THTexpansion_CassavaCrop.png" width="128" height="32"/>
+  <image source="CheshiresAtelier.THTexpansion_CassavaCrop.png" width="128" height="32"/>
  </tileset>
  <tileset firstgid="10524" name="CheshiresAtelier.THTexpansion_PindoRamaCacaoTree" tilewidth="16" tileheight="16" tilecount="135" columns="27">
-  <image source="../Trees/CheshiresAtelier.THTexpansion_PindoRamaCacaoTree.png" width="432" height="80"/>
+  <image source="CheshiresAtelier.THTexpansion_PindoRamaCacaoTree.png" width="432" height="80"/>
  </tileset>
  <tileset firstgid="10659" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
   <image source="paths.png" width="64" height="256"/>
  </tileset>
  <tileset firstgid="10723" name="CheshiresAtelier.THTexpansion_Fish" tilewidth="16" tileheight="16" tilecount="30" columns="10">
-  <image source="../Fish/CheshiresAtelier.THTexpansion_Fish.png" width="160" height="48"/>
+  <image source="CheshiresAtelier.THTexpansion_Fish.png" width="160" height="48"/>
  </tileset>
  <tileset firstgid="10753" name="CheshiresAtelier.THTexpansion_CattleaOrchidCrop" tilewidth="16" tileheight="16" tilecount="16" columns="8">
-  <image source="../Crops/CheshiresAtelier.THTexpansion_CattleaOrchidCrop.png" width="128" height="32"/>
+  <image source="CheshiresAtelier.THTexpansion_CattleaOrchidCrop.png" width="128" height="32"/>
  </tileset>
  <tileset firstgid="10769" name="CheshiresAtelier.THTexpansion_CupuassuCrop" tilewidth="16" tileheight="16" tilecount="16" columns="8">
-  <image source="../Crops/CheshiresAtelier.THTexpansion_CupuassuCrop.png" width="128" height="32"/>
+  <image source="CheshiresAtelier.THTexpansion_CupuassuCrop.png" width="128" height="32"/>
  </tileset>
  <tileset firstgid="10785" name="CheshiresAtelier.THTexpansion_FlameVineCrop" tilewidth="16" tileheight="16" tilecount="16" columns="8">
-  <image source="../Crops/CheshiresAtelier.THTexpansion_FlameVineCrop.png" width="128" height="32"/>
+  <image source="CheshiresAtelier.THTexpansion_FlameVineCrop.png" width="128" height="32"/>
  </tileset>
  <tileset firstgid="10801" name="CheshiresAtelier.THTexpansion_GuaranaCrop" tilewidth="16" tileheight="16" tilecount="16" columns="8">
-  <image source="../Crops/CheshiresAtelier.THTexpansion_GuaranaCrop.png" width="128" height="32"/>
+  <image source="CheshiresAtelier.THTexpansion_GuaranaCrop.png" width="128" height="32"/>
  </tileset>
  <tileset firstgid="10817" name="CheshiresAtelier.THTexpansion_HolidayCactusCrop" tilewidth="16" tileheight="16" tilecount="16" columns="8">
-  <image source="../Crops/CheshiresAtelier.THTexpansion_HolidayCactusCrop.png" width="128" height="32"/>
+  <image source="CheshiresAtelier.THTexpansion_HolidayCactusCrop.png" width="128" height="32"/>
  </tileset>
  <tileset firstgid="10833" name="CheshiresAtelier.THTexpansion_PindoRamaDwarfMorningGloryCrop" tilewidth="16" tileheight="16" tilecount="16" columns="8">
-  <image source="../Crops/CheshiresAtelier.THTexpansion_PindoRamaDwarfMorningGloryCrop.png" width="128" height="32"/>
+  <image source="CheshiresAtelier.THTexpansion_PindoRamaDwarfMorningGloryCrop.png" width="128" height="32"/>
  </tileset>
  <tileset firstgid="10849" name="CheshiresAtelier.THTexpansion_PrincessFlowerCrop" tilewidth="16" tileheight="16" tilecount="16" columns="8">
-  <image source="../Crops/CheshiresAtelier.THTexpansion_PrincessFlowerCrop.png" width="128" height="32"/>
+  <image source="CheshiresAtelier.THTexpansion_PrincessFlowerCrop.png" width="128" height="32"/>
  </tileset>
  <tileset firstgid="10865" name="CheshiresAtelier.THTexpansion_SnowflakeCrop" tilewidth="16" tileheight="16" tilecount="16" columns="8">
-  <image source="../Crops/CheshiresAtelier.THTexpansion_SnowflakeCrop.png" width="128" height="32"/>
+  <image source="CheshiresAtelier.THTexpansion_SnowflakeCrop.png" width="128" height="32"/>
  </tileset>
  <tileset firstgid="10881" name="CheshiresAtelier.THTexpansion_SugarCaneCrop" tilewidth="16" tileheight="16" tilecount="16" columns="8">
-  <image source="../Crops/CheshiresAtelier.THTexpansion_SugarCaneCrop.png" width="128" height="32"/>
+  <image source="CheshiresAtelier.THTexpansion_SugarCaneCrop.png" width="128" height="32"/>
  </tileset>
  <tileset firstgid="10897" name="CheshiresAtelier.THTexpansion_WildRosemaryCrop" tilewidth="16" tileheight="16" tilecount="16" columns="8">
-  <image source="../Crops/CheshiresAtelier.THTexpansion_WildRosemaryCrop.png" width="128" height="32"/>
+  <image source="CheshiresAtelier.THTexpansion_WildRosemaryCrop.png" width="128" height="32"/>
  </tileset>
  <layer id="1" name="Back" width="40" height="40">
   <data encoding="csv">
@@ -594,18 +594,17 @@
  </layer>
  <objectgroup id="6" name="Back"/>
  <objectgroup id="7" name="Buildings">
-  <object id="29" name="TileData" x="160" y="128" width="16" height="32">
+  <object id="29" name="TileData" x="160" y="144" width="16" height="16">
    <properties>
     <property name="Action" value="Message &quot;THTMuseum1&quot;"/>
    </properties>
   </object>
-  <object id="30" name="TileData" x="176" y="112" width="16" height="16"/>
   <object id="33" name="TileData" x="176" y="112" width="16" height="16">
    <properties>
     <property name="Action" value="Message &quot;THTMuseum2&quot;"/>
    </properties>
   </object>
-  <object id="31" name="TileData" x="192" y="128" width="16" height="32">
+  <object id="31" name="TileData" x="192" y="144" width="16" height="16">
    <properties>
     <property name="Action" value="Message &quot;THTMuseum3&quot;"/>
    </properties>
@@ -613,6 +612,16 @@
   <object id="32" name="TileData" x="208" y="112" width="16" height="16">
    <properties>
     <property name="Action" value="Message &quot;THTMuseum4&quot;"/>
+   </properties>
+  </object>
+  <object id="37" name="TileData" x="240" y="560" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTMuseum5&quot;"/>
+   </properties>
+  </object>
+  <object id="38" name="TileData" x="320" y="368" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTMuseum6&quot;"/>
    </properties>
   </object>
  </objectgroup>
