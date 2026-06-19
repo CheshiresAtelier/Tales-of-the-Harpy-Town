@@ -573,6 +573,16 @@
 						"MapPath": "Maps/{{ModId}}_THTGraveyard"
 					},
 					"DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_Map28}}"
+				},
+				"{{ModId}}_THTMuseum": {
+					"CreateOnLoad": {
+						"MapPath": "Maps/{{ModId}}_THTMuseum"
+					},
+					"DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_Map29}}",
+					"DefaultArrivalTile": {
+						"X": 20,
+						"Y": 38
+					}
 				}
 			}
 		},
@@ -774,6 +784,12 @@
 			"Action": "Load",
 			"Target": "Maps/{{ModID}}_THTGraveyard",
 			"FromFile": "assets/maps/{{ModID}}_THTGraveyard.tmx"
+		},
+		{
+			"LogName": "Load Museum",
+			"Action": "Load",
+			"Target": "Maps/{{ModID}}_THTMuseum",
+			"FromFile": "assets/maps/{{ModID}}_THTMuseum.tmx"
 		},
 		//Festival maps
 		{
