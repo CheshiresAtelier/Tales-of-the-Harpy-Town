@@ -2501,7 +2501,7 @@
 			"Action": "EditData",
 			"Target": "Data/CookingRecipes",
 			"Entries": {
-				"{{ModId}}_AcaiBowl": "(O){{ModId}}_Acai 3/10 10/{{ModId}}_AcaiBowl/null/{{i18n: CheshiresAtelier.THTexpansion_Food26}}"
+				"{{ModId}}_AcaiBowl": "(O){{ModId}}_Acai 3/10 10/{{ModId}}_AcaiBowl/f {{ModId}}_Pacoca 3/{{i18n: CheshiresAtelier.THTexpansion_Food26}}" 
 			}
 		},
 		//Açaí fruit salad
@@ -7870,7 +7870,7 @@
 					"Edibility": 15,
 					"ContextTags": [
 						"color_orange"
-					]
+				]
 				},
 				"{{ModId}}_PalmOilFruitSapling": {
 					"Name": "{{ModId}}_PalmOilFruitSapling",
@@ -8016,7 +8016,7 @@
 		},
 		//Guava
 		{
-			"LogName": "Add Jatova and sapling to objects",
+			"LogName": "Add guava and sapling to objects",
 			"Action": "EditData",
 			"Target": "Data/Objects",
 			"Entries": {

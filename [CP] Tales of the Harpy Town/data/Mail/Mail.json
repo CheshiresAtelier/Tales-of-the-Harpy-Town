@@ -55,7 +55,8 @@
                 "{{ModId}}_AdriannoCooking": "{{i18n:CheshiresAtelier.THTexpansion_MailAdriannoRecipe}}%item cookingRecipe %%[#]{{i18n:CheshiresAtelier.THTexpansion_AdriannoRecipe}}",
                 "{{ModId}}_JulietaCooking": "{{i18n:CheshiresAtelier.THTexpansion_MailJuRecipe}}%item cookingRecipe %%[#]{{i18n:CheshiresAtelier.THTexpansion_JuRecipe}}",
                 "{{ModId}}_CameliaCooking": "{{i18n:CheshiresAtelier.THTexpansion_MailCameliaRecipe}}%item cookingRecipe %%[#]{{i18n:CheshiresAtelier.THTexpansion_CameliaRecipe}}",
-                "{{ModId}}_LeviCooking": "{{i18n:CheshiresAtelier.THTexpansion_MailLeviRecipe}}%item cookingRecipe %%[#]{{i18n:CheshiresAtelier.THTexpansion_LeviRecipe}}"
+                "{{ModId}}_LeviCooking": "{{i18n:CheshiresAtelier.THTexpansion_MailLeviRecipe}}%item cookingRecipe %%[#]{{i18n:CheshiresAtelier.THTexpansion_LeviRecipe}}",
+                "{{ModId}}_PacocaCooking": "{{i18n:CheshiresAtelier.THTexpansion_MailPacocaRecipe}}%item cookingRecipe %%[#]{{i18n:CheshiresAtelier.THTexpansion_PacocaRecipe}}"
             }
         }
     ]
