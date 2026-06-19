@@ -130,7 +130,17 @@
                 "THTEmiliasHouse2.9": "{{i18n:CheshiresAtelier.THTexpansion_MapString124}}",
                 "THTEmiliasHouse2.10": "{{i18n:CheshiresAtelier.THTexpansion_MapString125}}",
                 "THTEmiliasHouse2.11": "{{i18n:CheshiresAtelier.THTexpansion_MapString126}}",
-                "THTEmiliasHouse2.12": "{{i18n:CheshiresAtelier.THTexpansion_MapString127}}"
+                "THTEmiliasHouse2.12": "{{i18n:CheshiresAtelier.THTexpansion_MapString127}}",
+                "THTTown.5": "{{i18n:CheshiresAtelier.THTexpansion_MapString128}}",
+                "THTTown.6": "{{i18n:CheshiresAtelier.THTexpansion_MapString129}}",
+                "THTTown.7": "{{i18n:CheshiresAtelier.THTexpansion_MapString130}}",
+                //
+                //Museum
+                //
+                "THTMuseum1": "{{i18n:CheshiresAtelier.THTexpansion_MapString131}}",
+                "THTMuseum2": "{{i18n:CheshiresAtelier.THTexpansion_MapString132}}",
+                "THTMuseum3": "{{i18n:CheshiresAtelier.THTexpansion_MapString133}}",
+                "THTMuseum4": "{{i18n:CheshiresAtelier.THTexpansion_MapString134}}"
             }
         }
     ]
