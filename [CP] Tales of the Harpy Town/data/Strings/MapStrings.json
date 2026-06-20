@@ -140,7 +140,12 @@
                 "THTMuseum1": "{{i18n:CheshiresAtelier.THTexpansion_MapString131}}",
                 "THTMuseum2": "{{i18n:CheshiresAtelier.THTexpansion_MapString132}}",
                 "THTMuseum3": "{{i18n:CheshiresAtelier.THTexpansion_MapString133}}",
-                "THTMuseum4": "{{i18n:CheshiresAtelier.THTexpansion_MapString134}}"
+                "THTMuseum4": "{{i18n:CheshiresAtelier.THTexpansion_MapString134}}",
+                "THTMuseum7": "{{i18n:CheshiresAtelier.THTexpansion_MapString137}}",
+                "THTMuseum8": "{{i18n:CheshiresAtelier.THTexpansion_MapString138}}",
+                "THTMuseum9": "{{i18n:CheshiresAtelier.THTexpansion_MapString139}}",
+                "THTMuseum10": "{{i18n:CheshiresAtelier.THTexpansion_MapString140}}",
+                "THTMuseum11": "{{i18n:CheshiresAtelier.THTexpansion_MapString141}}"
             }
         }
     ]
