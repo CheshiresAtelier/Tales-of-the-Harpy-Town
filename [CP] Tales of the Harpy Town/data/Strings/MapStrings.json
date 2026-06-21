@@ -249,7 +249,22 @@
                 "THTNarcisosBedroom.2": "{{i18n:CheshiresAtelier.THTexpansion_MapString240}}",
                 "THTNarcisosBedroom.3": "{{i18n:CheshiresAtelier.THTexpansion_MapString241}}",
                 "THTNarcisosBedroom.4": "{{i18n:CheshiresAtelier.THTexpansion_MapString242}}",
-                "THTNarcisosBedroom.5": "{{i18n:CheshiresAtelier.THTexpansion_MapString243}}"
+                "THTNarcisosBedroom.5": "{{i18n:CheshiresAtelier.THTexpansion_MapString243}}",
+                "THTGraveyard.1": "{{i18n:CheshiresAtelier.THTexpansion_MapString244}}",
+                "THTGraveyard.2": "{{i18n:CheshiresAtelier.THTexpansion_MapString245}}",
+                "THTGraveyard.3": "{{i18n:CheshiresAtelier.THTexpansion_MapString246}}",
+                "THTGraveyard.4": "{{i18n:CheshiresAtelier.THTexpansion_MapString247}}",
+                "THTGraveyard.5": "{{i18n:CheshiresAtelier.THTexpansion_MapString248}}",
+                "THTGraveyard.6": "{{i18n:CheshiresAtelier.THTexpansion_MapString249}}",
+                "THTGraveyard.7": "{{i18n:CheshiresAtelier.THTexpansion_MapString250}}",
+                "THTGraveyard.8": "{{i18n:CheshiresAtelier.THTexpansion_MapString251}}",
+                "THTGraveyard.9": "{{i18n:CheshiresAtelier.THTexpansion_MapString252}}",
+                "THTJosesHouse.1": "{{i18n:CheshiresAtelier.THTexpansion_MapString253}}",
+                "THTJosesHouse.2": "{{i18n:CheshiresAtelier.THTexpansion_MapString254}}",
+                "THTLilicasHouse.1": "{{i18n:CheshiresAtelier.THTexpansion_MapString255}}",
+                "THTLilicasHouse.2": "{{i18n:CheshiresAtelier.THTexpansion_MapString256}}",
+                "THTLilicasHouse.3": "{{i18n:CheshiresAtelier.THTexpansion_MapString257}}",
+                "THTLucaosHouse.1": "{{i18n:CheshiresAtelier.THTexpansion_MapString258}}"
             }
         }
     ]
