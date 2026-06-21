@@ -7977,7 +7977,7 @@
 					"SpriteIndex": 0,
 					"Edibility": 20,
 					"ContextTags": [
-						"color_pink"
+						"color_sand"
 					]
 				},
 				"{{ModId}}_JatobaSapling": {
@@ -8109,7 +8109,7 @@
 				"{{ModId}}_MorichePalmFruitSapling": {
 					"DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_Fruit1}}",
 					"Seasons": [
-						"Fall"
+						"Summer"
 					],
 					"Fruit": [
 						{
