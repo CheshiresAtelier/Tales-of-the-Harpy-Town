@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="left-down" width="17" height="15" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="2">
+<map version="1.10" tiledversion="1.12.1" orientation="orthogonal" renderorder="left-down" width="17" height="15" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="9">
  <properties>
   <property name="AmbientLight" value="95 95 95"/>
  </properties>
@@ -164,7 +164,33 @@
 </data>
  </layer>
  <objectgroup id="6" name="Back"/>
- <objectgroup id="7" name="Buildings"/>
+ <objectgroup id="7" name="Buildings">
+  <object id="4" name="TileData" x="144" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTNarcisosBedroom.1&quot;"/>
+   </properties>
+  </object>
+  <object id="5" name="TileData" x="128" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTNarcisosBedroom.2&quot;"/>
+   </properties>
+  </object>
+  <object id="6" name="TileData" x="144" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTNarcisosBedroom.3&quot;"/>
+   </properties>
+  </object>
+  <object id="7" name="TileData" x="96" y="144" width="48" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTNarcisosBedroom.4&quot;"/>
+   </properties>
+  </object>
+  <object id="8" name="TileData" x="64" y="192" width="48" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTNarcisosBedroom.5&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
  <objectgroup id="8" name="Paths"/>
  <objectgroup id="9" name="Front"/>
  <objectgroup id="10" name="AlwaysFront"/>
