@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="left-down" width="40" height="40" tilewidth="16" tileheight="16" infinite="0" nextlayerid="14" nextobjectid="8">
+<map version="1.10" tiledversion="1.12.1" orientation="orthogonal" renderorder="left-down" width="40" height="40" tilewidth="16" tileheight="16" infinite="0" nextlayerid="14" nextobjectid="8">
  <properties>
   <property name="AmbientLight" value="95 95 95"/>
   <property name="Warp" value="34 2 CheshiresAtelier.THTexpansion_THTWitchesHouse2Refurnished 1 19 35 2 CheshiresAtelier.THTexpansion_THTWitchesHouse2Refurnished 2 19 36 2 CheshiresAtelier.THTexpansion_THTWitchesHouse2Refurnished 3 19 37 2 CheshiresAtelier.THTexpansion_THTWitchesHouse2Refurnished 4 19"/>
@@ -33,8 +33,8 @@
  </tileset>
  <layer id="1" name="Back" width="40" height="40">
   <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1337,1337,1337,1337,1337,1337,1337,1337,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1337,1337,0,0,0,0,1337,1337,
 0,0,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,0,0,0,0,0,0,0,0,0,0,0,0,5851,5852,5851,5852,0,0,
 0,0,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,0,0,0,0,0,0,0,0,0,0,0,0,5851,5852,5851,5852,0,0,
 0,0,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,3184,0,0,0,0,0,0,0,0,0,0,0,0,0,5851,5852,5851,5852,0,0,

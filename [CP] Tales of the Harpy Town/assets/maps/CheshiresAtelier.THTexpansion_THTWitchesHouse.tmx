@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="left-down" width="40" height="40" tilewidth="16" tileheight="16" infinite="0" nextlayerid="14" nextobjectid="8">
+<map version="1.10" tiledversion="1.12.1" orientation="orthogonal" renderorder="left-down" width="40" height="40" tilewidth="16" tileheight="16" infinite="0" nextlayerid="14" nextobjectid="8">
  <editorsettings>
   <export target="CheshiresAtelier.THTexpansion_THTWitchesHouseRefurnished.tmx" format="tmx"/>
  </editorsettings>
@@ -293,8 +293,8 @@
  </layer>
  <layer id="5" name="AlwaysFront" width="40" height="40">
   <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1338,1339,1339,1340,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1337,1337,1337,1337,1337,1337,1337,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1337,1338,1339,1339,1340,1337,1337,
 0,1346,1347,1347,1347,1347,1347,1347,1347,1347,1347,1347,1347,1347,1347,1347,1347,1347,1347,1347,1348,0,0,0,0,0,0,0,0,0,0,0,0,1369,1378,0,0,1380,1373,0,
 0,1401,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1405,0,0,0,0,0,0,0,0,0,0,0,0,1401,0,0,0,0,1405,0,
 0,1401,0,3642,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1405,0,0,0,0,0,0,0,0,0,0,0,0,1401,0,0,0,0,1405,0,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="left-down" width="35" height="35" tilewidth="16" tileheight="16" infinite="0" nextlayerid="14" nextobjectid="4">
+<map version="1.10" tiledversion="1.12.1" orientation="orthogonal" renderorder="left-down" width="35" height="35" tilewidth="16" tileheight="16" infinite="0" nextlayerid="14" nextobjectid="25">
  <properties>
   <property name="AmbientLight" value="95 95 95"/>
   <property name="Doors" value="6 12 1 120 25 22 1 120"/>
@@ -307,8 +307,8 @@
  <layer id="5" name="AlwaysFront" width="35" height="35">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,10,11,11,11,11,11,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,65,0,0,0,0,0,69,0,0,0,0,2,3,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,10,11,11,11,11,11,12,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,65,0,0,0,0,0,69,0,0,0,1,2,3,3,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,65,0,0,0,0,0,69,0,0,0,33,42,0,0,44,37,0,10,11,11,11,11,11,11,11,11,11,11,12,0,0,0,
 0,0,0,65,0,0,0,0,0,69,0,0,0,65,0,0,0,0,69,0,65,0,0,0,0,0,0,0,0,0,0,69,0,0,0,
 0,0,0,65,0,0,0,0,0,69,0,0,0,65,0,0,0,0,69,0,65,0,0,0,0,0,0,0,0,0,0,69,0,0,0,
@@ -358,6 +358,106 @@
   <object id="3" name="TileData" x="400" y="352" width="16" height="16">
    <properties>
     <property name="Action" value="Door"/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="32" y="320" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTFranciscosHouse.1&quot;"/>
+   </properties>
+  </object>
+  <object id="5" name="TileData" x="48" y="192" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTFranciscosHouse.2&quot;"/>
+   </properties>
+  </object>
+  <object id="6" name="TileData" x="64" y="208" width="32" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTFranciscosHouse.3&quot;"/>
+   </properties>
+  </object>
+  <object id="7" name="TileData" x="144" y="208" width="48" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTFranciscosHouse.4&quot;"/>
+   </properties>
+  </object>
+  <object id="8" name="TileData" x="192" y="208" width="32" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTFranciscosHouse.5&quot;"/>
+   </properties>
+  </object>
+  <object id="10" name="TileData" x="208" y="304" width="48" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTFranciscosHouse.6&quot;"/>
+   </properties>
+  </object>
+  <object id="12" name="TileData" x="208" y="336" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTFranciscosHouse.7&quot;"/>
+   </properties>
+  </object>
+  <object id="13" name="TileData" x="400" y="224" width="32" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTFranciscosHouse.8&quot;"/>
+   </properties>
+  </object>
+  <object id="14" name="TileData" x="432" y="224" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTFranciscosHouse.9&quot;"/>
+   </properties>
+  </object>
+  <object id="15" name="TileData" x="448" y="224" width="32" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTFranciscosHouse.10&quot;"/>
+   </properties>
+  </object>
+  <object id="16" name="TileData" x="400" y="192" width="32" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTFranciscosHouse.11&quot;"/>
+   </properties>
+  </object>
+  <object id="17" name="TileData" x="448" y="192" width="32" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTFranciscosHouse.12&quot;"/>
+   </properties>
+  </object>
+  <object id="18" name="TileData" x="368" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTFranciscosHouse.13&quot;"/>
+   </properties>
+  </object>
+  <object id="19" name="TileData" x="480" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTFranciscosHouse.14&quot;"/>
+   </properties>
+  </object>
+  <object id="20" name="TileData" x="352" y="368" width="32" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTFranciscosHouse.15&quot;"/>
+   </properties>
+  </object>
+  <object id="21" name="TileData" x="480" y="448" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTFranciscosHouse.16&quot;"/>
+   </properties>
+  </object>
+  <object id="22" name="TileData" x="336" y="448" width="64" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTFranciscosHouse.17&quot;"/>
+   </properties>
+  </object>
+  <object id="23" name="TileData" x="336" y="368" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTFranciscosHouse.18&quot;"/>
+   </properties>
+  </object>
+  <object id="9" name="TileData" x="160" y="288" width="32" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTFranciscosHouse.3&quot;"/>
+   </properties>
+  </object>
+  <object id="11" name="TileData" x="272" y="288" width="32" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;THTFranciscosHouse.3&quot;"/>
    </properties>
   </object>
  </objectgroup>
