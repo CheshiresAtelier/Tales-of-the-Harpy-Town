@@ -820,7 +820,7 @@
 			"Action": "EditMap",
 			"Target": "Maps/Forest-FlowerFestival",
 			"PatchMode": "Replace",
-			"FromFile": "assets/maps/{{ModId}}_THTFF1.tmx",
+			"FromFile": "assets/maps/{{ModId}}_THTFF1SVE.tmx",
 			"FromArea": {
 				"X": 0,
 				"Y": 0,
@@ -834,7 +834,7 @@
 				"Height": 29
 			},
 			"When": {
-				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
 				"HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
 			}
 		},
@@ -866,7 +866,7 @@
 			"Action": "EditMap",
 			"Target": "Maps/Forest-FlowerFestival2",
 			"PatchMode": "Replace",
-			"FromFile": "assets/maps/{{ModId}}_THTFF1.tmx",
+			"FromFile": "assets/maps/{{ModId}}_THTFF1SVE.tmx",
 			"FromArea": {
 				"X": 0,
 				"Y": 0,
@@ -880,7 +880,7 @@
 				"Height": 29
 			},
 			"When": {
-				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
 				"HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
 			}
 		},
@@ -1080,6 +1080,12 @@
 			"LogName": "Blank JSON load",
 			"Action": "Load",
 			"Target": "Characters/Dialogue/{{ModId}}_Levi, Characters/schedules/{{ModId}}_Levi",
+			"FromFile": "assets/blank.json"
+		},
+		{
+			"LogName": "Blank JSON load",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/{{ModId}}_Levi, Characters/schedules/{{ModId}}_Pacoca",
 			"FromFile": "assets/blank.json"
 		},
 		//Including NPCs Files
