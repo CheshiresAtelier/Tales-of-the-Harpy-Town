@@ -2288,6 +2288,1021 @@
             "Entries": {
                 "{{ModId}}_Levi": "{{i18n: CheshiresAtelier.THTexpansion_FairLevi1}}"
             }
+        },
+        {
+            "LogName": "Spirit's Eve",
+            "Action": "EditData",
+            "When": {
+                "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Target": "Data/Festivals/fall27",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Cida 33 68 up",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Princess 40 27 up",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Bebel 22 53 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Anahi 26 29 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Mayara 29 62 up",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Francisco 10 23 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Adrianno 34 68 up",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Julieta 37 30 right",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Camelia 41 29 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Levi 25 60 up",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Spirit's Eve",
+            "Action": "EditData",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP",
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Target": "Data/Festivals/fall27",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Cida 33 68 up",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Princess 40 36 up",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Bebel 52 72 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Anahi 43 62 up",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Mayara 42 62 up",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Francisco 55 24 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Adrianno 21 93 up", //Ravi: 23 93 left // Valdemar 22 92 down // Serena: 22 94
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Julieta 20 35 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Camelia 12 25 up",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Levi 25 60 up",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Stardew Valley SE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Cida": "{{i18n: CheshiresAtelier.THTexpansion_SEcida2}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley SE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Princess": "{{i18n: CheshiresAtelier.THTexpansion_SEprincess1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley SE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Bebel": "{{i18n: CheshiresAtelier.THTexpansion_SEBebel1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley SE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone",
+                "Relationship:{{ModId}}_Bebel": "Married"
+            },
+            "Entries": {
+                "{{ModId}}_Bebel": "{{i18n: CheshiresAtelier.THTexpansion_SEBebel1S}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley SE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Anahi": "{{i18n: CheshiresAtelier.THTexpansion_SEAnahi1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley SE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone",
+                "Relationship:{{ModId}}_Anahi": "Married"
+            },
+            "Entries": {
+                "{{ModId}}_Anahi": "{{i18n: CheshiresAtelier.THTexpansion_SEAnahi1S}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley SE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Mayara": "{{i18n: CheshiresAtelier.THTexpansion_SEMayara1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley SE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Francisco": "{{i18n: CheshiresAtelier.THTexpansion_SEFrancisco1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley SE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone",
+                "Relationship:{{ModId}}_Francisco": "Married"
+            },
+            "Entries": {
+                "{{ModId}}_Francisco": "{{i18n: CheshiresAtelier.THTexpansion_SEFrancisco1S}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley SE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_SEAdrianno1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley SE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone",
+                "Relationship:{{ModId}}_Adrianno": "Married"
+            },
+            "Entries": {
+                "{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_SEAdrianno1S}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley SE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Julieta": "{{i18n: CheshiresAtelier.THTexpansion_SEJu1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley SE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone",
+                "Relationship:{{ModId}}_Julieta": "Married"
+            },
+            "Entries": {
+                "{{ModId}}_Julieta": "{{i18n: CheshiresAtelier.THTexpansion_SEJu1S}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley SE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Camelia": "{{i18n: CheshiresAtelier.THTexpansion_SECamelia1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley SE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Levi": "{{i18n: CheshiresAtelier.THTexpansion_SELevi1}}"
+            }
+        },
+        {
+            "LogName": "Ice Festival",
+            "Action": "EditData",
+            "When": {
+                "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Cida 33 47 left",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Princess 31 47 right",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Bebel 52 37 left",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Anahi 95 31 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Mayara 94 32 right",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Francisco 58 38 right",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Adrianno 69 39 right",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Julieta 72 40 left",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Camelia 72 26 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Levi 59 39 up",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Ice Festival",
+            "Action": "EditData",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP",
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Cida 65 9 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Princess 67 9 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Bebel 66 45 left",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Anahi 66 48 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Mayara 65 49 right",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Francisco 70 46 up",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Adrianno 69 39 right",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Julieta 72 40 left",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Camelia 70 26 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Levi 71 46 up",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Stardew Valley IF",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Cida": "{{i18n: CheshiresAtelier.THTexpansion_IFcida2}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley IF",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Princess": "{{i18n: CheshiresAtelier.THTexpansion_IFprincess1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley IF",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Bebel": "{{i18n: CheshiresAtelier.THTexpansion_IFBebel1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley IF",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone",
+                "Relationship:{{ModId}}_Bebel": "Married"
+            },
+            "Entries": {
+                "{{ModId}}_Bebel": "{{i18n: CheshiresAtelier.THTexpansion_IFBebel1S}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley IF",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Anahi": "{{i18n: CheshiresAtelier.THTexpansion_IFAnahi1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley IF",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone",
+                "Relationship:{{ModId}}_Anahi": "Married"
+            },
+            "Entries": {
+                "{{ModId}}_Anahi": "{{i18n: CheshiresAtelier.THTexpansion_IFAnahi1S}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley IF",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Mayara": "{{i18n: CheshiresAtelier.THTexpansion_IFMayara1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley IF",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Francisco": "{{i18n: CheshiresAtelier.THTexpansion_IFFrancisco1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley IF",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone",
+                "Relationship:{{ModId}}_Francisco": "Married"
+            },
+            "Entries": {
+                "{{ModId}}_Francisco": "{{i18n: CheshiresAtelier.THTexpansion_IFFrancisco1S}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley IF",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_IFAdrianno1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley IF",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone",
+                "Relationship:{{ModId}}_Adrianno": "Married"
+            },
+            "Entries": {
+                "{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_IFAdrianno1S}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley IF",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Julieta": "{{i18n: CheshiresAtelier.THTexpansion_IFJu1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley IF",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone",
+                "Relationship:{{ModId}}_Julieta": "Married"
+            },
+            "Entries": {
+                "{{ModId}}_Julieta": "{{i18n: CheshiresAtelier.THTexpansion_IFJu1S}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley IF",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Camelia": "{{i18n: CheshiresAtelier.THTexpansion_IFCamelia1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley IF",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Levi": "{{i18n: CheshiresAtelier.THTexpansion_IFLevi1}}"
+            }
+        },
+        {
+            "LogName": "Feast of the Winter Star",
+            "Action": "EditData",
+            "When": {
+                "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Target": "Data/Festivals/winter25",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Cida 14 52 right",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Princess 28 71 up",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Bebel 35 79 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Anahi 10 71 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Mayara 9 72 right",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Francisco 26 54 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Adrianno 48 75 right",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Julieta 23 100 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Camelia 25 100 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModId}}_Levi 25 54 down",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Stardew Valley FWS",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Cida": "{{i18n: CheshiresAtelier.THTexpansion_FWScida2}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley FWS",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Princess": "{{i18n: CheshiresAtelier.THTexpansion_FWSprincess1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley FWS",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Bebel": "{{i18n: CheshiresAtelier.THTexpansion_FWSBebel1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley FWS",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone",
+                "Relationship:{{ModId}}_Bebel": "Married"
+            },
+            "Entries": {
+                "{{ModId}}_Bebel": "{{i18n: CheshiresAtelier.THTexpansion_FWSBebel1S}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley FWS",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Anahi": "{{i18n: CheshiresAtelier.THTexpansion_FWSAnahi1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley FWS",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone",
+                "Relationship:{{ModId}}_Anahi": "Married"
+            },
+            "Entries": {
+                "{{ModId}}_Anahi": "{{i18n: CheshiresAtelier.THTexpansion_FWSAnahi1S}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley FWS",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Mayara": "{{i18n: CheshiresAtelier.THTexpansion_FWSMayara1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley FWS",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Francisco": "{{i18n: CheshiresAtelier.THTexpansion_FWSFrancisco1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley FWS",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone",
+                "Relationship:{{ModId}}_Francisco": "Married"
+            },
+            "Entries": {
+                "{{ModId}}_Francisco": "{{i18n: CheshiresAtelier.THTexpansion_FWSFrancisco1S}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley FWS",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_FWSAdrianno1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley FWS",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone",
+                "Relationship:{{ModId}}_Adrianno": "Married"
+            },
+            "Entries": {
+                "{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_FWSAdrianno1S}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley FWS",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Julieta": "{{i18n: CheshiresAtelier.THTexpansion_FWSJu1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley FWS",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone",
+                "Relationship:{{ModId}}_Julieta": "Married"
+            },
+            "Entries": {
+                "{{ModId}}_Julieta": "{{i18n: CheshiresAtelier.THTexpansion_FWSJu1S}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley FWS",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Camelia": "{{i18n: CheshiresAtelier.THTexpansion_FWSCamelia1}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley FWS",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            },
+            "Entries": {
+                "{{ModId}}_Levi": "{{i18n: CheshiresAtelier.THTexpansion_FWSLevi1}}"
+            }
         }
     ]
 }

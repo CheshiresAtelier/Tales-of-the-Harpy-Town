@@ -35,6 +35,13 @@
 						 "Direction": "left"
 					 }
 				 ],
+"WinterStarGifts": [
+   {
+    "Id": "Cida winter star gifts",
+    "RandomItemId": ["(O){{ModId}}_SugarCaneJuice", "(O){{ModId}}_WindPastel", "(O){{ModId}}_OrangeJuice"],
+	"MinStack": 3
+   }
+],
 "Appearance":[
 {
 "Id": "CidaWinter",
@@ -165,6 +172,18 @@
  "Direction": "left"
 }
 ],
+"WinterStarGifts": [
+   {
+    "Id": "Bebel winter star gifts",
+    "RandomItemId": ["(O){{ModId}}_FlamingoPlushie", "(O){{ModId}}_SlimePlushie", "(O){{ModId}}_DragonPlushie", "(O){{ModId}}_MermaidPlushie", "(O){{ModId}}_GhostPlushie", "(O)221"],
+	"MinStack": 1
+   },
+   {
+    "Id": "Bebel winter star gifts2",
+    "RandomItemId": ["(O)223", "(O)595", "(O)428"],
+	"MinStack": 3
+   }
+],
 				 "SpouseRoom": {
 					"MapAsset": "{{ModId}}_THTBebelsSpouseRoom",
 					"MapSourceRect": {
@@ -255,6 +274,18 @@
  "Direction": "left"
 }
  ],
+ "WinterStarGifts": [
+   {
+    "Id": "Anahi winter star gifts",
+    "RandomItemId": ["(O){{ModId}}_AbutilonBouquet", "(O){{ModId}}_Acaraje", "(O){{ModId}}_PacocaLatte"],
+	"MinStack": 3
+   },
+   {
+    "Id": "Anahi winter star gifts2",
+    "RandomItemId": ["(O)344", "(O)350", "(O)392", "{{ModId}}_Abutilon"],
+	"MinStack": 5
+   }
+],
 				 "SpouseRoom": {
 					"MapAsset": "{{ModId}}_THTAnahisSpouseRoom",
 					"MapSourceRect": {
@@ -354,6 +385,18 @@
  "Direction": "left"
 }
  ],
+ "WinterStarGifts": [
+   {
+    "Id": "Mayara winter star gifts",
+    "RandomItemId": ["(O)341", "(O){{ModId}}_ProtectiveRosemaryPerfume", "(O){{ModId}}_TopazYobaCross"],
+	"MinStack": 1
+   },
+   {
+    "Id": "Mayara winter star gifts2",
+    "RandomItemId": ["(O){{ModId}}_IcedCrystalFruitAffogato", "(O){{ModId}}_BlueSkyLatte", "(O)62", "{{ModId}}_WildRosemary", "(O){{ModId}}_SparklingGrapeLatte"],
+	"MinStack": 3
+   }
+],
  "Appearance":[
 {
 "Id": "MayaraWinter",
@@ -436,6 +479,18 @@
  "Direction": "right"
 }
  ],
+ "WinterStarGifts": [
+   {
+    "Id": "Francisco winter star gifts",
+    "RandomItemId": ["(O)422", "(O)851"],
+	"MinStack": 3
+   },
+   {
+    "Id": "Francisco winter star gifts2",
+    "RandomItemId": ["(O)281", "(O)257"],
+	"MinStack": 5
+   }
+],
  "Appearance":[
 {
 "Id": "FranciscoWinter",
@@ -494,6 +549,18 @@
  },
  "Direction": "right"
 }
+],
+ "WinterStarGifts": [
+   {
+    "Id": "Adrianno winter star gifts",
+    "RandomItemId": ["(O){{ModId}}_GracefulCranberryPerfume", "(O){{ModId}}_GeminiteBracelet", "(O){{ModId}}_OceanStoneHandMirror"],
+	"MinStack": 1
+   },
+   {
+    "Id": "Adrianno winter star gifts2",
+    "RandomItemId": ["(O){{ModId}}_BrigadeiroJarCake", "(O){{ModId}}_AppleIcePop", "(O){{ModId}}_CloudCoffee"],
+	"MinStack": 3
+   }
 ]
  }
 }
@@ -560,6 +627,18 @@
  "Direction": "right"
 }
  ],
+ "WinterStarGifts": [
+   {
+    "Id": "Julieta winter star gifts",
+    "RandomItemId": ["(O)308", "(O)288"],
+	"MinStack": 3
+   },
+   {
+    "Id": "Julieta winter star gifts2",
+    "RandomItemId": ["(O)286", "(O)287"],
+	"MinStack": 5
+   }
+],
 "When": {
  "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
 }
@@ -607,6 +686,18 @@
  "Direction": "right"
 }
  ],
+ "WinterStarGifts": [
+   {
+    "Id": "Camelia winter star gifts",
+    "RandomItemId": ["(O){{ModId}}_FlamingoPlushie", "(O){{ModId}}_SlimePlushie", "(O){{ModId}}_DragonPlushie", "(O){{ModId}}_MermaidPlushie", "(O){{ModId}}_GhostPlushie"],
+	"MinStack": 1
+   },
+   {
+    "Id": "Camelia winter star gifts2",
+    "RandomItemId": ["(O)428", "(O)62"],
+	"MinStack": 5
+   }
+],
 "When": {
  "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
 }
@@ -653,6 +744,18 @@
 },
 "Direction": "right"
 }
+],
+ "WinterStarGifts": [
+   {
+    "Id": "Levi winter star gifts",
+    "RandomItemId": ["(O)918", "(O)919", "(O)920"],
+	"MinStack": 3
+   },
+   {
+    "Id": "Levi winter star gifts2",
+    "RandomItemId": ["(O)369", "(O)371"],
+	"MinStack": 5
+   }
 ],
 "When": {
 "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"

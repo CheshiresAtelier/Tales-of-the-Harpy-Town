@@ -1085,7 +1085,7 @@
 		{
 			"LogName": "Blank JSON load",
 			"Action": "Load",
-			"Target": "Characters/Dialogue/{{ModId}}_Levi, Characters/schedules/{{ModId}}_Pacoca",
+			"Target": "Characters/Dialogue/{{ModId}}_Pacoca, Characters/schedules/{{ModId}}_Pacoca",
 			"FromFile": "assets/blank.json"
 		},
 		//Including NPCs Files
