@@ -1,0 +1,91 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/GarbageCans",
+            "TargetField": [ "GarbageCans" ],
+            "Entries": {
+                "{{ModId}}_Mayaras": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_FoodAtMayaras",
+                            "Condition": "RANDOM 0.10",
+                            "RandomItemId": ["(O){{ModId}}_Coxinha",
+                                "(O){{ModId}}_HoneyedPicanha",
+                                "(O){{ModId}}_Acaraje",
+                                "(O){{ModId}}_CheeseTapioca",
+                                "(O){{ModId}}_CookedBlackEyedPeas",
+                                "(O){{ModId}}_Feijoada",
+                                "(O){{ModId}}_FreshRice",
+                                "(O){{ModId}}_HomemadeFarofa",
+                                "(O){{ModId}}_Manicoba",
+                                "(O){{ModId}}_StirFryBurrGherkin",
+                                "(O){{ModId}}_BaiaoDeDois",
+                                "(O){{ModId}}_Moqueca",
+                                "(O){{ModId}}_Tacaca",
+                                "(O){{ModId}}_Vatapa",
+                                "(O){{ModId}}_Quindim",
+                                "(O){{ModId}}_Cuscuz",
+                                "(O){{ModId}}_Cheesebread"]
+                        },
+                        {
+                            "ID": "{{ModId}}_LuckyFoodAtMayaras",
+                            "Condition": "RANDOM 0.001",
+                            "RandomItemId": ["(O){{ModId}}_CompleteBento",
+                                "(O){{ModId}}_PartyKit"]
+                        }
+                    ]
+                },
+                    "{{ModId}}_Bebels":{
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_FoodAtBebels",
+                            "Condition": "RANDOM 0.05",
+                            "RandomItemId": [
+                                "tht_chocolate_item",
+                                "tht_icepop_item",
+                                "tht_jarcake_item"]
+                        }
+                    ]
+                },
+                "{{ModId}}_Julietas":{
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_WoolAtJulietas",
+                            "Condition": "RANDOM 0.05",
+                            "RandomItemId": [
+                                "(O)440",
+                                "(O)428",
+                                "tht_plush_item"
+                            ]
+                        }
+                    ]
+                },
+                "{{ModId}}_Franciscos":{
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_FranciscosTrashCan",
+                            "Condition": "RANDOM 0.10",
+                            "RandomItemId": [
+                                "(O)770",
+                                "(O)MixedFlowerSeeds",
+                                "(O)330",
+                                "(O)388",
+                                "(O)390"
+                            ]
+                        },
+                        {
+                            "ID": "{{ModId}}_FranciscosTrashCan2",
+                            "Condition": "RANDOM 0.01",
+                            "RandomItemId": [
+                                "(O)404",
+                                "(O)281",
+                                "(O)257"
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
