@@ -1,0 +1,21 @@
+{
+"Changes":
+	[
+ 
+   	 {
+        	"LogName": "Princess Schedule",
+        	"Action": "EditData",
+        	"Target": "Characters/Schedules/{{ModId}}_Ravi",
+   		 "Entries": {
+   			 "rain": "0 {{ModId}}_THTAdriannosHouse2 22 14 2/900 {{ModId}}_THTtown 52 43 3/1200 {{ModId}}_THTEmiliasHouse2 26 24 2/1430 {{ModId}}_THTEmiliasHouse2 17 7 3/2100 {{ModId}}_THTEmiliasHouse2 21 5 2 {{ModId}}_Ravi_sleep",
+   			 "spring": "0 {{ModId}}_THTAdriannosHouse2 22 14 2/900 {{ModId}}_THTbeach 25 25 1/1000 {{ModId}}_THTtown 46 53 0/1200 {{ModId}}_THTEmiliasHouse2 26 24 2/1430 {{ModId}}_THTEmiliasHouse2 17 7 3/1900 {{ModId}}_THTtown 88 28 0/2030 {{ModId}}_THTbeach 1 20 1/2100 {{ModId}}_THTAdriannosHouse2 22 14 2 {{ModId}}_Ravi_sleep",
+   			 "summer": "GOTO spring",
+   			 "fall": "GOTO spring",
+   			 "winter": "GOTO spring"
+   		 },
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            }
+    	}
+]
+}

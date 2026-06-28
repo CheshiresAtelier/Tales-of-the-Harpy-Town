@@ -2057,11 +2057,11 @@
 			]
 		},
 		{
-			"LogName": "farofa recipe",
+			"LogName": "Moriche ice cream recipe",
 			"Action": "EditData",
 			"Target": "Data/CookingRecipes",
 			"Entries": {
-				"{{ModId}}_MoricheIceCream": "(O)184 1 (O){{ModId}}_MorichePalmFruit 1 (O)245 1/10 10/{{ModId}}_MoricheIceCream/null/{{i18n: CheshiresAtelier.THTexpansion_Food20}}"
+				"{{ModId}}_MoricheIceCream": "-6 1 (O){{ModId}}_MorichePalmFruit 1 (O)245 1/10 10/{{ModId}}_MoricheIceCream/f {{ModId}}_Ravi 3/{{i18n: CheshiresAtelier.THTexpansion_Food20}}"
 			}
 		},
 		//Omolocum
@@ -2135,7 +2135,7 @@
 			"Action": "EditData",
 			"Target": "Data/CookingRecipes",
 			"Entries": {
-				"{{ModId}}_Omolocum": "(O)176 1 (O){{ModId}}_BlackEyedPeas 1 (O)720 1 (O){{ModId}}_PalmOil 1/10 10/{{ModId}}_Omolocum/null/{{i18n: CheshiresAtelier.THTexpansion_Food21}}"
+				"{{ModId}}_Omolocum": "-5 1 (O){{ModId}}_BlackEyedPeas 1 (O)720 1 (O){{ModId}}_PalmOil 1/10 10/{{ModId}}_Omolocum/null/{{i18n: CheshiresAtelier.THTexpansion_Food21}}"
 			}
 		},
 		//Pamonha
@@ -2871,7 +2871,7 @@
 			"Action": "EditData",
 			"Target": "Data/CookingRecipes",
 			"Entries": {
-				"{{ModId}}_ChocolateMilk": "(O)184 1 (O)256 1 (O){{ModID}}_ChocoPowder 1/10 10/{{ModId}}_ChocolateMilk/null/{{i18n: CheshiresAtelier.THTexpansion_Food31}}"
+				"{{ModId}}_ChocolateMilk": "-6 1 (O)256 1 (O){{ModID}}_ChocoPowder 1/10 10/{{ModId}}_ChocolateMilk/null/{{i18n: CheshiresAtelier.THTexpansion_Food31}}"
 			}
 		},
 		//Orange Caipirinha

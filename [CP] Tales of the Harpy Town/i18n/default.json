@@ -289,6 +289,8 @@
     "CheshiresAtelier.THTexpansion_LeviRecipe": "Levi's Recipe",
     "CheshiresAtelier.THTexpansion_MailPacocaRecipe": "^Hello there, @! It's Nat here!^ So, I was taking care of the garden when, suddely, Paçoca stopped next to me with something on his mouth.^ I was so worried, Paçoca often swallows random things and we have to run to the Zuzu vet, but it was a piece of paper containing an açaí recipe.^ I don't know if you like açaí, but I recommend you to, at least, try it once... It's delicious!^Here's the recipe:",
     "CheshiresAtelier.THTexpansion_PacocaRecipe": "Paçoca's Recipe",
+    "CheshiresAtelier.THTexpansion_MailRaviRecipe": "Hello there, @!^It's Serena here.^Ravi wanted to send a little gift for you. He says it's really tasty!",
+    "CheshiresAtelier.THTexpansion_RaviRecipe": "Ravi's Recipe",
     //Crops and seeds
     "CheshiresAtelier.THTexpansion_Seeds": "Abutilon Seeds",
     "CheshiresAtelier.THTexpansion_SeedsDesc": "Plant these in spring. Takes 7 days to grow, but keeps producing after that.",
@@ -4146,7 +4148,11 @@
     "CheshiresAtelier.THTexpansion_RejectMermaidPendantRavi": "Ewwwwww...$2",
     "CheshiresAtelier.THTexpansion_RejectRoommateProposalRavi": "I don't wanna leave my house...$2",
     "CheshiresAtelier.THTexpansion_RejectMovieTicketRavi": "I don't wanna watch that...$2",
-
+    "CheshiresAtelier.THTexpansion_LovedGiftRavi": "Whoa... for me? Thank you, @! You are so generous!$1",
+    "CheshiresAtelier.THTexpansion_LikedGiftRavi": "This smells good! Thank you, @!$1",
+    "CheshiresAtelier.THTexpansion_NeutralGiftRavi": "Thank you!$1",
+    "CheshiresAtelier.THTexpansion_DislikedGiftRavi": "This smells bad...$2",
+    "CheshiresAtelier.THTexpansion_HatedGiftRavi": "Ewwwww... This smells horrible!$2",
 
     "CheshiresAtelier.THTexpansion_Spring1Ravi": "I love spring! I love the smell of flowers!$1#$b#In spring mama let me sleep in Duda's house.$1",
     "CheshiresAtelier.THTexpansion_SpringMonRavi": "... Hey.",
@@ -4912,8 +4918,8 @@
     "CheshiresAtelier.THTexpansion_CharName8": "Julieta",
     "CheshiresAtelier.THTexpansion_CharName9": "Camélia",
     "CheshiresAtelier.THTexpansion_CharName10": "Levi",
-    //Fazendo
     "CheshiresAtelier.THTexpansion_CharName11": "Paçoca",
+    //Fazendo
     "CheshiresAtelier.THTexpansion_CharName12": "Ravi",
     //Precisa fazer
     "CheshiresAtelier.THTexpansion_CharName13": "Duda",

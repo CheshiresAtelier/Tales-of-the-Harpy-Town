@@ -1670,6 +1670,14 @@
 			"Action": "Include",
 			"FromFile": "assets/Characters/Ravi/Schedule/Schedule.json"
 		},
+		{
+			"LogName": "Pacoca animations",
+			"Action": "EditData",
+			"Target": "Data/animationdescriptions",
+			"Entries": {
+				"{{ModId}}_Ravi_sleep": "16/16 16/16"
+			}
+		},
 		//
 		// Tilesheets fixos
 		//
