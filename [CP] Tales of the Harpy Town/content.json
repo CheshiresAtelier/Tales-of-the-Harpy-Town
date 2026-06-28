@@ -1093,6 +1093,12 @@
 			"Target": "Characters/Dialogue/{{ModId}}_Pacoca, Characters/schedules/{{ModId}}_Pacoca",
 			"FromFile": "assets/blank.json"
 		},
+		{
+			"LogName": "Blank JSON load",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/{{ModId}}_Ravi, Characters/schedules/{{ModId}}_Ravi",
+			"FromFile": "assets/blank.json"
+		},
 		//Including NPCs Files
 		{
 			"LogName": "NPC Gift tastes",
@@ -1640,6 +1646,29 @@
 				"{{ModId}}_Pacoca_nap": "19/19 19/19",
 				"{{ModId}}_Pacoca_sleep": "19/19 19/19"
 			}
+		},
+		//Ravi
+		{
+			"LogName": "Base Portraits",
+			"Action": "Load",
+			"Target": "Portraits/{{ModId}}_Ravi",
+			"FromFile": "assets/Characters/Ravi/Portraits/Ravi.png"
+		},
+		{
+			"LogName": "Base sprites",
+			"Action": "Load",
+			"Target": "Characters/{{ModId}}_Ravi",
+			"FromFile": "assets/Characters/Ravi/Sprites/Ravi.png"
+		},
+		{
+			"LogName": "NPC Dialogue",
+			"Action": "Include",
+			"FromFile": "assets/Characters/Ravi/Dialogue/Dialogue.json"
+		},
+		{
+			"LogName": "NPC Schedule",
+			"Action": "Include",
+			"FromFile": "assets/Characters/Ravi/Schedule/Schedule.json"
 		},
 		//
 		// Tilesheets fixos

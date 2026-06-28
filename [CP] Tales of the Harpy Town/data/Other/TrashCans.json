@@ -9,7 +9,7 @@
                     "Items": [
                         {
                             "ID": "{{ModId}}_FoodAtMayaras",
-                            "Condition": "RANDOM 0.10",
+                            "Condition": "RANDOM 0.20",
                             "RandomItemId": ["(O){{ModId}}_Coxinha",
                                 "(O){{ModId}}_HoneyedPicanha",
                                 "(O){{ModId}}_Acaraje",
@@ -40,7 +40,7 @@
                     "Items": [
                         {
                             "ID": "{{ModId}}_FoodAtBebels",
-                            "Condition": "RANDOM 0.05",
+                            "Condition": "RANDOM 0.20",
                             "RandomItemId": [
                                 "tht_chocolate_item",
                                 "tht_icepop_item",
@@ -52,7 +52,7 @@
                     "Items": [
                         {
                             "ID": "{{ModId}}_WoolAtJulietas",
-                            "Condition": "RANDOM 0.05",
+                            "Condition": "RANDOM 0.20",
                             "RandomItemId": [
                                 "(O)440",
                                 "(O)428",
@@ -65,7 +65,7 @@
                     "Items": [
                         {
                             "ID": "{{ModId}}_FranciscosTrashCan",
-                            "Condition": "RANDOM 0.10",
+                            "Condition": "RANDOM 0.20",
                             "RandomItemId": [
                                 "(O)770",
                                 "(O)MixedFlowerSeeds",
@@ -76,7 +76,7 @@
                         },
                         {
                             "ID": "{{ModId}}_FranciscosTrashCan2",
-                            "Condition": "RANDOM 0.01",
+                            "Condition": "RANDOM 0.10",
                             "RandomItemId": [
                                 "(O)404",
                                 "(O)281",

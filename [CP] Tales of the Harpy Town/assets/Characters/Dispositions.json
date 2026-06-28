@@ -809,6 +809,53 @@
 }
 }
 }
+},
+//Ravi
+{
+"Action": "EditData",
+"Target": "Data/Characters",
+"Entries": {
+"{{ModId}}_Ravi": {
+"DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_CharName12}}",
+"Gender": "Male",
+"Age": "Child",
+"Manner": "Polite",
+"SocialAnxiety": "Shy",
+"Optimism": "Neutral",
+"BirthSeason": "Summer",
+"BirthDay": "7",
+"IsDarkSkinned": true,
+"HomeRegion": "Other",
+"CanBeRomanced": false,
+"CanVisitIsland": true,
+"IntroductionsQuest": false,
+"ItemDeliveryQuests": true,
+"WinterStarParticipant": true,
+"CanSocialize": true,
+"CanRecieveGifts": true,
+"Calendar": "HiddenUntilMet",
+"SocialTab": "UnknownUntilMet",
+"CanCommentOnPurchasedShopItems": false,
+"CanGreetNearbyCharacters": true,
+"FlowerDanceCanDance": false,
+"UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone",
+"SpawnIfMissing": true,
+"Home": [
+{
+"Id": "{{ModId}}_RaviHouse",
+"Location": "{{ModId}}_THTAdriannosHouse2",
+"Tile": {
+"X": 22,
+"Y": 14
+},
+"Direction": "left"
+}
+],
+"When": {
+"HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+}
+}
+}
 }
 ]
 }
