@@ -583,6 +583,104 @@
 						"X": 20,
 						"Y": 38
 					}
+				},
+				"{{ModId}}_THTsecretPlace4": {
+					"CreateOnLoad": {
+						"MapPath": "Maps/{{ModId}}_THTsecretPlace4"
+					},
+					"DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_Map31}}",
+					"DefaultArrivalTile": {
+						"X": 3,
+						"Y": 16
+					},
+					"Forage": [
+						{
+							"ID": "{{ModId}}_SpawnSpringForage7",
+							"RandomItemId": [
+								"(O){{ModId}}_SnakePlant",
+								"{{ModId}}_Chicory"
+							],
+							"Chance": 1,
+							"Condition": "SEASON Spring"
+						},
+						{
+							"ID": "{{ModId}}_SpawnSummerForage7",
+							"RandomItemId": [
+								"(O){{ModId}}_Mandacaru",
+								"{{ModId}}_WildPeanut"
+							],
+							"Chance": 1,
+							"Condition": "SEASON Summer"
+						},
+						{
+							"ID": "{{ModId}}_SpawnFallForage7",
+							"RandomItemId": [
+								"(O){{ModId}}_PindoRamaNut",
+								"(O){{ModId}}_Chicory"
+							],
+							"Chance": 1,
+							"Condition": "SEASON Fall"
+						},
+						{
+							"ID": "{{ModId}}_SpawnWinterForage7",
+							"RandomItemId": [
+								"(O){{ModId}}_WildRosemary",
+								"(O){{ModId}}_CrystalRose"
+							],
+							"Chance": 1,
+							"Condition": "SEASON Winter"
+						}
+					]
+				},
+				"{{ModId}}_THTbeachPath": {
+					"CreateOnLoad": {
+						"MapPath": "Maps/{{ModId}}_THTbeachPath"
+					},
+					"DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_Map32}}",
+					"DefaultArrivalTile": {
+						"X": 1,
+						"Y": 18
+					},
+					"Forage": [
+						{
+							"ID": "{{ModId}}_SpawnSpringForage8",
+							"RandomItemId": [
+								"(O){{ModId}}_BarbadosCherry",
+								"(O){{ModId}}_LilacTasselflower",
+								"(O){{ModId}}_TridaxDaisy"
+							],
+							"Chance": 1,
+							"Condition": "SEASON Spring"
+						},
+						{
+							"ID": "{{ModId}}_SpawnSummerForage8",
+							"RandomItemId": [
+								"(O){{ModId}}_BengalDayflower",
+								"(O){{ModId}}_BlackNightshade",
+								"(O){{ModId}}_GlobeAmaranth"
+							],
+							"Chance": 1,
+							"Condition": "SEASON Summer"
+						},
+						{
+							"ID": "{{ModId}}_SpawnFallForage8",
+							"RandomItemId": [
+								"(O){{ModId}}_CosmoFlower",
+								"(O){{ModId}}_WildCoquinho",
+								"(O){{ModId}}_WildSurinamCherry"
+							],
+							"Chance": 1,
+							"Condition": "SEASON Fall"
+						},
+						{
+							"ID": "{{ModId}}_SpawnWinterForage8",
+							"RandomItemId": [
+								"(O){{ModId}}_WildRosemary"
+							],
+							"Chance": 1,
+							"Condition": "SEASON Winter"
+						}
+					]
 				}
 			}
 		},
@@ -790,6 +888,18 @@
 			"Action": "Load",
 			"Target": "Maps/{{ModID}}_THTMuseum",
 			"FromFile": "assets/maps/{{ModID}}_THTMuseum.tmx"
+		},
+		{
+			"LogName": "Load secret place 4",
+			"Action": "Load",
+			"Target": "Maps/{{ModID}}_THTsecretPlace4",
+			"FromFile": "assets/maps/{{ModID}}_THTsecretPlace4.tmx"
+		},
+		{
+			"LogName": "Load beach path",
+			"Action": "Load",
+			"Target": "Maps/{{ModID}}_THTbeachPath",
+			"FromFile": "assets/maps/{{ModID}}_THTbeachPath.tmx"
 		},
 		//Festival maps
 		{

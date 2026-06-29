@@ -1,6 +1,10 @@
 {
     "Changes":[{
         //Code
+            "LogName": "NPC dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/{{ModId}}_Ravi",
+            "Entries": {
     "Introduction": "{{i18n: CheshiresAtelier.THTexpansion_IntroductionRavi}}",
     "DumpsterDiveComment": "{{i18n: CheshiresAtelier.THTexpansion_DumpsterDiveCommentRavi}}",
     "GreenRain": "{{i18n: CheshiresAtelier.THTexpansion_GreenRainRavi}}",
@@ -239,7 +243,7 @@
     "winter_24_2": "{{i18n: CheshiresAtelier.THTexpansion_Winter24Y2Ravi}}"
 
 
-
+            }
 
     }]
 }

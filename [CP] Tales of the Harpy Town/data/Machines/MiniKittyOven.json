@@ -1217,7 +1217,7 @@
                             ],
                             "OutputItem": [
                                 {
-                                    "Id": "{{ModId}}_HazelnutChocolateWithPowderedMilkJarCakeJarCakeOutput",
+                                    "Id": "{{ModId}}_HazelnutChocolateWithPowderedMilkJarCakeOutput",
                                     "ItemId": "(O){{ModId}}_HazelnutChocolateWithPowderedMilkJarCake",
                                     "MinStack": 3
                                 }
