@@ -9,7 +9,7 @@
                     "Items": [
                         {
                             "ID": "{{ModId}}_FoodAtMayaras",
-                            "Condition": "RANDOM 0.20",
+                            "Condition": "RANDOM 0.20 @addDailyLuck",
                             "RandomItemId": ["(O){{ModId}}_Coxinha",
                                 "(O){{ModId}}_HoneyedPicanha",
                                 "(O){{ModId}}_Acaraje",
@@ -40,7 +40,7 @@
                     "Items": [
                         {
                             "ID": "{{ModId}}_IcePopAtBebels",
-                            "Condition": "RANDOM 0.20",
+                            "Condition": "RANDOM 0.20 @addDailyLuck",
                             "RandomItemId": [
                                 "(O){{ModId}}_PacocaIcePop",
                                 "(O){{ModId}}_FlanIcePop",
@@ -111,7 +111,7 @@
                         },
                        {
                             "ID": "{{ModId}}_JarCakeAtBebels",
-                            "Condition": "RANDOM 0.10",
+                            "Condition": "RANDOM 0.10 @addDailyLuck",
                             "RandomItemId": [
                                 "(O){{ModId}}_FlanJarCake",
                                 "(O){{ModId}}_BrigadeiroJarCake",
@@ -184,7 +184,7 @@
                     "Items": [
                         {
                             "ID": "{{ModId}}_WoolAtJulietas",
-                            "Condition": "RANDOM 0.20",
+                            "Condition": "RANDOM 0.20 @addDailyLuck",
                             "RandomItemId": [
                                 "(O)440",
                                 "(O)428",
@@ -219,7 +219,7 @@
                     "Items": [
                         {
                             "ID": "{{ModId}}_FranciscosTrashCan",
-                            "Condition": "RANDOM 0.20",
+                            "Condition": "RANDOM 0.20 @addDailyLuck",
                             "RandomItemId": [
                                 "(O)770",
                                 "(O)MixedFlowerSeeds",
@@ -230,11 +230,358 @@
                         },
                         {
                             "ID": "{{ModId}}_FranciscosTrashCan2",
-                            "Condition": "RANDOM 0.10",
+                            "Condition": "RANDOM 0.10 @addDailyLuck",
                             "RandomItemId": [
                                 "(O)404",
                                 "(O)281",
                                 "(O)257"
+                            ]
+                        }
+                    ]
+                },
+                "{{ModId}}_Adriannos":{
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_AdriannosTrashCanSpring",
+                            "Condition": "RANDOM 0.20 @addDailyLuck SEASON Spring",
+                            "RandomItemId": [
+                                "(O){{ModId}}_Arapaima",
+                                "(O){{ModId}}_Needlefish",
+                                "(O){{ModId}}_Surubim",
+                                "(O){{ModId}}_Needlefish",
+                                "(O){{ModId}}_Tucunare",
+                                "(O){{ModId}}_Needlefish",
+                                "(O){{ModId}}_BlackPacu",
+                                "(O){{ModId}}_Needlefish",
+                                "(O){{ModId}}_BlackGrouper",
+                                "(O){{ModId}}_Needlefish",
+                                "(O){{ModId}}_Salema",
+                                "(O){{ModId}}_Needlefish",
+                                "(O){{ModId}}_AtlanticMoonfish",
+                                "(O){{ModId}}_Needlefish",
+                                "(O){{ModId}}_YellowtailAmberjack",
+                                "(O){{ModId}}_Needlefish"
+                            ]
+                        },
+                        {
+                            "ID": "{{ModId}}_AdriannosTrashCanSummer",
+                            "Condition": "RANDOM 0.20 @addDailyLuck SEASON Summer",
+                            "RandomItemId": [
+                                "(O){{ModId}}_GoldenDorado",
+                                "(O){{ModId}}_Needlefish",
+                                "(O){{ModId}}_PacuPeva",
+                                "(O){{ModId}}_Needlefish",
+                                "(O){{ModId}}_Surubim",
+                                "(O){{ModId}}_Needlefish",
+                                "(O){{ModId}}_BlackPacu",
+                                "(O){{ModId}}_Needlefish",
+                                "(O){{ModId}}_BlackGrouper",
+                                "(O){{ModId}}_Needlefish",
+                                "(O){{ModId}}_Salema",
+                                "(O){{ModId}}_Needlefish",
+                                "(O){{ModId}}_CommonSnook",
+                                "(O){{ModId}}_Needlefish",
+                                "(O){{ModId}}_Cobia",
+                                "(O){{ModId}}_Needlefish",
+                                "(O){{ModId}}_NamoradoSandperch",
+                                "(O){{ModId}}_Needlefish",
+                                "(O){{ModId}}_DolphinFish",
+                                "(O){{ModId}}_YellowtailAmberjack"
+
+                            ]
+                        },
+                        {
+                            "ID": "{{ModId}}_AdriannosTrashCanFall",
+                            "Condition": "RANDOM 0.20 @addDailyLuck SEASON Fall",
+                            "RandomItemId": [
+                                "(O){{ModId}}_PacuPeva",
+                                "(O){{ModId}}_Monkfish",
+                                "(O){{ModId}}_Piranha",
+                                "(O){{ModId}}_Monkfish",
+                                "(O){{ModId}}_Surubim",
+                                "(O){{ModId}}_Monkfish",
+                                "(O){{ModId}}_Dogfish",
+                                "(O){{ModId}}_Monkfish",
+                                "(O){{ModId}}_Barracuda",
+                                "(O){{ModId}}_Monkfish",
+                                "(O){{ModId}}_Cobia",
+                                "(O){{ModId}}_Monkfish",
+                                "(O){{ModId}}_NamoradoSandperch",
+                                "(O){{ModId}}_Monkfish",
+                                "(O){{ModId}}_Guitarfish"
+                            ]
+                        },
+                        {
+                            "ID": "{{ModId}}_AdriannosTrashCanWinter",
+                            "Condition": "RANDOM 0.20 @addDailyLuck SEASON Winter",
+                            "RandomItemId": [
+                                "(O){{ModId}}_GoldenDorado",
+                                "(O){{ModId}}_Croaker",
+                                "(O){{ModId}}_Traira",
+                                "(O){{ModId}}_Croaker",
+                                "(O){{ModId}}_SmoothWeakfish",
+                                "(O){{ModId}}_Croaker",
+                                "(O){{ModId}}_Mackerel",
+                                "(O){{ModId}}_Croaker",
+                                "(O){{ModId}}_Monkfish",
+                                "(O){{ModId}}_Croaker",
+                                "(O){{ModId}}_Opah",
+                                "(O){{ModId}}_Croaker"
+                            ]
+                        }
+                    ]
+                },
+                "{{ModId}}_Witches":{
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_WitchesTrashCanRefurnishedSpring",
+                            "Condition": "RANDOM 0.10 @addDailyLuck SEASON Spring",
+                            "RandomItemId": [
+                                "(O){{ModId}}_SweetPeaBouquet",
+                                "(O){{ModId}}_CrocusBouquet",
+                                "(O){{ModId}}_TulipBouquet",
+                                "(O){{ModId}}_BlueJazzBouquet",
+                                "(O){{ModId}}_SummerSpangleBouquet",
+                                "(O){{ModId}}_PoppyBouquet",
+                                "(O){{ModId}}_SunflowerBouquet",
+                                "(O)458",
+                                "(O){{ModId}}_CactusFlowerBouquet",
+                                "(O){{ModId}}_AbutilonBouquet",
+                                "(O){{ModId}}_CattleaOrchidBouquet",
+                                "(O){{ModId}}_FlameVineBouquet",
+                                "(O){{ModId}}_HolidayCactusBouquet",
+                                "(O){{ModId}}_PindoRamaDwarfMorningGloryBouquet",
+                                "(O){{ModId}}_PrincessFlowerBouquet",
+                                "(O){{ModId}}_SnowflakeBouquet",
+                                "(O){{ModId}}_DaffodilBouquet",
+                                "(O){{ModId}}_DandelionBouquet",
+                                "(O){{ModId}}_CrystalRoseBouquet",
+                                "(O){{ModId}}_CosmoFlowerBouquet"
+                            ]
+                        },
+                        {
+                            "ID": "{{ModId}}_WitchesTrashCanRefurnishedSummer",
+                            "Condition": "RANDOM 0.10 @addDailyLuck SEASON Summer",
+                            "RandomItemId": [
+                                "(O){{ModId}}_MysticAncientFruitPerfume",
+                                "(O){{ModId}}_FunApplePerfume",
+                                "(O){{ModId}}_SugaryBananaPerfume",
+                                "(O){{ModId}}_SimpleBlackberryPerfume",
+                                "(O){{ModId}}_FruityBlueberryPerfume",
+                                "(O){{ModId}}_RefreshingCactusPerfume",
+                                "(O){{ModId}}_KawaiiCherryPerfume",
+                                "(O){{ModId}}_BoldCoconutPerfume",
+                                "(O){{ModId}}_GracefulCranberryPerfume",
+                                "(O){{ModId}}_CrystalineCrystalFruitPerfume",
+                                "(O){{ModId}}_CoolGrapePerfume",
+                                "(O){{ModId}}_SpicyHotPepperPerfume",
+                                "(O){{ModId}}_TropicalMangoPerfume",
+                                "(O){{ModId}}_SummeryMelonPerfume",
+                                "(O){{ModId}}_CitricOrangePerfume",
+                                "(O){{ModId}}_FuzzyPeachPerfume",
+                                "(O){{ModId}}_FreshPineapplePerfume",
+                                "(O){{ModId}}_FemininePomegranatePerfume",
+                                "(O){{ModId}}_FreezingPowdermelonPerfume",
+                                "(O){{ModId}}_WeirdRhubarbPerfume",
+                                "(O){{ModId}}_CommonSalmonberryPerfume",
+                                "(O){{ModId}}_HotSpiceBerryPerfume",
+                                "(O){{ModId}}_RichStarfruitPerfume",
+                                "(O){{ModId}}_RomanticStrawberryPerfume",
+                                "(O){{ModId}}_SerenePlumPerfume",
+                                "(O){{ModId}}_FabulousAbutilonPerfume",
+                                "(O){{ModId}}_DifferentAcaiPerfume",
+                                "(O){{ModId}}_AdorableHolidayCactusPerfume",
+                                "(O){{ModId}}_FragrantPrincessFlowerPerfume",
+                                "(O){{ModId}}_PearlyCrystalRosePerfume",
+                                "(O){{ModId}}_ProtectiveRosemaryPerfume",
+                                "(O){{ModId}}_EtherealFlameVinePerfume",
+                                "(O){{ModId}}_SweetSweetPeaPerfume",
+                                "(O){{ModId}}_WintryCrocusPerfume",
+                                "(O){{ModId}}_CuteTulipPerfume",
+                                "(O){{ModId}}_EnchantingBlueJazzPerfume",
+                                "(O){{ModId}}_GlimmerySummerSpanglePerfume",
+                                "(O){{ModId}}_MacabrePoppyPerfume",
+                                "(O){{ModId}}_SolarSunflowerPerfume",
+                                "(O){{ModId}}_MagicalFairyRosePerfume",
+                                "(O){{ModId}}_CuriousHoneyPerfume",
+                                "(O){{ModId}}_HoneyedSweetGemBerryPerfume",
+                                "(O){{ModId}}_ScaryPumpkinPerfume",
+                                "(O){{ModId}}_PerfectChocolatePerfume",
+                                "(O){{ModId}}_SquishyGuavaPerfume",
+                                "(O){{ModId}}_DelicateMorichePerfume",
+                                "(O){{ModId}}_AuthenticJatobaPerfume",
+                                "(O){{ModId}}_EnergeticCoffeePerfume",
+                                "(O){{ModId}}_StrongGingerPerfume",
+                                "(O){{ModId}}_ManlyHardwoodPerfume",
+                                "(O){{ModId}}_CharmingPinkCakePerfume",
+                                "(O){{ModId}}_PlayfulPumpkinPiePerfume",
+                                "(O){{ModId}}_DeliciousCookiePerfume",
+                                "(O){{ModId}}_TinyBrigadeiroPerfume",
+                                "(O){{ModId}}_BeautifulIceCreamPerfume",
+                                "(O){{ModId}}_CaptivatingCaramelPerfume",
+                                "(O){{ModId}}_InspiringDulceDeLechePerfume",
+                                "(O){{ModId}}_VibrantCondensedMilkPerfume",
+                                "(O){{ModId}}_ExquisiteGreenTeaPerfume",
+                                "(O){{ModId}}_NiceDaffodilPerfume",
+                                "(O){{ModId}}_SmallPindoRamaDwarfMorningGloryPerfume",
+                                "(O){{ModId}}_SoftSnowflakePerfume",
+                                "(O){{ModId}}_ColorfulCattleaOrchidPerfume"
+                            ]
+                        },
+                        {
+                            "ID": "{{ModId}}_WitchesTrashCanRefurnishedFall",
+                            "Condition": "RANDOM 0.10 @addDailyLuck SEASON Fall",
+                            "RandomItemId": [
+                                "(O){{ModId}}_MilkChocolate",
+                                "(O){{ModId}}_WhiteChocolate",
+                                "(O){{ModId}}_BitterChocolate",
+                                "(O){{ModId}}_RubyChocolate",
+                                "(O){{ModId}}_StrawberryChocolate",
+                                "(O){{ModId}}_Brigadeiro",
+                                "(O){{ModId}}_PeanutChocolate",
+                                "(O){{ModId}}_Mocaccino",
+                                "(O){{ModId}}_ChocolateCookies",
+                                "(O){{ModId}}_ChocolateIceCream",
+                                "(O){{ModId}}_ChocolateHoneyBread",
+                                "(O){{ModId}}_SpicyChocolate",
+                                "(O){{ModId}}_AncientChocolate",
+                                "(O){{ModId}}_StarfruitChocolate",
+                                "(O){{ModId}}_AppleChocolate",
+                                "(O){{ModId}}_BlackberryChocolate",
+                                "(O){{ModId}}_PomegranateChocolate",
+                                "(O){{ModId}}_Chocottone",
+                                "(O){{ModId}}_ApricotChocolate",
+                                "(O){{ModId}}_BananaFondue",
+                                "(O){{ModId}}_BlueberryChocolate",
+                                "(O){{ModId}}_CoconutChocolate",
+                                "(O){{ModId}}_CaramelChocolate",
+                                "(O){{ModId}}_OrangeChocolate",
+                                "(O){{ModId}}_BlackForestChocolate",
+                                "(O){{ModId}}_RedVelvetChocolate",
+                                "(O){{ModId}}_PumpkinChocolate",
+                                "(O){{ModId}}_GreenTeaChocolate",
+                                "(O){{ModId}}_MarbleChocolate",
+                                "(O){{ModId}}_MapleSyrupChocolate",
+                                "(O){{ModId}}_PeachChocolate",
+                                "(O){{ModId}}_ChocolatePie",
+                                "(O){{ModId}}_DulceDeLecheChocolate",
+                                "(O){{ModId}}_EspressoChocolate",
+                                "(O){{ModId}}_FairyRoseChocolate",
+                                "(O){{ModId}}_GrapeChocolate",
+                                "(O){{ModId}}_MangoChocolate",
+                                "(O){{ModId}}_HazelnutChocolate"
+                            ]
+                        },
+                        {
+                            "ID": "{{ModId}}_WitchesTrashCanRefurnishedWinter",
+                            "Condition": "RANDOM 0.10 @addDailyLuck SEASON Winter",
+                            "RandomItemId": [
+                                "(O){{ModId}}_QuartzGlasses",
+                                "(O){{ModId}}_EarthCrystalSpinningTop",
+                                "(O){{ModId}}_FrozenTearContactLens",
+                                "(O){{ModId}}_FireQuartzSunglasses",
+                                "(O){{ModId}}_EmeraldLocketNecklace",
+                                "(O){{ModId}}_AquamarineFan",
+                                "(O){{ModId}}_RubyCup",
+                                "(O){{ModId}}_AmethystUmbrella",
+                                "(O){{ModId}}_TopazYobaCross",
+                                "(O){{ModId}}_JadeHairClip",
+                                "(O){{ModId}}_DiamondHeel",
+                                "(O){{ModId}}_CarnivalMask",
+                                "(O){{ModId}}_TigerseyeClaws",
+                                "(O){{ModId}}_OpalSword",
+                                "(O){{ModId}}_FireOpalSyringe",
+                                "(O){{ModId}}_AlamiteGlowingStick",
+                                "(O){{ModId}}_BixiteBilliardBall",
+                                "(O){{ModId}}_BaryteTeaSet",
+                                "(O){{ModId}}_AeriniteLantern",
+                                "(O){{ModId}}_CalciteTiara",
+                                "(O){{ModId}}_DolomitePendant",
+                                "(O){{ModId}}_EsperiteKey",
+                                "(O){{ModId}}_FluorapatiteGrillz",
+                                "(O){{ModId}}_GeminiteBracelet",
+                                "(O){{ModId}}_HelvitePurse",
+                                "(O){{ModId}}_JamboriteInkPen",
+                                "(O){{ModId}}_JagoiteOrnament",
+                                "(O){{ModId}}_MudstoneWaterFilter",
+                                "(O){{ModId}}_KyaniteScissor",
+                                "(O){{ModId}}_LunariteEarrings",
+                                "(O){{ModId}}_MalachiteCuia",
+                                "(O){{ModId}}_NeptuniteKnife",
+                                "(O){{ModId}}_LemonStoneGoggles",
+                                "(O){{ModId}}_NekoiteHairBrush",
+                                "(O){{ModId}}_OrpimentMask",
+                                "(O){{ModId}}_PetrifiedSlimeHourglass",
+                                "(O){{ModId}}_ThunderEggAromaticCandle",
+                                "(O){{ModId}}_PyriteChimes",
+                                "(O){{ModId}}_OceanStoneHandMirror",
+                                "(O){{ModId}}_GhostCrystalPorcelainDoll",
+                                "(O){{ModId}}_JasperDice",
+                                "(O){{ModId}}_CelestineVeil",
+                                "(O){{ModId}}_MarbleStatue",
+                                "(O){{ModId}}_SandstoneSundial",
+                                "(O){{ModId}}_GraniteJar",
+                                "(O){{ModId}}_BasaltLighter",
+                                "(O){{ModId}}_LimestoneNecklace",
+                                "(O){{ModId}}_SoapstoneMagnifyingGlass",
+                                "(O){{ModId}}_HematiteBell",
+                                "(O){{ModId}}_ObsidianDagger",
+                                "(O){{ModId}}_SlateGravestone",
+                                "(O){{ModId}}_FairyStoneWand",
+                                "(O){{ModId}}_CelestialMusicBox"
+                            ]
+                        }
+                    ]
+                },
+                "{{ModId}}_Joses":{
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JosesTrashCan",
+                            "Condition": "RANDOM 0.20 @addDailyLuck",
+                            "RandomItemId": [
+                                "(O)304",
+                                "(O){{ModId}}_Sugarcane",
+                                "(O)340"
+                            ]
+                        },
+                        {
+                            "ID": "{{ModId}}_JosesTrashCan2",
+                            "Condition": "RANDOM 0.10 @addDailyLuck",
+                            "RandomItemId": [
+                                "(O){{ModId}}_OrangeCaipirinha",
+                                "(O){{ModId}}_SugarCaneLiquor",
+                                "(O){{ModId}}_Quentao",
+                                "(O){{ModId}}_JatobaCocktail",
+                                "(O)303",
+                                "(O)346",
+                                "(O)459",
+                                "(O)348"
+                            ]
+                        }
+                    ]
+                },
+                "{{ModId}}_Gabis":{
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_GabisTrashCan",
+                            "Condition": "RANDOM 0.30 @addDailyLuck",
+                            "RandomItemId": [
+                                "(O){{ModId}}_BarbadosCherry",
+                                "(O){{ModId}}_LilacTasselflower",
+                                "(O){{ModId}}_TridaxDaisy",
+                                "(O){{ModId}}_BengalDayflower",
+                                "(O){{ModId}}_BlackNightshade",
+                                "(O){{ModId}}_GlobeAmaranth",
+                                "(O){{ModId}}_CosmoFlower",
+                                "(O){{ModId}}_WildCoquinho",
+                                "(O){{ModId}}_WildSurinamCherry",
+                                "(O){{ModId}}_WildRosemary",
+                                "(O){{ModId}}_CrystalRose",
+                                "(O){{ModId}}_SnakePlant",
+                                "(O){{ModId}}_Mandacaru",
+                                "(O){{ModId}}_PindoRamaNut",
+                                "(O){{ModId}}_Chicory",
+                                "(O){{ModId}}_WildPeanut"
                             ]
                         }
                     ]

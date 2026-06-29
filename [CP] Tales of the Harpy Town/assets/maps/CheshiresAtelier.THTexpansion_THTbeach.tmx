@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="left-down" width="40" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="14" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="left-down" width="40" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="14" nextobjectid="2">
  <properties>
   <property name="Outdoors" value="True"/>
  </properties>
@@ -2398,6 +2398,18 @@
  <tileset firstgid="26211" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
   <image source="paths.png" width="64" height="256"/>
  </tileset>
+ <tileset firstgid="26275" name="fall_town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
+  <image source="fall_town.png" width="512" height="1152"/>
+ </tileset>
+ <tileset firstgid="28579" name="spring_town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
+  <image source="spring_town.png" width="512" height="1152"/>
+ </tileset>
+ <tileset firstgid="30883" name="summer_town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
+  <image source="summer_town.png" width="512" height="1152"/>
+ </tileset>
+ <tileset firstgid="33187" name="winter_town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
+  <image source="winter_town.png" width="512" height="1152"/>
+ </tileset>
  <layer id="1" name="Back" width="40" height="50">
   <data encoding="csv">
 3381,3381,3305,3305,3305,3381,3381,3381,3381,3381,3381,3381,3381,3381,3381,3381,3381,3381,3381,3381,3381,3381,3381,3381,3381,3381,3381,3381,3381,3381,3381,3381,3381,3382,3305,2545,2545,10116,10116,10116,
@@ -2527,7 +2539,7 @@
 3574,17317,17318,17319,0,0,0,0,0,0,0,19931,19932,0,0,0,0,0,20229,0,0,0,0,0,0,21280,21280,0,0,0,0,0,1610622886,21036,21036,21036,0,0,0,0,
 0,0,0,20266,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20269,0,0,0,0,0,0,21283,21284,2147504929,0,0,0,10235,10252,21036,21036,0,0,0,21036,0,
 0,0,0,20306,20427,20428,20427,20428,20427,20428,20427,20428,20427,20429,0,20426,20427,20428,20309,0,0,0,0,0,0,0,21282,0,0,0,0,1610622886,21036,21036,0,0,0,0,0,0,
-0,0,0,0,21280,21280,21279,0,19987,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1610622886,21036,21036,0,0,0,0,0,0,
+0,0,0,0,21280,21280,21279,0,19987,0,0,0,28657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1610622886,21036,21036,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1610622903,21036,21036,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21280,0,0,0,0,0,0,0,0,0,0,0,0,1610622886,21036,21036,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21281,21283,21284,0,0,0,0,0,0,0,0,0,0,0,0,1610622903,21036,21036,0,0,21036,0,0,0,
@@ -2634,7 +2646,7 @@
 0,0,0,20226,0,0,0,0,0,0,0,19891,19892,0,0,0,0,0,0,0,0,0,0,0,0,21240,21240,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,20226,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21243,21244,2147504889,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,20388,20387,20388,20387,20388,20387,20388,20387,20388,20389,0,20386,20387,20388,0,0,0,0,0,0,0,0,21242,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,21240,21240,21239,0,19947,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,21240,21240,21239,0,19947,0,0,0,28625,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21240,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21241,21243,21244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -2831,7 +2843,13 @@
 </data>
  </layer>
  <objectgroup id="6" name="Back"/>
- <objectgroup id="7" name="Buildings"/>
+ <objectgroup id="7" name="Buildings">
+  <object id="1" name="TileData" x="192" y="304" width="16" height="16">
+   <properties>
+    <property name="Action" value="Garbage CheshiresAtelier.THTexpansion_Adriannos"/>
+   </properties>
+  </object>
+ </objectgroup>
  <objectgroup id="8" name="Paths"/>
  <objectgroup id="9" name="Front"/>
  <objectgroup id="10" name="AlwaysFront"/>

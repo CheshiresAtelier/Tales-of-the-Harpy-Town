@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.12.1" orientation="orthogonal" renderorder="left-down" width="19" height="27" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="405">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="left-down" width="19" height="27" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="406">
  <properties>
   <property name="Outdoors" value="True"/>
  </properties>
@@ -3584,6 +3584,18 @@
  <tileset firstgid="29503" name="winter_CheshiresAtelier.THTexpansionTownTilesheets" tilewidth="16" tileheight="16" tilecount="1600" columns="40">
   <image source="winter_CheshiresAtelier.THTexpansionTownTilesheets.png" width="640" height="640"/>
  </tileset>
+ <tileset firstgid="31103" name="fall_town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
+  <image source="fall_town.png" width="512" height="1152"/>
+ </tileset>
+ <tileset firstgid="33407" name="spring_town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
+  <image source="spring_town.png" width="512" height="1152"/>
+ </tileset>
+ <tileset firstgid="35711" name="summer_town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
+  <image source="summer_town.png" width="512" height="1152"/>
+ </tileset>
+ <tileset firstgid="38015" name="winter_town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
+  <image source="winter_town.png" width="512" height="1152"/>
+ </tileset>
  <layer id="1" name="Back" width="19" height="27">
   <data encoding="csv">
 352,306,352,352,354,378,17145,17147,228,228,207,228,232,179,254,276,22480,276,326,
@@ -3671,7 +3683,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,517,519,341,467,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,542,544,366,492,
 0,0,0,0,0,0,0,0,0,0,0,0,19461,19462,19463,0,0,0,517,
-0,0,0,0,0,0,0,0,0,17008,17009,17010,19476,19477,19478,0,0,0,542,
+0,0,0,0,0,0,0,0,33485,17008,17009,17010,19476,19477,19478,0,0,0,542,
 0,0,0,0,0,0,0,0,0,0,0,0,0,24877,24878,24879,384,385,386,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -3732,7 +3744,7 @@
 0,0,0,0,0,0,0,0,0,0,19414,19415,19416,19417,19418,19419,19420,0,0,
 0,0,0,0,0,0,0,0,0,0,19429,19430,19431,19432,19433,19434,19435,0,0,
 0,0,0,0,0,0,0,0,0,16958,16959,16960,0,19447,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,16983,16984,16985,0,0,0,24799,0,0,0,
+0,0,0,0,0,0,0,0,33453,16983,16984,16985,0,0,0,24799,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,24837,24838,24839,359,360,361,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 12,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -3843,6 +3855,11 @@
   <object id="404" name="TileData" x="208" y="384" width="32" height="16">
    <properties>
     <property name="Action" value="Message &quot;THTJosesHouse.2&quot;"/>
+   </properties>
+  </object>
+  <object id="405" x="128" y="368" width="16" height="16">
+   <properties>
+    <property name="Action" value="Garbage CheshiresAtelier.THTexpansion_Joses"/>
    </properties>
   </object>
  </objectgroup>

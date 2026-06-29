@@ -241,7 +241,7 @@
 							"OutputItem": [
 								{
 									"Id": "{{ModId}}_OrchidBouquetOutput",
-									"ItemId": "(O){{ModId}}_OrchidBouquet",
+									"ItemId": "(O){{ModId}}_CattleaOrchidBouquet",
 									"MinStack": 1
 								}
 							],

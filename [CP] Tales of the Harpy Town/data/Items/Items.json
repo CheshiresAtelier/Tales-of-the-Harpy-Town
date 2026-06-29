@@ -1400,7 +1400,7 @@
 			"Action": "EditData",
 			"Target": "Data/CookingRecipes",
 			"Entries": {
-				"{{ModId}}_Acaraje": "(O){{ModId}}_Vatapa 1 (O){{ModId}}_BlackEyedPeas 1 720 1 {{ModId}}_PalmOil 1/10 10/{{ModId}}_Acaraje/null/{{i18n: CheshiresAtelier.THTexpansion_Food11}}"
+				"{{ModId}}_Acaraje": "(O){{ModId}}_Vatapa 1 (O){{ModId}}_BlackEyedPeas 1 (O)720 1 (O){{ModId}}_PalmOil 1/10 10/{{ModId}}_Acaraje/null/{{i18n: CheshiresAtelier.THTexpansion_Food11}}"
 			}
 		},
 		//Carrot Cake
@@ -1470,7 +1470,7 @@
 			]
 		},
 		{
-			"LogName": "Picanha recipe",
+			"LogName": "Carrot cake recipe",
 			"Action": "EditData",
 			"Target": "Data/CookingRecipes",
 			"Entries": {
@@ -1696,7 +1696,7 @@
 			"Action": "EditData",
 			"Target": "Data/CookingRecipes",
 			"Entries": {
-				"{{ModId}}_Feijoada": "(O){{ModId}}_BlackBeans 1 (O)248 1 (O){{ModId}}_CannedMeat 3/10 10/{{ModId}}_Feijoada/null/{{i18n: CheshiresAtelier.THTexpansion_Food16}}"
+				"{{ModId}}_Feijoada": "(O){{ModId}}_BlackBeans 1 (O)248 1 (O){{ModId}}_CannedMeat 3/10 10/{{ModId}}_Feijoada/null/{{i18n: CheshiresAtelier.THTexpansion_Food15}}"
 			}
 		},
 		//fresh rice
@@ -1911,7 +1911,7 @@
 			]
 		},
 		{
-			"LogName": "farofa recipe",
+			"LogName": "Jatoba bread recipe",
 			"Action": "EditData",
 			"Target": "Data/CookingRecipes",
 			"Entries": {
