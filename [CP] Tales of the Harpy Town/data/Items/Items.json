@@ -2871,7 +2871,7 @@
 			"Action": "EditData",
 			"Target": "Data/CookingRecipes",
 			"Entries": {
-				"{{ModId}}_ChocolateMilk": "-6 1 (O)256 1 (O){{ModID}}_ChocoPowder 1/10 10/{{ModId}}_ChocolateMilk/null/{{i18n: CheshiresAtelier.THTexpansion_Food31}}"
+				"{{ModId}}_ChocolateMilk": "-6 1 (O)256 1 (O){{ModID}}_ChocoPowder 1/10 10/{{ModId}}_ChocolateMilk/f {{ModId}}_Duda 3/{{i18n: CheshiresAtelier.THTexpansion_Food31}}"
 			}
 		},
 		//Orange Caipirinha

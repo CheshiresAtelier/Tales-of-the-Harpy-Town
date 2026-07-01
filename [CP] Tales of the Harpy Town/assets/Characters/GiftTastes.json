@@ -8,8 +8,8 @@
 "Entries":
 {
 "{{ModId}}_Cida": "{{i18n: CheshiresAtelier.THTexpansion_LovedGiftCida}}/CheshiresAtelier.THTexpansion_Pamonha 417 CheshiresAtelier.THTexpansion_HelvitePurse CheshiresAtelier.THTexpansion_PacocaIcePop CheshiresAtelier.THTexpansion_PineappleJarCake CheshiresAtelier.THTexpansion_PineappleJuice CheshiresAtelier.THTexpansion_PearlyCrystalRosePerfume CheshiresAtelier.THTexpansion_RichStarfruitPerfume 733 346 303 216 166 268/{{i18n: CheshiresAtelier.THTexpansion_LikedGiftCida}}/306 247 245/{{i18n: CheshiresAtelier.THTexpansion_DislikedGiftCida}}/334/{{i18n: CheshiresAtelier.THTexpansion_HatedGiftCida}}/338/{{i18n: CheshiresAtelier.THTexpansion_NeutralGiftCida}}/88 253 245",
-"{{ModId}}_Princess": "{{i18n: CheshiresAtelier.THTexpansion_LovedGiftPrincess}}/874 130 198 580/{{i18n: CheshiresAtelier.THTexpansion_LikedGiftPrincess}}/390/{{i18n: CheshiresAtelier.THTexpansion_DislikedGiftPrincess}}/586/{{i18n: CheshiresAtelier.THTexpansion_HatedGiftPrincess}}/icepop_item jarcake_item chocolate_item 128/{{i18n: CheshiresAtelier.THTexpansion_NeutralGiftPrincess}}/390",
-"{{ModId}}_Bebel": "{{i18n: CheshiresAtelier.THTexpansion_LovedGiftBebel}}/103 126 127 223 221 CheshiresAtelier.THTexpansion_CharmingPinkCakePerfume Book_Speed2 614 253 CheshiresAtelier.THTexpansion_CuteTulipPerfume CheshiresAtelier.THTexpansion_CattleaOrchidBouquet CheshiresAtelier.THTexpansion_Chimarrao CheshiresAtelier.THTexpansion_BebelPlushie/{{i18n: CheshiresAtelier.THTexpansion_LikedGiftBebel}}/203 418 402 376 18 22 591 593 595 597 400 Book_Speed 421 254/{{i18n: CheshiresAtelier.THTexpansion_DislikedGiftBebel}}/tht_jarcake_item tht_icepop_item 438 436 426 424 186 195 184 904 730 727 608 605 243 236 233 232 215 206 201 199 197/{{i18n: CheshiresAtelier.THTexpansion_HatedGiftBebel}}/CheshiresAtelier.THTexpansion_CakeBatter category_milk allergen_dairy 148 202 226 225 151 149 143 CheshiresAtelier.THTexpansion_DulceDeLecheChocolate CheshiresAtelier.THTexpansion_Brigadeiro CheshiresAtelier.THTexpansion_MilkChocolate/{{i18n: CheshiresAtelier.THTexpansion_NeutralGiftBebel}}/105",
+"{{ModId}}_Princess": "{{i18n: CheshiresAtelier.THTexpansion_LovedGiftPrincess}}/874 130 198 580/{{i18n: CheshiresAtelier.THTexpansion_LikedGiftPrincess}}/390/{{i18n: CheshiresAtelier.THTexpansion_DislikedGiftPrincess}}/586/{{i18n: CheshiresAtelier.THTexpansion_HatedGiftPrincess}}/{{ModId}}_HoneyedSweetGemBerryPerfume icepop_item jarcake_item chocolate_item 128/{{i18n: CheshiresAtelier.THTexpansion_NeutralGiftPrincess}}/390",
+"{{ModId}}_Bebel": "{{i18n: CheshiresAtelier.THTexpansion_LovedGiftBebel}}/103 126 127 223 221 CheshiresAtelier.THTexpansion_TutuBeans CheshiresAtelier.THTexpansion_CharmingPinkCakePerfume Book_Speed2 614 253 CheshiresAtelier.THTexpansion_CuteTulipPerfume CheshiresAtelier.THTexpansion_CattleaOrchidBouquet CheshiresAtelier.THTexpansion_Chimarrao CheshiresAtelier.THTexpansion_BebelPlushie plushie_item/{{i18n: CheshiresAtelier.THTexpansion_LikedGiftBebel}}/203 418 402 376 18 22 591 593 595 597 400 Book_Speed 421 254/{{i18n: CheshiresAtelier.THTexpansion_DislikedGiftBebel}}/tht_jarcake_item tht_icepop_item 438 436 426 424 186 195 184 904 730 727 608 605 243 236 233 232 215 206 201 199 197/{{i18n: CheshiresAtelier.THTexpansion_HatedGiftBebel}}/CheshiresAtelier.THTexpansion_CakeBatter category_milk allergen_dairy 148 202 226 225 151 149 143 CheshiresAtelier.THTexpansion_DulceDeLecheChocolate CheshiresAtelier.THTexpansion_Brigadeiro CheshiresAtelier.THTexpansion_MilkChocolate/{{i18n: CheshiresAtelier.THTexpansion_NeutralGiftBebel}}/105",
 "{{ModId}}_Anahi": "{{i18n: CheshiresAtelier.THTexpansion_LovedGiftAnahi}}/206 CheshiresAtelier.THTexpansion_AnythingBurger CheshiresAtelier.THTexpansion_FabulousAbutilonPerfume CheshiresAtelier.THTexpansion_Acaraje CheshiresAtelier.THTexpansion_Chimarrao 554 CheshiresAtelier.THTexpansion_Abutilon 350 106 241 CheshiresAtelier.THTexpansion_EarthCrystalSpinningTop CheshiresAtelier.THTexpansion_DulceDeLatte CheshiresAtelier.THTexpansion_FlanCappuccino CheshiresAtelier.THTexpansion_OrangeJuice CheshiresAtelier.THTexpansion_AbutilonBouquet CheshiresAtelier.THTexpansion_AnahiPlushie CheshiresAtelier.THTexpansion_SurinamCherryJarCake CheshiresAtelier.THTexpansion_DulceDeLecheIcePop/{{i18n: CheshiresAtelier.THTexpansion_LikedGiftAnahi}}/214 CheshiresAtelier.THTexpansion_SurinamCherry 618 CheshiresAtelier.THTexpansion_BarbadosCherryJarCake CheshiresAtelier.THTexpansion_AppleIcePop/{{i18n: CheshiresAtelier.THTexpansion_DislikedGiftAnahi}}/235 CheshiresAtelier.THTexpansion_CookedBlackEyedPeas CheshiresAtelier.THTexpansion_BaiaoDeDois 608 225 226/{{i18n: CheshiresAtelier.THTexpansion_HatedGiftAnahi}}/CheshiresAtelier.THTexpansion_BlackEyedPeas CheshiresAtelier.THTexpansion_PumpkinChocolate CheshiresAtelier.THTexpansion_PumpkinIcePop CheshiresAtelier.THTexpansion_PumpkinJarCake 746 373 276 236 CheshiresAtelier.THTexpansion_ScaryPumpkinPerfume CheshiresAtelier.THTexpansion_PlayfulPumpkinPiePerfume item_pumpkin CheshiresAtelier.THTexpansion_PumpkinSpiceLatte/{{i18n: CheshiresAtelier.THTexpansion_NeutralGiftAnahi}}/221 732 148 172",
 "{{ModId}}_Mayara": "{{i18n: CheshiresAtelier.THTexpansion_LovedGiftMayara}}/CheshiresAtelier.THTexpansion_ProtectiveRosemaryPerfume CheshiresAtelier.THTexpansion_PearlyCrystalRosePerfume CheshiresAtelier.THTexpansion_Manjar 62 586 560 395 123 Raisins CheshiresAtelier.THTexpansion_WildRosemary 341 CheshiresAtelier.THTexpansion_CrystalRose CheshiresAtelier.THTexpansion_AncientFruitChocolateIcePop CheshiresAtelier.THTexpansion_AncientChocolate CheshiresAtelier.THTexpansion_DulceDeLecheChocolateJarCake CheshiresAtelier.THTexpansion_TopazYobaCross CheshiresAtelier.THTexpansion_AnahiPlushie CheshiresAtelier.THTexpansion_AlamandaPlushie CheshiresAtelier.THTexpansion_KaiquePlushie/{{i18n: CheshiresAtelier.THTexpansion_LikedGiftMayara}}/199 236 216 701 392 393 394 CheshiresAtelier.THTexpansion_CoconutJarCake CheshiresAtelier.THTexpansion_BlackberryIcePop/{{i18n: CheshiresAtelier.THTexpansion_DislikedGiftMayara}}/260 832 151 162 148 128/{{i18n: CheshiresAtelier.THTexpansion_HatedGiftMayara}}/720 202 215 218 225 226 728 733 729 730 732 733 907 241 206/{{i18n: CheshiresAtelier.THTexpansion_NeutralGiftMayara}}/CheshiresAtelier.THTexpansion_RubyChocolateJarCake MixedFlowerSeeds 348 376",
 "{{ModId}}_Francisco": "{{i18n: CheshiresAtelier.THTexpansion_LovedGiftFrancisco}}/CheshiresAtelier.THTexpansion_Moqueca CheshiresAtelier.THTexpansion_MoricheIceCream 428 CheshiresAtelier.THTexpansion_RomanticStrawberryPerfume CheshiresAtelier.THTexpansion_HolidayCactus CheshiresAtelier.THTexpansion_AdorableHolidayCactusPerfume CheshiresAtelier.THTexpansion_HolidayCactusBouquet CheshiresAtelier.THTexpansion_Tacaca 72 257 104 205 CheshiresAtelier.THTexpansion_FranciscoPlushie CheshiresAtelier.THTexpansion_RedVelvetIcePop CheshiresAtelier.THTexpansion_RedVelvetJarCake CheshiresAtelier.THTexpansion_RedVelvetChocolate/{{i18n: CheshiresAtelier.THTexpansion_LikedGiftFrancisco}}/CheshiresAtelier.THTexpansion_CompleteBento 404 420 422 281 440 CheshiresAtelier.THTexpansion_RubyChocolateJarCake CheshiresAtelier.THTexpansion_RubyChocolateIcePop CheshiresAtelier.THTexpansion_RubyChocolate Book_Roe Book_WildSeeds Book_Woodcutting Book_Defense Book_Friendship Book_Void Book_Speed Book_Marlon Book_PriceCatalogue Book_QueenOfSauce Book_Mystery Book_Diamonds Book_AnimalCatalogue Book_Speed2 Book_Artifact Book_Horse Book_Grass Book_Bombs Book_Crabbing Book_Trash SkillBook_4 SkillBook_3 SkillBook_1 SkillBook_2 SkillBook_0 PurpleBook/{{i18n: CheshiresAtelier.THTexpansion_DislikedGiftFrancisco}}/459 346 348 303 873 CheshiresAtelier.THTexpansion_Caipirinha/{{i18n: CheshiresAtelier.THTexpansion_HatedGiftFrancisco}}/CheshiresAtelier.THTexpansion_Quentao CheshiresAtelier.THTexpansion_Pave CheshiresAtelier.THTexpansion_HomemadeFarofa CheshiresAtelier.THTexpansion_Chimarrao CheshiresAtelier.THTexpansion_Cachaca 18/{{i18n: CheshiresAtelier.THTexpansion_NeutralGiftFrancisco}}/771 446",
@@ -18,11 +18,39 @@
 "{{ModId}}_Camelia": "{{i18n: CheshiresAtelier.THTexpansion_LovedGiftCamelia}}/CheshiresAtelier.THTexpansion_FemininePomegranatePerfume CheshiresAtelier.THTexpansion_PrincessFlower CheshiresAtelier.THTexpansion_PrincessFlowerBouquet CheshiresAtelier.THTexpansion_ChocolateCookies CheshiresAtelier.THTexpansion_ChocolateCookiesJarCake CheshiresAtelier.THTexpansion_MorangoDoAmorJarCake CheshiresAtelier.THTexpansion_NekoiteHairBrush CheshiresAtelier.THTexpansion_KyaniteScissor CheshiresAtelier.THTexpansion_ChocolateHoneyBread CheshiresAtelier.THTexpansion_JadeHairclip/{{i18n: CheshiresAtelier.THTexpansion_LikedGiftCamelia}}/336/{{i18n: CheshiresAtelier.THTexpansion_DislikedGiftCamelia}}/334/{{i18n: CheshiresAtelier.THTexpansion_HatedGiftCamelia}}/337/{{i18n: CheshiresAtelier.THTexpansion_NeutralGiftCamelia}}/335",
 "{{ModId}}_Levi": "{{i18n: CheshiresAtelier.THTexpansion_LovedGiftLevi}}/CheshiresAtelier.THTexpansion_FreshPineapplePerfume 219 CheshiresAtelier.THTexpansion_FreshRice CheshiresAtelier.THTexpansion_Feijoada CheshiresAtelier.THTexpansion_Moqueca CheshiresAtelier.THTexpansion_BarbadosCherry {{ModId}}_SummeryMelonPerfume {{ModId}}_FlameVineBouquet 252 {{ModId}}_RhubarbJuice {{ModId}}_CherrySyrupCappuccino {{ModId}}_CoconutWater {{ModId}}_CaramelDogPlushie {{ModId}}_FranciscoPlushie {{ModId}}_RedVelvetIcePop {{ModId}}_BarbadosCherryJarCake {{ModId}}_KyaniteScissor {{ModId}}_BasaltLighter {{ModId}}_LemonStoneGoggles/{{i18n: CheshiresAtelier.THTexpansion_LikedGiftLevi}}/{{ModId}}_Goiabada {{ModId}}_OrpimentMask 726 787 725 444 115 {{ModId}}_Abutilon {{ModId}}_FuzzyCranberryCoffee {{ModId}}_HotPepperJuice 158/{{i18n: CheshiresAtelier.THTexpansion_DislikedGiftLevi}}/{{ModId}}_IcedCrystalFruitAffogato 306 {{ModId}}_PeachJuice {{ModId}}_Tacaca {{ModId}}_HazelnutChocolate {{ModId}}_MangoChocolate {{ModId}}_Surubim/{{i18n: CheshiresAtelier.THTexpansion_HatedGiftLevi}}/392 {{ModId}}_MangoIcePop {{ModId}}_MangoChocolateIcePop 834 {{ModId}}_MangoJarCake {{ModId}}_MangoChocolateJarCake {{ModId}}_TropicalMangoPerfume {{ModId}}_FemininePomegranatePerfume/{{i18n: CheshiresAtelier.THTexpansion_NeutralGiftLevi}}/399 388 142 {{ModId}}_CommonSalmonberryPerfume",
 "{{ModId}}_Pacoca": "{{i18n: CheshiresAtelier.THTexpansion_LovedGiftPacoca}}/834 267 91 580 874 {{ModId}}_BananaJuice {{ModId}}_CaramelDogPlushie/{{i18n: CheshiresAtelier.THTexpansion_LikedGiftPacoca}}/egg_item 330/{{i18n: CheshiresAtelier.THTexpansion_DislikedGiftPacoca}}/perfume_item/{{i18n: CheshiresAtelier.THTexpansion_HatedGiftPacoca}}/chocolate_item coffee_item 245 Raisins 398 {{ModId}}_Coxinha 248/{{i18n: CheshiresAtelier.THTexpansion_NeutralGiftPacoca}}/613",
-"{{ModId}}_Ravi": "{{i18n: CheshiresAtelier.THTexpansion_LovedGiftRavi}}/CheshiresAtelier.THTexpansion_AppleJuice CheshiresAtelier.THTexpansion_CommonSalmonberryPerfume CheshiresAtelier.THTexpansion_ChocolateMilk CheshiresAtelier.THTexpansion_Cocada CheshiresAtelier.THTexpansion_SugarcaneJuice CheshiresAtelier.THTexpansion_JatobaBread CheshiresAtelier.THTexpansion_TinyBrigadeiroPerfume CheshiresAtelier.THTexpansion_ChocolateIceCream 150 CheshiresAtelier.THTexpansion_MariaMole CheshiresAtelier.THTexpansion_DandelionBouquet Book_Defense 233 CheshiresAtelier.THTexpansion_AdriannnoPlushie CheshiresAtelier.THTexpansion_ChocolateCakeIcePop CheshiresAtelier.THTexpansion_MilkChocolateJarCake 220/{{i18n: CheshiresAtelier.THTexpansion_LikedGiftRavi}}/category_flowers jarcake_item icepop_item/{{i18n: CheshiresAtelier.THTexpansion_DislikedGiftRavi}}/{{ModId}}_PineappleIcePop {{ModId}}_PineappleJarcake CheshiresAtelier.THTexpansion_PineappleJuice/{{i18n: CheshiresAtelier.THTexpansion_HatedGiftRavi}}/832 coffee_item {{ModId}}_OrangeCaipirinha {{ModId}}_SugarCaneLiquor {{ModId}}_Quentao {{ModId}}_JatobaCocktail 303 346 348 459/{{i18n: CheshiresAtelier.THTexpansion_NeutralGiftRavi}}/196 199 296"
+"{{ModId}}_Ravi": "{{i18n: CheshiresAtelier.THTexpansion_LovedGiftRavi}}/CheshiresAtelier.THTexpansion_AppleJuice CheshiresAtelier.THTexpansion_CommonSalmonberryPerfume CheshiresAtelier.THTexpansion_ChocolateMilk CheshiresAtelier.THTexpansion_Cocada CheshiresAtelier.THTexpansion_SugarcaneJuice CheshiresAtelier.THTexpansion_JatobaBread CheshiresAtelier.THTexpansion_TinyBrigadeiroPerfume CheshiresAtelier.THTexpansion_ChocolateIceCream 150 CheshiresAtelier.THTexpansion_MariaMole CheshiresAtelier.THTexpansion_DandelionBouquet Book_Defense 233 CheshiresAtelier.THTexpansion_AdriannnoPlushie CheshiresAtelier.THTexpansion_ChocolateCakeIcePop CheshiresAtelier.THTexpansion_MilkChocolateJarCake 220/{{i18n: CheshiresAtelier.THTexpansion_LikedGiftRavi}}/category_flowers jarcake_item icepop_item/{{i18n: CheshiresAtelier.THTexpansion_DislikedGiftRavi}}/{{ModId}}_PineappleIcePop {{ModId}}_PineappleJarcake CheshiresAtelier.THTexpansion_PineappleJuice/{{i18n: CheshiresAtelier.THTexpansion_HatedGiftRavi}}/832 coffee_item {{ModId}}_OrangeCaipirinha {{ModId}}_SugarCaneLiquor {{ModId}}_Quentao {{ModId}}_JatobaCocktail 303 346 348 459/{{i18n: CheshiresAtelier.THTexpansion_NeutralGiftRavi}}/196 199 296",
+"{{ModId}}_Duda": "{{i18n: CheshiresAtelier.THTexpansion_LovedGiftDuda}}/Broccoli 196 131 CheshiresAtelier.THTexpansion_Brigadeiro 350 22 200 {{ModId}}_CaptivatingCaramelPerfume {{ModId}}_BeautifulIceCreamPerfume Book_Horse {{ModId}}_BlackberryChocolate {{ModId}}_PeachChocolate 237 610 {{ModId}}_PrincessFlower {{ModId}}_AppleIcePop {{ModId}}_BananaIcePop {{ModId}}_BarbadosCherryJarCake/{{i18n: CheshiresAtelier.THTexpansion_LikedGiftDuda}}/419 Carrot {{ModId}}_Cassava 103/{{i18n: CheshiresAtelier.THTexpansion_DislikedGiftDuda}}/{{ModId}}_MocotoCandy {{ModId}}_Rapadura 260 342 215/{{i18n: CheshiresAtelier.THTexpansion_HatedGiftDuda}}/832 coffee_item {{ModId}}_OrangeCaipirinha {{ModId}}_SugarCaneLiquor {{ModId}}_Quentao {{ModId}}_JatobaCocktail 303 346 348 459/{{i18n: CheshiresAtelier.THTexpansion_NeutralGiftDuda}}/283 284 296 410"
 }
 		},
 //Custom interactions :3 Ty Lucy for your help <3
 //Make sure to check her mod btw, adds a lot of cute sea fishies AND NPCs dialogues expansions :D
+//Cida
+{
+"Action": "EditData",
+"Target": "Characters/Dialogue/{{ModId}}_Cida",
+"Entries": {
+"AcceptGift_(O){{ModId}}_CompleteBento": "{{i18n: CheshiresAtelier.THTexpansion_CidaGTinteraction1}}",
+"AcceptGift_(O)346": "{{i18n: CheshiresAtelier.THTexpansion_CidaGTinteraction2}}",
+"AcceptGift_(O){{ModId}}_HelvitePurse": "{{i18n: CheshiresAtelier.THTexpansion_CidaGTinteraction3}}",
+"AcceptGift_(O){{ModId}}_RichStarfruitPerfume": "{{i18n: CheshiresAtelier.THTexpansion_CidaGTinteraction4}}",
+"AcceptGift_(O){{ModID}}_PearlyCrystalRosePerfume": "{{i18n: CheshiresAtelier.THTexpansion_CidaGTinteraction4}}",
+"AcceptGift_(O)733": "{{i18n: CheshiresAtelier.THTexpansion_CidaGTinteraction5}}",
+"AcceptGift_(O)268": "{{i18n: CheshiresAtelier.THTexpansion_CidaGTinteraction6}}",
+"AcceptGift_(O)417": "{{i18n: CheshiresAtelier.THTexpansion_CidaGTinteraction6}}",
+"AcceptGift_(O)166": "{{i18n: CheshiresAtelier.THTexpansion_CidaGTinteraction6}}"
+}
+},
+//Princess
+{
+"Action": "EditData",
+"Target": "Characters/Dialogue/{{ModId}}_Princess",
+"Entries": {
+"AcceptGift_(O)198": "{{i18n: CheshiresAtelier.THTexpansion_PrincessGTinteraction1}}",
+"AcceptGift_(O)130": "{{i18n: CheshiresAtelier.THTexpansion_PrincessGTinteraction1}}",
+"AcceptGift_(O)874": "{{i18n: CheshiresAtelier.THTexpansion_PrincessGTinteraction2}}",
+"AcceptGift_(O)580": "{{i18n: CheshiresAtelier.THTexpansion_PrincessGTinteraction3}}"
+}
+},
 //Bebel edits
 
 {
@@ -34,7 +62,38 @@
 "AcceptGift_(O)127": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction1}}",
 "AcceptGift_(O)Book_Speed2": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction2}}",
 "AcceptGift_(O)221": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction3}}",
+"AcceptGift_(O){{ModId}}_BebelPlushie": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction4}}",
+"AcceptGift_(O){{ModID}}_CattleaOrchidBouquet": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction5}}",
+"AcceptGift_(O){{ModId}}_CharmingPinkCakePerfume": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction6}}",
+"AcceptGift_(O){{ModId}}_Chimarrao": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction7}}",
+"AcceptGift_(O)223": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction8}}",
+"AcceptGift_(O)253": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction9}}",
+"AcceptGift_(O){{ModId}}_TutuBeans": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction10}}",
+"AcceptGift_plushie_item": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction11}}",
 "RejectItem_category_milk": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction1R}}"
+}
+},
+{
+"Action": "EditData",
+"Target": "Characters/Dialogue/{{ModId}}_Bebel",
+"Entries": {
+"AcceptGift_(O)103": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction1S}}",
+"AcceptGift_(O)126": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction1S}}",
+"AcceptGift_(O)127": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction1S}}",
+"AcceptGift_(O)Book_Speed2": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction2S}}",
+"AcceptGift_(O)221": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction3S}}",
+"AcceptGift_(O){{ModId}}_BebelPlushie": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction4S}}",
+"AcceptGift_(O){{ModID}}_CattleaOrchidBouquet": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction5S}}",
+"AcceptGift_(O){{ModId}}_CharmingPinkCakePerfume": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction6S}}",
+"AcceptGift_(O){{ModId}}_Chimarrao": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction7S}}",
+"AcceptGift_(O)223": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction8S}}",
+"AcceptGift_(O)253": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction9S}}",
+"AcceptGift_(O){{ModId}}_TutuBeans": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction10S}}",
+"AcceptGift_plushie_item": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction11S}}",
+"RejectItem_category_milk": "{{i18n: CheshiresAtelier.THTexpansion_BebelGTinteraction1R}}"
+},
+"When": {
+ "Relationship:{{ModId}}_Bebel": "Married"
 }
 },
 {
@@ -58,8 +117,46 @@
 "AcceptGift_(O){{ModId}}_Acaraje": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction3}}",
 "AcceptGift_(O){{ModId}}_FabulousAbutilonPerfume": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction4}}",
 "AcceptGift_(O){{ModId}}_AnythingBurger": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction5}}",
+"AcceptGift_(O){{ModId}}_AbutilonBouquet": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction6}}",
+"AcceptGift_(O){{ModId}}_AnahiPlushie": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction7}}",
+"AcceptGift_(O){{ModId}}_DulceDeLecheChocolateIcePop": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction8}}",
+"AcceptGift_(O){{ModId}}_EarthCrystalSpinningTop": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction9}}",
+"AcceptGift_(O){{ModId}}_FlanCappuccino": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction10}}",
+"AcceptGift_(O){{ModId}}_OrangeJuice": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction11}}",
+"AcceptGift_(O){{ModId}}_SurinamCherryJarCake": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction12}}",
+"AcceptGift_(O)350": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction13}}",
+"AcceptGift_(O)106": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction14}}",
+"AcceptGift_(O)206": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction15}}",
+"AcceptGift_(O)241": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction16}}",
 "RejectItem_(O)373": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction1R}}",
 "RejectItem_item_pumpkin": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction1R}}"
+}
+},
+//Anahi
+
+{
+"Action": "EditData",
+"Target": "Characters/Dialogue/{{ModId}}_Anahi",
+"Entries": {
+"AcceptGift_(O){{ModId}}_Abutilon": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction1S}}",
+"AcceptGift_(O){{ModId}}_Chimarrao": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction2S}}",
+"AcceptGift_(O){{ModId}}_Acaraje": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction3S}}",
+"AcceptGift_(O){{ModId}}_FabulousAbutilonPerfume": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction4S}}",
+"AcceptGift_(O){{ModId}}_AnythingBurger": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction5S}}",
+"AcceptGift_(O){{ModId}}_AbutilonBouquet": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction6S}}",
+"AcceptGift_(O){{ModId}}_AnahiPlushie": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction7S}}",
+"AcceptGift_(O){{ModId}}_DulceDeLecheChocolateIcePop": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction8S}}",
+"AcceptGift_(O){{ModId}}_EarthCrystalSpinningTop": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction9S}}",
+"AcceptGift_(O){{ModId}}_FlanCappuccino": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction10S}}",
+"AcceptGift_(O){{ModId}}_OrangeJuice": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction11S}}",
+"AcceptGift_(O){{ModId}}_SurinamCherryJarCake": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction12S}}",
+"AcceptGift_(O)350": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction13S}}",
+"AcceptGift_(O)106": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction14S}}",
+"AcceptGift_(O)206": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction15S}}",
+"AcceptGift_(O)241": "{{i18n: CheshiresAtelier.THTexpansion_AnahiGTinteraction16S}}"
+},
+"When": {
+ "Relationship:{{ModId}}_Anahi": "Married"
 }
 },
 //Mayara
@@ -1318,6 +1415,106 @@
 1
 ],
 "Value": "FlashShifter.StardewValleyExpandedCP_Kittyfish, FlashShifter.StardewValleyExpandedCP_Shark_Tooth",
+"Delimiter": " "
+}
+]
+},
+//Julieta
+{
+"Action": "EditData",
+"Target": "Data/NPCGiftTastes",
+"When":{
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+},
+"TextOperations": [
+{
+"Operation": "Append",
+"Target": [
+"Fields",
+"{{ModId}}_Julieta",
+1
+],
+"Value": "FlashShifter.StardewValleyExpandedCP_Alligator, FlashShifter.StardewValleyExpandedCP_Frog",
+"Delimiter": " "
+}
+]
+},
+//Camelia
+{
+"Action": "EditData",
+"Target": "Data/NPCGiftTastes",
+"When":{
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+},
+"TextOperations": [
+{
+"Operation": "Append",
+"Target": [
+"Fields",
+"{{ModId}}_Camelia",
+1
+],
+"Value": "FlashShifter.StardewValleyExpandedCP_Cheese_Charcuterie, FlashShifter.StardewValleyExpandedCP_Persimmon",
+"Delimiter": " "
+}
+]
+},
+//Levi
+{
+"Action": "EditData",
+"Target": "Data/NPCGiftTastes",
+"When":{
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+},
+"TextOperations": [
+{
+"Operation": "Append",
+"Target": [
+"Fields",
+"{{ModId}}_Levi",
+1
+],
+"Value": "FlashShifter.StardewValleyExpandedCP_Baked_Potato",
+"Delimiter": " "
+}
+]
+},
+//Ravi
+{
+"Action": "EditData",
+"Target": "Data/NPCGiftTastes",
+"When":{
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+},
+"TextOperations": [
+{
+"Operation": "Append",
+"Target": [
+"Fields",
+"{{ModId}}_Ravi",
+1
+],
+"Value": "FlashShifter.StardewValleyExpandedCP_Candy",
+"Delimiter": " "
+}
+]
+},
+//Duda
+{
+"Action": "EditData",
+"Target": "Data/NPCGiftTastes",
+"When":{
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+},
+"TextOperations": [
+{
+"Operation": "Append",
+"Target": [
+"Fields",
+"{{ModId}}_Duda",
+1
+],
+"Value": "FlashShifter.StardewValleyExpandedCP_Seaweed_Salad FlashShifter.StardewValleyExpandedCP_Boomerang, FlashShifter.StardewValleyExpandedCP_Frog",
 "Delimiter": " "
 }
 ]

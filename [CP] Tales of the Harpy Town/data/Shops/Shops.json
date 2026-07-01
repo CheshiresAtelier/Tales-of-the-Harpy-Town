@@ -160,7 +160,7 @@
                             "Portrait": "Portraits/Mayara",
                             "Dialogues": [
                                 {
-                                    "Dialogue": "{{i18n: CheshiresAtelier.THTexpansion_Shop2}}"
+                                    "Dialogue": "{{i18n: CheshiresAtelier.THTexpansion_Shop4}}"
                                 }
                             ]
                         }

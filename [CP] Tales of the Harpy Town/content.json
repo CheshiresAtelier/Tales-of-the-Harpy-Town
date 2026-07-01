@@ -681,6 +681,156 @@
 							"Condition": "SEASON Winter"
 						}
 					]
+				},
+				"{{ModId}}_THTsecretPlace2Path1": {
+					"CreateOnLoad": {
+						"MapPath": "Maps/{{ModId}}_THTsecretPlace2Path1"
+					},
+					"DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_Map33}}",
+					"DefaultArrivalTile": {
+						"X": 16,
+						"Y": 7
+					},
+					"Forage": [
+						{
+							"ID": "{{ModId}}_SpawnSpringForage9",
+							"RandomItemId": [
+								"(O){{ModId}}_BarbadosCherry",
+								"(O){{ModId}}_LilacTasselflower",
+								"(O){{ModId}}_TridaxDaisy"
+							],
+							"Chance": 1,
+							"Condition": "SEASON Spring"
+						},
+						{
+							"ID": "{{ModId}}_SpawnSummerForage9",
+							"RandomItemId": [
+								"(O){{ModId}}_BengalDayflower",
+								"(O){{ModId}}_BlackNightshade",
+								"(O){{ModId}}_GlobeAmaranth"
+							],
+							"Chance": 1,
+							"Condition": "SEASON Summer"
+						},
+						{
+							"ID": "{{ModId}}_SpawnFallForage9",
+							"RandomItemId": [
+								"(O){{ModId}}_CosmoFlower",
+								"(O){{ModId}}_WildCoquinho",
+								"(O){{ModId}}_WildSurinamCherry"
+							],
+							"Chance": 1,
+							"Condition": "SEASON Fall"
+						},
+						{
+							"ID": "{{ModId}}_SpawnWinterForage9",
+							"RandomItemId": [
+								"(O){{ModId}}_WildRosemary"
+							],
+							"Chance": 1,
+							"Condition": "SEASON Winter"
+						}
+					]
+				},
+				"{{ModId}}_THTsecretPlace2Path2": {
+					"CreateOnLoad": {
+						"MapPath": "Maps/{{ModId}}_THTsecretPlace2Path2"
+					},
+					"DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_Map34}}",
+					"DefaultArrivalTile": {
+						"X": 16,
+						"Y": 7
+					},
+					"Forage": [
+						{
+							"ID": "{{ModId}}_SpawnSpringForage10",
+							"RandomItemId": [
+								"(O){{ModId}}_BarbadosCherry",
+								"(O){{ModId}}_LilacTasselflower",
+								"(O){{ModId}}_TridaxDaisy"
+							],
+							"Chance": 1,
+							"Condition": "SEASON Spring"
+						},
+						{
+							"ID": "{{ModId}}_SpawnSummerForage10",
+							"RandomItemId": [
+								"(O){{ModId}}_BengalDayflower",
+								"(O){{ModId}}_BlackNightshade",
+								"(O){{ModId}}_GlobeAmaranth"
+							],
+							"Chance": 1,
+							"Condition": "SEASON Summer"
+						},
+						{
+							"ID": "{{ModId}}_SpawnFallForage10",
+							"RandomItemId": [
+								"(O){{ModId}}_CosmoFlower",
+								"(O){{ModId}}_WildCoquinho",
+								"(O){{ModId}}_WildSurinamCherry"
+							],
+							"Chance": 1,
+							"Condition": "SEASON Fall"
+						},
+						{
+							"ID": "{{ModId}}_SpawnWinterForage10",
+							"RandomItemId": [
+								"(O){{ModId}}_WildRosemary"
+							],
+							"Chance": 1,
+							"Condition": "SEASON Winter"
+						}
+					]
+				},
+				"{{ModId}}_THTsecretPlace2Path3": {
+					"CreateOnLoad": {
+						"MapPath": "Maps/{{ModId}}_THTsecretPlace2Path3"
+					},
+					"DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_Map35}}",
+					"DefaultArrivalTile": {
+						"X": 17,
+						"Y": 8
+					},
+					"Forage": [
+						{
+							"ID": "{{ModId}}_SpawnSpringForage11",
+							"RandomItemId": [
+								"(O){{ModId}}_BarbadosCherry",
+								"(O){{ModId}}_LilacTasselflower",
+								"(O){{ModId}}_TridaxDaisy"
+							],
+							"Chance": 1,
+							"Condition": "SEASON Spring"
+						},
+						{
+							"ID": "{{ModId}}_SpawnSummerForage11",
+							"RandomItemId": [
+								"(O){{ModId}}_BengalDayflower",
+								"(O){{ModId}}_BlackNightshade",
+								"(O){{ModId}}_GlobeAmaranth"
+							],
+							"Chance": 1,
+							"Condition": "SEASON Summer"
+						},
+						{
+							"ID": "{{ModId}}_SpawnFallForage11",
+							"RandomItemId": [
+								"(O){{ModId}}_CosmoFlower",
+								"(O){{ModId}}_WildCoquinho",
+								"(O){{ModId}}_WildSurinamCherry"
+							],
+							"Chance": 1,
+							"Condition": "SEASON Fall"
+						},
+						{
+							"ID": "{{ModId}}_SpawnWinterForage11",
+							"RandomItemId": [
+								"(O){{ModId}}_WildRosemary"
+							],
+							"Chance": 1,
+							"Condition": "SEASON Winter"
+						}
+					]
 				}
 			}
 		},
@@ -900,6 +1050,24 @@
 			"Action": "Load",
 			"Target": "Maps/{{ModID}}_THTbeachPath",
 			"FromFile": "assets/maps/{{ModID}}_THTbeachPath.tmx"
+		},
+		{
+			"LogName": "Load secret place path",
+			"Action": "Load",
+			"Target": "Maps/{{ModID}}_THTsecretPlace2Path1",
+			"FromFile": "assets/maps/{{ModID}}_THTsecretPlace2Path1.tmx"
+		},
+		{
+			"LogName": "Load secret place path 2",
+			"Action": "Load",
+			"Target": "Maps/{{ModID}}_THTsecretPlace2Path2",
+			"FromFile": "assets/maps/{{ModID}}_THTsecretPlace2Path2.tmx"
+		},
+		{
+			"LogName": "Load secret place path 3",
+			"Action": "Load",
+			"Target": "Maps/{{ModID}}_THTsecretPlace2Path3",
+			"FromFile": "assets/maps/{{ModID}}_THTsecretPlace2Path3.tmx"
 		},
 		//Festival maps
 		{
@@ -1207,6 +1375,12 @@
 			"LogName": "Blank JSON load",
 			"Action": "Load",
 			"Target": "Characters/Dialogue/{{ModId}}_Ravi, Characters/schedules/{{ModId}}_Ravi",
+			"FromFile": "assets/blank.json"
+		},
+		{
+			"LogName": "Blank JSON load",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/{{ModId}}_Duda, Characters/schedules/{{ModId}}_Duda",
 			"FromFile": "assets/blank.json"
 		},
 		//Including NPCs Files
@@ -1786,6 +1960,38 @@
 			"Target": "Data/animationdescriptions",
 			"Entries": {
 				"{{ModId}}_Ravi_sleep": "16/16 16/16"
+			}
+		},
+		//Duda
+		{
+			"LogName": "Base Portraits",
+			"Action": "Load",
+			"Target": "Portraits/{{ModId}}_Duda",
+			"FromFile": "assets/Characters/Duda/Portraits/Duda.png"
+		},
+		{
+			"LogName": "Base sprites",
+			"Action": "Load",
+			"Target": "Characters/{{ModId}}_Duda",
+			"FromFile": "assets/Characters/Duda/Sprites/Duda.png"
+		},
+		{
+			"LogName": "NPC Dialogue",
+			"Action": "Include",
+			"FromFile": "assets/Characters/Duda/Dialogue/Dialogue.json"
+		},
+		{
+			"LogName": "NPC Schedule",
+			"Action": "Include",
+			"FromFile": "assets/Characters/Duda/Schedule/Schedule.json"
+		},
+		{
+			"LogName": "Pacoca animations",
+			"Action": "EditData",
+			"Target": "Data/animationdescriptions",
+			"Entries": {
+				"{{ModId}}_Duda_play": "18/19 18/19",
+				"{{ModId}}_Duda_sleep": "16/16 16/16"
 			}
 		},
 		//

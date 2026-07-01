@@ -1,0 +1,21 @@
+{
+"Changes":
+	[
+ 
+   	 {
+        	"LogName": "Princess Schedule",
+        	"Action": "EditData",
+        	"Target": "Characters/Schedules/{{ModId}}_Duda",
+   		 "Entries": {
+   			 "rain": "0 {{ModId}}_THTEmiliasHouse2 15 5 2/900 {{ModId}}_THTtown 50 43 3/1200 {{ModId}}_THTEmiliasHouse2 28 24 2/1430 {{ModId}}_THTEmiliasHouse2 15 7 1/2100 {{ModId}}_THTEmiliasHouse2 15 5 2 {{ModId}}_Duda_sleep",
+   			 "spring": "0 {{ModId}}_THTEmiliasHouse2 15 5 2/700 {{ModId}}_THTbeach 27 25 3/1030 {{ModId}}_THTtown 45 47 2 {{ModId}}_Duda_play/1200 {{ModId}}_THTEmiliasHouse2 28 24 2/1430 {{ModId}}_THTEmiliasHouse2 15 7 1/1900 {{ModId}}_THTtown 30 22 2/1930 {{ModId}}_THTEmiliasHouse2 15 5 2 {{ModId}}_Duda_sleep",
+   			 "summer": "0 {{ModId}}_THTEmiliasHouse2 15 5 2/1100 {{ModId}}_THTtown 34 30 2/1200 {{ModId}}_THTtown 45 47 2 {{ModId}}_Duda_play/1600 {{ModId}}_THTEmiliasHouse2 17 7 3/1830 {{ModId}}_THTtown 30 22 2/1900 {{ModId}}_THTEmiliasHouse2 15 5 2 {{ModId}}_Duda_sleep",
+   			 "fall": "0 {{ModId}}_THTEmiliasHouse2 15 5 2/1100 {{ModId}}_THTtown 34 30 2/1200 Town 33 66 3/1900 {{ModId}}_THTtown 87 28 1/2210 {{ModId}}_THTEmiliasHouse2 15 5 2 {{ModId}}_Duda_sleep",
+   			 "winter": "0 {{ModId}}_THTEmiliasHouse2 15 5 2/1100 {{ModId}}_THTtown 34 30 2/1200 Beach 50 20 1/1900 {{ModId}}_THTtown 87 28 1/2210 {{ModId}}_THTEmiliasHouse2 15 5 2 {{ModId}}_Duda_sleep"
+   		 },
+            "When": {
+                "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+            }
+    	}
+]
+}

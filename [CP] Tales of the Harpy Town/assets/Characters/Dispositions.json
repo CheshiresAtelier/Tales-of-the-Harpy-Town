@@ -851,6 +851,67 @@
 "Direction": "left"
 }
 ],
+ "WinterStarGifts": [
+   {
+    "Id": "Ravi winter star gifts",
+    "RandomItemId": ["(O)591", "(O)593", "(O)595", "(O)597"],
+	"MinStack": 15
+   }
+],
+"When": {
+"HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+}
+}
+}
+},
+//Duda
+{
+"Action": "EditData",
+"Target": "Data/Characters",
+"Entries": {
+"{{ModId}}_Duda": {
+"DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_CharName13}}",
+"Gender": "Female",
+"Age": "Child",
+"Manner": "Neutral",
+"SocialAnxiety": "Outgoing",
+"Optimism": "Positive",
+"BirthSeason": "Spring",
+"BirthDay": "6",
+"IsDarkSkinned": false,
+"HomeRegion": "Other",
+"CanBeRomanced": false,
+"CanVisitIsland": true,
+"IntroductionsQuest": false,
+"ItemDeliveryQuests": true,
+"WinterStarParticipant": true,
+"CanSocialize": true,
+"CanRecieveGifts": true,
+"Calendar": "HiddenUntilMet",
+"SocialTab": "UnknownUntilMet",
+"CanCommentOnPurchasedShopItems": false,
+"CanGreetNearbyCharacters": true,
+"FlowerDanceCanDance": false,
+"UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone",
+"SpawnIfMissing": true,
+"Home": [
+{
+"Id": "{{ModId}}_DudaHouse",
+"Location": "{{ModId}}_THTEmiliasHouse2",
+"Tile": {
+"X": 15,
+"Y": 5
+},
+"Direction": "left"
+}
+],
+ "WinterStarGifts": [
+   {
+    "Id": "Duda winter star gifts",
+    "RandomItemId": ["(O){{ModId}}_FlamingoPlushie", "(O){{ModId}}_SlimePlushie", "(O){{ModId}}_DragonPlushie", "(O){{ModId}}_MermaidPlushie", "(O){{ModId}}_GhostPlushie"],
+	"MinStack": 1
+   }
+],
 "When": {
 "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
 }
