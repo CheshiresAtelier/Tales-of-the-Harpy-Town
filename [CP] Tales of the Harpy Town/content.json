@@ -55,7 +55,9 @@
 						{
 							"ID": "{{ModId}}_SpawnWinterForage3",
 							"RandomItemId": [
-								"(O){{ModId}}_WildRosemary"
+								"(O){{ModId}}_WildRosemary",
+								"(O){{ModId}}_YerbaMate",
+								"(O){{ModId}}_PineNut"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Winter"
@@ -105,7 +107,9 @@
 						{
 							"ID": "{{ModId}}_SpawnWinterForage2",
 							"RandomItemId": [
-								"(O){{ModId}}_WildRosemary"
+								"(O){{ModId}}_WildRosemary",
+								"(O){{ModId}}_YerbaMate",
+								"(O){{ModId}}_PineNut"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Winter"
@@ -155,7 +159,9 @@
 						{
 							"ID": "{{ModId}}_SpawnWinterForage3",
 							"RandomItemId": [
-								"(O){{ModId}}_WildRosemary"
+								"(O){{ModId}}_WildRosemary",
+								"(O){{ModId}}_YerbaMate",
+								"(O){{ModId}}_PineNut"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Winter"
@@ -211,7 +217,9 @@
 						{
 							"ID": "{{ModId}}_SpawnWinterForage4",
 							"RandomItemId": [
-								"(O){{ModId}}_WildRosemary"
+								"(O){{ModId}}_WildRosemary",
+								"(O){{ModId}}_YerbaMate",
+								"(O){{ModId}}_PineNut"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Winter"
@@ -335,7 +343,9 @@
 						{
 							"ID": "{{ModId}}_SpawnWinterForage6",
 							"RandomItemId": [
-								"(O){{ModId}}_WildRosemary"
+								"(O){{ModId}}_WildRosemary",
+								"(O){{ModId}}_YerbaMate",
+								"(O){{ModId}}_PineNut"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Winter"
@@ -675,7 +685,9 @@
 						{
 							"ID": "{{ModId}}_SpawnWinterForage8",
 							"RandomItemId": [
-								"(O){{ModId}}_WildRosemary"
+								"(O){{ModId}}_WildRosemary",
+								"(O){{ModId}}_YerbaMate",
+								"(O){{ModId}}_PineNut"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Winter"
@@ -725,7 +737,9 @@
 						{
 							"ID": "{{ModId}}_SpawnWinterForage9",
 							"RandomItemId": [
-								"(O){{ModId}}_WildRosemary"
+								"(O){{ModId}}_WildRosemary",
+								"(O){{ModId}}_YerbaMate",
+								"(O){{ModId}}_PineNut"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Winter"
@@ -775,7 +789,9 @@
 						{
 							"ID": "{{ModId}}_SpawnWinterForage10",
 							"RandomItemId": [
-								"(O){{ModId}}_WildRosemary"
+								"(O){{ModId}}_WildRosemary",
+								"(O){{ModId}}_YerbaMate",
+								"(O){{ModId}}_PineNut"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Winter"
@@ -825,7 +841,9 @@
 						{
 							"ID": "{{ModId}}_SpawnWinterForage11",
 							"RandomItemId": [
-								"(O){{ModId}}_WildRosemary"
+								"(O){{ModId}}_WildRosemary",
+								"(O){{ModId}}_YerbaMate",
+								"(O){{ModId}}_PineNut"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Winter"
@@ -1984,6 +2002,30 @@
 			"LogName": "NPC Schedule",
 			"Action": "Include",
 			"FromFile": "assets/Characters/Duda/Schedule/Schedule.json"
+		},
+		{
+			"LogName": "Base Portraits",
+			"Action": "Load",
+			"Target": "Portraits/{{ModId}}_Duda_Beach",
+			"FromFile": "assets/Characters/Duda/Portraits/Duda_Beach.png"
+		},
+		{
+			"LogName": "Base sprites",
+			"Action": "Load",
+			"Target": "Characters/{{ModId}}_Duda_Beach",
+			"FromFile": "assets/Characters/Duda/Sprites/Duda_Beach.png"
+		},
+		{
+			"LogName": "Base Portraits",
+			"Action": "Load",
+			"Target": "Portraits/{{ModId}}_Duda_Winter",
+			"FromFile": "assets/Characters/Duda/Portraits/Duda_Winter.png"
+		},
+		{
+			"LogName": "Base sprites",
+			"Action": "Load",
+			"Target": "Characters/{{ModId}}_Duda_Winter",
+			"FromFile": "assets/Characters/Duda/Sprites/Duda_Winter.png"
 		},
 		{
 			"LogName": "Pacoca animations",

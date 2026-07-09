@@ -19,7 +19,8 @@
 "{{ModId}}_Levi": "{{i18n: CheshiresAtelier.THTexpansion_LovedGiftLevi}}/CheshiresAtelier.THTexpansion_FreshPineapplePerfume 219 CheshiresAtelier.THTexpansion_FreshRice CheshiresAtelier.THTexpansion_Feijoada CheshiresAtelier.THTexpansion_Moqueca CheshiresAtelier.THTexpansion_BarbadosCherry {{ModId}}_SummeryMelonPerfume {{ModId}}_FlameVineBouquet 252 {{ModId}}_RhubarbJuice {{ModId}}_CherrySyrupCappuccino {{ModId}}_CoconutWater {{ModId}}_CaramelDogPlushie {{ModId}}_FranciscoPlushie {{ModId}}_RedVelvetIcePop {{ModId}}_BarbadosCherryJarCake {{ModId}}_KyaniteScissor {{ModId}}_BasaltLighter {{ModId}}_LemonStoneGoggles/{{i18n: CheshiresAtelier.THTexpansion_LikedGiftLevi}}/{{ModId}}_Goiabada {{ModId}}_OrpimentMask 726 787 725 444 115 {{ModId}}_Abutilon {{ModId}}_FuzzyCranberryCoffee {{ModId}}_HotPepperJuice 158/{{i18n: CheshiresAtelier.THTexpansion_DislikedGiftLevi}}/{{ModId}}_IcedCrystalFruitAffogato 306 {{ModId}}_PeachJuice {{ModId}}_Tacaca {{ModId}}_HazelnutChocolate {{ModId}}_MangoChocolate {{ModId}}_Surubim/{{i18n: CheshiresAtelier.THTexpansion_HatedGiftLevi}}/392 {{ModId}}_MangoIcePop {{ModId}}_MangoChocolateIcePop 834 {{ModId}}_MangoJarCake {{ModId}}_MangoChocolateJarCake {{ModId}}_TropicalMangoPerfume {{ModId}}_FemininePomegranatePerfume/{{i18n: CheshiresAtelier.THTexpansion_NeutralGiftLevi}}/399 388 142 {{ModId}}_CommonSalmonberryPerfume",
 "{{ModId}}_Pacoca": "{{i18n: CheshiresAtelier.THTexpansion_LovedGiftPacoca}}/834 267 91 580 874 {{ModId}}_BananaJuice {{ModId}}_CaramelDogPlushie/{{i18n: CheshiresAtelier.THTexpansion_LikedGiftPacoca}}/egg_item 330/{{i18n: CheshiresAtelier.THTexpansion_DislikedGiftPacoca}}/perfume_item/{{i18n: CheshiresAtelier.THTexpansion_HatedGiftPacoca}}/chocolate_item coffee_item 245 Raisins 398 {{ModId}}_Coxinha 248/{{i18n: CheshiresAtelier.THTexpansion_NeutralGiftPacoca}}/613",
 "{{ModId}}_Ravi": "{{i18n: CheshiresAtelier.THTexpansion_LovedGiftRavi}}/CheshiresAtelier.THTexpansion_AppleJuice CheshiresAtelier.THTexpansion_CommonSalmonberryPerfume CheshiresAtelier.THTexpansion_ChocolateMilk CheshiresAtelier.THTexpansion_Cocada CheshiresAtelier.THTexpansion_SugarcaneJuice CheshiresAtelier.THTexpansion_JatobaBread CheshiresAtelier.THTexpansion_TinyBrigadeiroPerfume CheshiresAtelier.THTexpansion_ChocolateIceCream 150 CheshiresAtelier.THTexpansion_MariaMole CheshiresAtelier.THTexpansion_DandelionBouquet Book_Defense 233 CheshiresAtelier.THTexpansion_AdriannnoPlushie CheshiresAtelier.THTexpansion_ChocolateCakeIcePop CheshiresAtelier.THTexpansion_MilkChocolateJarCake 220/{{i18n: CheshiresAtelier.THTexpansion_LikedGiftRavi}}/category_flowers jarcake_item icepop_item/{{i18n: CheshiresAtelier.THTexpansion_DislikedGiftRavi}}/{{ModId}}_PineappleIcePop {{ModId}}_PineappleJarcake CheshiresAtelier.THTexpansion_PineappleJuice/{{i18n: CheshiresAtelier.THTexpansion_HatedGiftRavi}}/832 coffee_item {{ModId}}_OrangeCaipirinha {{ModId}}_SugarCaneLiquor {{ModId}}_Quentao {{ModId}}_JatobaCocktail 303 346 348 459/{{i18n: CheshiresAtelier.THTexpansion_NeutralGiftRavi}}/196 199 296",
-"{{ModId}}_Duda": "{{i18n: CheshiresAtelier.THTexpansion_LovedGiftDuda}}/Broccoli 196 131 CheshiresAtelier.THTexpansion_Brigadeiro 350 22 200 {{ModId}}_CaptivatingCaramelPerfume {{ModId}}_BeautifulIceCreamPerfume Book_Horse {{ModId}}_BlackberryChocolate {{ModId}}_PeachChocolate 237 610 {{ModId}}_PrincessFlower {{ModId}}_AppleIcePop {{ModId}}_BananaIcePop {{ModId}}_BarbadosCherryJarCake/{{i18n: CheshiresAtelier.THTexpansion_LikedGiftDuda}}/419 Carrot {{ModId}}_Cassava 103/{{i18n: CheshiresAtelier.THTexpansion_DislikedGiftDuda}}/{{ModId}}_MocotoCandy {{ModId}}_Rapadura 260 342 215/{{i18n: CheshiresAtelier.THTexpansion_HatedGiftDuda}}/832 coffee_item {{ModId}}_OrangeCaipirinha {{ModId}}_SugarCaneLiquor {{ModId}}_Quentao {{ModId}}_JatobaCocktail 303 346 348 459/{{i18n: CheshiresAtelier.THTexpansion_NeutralGiftDuda}}/283 284 296 410"
+"{{ModId}}_Duda": "{{i18n: CheshiresAtelier.THTexpansion_LovedGiftDuda}}/Broccoli 196 131 CheshiresAtelier.THTexpansion_Brigadeiro 350 22 200 {{ModId}}_CaptivatingCaramelPerfume {{ModId}}_BeautifulIceCreamPerfume Book_Horse {{ModId}}_BlackberryChocolate {{ModId}}_PeachChocolate 237 610 {{ModId}}_PrincessFlower {{ModId}}_AppleIcePop {{ModId}}_BananaIcePop {{ModId}}_BarbadosCherryJarCake/{{i18n: CheshiresAtelier.THTexpansion_LikedGiftDuda}}/419 Carrot {{ModId}}_Cassava 103/{{i18n: CheshiresAtelier.THTexpansion_DislikedGiftDuda}}/{{ModId}}_MocotoCandy {{ModId}}_Rapadura 260 342 215/{{i18n: CheshiresAtelier.THTexpansion_HatedGiftDuda}}/832 coffee_item {{ModId}}_OrangeCaipirinha {{ModId}}_SugarCaneLiquor {{ModId}}_Quentao {{ModId}}_JatobaCocktail 303 346 348 459/{{i18n: CheshiresAtelier.THTexpansion_NeutralGiftDuda}}/283 284 296 410",
+"{{ModId}}_Raoni": ""
 }
 		},
 //Custom interactions :3 Ty Lucy for your help <3
@@ -169,10 +170,52 @@
 "AcceptGift_(O)560": "{{i18n: CheshiresAtelier.THTexpansion_MayaraGTinteraction1}}",
 "AcceptGift_(O)797": "{{i18n: CheshiresAtelier.THTexpansion_MayaraGTinteraction1}}",
 "AcceptGift_(O){{ModId}}_CrystalRose": "{{i18n: CheshiresAtelier.THTexpansion_MayaraGTinteraction1}}",
-"AcceptGift_(O)586": "{{i18n: CheshiresAtelier.THTexpansion_MayaraGTinteraction1}}"
+"AcceptGift_(O)586": "{{i18n: CheshiresAtelier.THTexpansion_MayaraGTinteraction1}}",
+"AcceptGift_(O){{ModId}}_PearlyCrystalRosePerfume": "{{i18n: CheshiresAtelier.THTexpansion_MayaraGTinteraction2}}",
+"AcceptGift_(O){{ModId}}_AlamandaPlushie": "{{i18n: CheshiresAtelier.THTexpansion_MayaraGTinteraction3}}",
+"AcceptGift_(O){{ModId}}_AnahiPlushie": "{{i18n: CheshiresAtelier.THTexpansion_MayaraGTinteraction4}}",
+"AcceptGift_(O){{ModId}}_KaiquePlushie": "{{i18n: CheshiresAtelier.THTexpansion_MayaraGTinteraction5}}",
+"AcceptGift_(O){{ModId}}_AncientChocolate": "{{i18n: CheshiresAtelier.THTexpansion_MayaraGTinteraction6}}",
+"AcceptGift_(O){{ModId}}_AncientChocolateIcePop": "{{i18n: CheshiresAtelier.THTexpansion_MayaraGTinteraction7}}",
+"AcceptGift_(O){{ModId}}_ProtectiveRosemaryPerfume": "{{i18n: CheshiresAtelier.THTexpansion_MayaraGTinteraction8}}",
+"AcceptGift_(O){{ModId}}_WildRosemary": "{{i18n: CheshiresAtelier.THTexpansion_MayaraGTinteraction9}}",
+"AcceptGift_(O){{ModId}}_DulceDeLecheChocolateJarCake": "{{i18n: CheshiresAtelier.THTexpansion_MayaraGTinteraction10}}",
+"AcceptGift_(O){{ModId}}_Manjar": "{{i18n: CheshiresAtelier.THTexpansion_MayaraGTinteraction11}}",
+"AcceptGift_(O)395": "{{i18n: CheshiresAtelier.THTexpansion_MayaraGTinteraction12}}"
 }
 },
 //Francisco
+{
+"Action": "EditData",
+"Target": "Characters/Dialogue/{{ModId}}_Francisco",
+"Entries": {
+"AcceptGift_(O){{ModId}}_AdorableHolidayCactusPerfume": "{{i18n: CheshiresAtelier.THTexpansion_FranciscoGTinteraction1}}",
+"AcceptGift_(O){{ModId}}_FranciscoPlushie": "{{i18n: CheshiresAtelier.THTexpansion_FranciscoGTinteraction2}}",
+"AcceptGift_(O){{ModId}}_HolidayCactus": "{{i18n: CheshiresAtelier.THTexpansion_FranciscoGTinteraction3}}",
+"AcceptGift_(O){{ModId}}_HolidayCactusBouquet": "{{i18n: CheshiresAtelier.THTexpansion_FranciscoGTinteraction4}}",
+"AcceptGift_(O){{ModId}}_Moqueca": "{{i18n: CheshiresAtelier.THTexpansion_FranciscoGTinteraction5}}",
+"AcceptGift_(O){{ModId}}_MoricheIceCream": "{{i18n: CheshiresAtelier.THTexpansion_FranciscoGTinteraction6}}",
+"AcceptGift_(O){{ModId}}_RedVelvetIcePop": "{{i18n: CheshiresAtelier.THTexpansion_FranciscoGTinteraction7}}",
+"AcceptGift_(O){{ModId}}_RedVelvetChocolate": "{{i18n: CheshiresAtelier.THTexpansion_FranciscoGTinteraction8}}",
+"AcceptGift_(O){{ModId}}_RedVelvetJarCake": "{{i18n: CheshiresAtelier.THTexpansion_FranciscoGTinteraction7}}",
+"AcceptGift_(O){{ModId}}_RomanticStrawberryPerfume": "{{i18n: CheshiresAtelier.THTexpansion_FranciscoGTinteraction10}}",
+"AcceptGift_(O){{ModId}}_Tacaca": "{{i18n: CheshiresAtelier.THTexpansion_FranciscoGTinteraction11}}",
+"AcceptGift_(O)205": "{{i18n: CheshiresAtelier.THTexpansion_FranciscoGTinteraction12}}",
+"AcceptGift_(O)257": "{{i18n: CheshiresAtelier.THTexpansion_FranciscoGTinteraction13}}",
+"AcceptGift_(O)104": "{{i18n: CheshiresAtelier.THTexpansion_FranciscoGTinteraction14}}",
+"AcceptGift_(O)72": "{{i18n: CheshiresAtelier.THTexpansion_FranciscoGTinteraction15}}"
+}
+},
+{
+"Action": "EditData",
+"Target": "Characters/Dialogue/{{ModId}}_Francisco",
+"When":{
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+},
+"Entries": {
+"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Mushroom_Colony": "{{i18n: CheshiresAtelier.THTexpansion_FranciscoGTinteractionSVE}}"
+}
+},
 //Adrianno
 {
 "Action": "EditData",

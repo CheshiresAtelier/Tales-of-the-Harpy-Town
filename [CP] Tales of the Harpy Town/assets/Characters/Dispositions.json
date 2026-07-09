@@ -912,6 +912,76 @@
 	"MinStack": 1
    }
 ],
+"Appearance":[
+{
+"Id": "DudaWinter",
+"Season": "Winter",
+"Indoors": true,
+"Outdoors": true,
+"Portrait": "Portraits/{{ModId}}_Duda_Winter",
+"Sprite": "Characters/{{ModId}}_Duda_Winter",
+"IsIslandAttire": false,
+"Precedence": -100,
+"Weight": 0
+},
+{
+"Id": "DudaBeach",
+"Indoors": true,
+"Outdoors": true,
+"Portrait": "Portraits/{{ModId}}_Duda_Beach",
+"Sprite": "Characters/{{ModId}}_Duda_Beach",
+"IsIslandAttire": true,
+"Precedence": -100,
+"Weight": 0
+}
+ ],
+"When": {
+"HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+}
+}
+}
+},
+//Raoni
+{
+"Action": "EditData",
+"Target": "Data/Characters",
+"Entries": {
+"{{ModId}}_Ravi": {
+"DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_CharName14}}",
+"Gender": "Male",
+"Age": "Adult",
+"Manner": "Polite",
+"SocialAnxiety": "Neutral",
+"Optimism": "Neutral",
+"BirthSeason": "Winter",
+"BirthDay": "22",
+"IsDarkSkinned": true,
+"HomeRegion": "Other",
+"CanBeRomanced": false,
+"CanVisitIsland": false,
+"IntroductionsQuest": false,
+"ItemDeliveryQuests": false,
+"WinterStarParticipant": false,
+"CanSocialize": true,
+"CanRecieveGifts": true,
+"Calendar": "HiddenUntilMet",
+"SocialTab": "UnknownUntilMet",
+"CanCommentOnPurchasedShopItems": false,
+"CanGreetNearbyCharacters": false,
+"FlowerDanceCanDance": false,
+"UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone",
+"SpawnIfMissing": true,
+"Home": [
+{
+"Id": "{{ModId}}_RaoniHouse",
+"Location": "{{ModId}}_THTAnahisHouse2",
+"Tile": {
+"X": 12,
+"Y": 24
+},
+"Direction": "right"
+}
+],
 "When": {
 "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
 }

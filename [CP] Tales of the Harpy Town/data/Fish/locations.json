@@ -198,7 +198,8 @@
 				"{{ModId}}_Pufferkitty": {
 					"Id": "{{ModId}}_Pufferkitty",
 					"ItemId": "(O){{ModId}}_Pufferkitty",
-					"Condition": "LOCATION_Season Here Spring Summer"
+					"Condition": "LOCATION_Season Here Spring Summer",
+					"IsBossFish": true
 				},
 				"{{ModId}}_Oarfish": {
 					"Id": "{{ModId}}_Oarfish",

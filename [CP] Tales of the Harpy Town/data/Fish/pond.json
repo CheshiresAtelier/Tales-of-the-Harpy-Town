@@ -21,6 +21,34 @@
 						},
 						{
 							"RequiredPopulation": 10,
+							"Chance": 0.4,
+							"ItemID": "{{ModId}}_BlueJazzBouquet", // Blue jazz Bouquet
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.4,
+							"ItemID": "{{ModId}}_PeanutChocolateJarCake", // Peanut chocolate jar cake
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.4,
+							"ItemID": "396", // spice berry
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.4,
+							"ItemID": "397", // sea urchin
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
 							"Chance": 1.0,
 							"ItemID": "812", // Roe
 							"MinQuantity": 1,
@@ -62,6 +90,41 @@
 						},
 						{
 							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_FlameVineBouquet", // Flame Vine Bouquet
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_GracefulCranberryPerfume", // Cranberry perfume
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.4,
+							"ItemID": "{{ModId}}_GrapeJarCake", // Grape Jar cake
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.4,
+							"ItemID": "{{ModId}}_TridaxDaisy", // Tridax Daisy
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.4,
+							"ItemID": "153", // algae
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
 							"Chance": 1.0,
 							"ItemID": "812", // Roe
 							"MinQuantity": 1,
@@ -103,6 +166,41 @@
 						},
 						{
 							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_FreshPineapplePerfume", // Pineapple perfume
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_PyriteChimes", // Pyrite chimes
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.4,
+							"ItemID": "{{ModId}}_MangoJarCake", // Mango Jar cake
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.4,
+							"ItemID": "402", // Sweet pea
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.4,
+							"ItemID": "393", // Coral
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
 							"Chance": 1.0,
 							"ItemID": "812", // Roe
 							"MinQuantity": 1,
@@ -137,13 +235,41 @@
 					"ProducedItems": [
 						{
 							"RequiredPopulation": 10,
-							"Chance": 0.4,
-							"ItemID": "904", // Banana
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_HotSpiceBerryPerfume", // Spiceberry perfume
 							"MinQuantity": 1,
 							"MaxQuantity": 1
 						},
 						{
 							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_BlackberryChocolate", // Blackberry chocolate
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.4,
+							"ItemID": "{{ModId}}_CaramelJarCake", // Caramel Jar cake
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.4,
+							"ItemID": "399", // Spring onion
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.4,
+							"ItemID": "394", // Rainbow shell
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
 							"Chance": 1.0,
 							"ItemID": "812", // Roe
 							"MinQuantity": 1,
@@ -185,6 +311,34 @@
 						},
 						{
 							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_BlackForestChocolate", // Black forest chocolate
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.4,
+							"ItemID": "{{ModId}}_BananaJarCake", // Banana Jar cake
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.4,
+							"ItemID": "142", // Carp
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.4,
+							"ItemID": "153", // seaweed
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
 							"Chance": 1.0,
 							"ItemID": "812", // Roe
 							"MinQuantity": 1,
@@ -226,6 +380,48 @@
 						},
 						{
 							"RequiredPopulation": 10,
+							"Chance": 0.1,
+							"ItemID": "{{ModId}}_CommonSalmonberryPerfume", // Salmonberry perfume
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 10,
+							"Chance": 0.1,
+							"ItemID": "{{ModId}}_Mocaccino", // Mocaccino
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 10,
+							"Chance": 0.1,
+							"ItemID": "{{ModId}}_DandelionBouquet", // Dandelion Bouquet
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.4,
+							"ItemID": "{{ModId}}_BeijinhoJarCake", // Beijinho jar cake
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.4,
+							"ItemID": "{{ModId}}_DulceDeLeche", // Dulce de leche
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.4,
+							"ItemID": "685", // bait
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
 							"Chance": 1.0,
 							"ItemID": "812", // Roe
 							"MinQuantity": 1,
@@ -267,6 +463,34 @@
 						},
 						{
 							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_CelestineVeil", // Celestine Veil
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.4,
+							"ItemID": "424", // cheese
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.4,
+							"ItemID": "{{ModId}}_Goiabada", // Goiabada
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.4,
+							"ItemID": "393", // Coral
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
 							"Chance": 1.0,
 							"ItemID": "812", // Roe
 							"MinQuantity": 1,
@@ -302,12 +526,33 @@
 						{
 							"RequiredPopulation": 10,
 							"Chance": 0.4,
-							"ItemID": "{{ModId}}_Guarana", // Guarana
+							"ItemID": "{{ModId}}_CattleaOrchidBouquet", // Cattlea orchid bouquet
 							"MinQuantity": 1,
 							"MaxQuantity": 1
 						},
 						{
-							"RequiredPopulation": 10,
+							"RequiredPopulation": 9,
+							"Chance": 0.4,
+							"ItemID": "{{ModId}}_CannedMeat", // Canned meat
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						},
+						{
+							"RequiredPopulation": 5,
+							"Chance": 0.4,
+							"ItemID": "{{ModId}}_Guarana", // Guarana
+							"MinQuantity": 1,
+							"MaxQuantity": 5
+						},
+						{
+							"RequiredPopulation": 3,
+							"Chance": 0.4,
+							"ItemID": "394", // Rainbow shell
+							"MinQuantity": 1,
+							"MaxQuantity": 3
+						},
+						{
+							"RequiredPopulation": 1,
 							"Chance": 1.0,
 							"ItemID": "812", // Roe
 							"MinQuantity": 1,
@@ -342,8 +587,22 @@
 					"ProducedItems": [
 						{
 							"RequiredPopulation": 0,
-							"Chance": 0.4,
+							"Chance": 0.01,
 							"ItemID": "{{ModId}}_PartyKit", // Party Kit
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 0,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_SnowflakeBouquet", // Snowflake bouquet
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 0,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_RichStarfruitPerfume", // Starfruit Perfume
 							"MinQuantity": 1,
 							"MaxQuantity": 1
 						},
@@ -381,11 +640,18 @@
 					"SpawnTime": 3,
 					"ProducedItems": [
 						{
-							"RequiredPopulation": 9,
+							"RequiredPopulation": 10,
 							"Chance": 0.05,
-							"ItemID": "394", // Rainbow Shell
+							"ItemID": "{{ModId}}_DuckOnTucupi", // Duck on tucupi
 							"MinQuantity": 1,
 							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 10,
+							"Chance": 0.05,
+							"ItemID": "{{ModId}}_PrincessFlowerBouquet", // Princess flower bouquet
+							"MinQuantity": 1,
+							"MaxQuantity": 3
 						},
 						{
 							"RequiredPopulation": 5,
@@ -414,10 +680,10 @@
 							"(O)393 3" // Coral
 						],
 						"5": [
-							"(O)372 2" // Clam
+							"(O){{ModId}}_CakeBatter 2" // cake batter
 						],
 						"7": [
-							"(O)394" // Rainbow Shell
+							"(O){{ModId}}_JatobaCocktail" // Jatoba cocktail
 						]
 					}
 				}
@@ -436,9 +702,16 @@
 					"SpawnTime": 4,
 					"ProducedItems": [
 						{
-							"RequiredPopulation": 9,
+							"RequiredPopulation": 10,
 							"Chance": 0.02,
 							"ItemID": "227", // Sashimi
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 10,
+							"Chance": 0.05,
+							"ItemID": "{{ModId}}_MarbleChocolate", // Marble Chocolate
 							"MinQuantity": 1,
 							"MaxQuantity": 1
 						},
@@ -476,10 +749,10 @@
 							"(O)719 5" // Mussel
 						],
 						"5": [
-							"(O)152 2" // Seaweed
+							"(O)874 5" // Bug steak
 						],
 						"7": [
-							"(O)397" // Sea Urchin
+							"(O)564" // Opal
 						]
 					}
 				}
@@ -498,16 +771,30 @@
 					"SpawnTime": 4,
 					"ProducedItems": [
 						{
-							"RequiredPopulation": 9,
-							"Chance": 0.05,
-							"ItemID": "397", // Sea Urchin
+							"RequiredPopulation": 10,
+							"Chance": 0.1,
+							"ItemID": "{{ModId}}_DifferentAcaiPerfume", // Açaí perfume
 							"MinQuantity": 1,
-							"MaxQuantity": 2
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 10,
+							"Chance": 0.1,
+							"ItemID": "{{ModId}}_CrystalRoseBouquet", // Crystal rose bouquet
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.2,
+							"ItemID": "238", // Cranberry sauce
+							"MinQuantity": 1,
+							"MaxQuantity": 1
 						},
 						{
 							"RequiredPopulation": 5,
 							"Chance": 0.1,
-							"ItemID": "718", // Cockle
+							"ItemID": "84", // Crystal tear
 							"MinQuantity": 1,
 							"MaxQuantity": 3
 						},
@@ -531,10 +818,10 @@
 							"(O)372 3" // Clam
 						],
 						"5": [
-							"(O)718 2" // Cockle
+							"(O)215 2" // pepper poppers
 						],
 						"7": [
-							"(O)397" // Sea Urchin
+							"(O)577" // fairy stone
 						]
 					}
 				}
@@ -553,16 +840,30 @@
 					"SpawnTime": 3,
 					"ProducedItems": [
 						{
-							"RequiredPopulation": 9,
-							"Chance": 0.05,
-							"ItemID": "717", // Crab
+							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_SerenePlumPerfume", // Plum perfume
 							"MinQuantity": 1,
 							"MaxQuantity": 1
 						},
 						{
+							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_GreenTeaChocolate", // Green tea chocolate
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_BlackberryChocolateJarCake", // Blackberry chocolate jar cake
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
 							"RequiredPopulation": 5,
-							"Chance": 0.1,
-							"ItemID": "393", // Coral
+							"Chance": 0.2,
+							"ItemID": "224", // spaghetti
 							"MinQuantity": 1,
 							"MaxQuantity": 2
 						},
@@ -583,13 +884,13 @@
 					],
 					"PopulationGates": {
 						"3": [
-							"(O)152 5" // Seaweed
+							"(O)188 5" // Green Bean
 						],
 						"5": [
-							"(O)393 2" // Coral
+							"(O)199 2" // Parsnip soup
 						],
 						"7": [
-							"(O)394" // Rainbow Shell
+							"(O)110" // Rusty spoon
 						]
 					}
 				}
@@ -608,18 +909,25 @@
 					"SpawnTime": 3,
 					"ProducedItems": [
 						{
-							"RequiredPopulation": 9,
-							"Chance": 0.05,
-							"ItemID": "717", // Crab
+							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_FreezingPowdermelonPerfume", // powdermelon perfume
 							"MinQuantity": 1,
-							"MaxQuantity": 2
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_BlueberryChocolateJarCake", // Blueberry chocolate jar cake
+							"MinQuantity": 1,
+							"MaxQuantity": 1
 						},
 						{
 							"RequiredPopulation": 5,
-							"Chance": 0.1,
-							"ItemID": "720", // Shrimp
+							"Chance": 0.2,
+							"ItemID": "717", // Crab
 							"MinQuantity": 1,
-							"MaxQuantity": 3
+							"MaxQuantity": 1
 						},
 						{
 							"RequiredPopulation": 3,
@@ -638,13 +946,13 @@
 					],
 					"PopulationGates": {
 						"3": [
-							"(O)719 3" // Mussel
+							"(O){{ModId}}_StirFryBurrGherkin" // Stir fry burr gherkin
 						],
 						"5": [
-							"(O)720 2" // Shrimp
+							"(O)222 2" // Rhubarb pie
 						],
 						"7": [
-							"(O)717" // Crab
+							"(O){{ModId}}_PindoramaNutCake" // Pindo rama nut cake
 						]
 					}
 				}
@@ -663,16 +971,23 @@
 					"SpawnTime": 3,
 					"ProducedItems": [
 						{
-							"RequiredPopulation": 9,
-							"Chance": 0.05,
-							"ItemID": "718", // Cockle
+							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_ObsidianDagger", // obsidian dagger
 							"MinQuantity": 1,
-							"MaxQuantity": 2
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 9,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_BananaChocolateJarCake", // Banana chocolate jar cake
+							"MinQuantity": 1,
+							"MaxQuantity": 1
 						},
 						{
 							"RequiredPopulation": 5,
-							"Chance": 0.1,
-							"ItemID": "372", // Clam
+							"Chance": 0.2,
+							"ItemID": "392", // Nautilus shell
 							"MinQuantity": 1,
 							"MaxQuantity": 1
 						},
@@ -693,13 +1008,13 @@
 					],
 					"PopulationGates": {
 						"3": [
-							"(O)153 5" // Green Algae
+							"(O)233 1" // ice cream
 						],
 						"5": [
-							"(O)372 2" // Clam
+							"(O)20 5" // Leek
 						],
 						"7": [
-							"(O)718" // Cockle
+							"(O){{ModId}}_CupuassuCream" // Cupuassu cream
 						]
 					}
 				}
@@ -718,18 +1033,25 @@
 					"SpawnTime": 5,
 					"ProducedItems": [
 						{
+							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_MapleSyrupChocolate", // Maple syrup chocolate
+							"MinQuantity": 1,
+							"MaxQuantity": 2
+						},
+						{
 							"RequiredPopulation": 9,
 							"Chance": 0.05,
-							"ItemID": "727", // Chowder
+							"ItemID": "{{ModId}}_AppleChocolateJarCake", // Apple chocolate jar cake
 							"MinQuantity": 1,
 							"MaxQuantity": 1
 						},
 						{
 							"RequiredPopulation": 5,
-							"Chance": 0.1,
-							"ItemID": "397", // Sea Urchin
+							"Chance": 0.2,
+							"ItemID": "408", // Hazelnut
 							"MinQuantity": 1,
-							"MaxQuantity": 2
+							"MaxQuantity": 5
 						},
 						{
 							"RequiredPopulation": 3,
@@ -748,10 +1070,10 @@
 					],
 					"PopulationGates": {
 						"3": [
-							"(O)372 5" // Clam
+							"(O)24 5" // Parsnip
 						],
 						"5": [
-							"(O)397 2" // Sea Urchin
+							"(O)194 2" // Sea Urchin
 						],
 						"7": [
 							"(O)727" // Chowder
@@ -773,16 +1095,23 @@
 					"SpawnTime": 4,
 					"ProducedItems": [
 						{
+							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_FunApplePerfume", // Fun apple perfume
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
 							"RequiredPopulation": 9,
-							"Chance": 0.05,
-							"ItemID": "732", // Crab Cakes
+							"Chance": 0.3,
+							"ItemID": "{{ModId}}_DulceDeLecheChocolateJarCake", // Dulce de leche chocolate jar cake
 							"MinQuantity": 1,
 							"MaxQuantity": 1
 						},
 						{
 							"RequiredPopulation": 5,
 							"Chance": 0.1,
-							"ItemID": "394", // Rainbow Shell
+							"ItemID": "732", // Crab cakes
 							"MinQuantity": 1,
 							"MaxQuantity": 1
 						},
@@ -828,16 +1157,23 @@
 					"SpawnTime": 3,
 					"ProducedItems": [
 						{
+							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_ChocolatePie", // chocolate pie
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
 							"RequiredPopulation": 9,
 							"Chance": 0.05,
-							"ItemID": "397", // Sea Urchin
+							"ItemID": "{{ModId}}_CoconutChocolateJarCake", // Coconut chocolate jar cake
 							"MinQuantity": 1,
 							"MaxQuantity": 1
 						},
 						{
 							"RequiredPopulation": 5,
 							"Chance": 0.1,
-							"ItemID": "393", // Coral
+							"ItemID": "404", // Common mushroom
 							"MinQuantity": 1,
 							"MaxQuantity": 3
 						},
@@ -858,13 +1194,13 @@
 					],
 					"PopulationGates": {
 						"3": [
-							"(O)152 5" // Seaweed
+							"(O)410 5" // Blackberry
 						],
 						"5": [
-							"(O)393 2" // Coral
+							"(O)216 2" // Bread
 						],
 						"7": [
-							"(O)397" // Sea Urchin
+							"(O)208" // Glazed yams
 						]
 					}
 				}
@@ -883,16 +1219,23 @@
 					"SpawnTime": 2,
 					"ProducedItems": [
 						{
+							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_PetrifiedSlimeHourglass", // petrified slime hourglass
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
 							"RequiredPopulation": 9,
 							"Chance": 0.05,
-							"ItemID": "153", // Green Algae
+							"ItemID": "{{ModId}}_CherryChocolateJarCake", // Cherry chocolate jar cake
 							"MinQuantity": 1,
-							"MaxQuantity": 5
+							"MaxQuantity": 1
 						},
 						{
 							"RequiredPopulation": 5,
 							"Chance": 0.1,
-							"ItemID": "152", // Seaweed
+							"ItemID": "86", // Earth crystal
 							"MinQuantity": 1,
 							"MaxQuantity": 2
 						},
@@ -938,9 +1281,23 @@
 					"SpawnTime": 4,
 					"ProducedItems": [
 						{
+							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_LemonStoneGoggles", // Lemon stone goggles
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_DulceDeLecheChocolate", // Dulce de leche chocolate
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
 							"RequiredPopulation": 9,
 							"Chance": 0.05,
-							"ItemID": "243", // Miner's Treat
+							"ItemID": "{{ModId}}_OrangeChocolateJarCake", // Orange chocolate jar cake
 							"MinQuantity": 1,
 							"MaxQuantity": 1
 						},
@@ -968,13 +1325,13 @@
 					],
 					"PopulationGates": {
 						"3": [
-							"(O)153 5" // Green Algae
+							"(O)80 5" // quartz
 						],
 						"5": [
-							"(O)154 2" // Sea Cucumber
+							"(O)280 2" // Yam
 						],
 						"7": [
-							"(O)243" // Miner's Treat
+							"(O)307" // Duck mayo
 						]
 					}
 				}
@@ -993,16 +1350,30 @@
 					"SpawnTime": 3,
 					"ProducedItems": [
 						{
+							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_MagicalFairyRosePerfume", // Fairy rose perfume
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_GrapeChocolate", // Grape chocolate
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
 							"RequiredPopulation": 9,
 							"Chance": 0.05,
-							"ItemID": "372", // Clam
+							"ItemID": "{{ModId}}_RubyChocolateJarCake", // Ruby chocolate jar cake
 							"MinQuantity": 1,
 							"MaxQuantity": 3
 						},
 						{
 							"RequiredPopulation": 5,
 							"Chance": 0.1,
-							"ItemID": "720", // Shrimp
+							"ItemID": "338", // Refined quartz
 							"MinQuantity": 1,
 							"MaxQuantity": 2
 						},
@@ -1023,13 +1394,13 @@
 					],
 					"PopulationGates": {
 						"3": [
-							"(O)719 5" // Mussel
+							"(O)340 5" // Honey
 						],
 						"5": [
-							"(O)720 2" // Shrimp
+							"(O){{ModId}}_MorangoDoAmor 2" // Morango do amor
 						],
 						"7": [
-							"(O)372" // Clam
+							"(O)418" // Crocus
 						]
 					}
 				}
@@ -1048,9 +1419,23 @@
 					"SpawnTime": 3,
 					"ProducedItems": [
 						{
+							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_CactusFlowerBouquet", // Cactus flower bouquet
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_CommonSalmonberryPerfume", // Salmonberry perfume
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
 							"RequiredPopulation": 9,
 							"Chance": 0.05,
-							"ItemID": "730", // Lobster Bisque
+							"ItemID": "{{ModId}}_MilkChocolateJarCake", // Milk chocolate jar cake
 							"MinQuantity": 1,
 							"MaxQuantity": 1
 						},
@@ -1084,7 +1469,7 @@
 							"(O)718 2" // Cockle
 						],
 						"7": [
-							"(O)730" // Lobster Bisque
+							"(O)334" // Copper bar
 						]
 					}
 				}
@@ -1103,45 +1488,44 @@
 					"SpawnTime": 5,
 					"ProducedItems": [
 						{
-							"RequiredPopulation": 9,
-							"Chance": 0.05,
-							"ItemID": "74", // Prismatic Shard
+							"RequiredPopulation": 0,
+							"Chance": 0.01,
+							"ItemID": "{{ModId}}_CarnivalMask", // Carnival mask
 							"MinQuantity": 1,
 							"MaxQuantity": 1
 						},
 						{
-							"RequiredPopulation": 5,
-							"Chance": 0.1,
-							"ItemID": "243", // Miner's Treat
+							"RequiredPopulation": 0,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_SnowflakeBouquet", // Snowflake bouquet
 							"MinQuantity": 1,
 							"MaxQuantity": 1
 						},
 						{
-							"RequiredPopulation": 3,
-							"Chance": 0.15,
-							"ItemID": "152", // Seaweed
+							"RequiredPopulation": 0,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_RichStarfruitPerfume", // Starfruit Perfume
 							"MinQuantity": 1,
-							"MaxQuantity": 3
+							"MaxQuantity": 1
 						},
 						{
-							"RequiredPopulation": 1,
-							"Chance": 0.7,
+							"RequiredPopulation": 0,
+							"Chance": 1.0,
 							"ItemID": "812", // Roe
 							"MinQuantity": 1,
 							"MaxQuantity": 5
 						}
 					],
-					"PopulationGates": {
-						"3": [
-							"(O)152 5" // Seaweed
-						],
-						"5": [
-							"(O)535 2" // Geode
-						],
-						"7": [
-							"(O)243" // Miner's Treat
-						]
-					}
+					"PopulationGates": null,
+					"MaxPopulation": 1,
+					"WaterColor": [
+						{
+							"Id": "{{ModId}}_OarfishWatercolor",
+							"Color": "CopyFromInput",
+							"MinPopulation": 1,
+							"MinUnlockedPopulationGate": 0
+						}
+					]
 				}
 			}
 		},
@@ -1158,18 +1542,25 @@
 					"SpawnTime": 4,
 					"ProducedItems": [
 						{
+							"RequiredPopulation": 10,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_CelestialMusicBox", // Celestial music box
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
 							"RequiredPopulation": 9,
 							"Chance": 0.05,
-							"ItemID": "728", // Fish Stew
+							"ItemID": "{{ModId}}_WhiteChocolateJarCake", // White chocolate jar cake
 							"MinQuantity": 1,
 							"MaxQuantity": 1
 						},
 						{
 							"RequiredPopulation": 5,
 							"Chance": 0.1,
-							"ItemID": "397", // Sea Urchin
+							"ItemID": "787", // Battery Pack
 							"MinQuantity": 1,
-							"MaxQuantity": 2
+							"MaxQuantity": 3
 						},
 						{
 							"RequiredPopulation": 3,
@@ -1188,10 +1579,10 @@
 					],
 					"PopulationGates": {
 						"3": [
-							"(O)719 5" // Mussel
+							"(O)Powdermelon 10" // Powdermelon
 						],
 						"5": [
-							"(O)397 2" // Sea Urchin
+							"(O)834 2" // Mango
 						],
 						"7": [
 							"(O)728" // Fish Stew
@@ -1210,48 +1601,48 @@
 					"RequiredTags": [
 						"id_(o){{ModId}}_Pufferkitty"
 					],
-					"SpawnTime": 4,
+					"SpawnTime": 5,
 					"ProducedItems": [
 						{
-							"RequiredPopulation": 9,
-							"Chance": 0.05,
-							"ItemID": "213", // Fish Taco
+							"RequiredPopulation": 0,
+							"Chance": 0.01,
+							"ItemID": "{{ModId}}_HoneyedSweetGemBerryPerfume", // Sweet gem berry perfume
 							"MinQuantity": 1,
 							"MaxQuantity": 1
 						},
 						{
-							"RequiredPopulation": 5,
-							"Chance": 0.1,
-							"ItemID": "184", // Milk
-							"MinQuantity": 1,
-							"MaxQuantity": 2
-						},
-						{
-							"RequiredPopulation": 3,
-							"Chance": 0.15,
-							"ItemID": "152", // Seaweed
+							"RequiredPopulation": 0,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_HolidayCactus", // Holiday cactus bouquet
 							"MinQuantity": 1,
 							"MaxQuantity": 1
 						},
 						{
-							"RequiredPopulation": 1,
-							"Chance": 0.7,
+							"RequiredPopulation": 0,
+							"Chance": 0.2,
+							"ItemID": "{{ModId}}_MysticAncientFruitPerfume", // Ancient fruit Perfume
+							"MinQuantity": 1,
+							"MaxQuantity": 1
+						},
+						{
+							"RequiredPopulation": 0,
+							"Chance": 1.0,
 							"ItemID": "812", // Roe
 							"MinQuantity": 1,
 							"MaxQuantity": 5
 						}
 					],
-					"PopulationGates": {
-						"3": [
-							"(O)152 3" // Seaweed
-						],
-						"5": [
-							"(O)184 2" // Milk
-						],
-						"7": [
-							"(O)213" // Fish Taco
-						]
-					}
+					"PopulationGates": null,
+					"MaxPopulation": 1,
+					"WaterColor": [
+						{
+							"Id": "{{ModId}}_PufferkittyWatercolor",
+							"Color": "CopyFromInput",
+							"MinPopulation": 1,
+							"MinUnlockedPopulationGate": 0
+						}
+					]
+					
 				}
 			}
 		},

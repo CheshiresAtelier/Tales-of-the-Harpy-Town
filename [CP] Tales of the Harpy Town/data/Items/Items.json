@@ -43,7 +43,7 @@
 		{
 			"LogName": "Load forage",
 			"Action": "Load",
-			"Target": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_BarbadosCherry, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_LilacTasselflower, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_TridaxDaisy, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_BengalDayflower, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_BlackNightshade, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_GlobeAmaranth, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_CosmoFlower, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_WildCoquinho, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_WildSurinamCherry, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_WildRosemary, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_CrystalRose, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_SnakePlant, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_Mandacaru, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_Chicory, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_WildPeanut, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_PindoRamaNut",
+			"Target": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_BarbadosCherry, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_LilacTasselflower, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_TridaxDaisy, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_BengalDayflower, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_BlackNightshade, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_GlobeAmaranth, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_CosmoFlower, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_WildCoquinho, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_WildSurinamCherry, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_WildRosemary, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_CrystalRose, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_SnakePlant, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_Mandacaru, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_Chicory, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_WildPeanut, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_PindoRamaNut, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_YerbaMate, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_PineNut",
 			"FromFile": "assets/Items/Forage/{{TargetWithoutPath}}.png"
 		},
 		{
@@ -618,6 +618,78 @@
 						"Universal_Neutral"
 					],
 					"Value": "{{ModId}}_WildPeanut",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_YerbaMate": {
+					"Name": "{{ModId}}_YerbaMate",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Forage17}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Forage17Desc}}",
+					"Type": "Greens",
+					"Category": -81,
+					"Price": 110,
+					"Edibility": 9,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_YerbaMate",
+					"SpriteIndex": 0,
+					"ContextTags": [
+						"color_green",
+						"tht_forage"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_YerbaMate",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_PineNut": {
+					"Name": "{{ModId}}_PineNut",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Forage18}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Forage18Desc}}",
+					"Type": "Greens",
+					"Category": -81,
+					"Price": 210,
+					"Edibility": 27,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_PineNut",
+					"SpriteIndex": 0,
+					"ContextTags": [
+						"color_brown",
+						"tht_forage"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_PineNut",
 					"Delimiter": " "
 				}
 			]
@@ -2648,7 +2720,7 @@
 			"Action": "EditData",
 			"Target": "Data/CookingRecipes",
 			"Entries": {
-				"{{ModId}}_Chimarrao": "(O)815 5/10 10/{{ModId}}_Chimarrao/f {{ModId}}_Anahi 3/{{i18n: CheshiresAtelier.THTexpansion_Food28}}"
+				"{{ModId}}_Chimarrao": "(O){{ModId}}_YerbaMate 5/10 10/{{ModId}}_Chimarrao/f {{ModId}}_Anahi 3/{{i18n: CheshiresAtelier.THTexpansion_Food28}}"
 			}
 		},
 		//Baião de dois
@@ -5400,7 +5472,7 @@
 					"Type": "Cooking",
 					"Category": -7,
 					"Price": 150,
-					"Edibility": 80,
+					"Edibility": 70,
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
@@ -5476,7 +5548,7 @@
 					"Type": "Cooking",
 					"Category": -7,
 					"Price": 165,
-					"Edibility": 99,
+					"Edibility": 57,
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
