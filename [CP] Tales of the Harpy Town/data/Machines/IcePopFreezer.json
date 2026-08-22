@@ -186,7 +186,7 @@
                                     "Id": "{{ModId}}_AncientFruitInputIcePop",
                                     "Trigger": "ItemPlacedInMachine",
                                     "RequiredItemId": "(O)454",
-                                    "RequiredCount": 1
+                                    "RequiredCount": 1'
                                 }
                             ],
                             "OutputItem": [

@@ -946,7 +946,7 @@
 "Action": "EditData",
 "Target": "Data/Characters",
 "Entries": {
-"{{ModId}}_Ravi": {
+"{{ModId}}_Raoni": {
 "DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_CharName14}}",
 "Gender": "Male",
 "Age": "Adult",

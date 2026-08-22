@@ -1401,6 +1401,12 @@
 			"Target": "Characters/Dialogue/{{ModId}}_Duda, Characters/schedules/{{ModId}}_Duda",
 			"FromFile": "assets/blank.json"
 		},
+		{
+			"LogName": "Blank JSON load",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/{{ModId}}_Raoni, Characters/schedules/{{ModId}}_Raoni",
+			"FromFile": "assets/blank.json"
+		},
 		//Including NPCs Files
 		{
 			"LogName": "NPC Gift tastes",
@@ -1973,7 +1979,7 @@
 			"FromFile": "assets/Characters/Ravi/Schedule/Schedule.json"
 		},
 		{
-			"LogName": "Pacoca animations",
+			"LogName": "Ravi animations",
 			"Action": "EditData",
 			"Target": "Data/animationdescriptions",
 			"Entries": {
@@ -2028,12 +2034,44 @@
 			"FromFile": "assets/Characters/Duda/Sprites/Duda_Winter.png"
 		},
 		{
-			"LogName": "Pacoca animations",
+			"LogName": "Duda animations",
 			"Action": "EditData",
 			"Target": "Data/animationdescriptions",
 			"Entries": {
 				"{{ModId}}_Duda_play": "18/19 18/19",
 				"{{ModId}}_Duda_sleep": "16/16 16/16"
+			}
+		},
+		//Raoni
+		{
+			"LogName": "Base Portraits",
+			"Action": "Load",
+			"Target": "Portraits/{{ModId}}_Raoni",
+			"FromFile": "assets/Characters/Raoni/Portraits/Raoni.png"
+		},
+		{
+			"LogName": "Base sprites",
+			"Action": "Load",
+			"Target": "Characters/{{ModId}}_Raoni",
+			"FromFile": "assets/Characters/Raoni/Sprites/Raoni.png"
+		},
+		{
+			"LogName": "NPC Dialogue",
+			"Action": "Include",
+			"FromFile": "assets/Characters/Raoni/Dialogue/Dialogue.json"
+		},
+		{
+			"LogName": "NPC Schedule",
+			"Action": "Include",
+			"FromFile": "assets/Characters/Raoni/Schedule/Schedule.json"
+		},
+		{
+			"LogName": "Raoni animations",
+			"Action": "EditData",
+			"Target": "Data/animationdescriptions",
+			"Entries": {
+				"{{ModId}}_Raoni_sleep": "19/19 19/19",
+				"{{ModId}}_Raoni_sit": "17/16 17/16"
 			}
 		},
 		//
