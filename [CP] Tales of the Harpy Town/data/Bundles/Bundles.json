@@ -17,7 +17,7 @@
                     "ShopType": "CCBundle",
                     "BundleIconAsset": "Mods/{{ModId}}/assets/Tilesheets/Bundles/CheshiresAtelier.THTexpansion_SpringBundleIcon",
                     "BundleSlots": 4,
-                    "ShopEvent": "carpentry",
+                    "ShopEvent": "communityCenter/13 28/farmer 12 30 0/skippable/pause 500/move farmer 0 -3 0/pause 500/globalFade/viewport -1000 -1000/stopMusic/end",
                     "BundleCompletedActions": [
                         "AddMail All {{ModId}}_Bundle1Mail"
                     ],
