@@ -171,13 +171,13 @@
                 "45 75 {{ModId}}_THTbackwoods 14 3",
                 "46 75 {{ModId}}_THTbackwoods 15 3",
                 "47 75 {{ModId}}_THTbackwoods 16 3",
-                "-1 60 {{ModID}}_THTsecretPlace2Path1 17 6",
-                "-1 61 {{ModID}}_THTsecretPlace2Path1 17 6",
-                "-1 62 {{ModID}}_THTsecretPlace2Path1 17 6",
-                "-1 63 {{ModID}}_THTsecretPlace2Path1 17 7",
-                "-1 64 {{ModID}}_THTsecretPlace2Path1 17 8",
-                "-1 65 {{ModID}}_THTsecretPlace2Path1 17 8",
-                "-1 66 {{ModID}}_THTsecretPlace2Path1 17 8",
+                "-1 60 {{ModID}}_THTsecretPlace2Path1 36 24",
+                "-1 61 {{ModID}}_THTsecretPlace2Path1 36 24",
+                "-1 62 {{ModID}}_THTsecretPlace2Path1 36 24",
+                "-1 63 {{ModID}}_THTsecretPlace2Path1 36 24",
+                "-1 64 {{ModID}}_THTsecretPlace2Path1 36 25",
+                "-1 65 {{ModID}}_THTsecretPlace2Path1 36 25",
+                "-1 66 {{ModID}}_THTsecretPlace2Path1 36 25",
                 "-1 29 {{ModID}}_THTsecretPlace2Path2 16 8",
                 "-1 30 {{ModID}}_THTsecretPlace2Path2 16 8",
                 "-1 31 {{ModID}}_THTsecretPlace2Path2 16 9",
@@ -253,20 +253,17 @@
                 "40 17 {{ModId}}_THTsecretPlace2Path2 2 8",
                 "40 18 {{ModId}}_THTsecretPlace2Path2 2 9",
                 "40 19 {{ModId}}_THTsecretPlace2Path2 2 9",
-                "40 42 {{ModId}}_THTsecretPlace2Path1 3 7",
-                "40 43 {{ModId}}_THTsecretPlace2Path1 3 7",
-                "40 44 {{ModId}}_THTsecretPlace2Path1 3 8",
-                "40 45 {{ModId}}_THTsecretPlace2Path1 3 8",
-                "40 46 {{ModId}}_THTsecretPlace2Path1 3 8",
+                "40 42 {{ModId}}_THTsecretPlace2Path1 3 21",
+                "40 43 {{ModId}}_THTsecretPlace2Path1 3 21",
+                "40 44 {{ModId}}_THTsecretPlace2Path1 3 21",
+                "40 45 {{ModId}}_THTsecretPlace2Path1 3 22",
+                "40 46 {{ModId}}_THTsecretPlace2Path1 3 22",
                 "40 2 {{ModId}}_THTsecretPlace2Path3 3 5",
                 "40 3 {{ModId}}_THTsecretPlace2Path3 3 5",
                 "40 4 {{ModId}}_THTsecretPlace2Path3 3 6",
                 "40 5 {{ModId}}_THTsecretPlace2Path3 3 7",
                 "40 6 {{ModId}}_THTsecretPlace2Path3 3 8",
-                "40 7 {{ModId}}_THTsecretPlace2Path3 3 9",
-                "12 -1 {{ModId}}_THTforest 2 48",
-                "13 -1 {{ModId}}_THTforest 2 48",
-                "14 -1 {{ModId}}_THTforest 2 48"
+                "40 7 {{ModId}}_THTsecretPlace2Path3 3 9"
             ]
         },
         {
@@ -274,15 +271,18 @@
             "Action": "EditMap",
             "Target": "Maps/{{ModId}}_THTsecretPlace2Path1",
             "AddWarps": [
-                "20 4 {{ModId}}_THTtown 2 62",
-                "20 5 {{ModId}}_THTtown 2 62",
-                "20 6 {{ModId}}_THTtown 2 63",
-                "20 7 {{ModId}}_THTtown 2 64",
-                "20 8 {{ModId}}_THTtown 2 64",
-                "-1 6 {{ModId}}_THTsecretPlace2 36 43",
-                "-1 7 {{ModId}}_THTsecretPlace2 36 44",
-                "-1 8 {{ModId}}_THTsecretPlace2 36 45",
-                "-1 9 {{ModId}}_THTsecretPlace2 36 46"
+                "40 20 {{ModId}}_THTtown 2 62",
+                "40 21 {{ModId}}_THTtown 2 62",
+                "40 22 {{ModId}}_THTtown 2 63",
+                "40 23 {{ModId}}_THTtown 2 64",
+                "40 24 {{ModId}}_THTtown 2 64",
+                "40 25 {{ModId}}_THTtown 2 64",
+                "40 26 {{ModId}}_THTtown 2 64",
+                "-1 20 {{ModId}}_THTsecretPlace2 36 43",
+                "-1 21 {{ModId}}_THTsecretPlace2 36 44",
+                "-1 22 {{ModId}}_THTsecretPlace2 36 45",
+                "-1 23 {{ModId}}_THTsecretPlace2 36 46",
+                "-1 24 {{ModId}}_THTsecretPlace2 36 46"
             ]
         },
         {
@@ -882,6 +882,47 @@
         "11 26 {{ModId}}_THTAdriannosHouse 14 26",
         "12 26 {{ModId}}_THTAdriannosHouse 15 26",
         "13 26 {{ModId}}_THTAdriannosHouse 16 26"
+    ]
+},
+        {
+    "LogName": "Edit the secret path to warp inside of joja 2",
+    "Action": "EditMap",
+    "Target": "Maps/{{ModId}}_THTsecretPlace2Path1",
+    "MapTiles": [
+        {
+            "Position": { "X": 19, "Y": 7 },
+            "Layer": "Buildings",
+            "SetProperties": {
+                "Action": "LockedDoorWarp 29 36 {{ModID}}_THTJoja2 630 2200" 
+                    }
+                }
+            ]
+        },
+        {
+    "LogName": "Edit the secret path to warp inside of joja 2",
+    "Action": "EditMap",
+    "Target": "Maps/{{ModId}}_THTsecretPlace2Path1",
+    "MapTiles": [
+        {
+            "Position": { "X": 20, "Y": 7 },
+            "Layer": "Buildings",
+            "SetProperties": {
+                "Action": "LockedDoorWarp 30 36 {{ModID}}_THTJoja2 630 2200" 
+                    }
+                }
+            ]
+        },
+{
+    "LogName": "Edit Joja 2 interior to add warp out of it",
+    "Action": "EditMap",
+    "Target": "Maps/{{ModID}}_THTJoja2",
+    "AddWarps": [
+        "27 39 {{ModId}}_THTsecretPlace2Path1 19 11",
+        "28 39 {{ModId}}_THTsecretPlace2Path1 19 11",
+        "29 39 {{ModId}}_THTsecretPlace2Path1 19 11",
+        "30 39 {{ModId}}_THTsecretPlace2Path1 20 11",
+        "31 39 {{ModId}}_THTsecretPlace2Path1 20 11",
+        "32 39 {{ModId}}_THTsecretPlace2Path1 20 11"
     ]
 }
     ]

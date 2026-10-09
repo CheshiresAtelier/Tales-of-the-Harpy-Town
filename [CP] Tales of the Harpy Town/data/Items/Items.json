@@ -43,7 +43,7 @@
 		{
 			"LogName": "Load forage",
 			"Action": "Load",
-			"Target": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_BarbadosCherry, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_LilacTasselflower, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_TridaxDaisy, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_BengalDayflower, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_BlackNightshade, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_GlobeAmaranth, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_CosmoFlower, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_WildCoquinho, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_WildSurinamCherry, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_WildRosemary, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_CrystalRose, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_SnakePlant, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_Mandacaru, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_Chicory, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_WildPeanut, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_PindoRamaNut, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_YerbaMate, Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_PineNut",
+			"Target": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
 			"FromFile": "assets/Items/Forage/{{TargetWithoutPath}}.png"
 		},
 		{
@@ -54,15 +54,16 @@
 					"Name": "{{ModId}}_BarbadosCherry",
 					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Forage1}}",
 					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Forage1Desc}}",
-					"Type": "Greens",
-					"Category": -81,
+					"Type": "Fruit",
+					"Category": -79,
 					"Price": 40,
 					"Edibility": 4,
-					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_BarbadosCherry",
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
 					"SpriteIndex": 0,
 					"ContextTags": [
 						"color_red",
-						"tht_forage"
+						"tht_forage",
+						"forage_item"
 					]
 				}
 			}
@@ -94,11 +95,12 @@
 					"Category": -81,
 					"Price": 50,
 					"Edibility": -5,
-					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_LilacTasselflower",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 1,
 					"ContextTags": [
 						"color_pink",
-						"tht_forage"
+						"tht_forage",
+						"forage_item"
 					]
 				}
 			}
@@ -130,11 +132,12 @@
 					"Category": -81,
 					"Price": 35,
 					"Edibility": 2,
-					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_TridaxDaisy",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 2,
 					"ContextTags": [
 						"color_yellow",
-						"tht_forage"
+						"tht_forage",
+						"forage_item"
 					]
 				}
 			}
@@ -166,11 +169,12 @@
 					"Category": -81,
 					"Price": 120,
 					"Edibility": 1,
-					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_BengalDayflower",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 3,
 					"ContextTags": [
 						"color_blue",
-						"tht_forage"
+						"tht_forage",
+						"forage_item"
 					]
 				}
 			}
@@ -202,11 +206,12 @@
 					"Category": -81,
 					"Price": 120,
 					"Edibility": 4,
-					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_BlackNightshade",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 4,
 					"ContextTags": [
 						"color_black",
-						"tht_forage"
+						"tht_forage",
+						"forage_item"
 					]
 				}
 			}
@@ -238,11 +243,12 @@
 					"Category": -81,
 					"Price": 130,
 					"Edibility": 3,
-					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_GlobeAmaranth",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 5,
 					"ContextTags": [
 						"color_purple",
-						"tht_forage"
+						"tht_forage",
+						"forage_item"
 					]
 				}
 			}
@@ -270,15 +276,16 @@
 					"Name": "{{ModId}}_CosmoFlower",
 					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Forage7}}",
 					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Forage7Desc}}",
-					"Type": "Greens",
-					"Category": -81,
+					"Type": "Flower",
+					"Category": -80,
 					"Price": 120,
 					"Edibility": 1,
-					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_CosmoFlower",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 6,
 					"ContextTags": [
 						"color_orange",
-						"tht_forage"
+						"tht_forage",
+						"forage_item"
 					]
 				}
 			}
@@ -310,11 +317,12 @@
 					"Category": -81,
 					"Price": 120,
 					"Edibility": 4,
-					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_WildCoquinho",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 7,
 					"ContextTags": [
 						"color_orange",
-						"tht_forage"
+						"tht_forage",
+						"forage_item"
 					]
 				}
 			}
@@ -342,15 +350,16 @@
 					"Name": "{{ModId}}_WildSurinamCherry",
 					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Forage9}}",
 					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Forage9Desc}}",
-					"Type": "Greens",
-					"Category": -81,
+					"Type": "Fruit",
+					"Category": -79,
 					"Price": 140,
 					"Edibility": 5,
-					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_WildSurinamCherry",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 8,
 					"ContextTags": [
 						"color_copper",
-						"tht_forage"
+						"tht_forage",
+						"forage_item"
 					]
 				}
 			}
@@ -382,11 +391,12 @@
 					"Category": -81,
 					"Price": 150,
 					"Edibility": 10,
-					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_WildRosemary",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 9,
 					"ContextTags": [
 						"color_jade",
-						"tht_forage"
+						"tht_forage",
+						"forage_item"
 					]
 				}
 			}
@@ -414,15 +424,16 @@
 					"Name": "{{ModId}}_CrystalRose",
 					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Forage11}}",
 					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Forage11Desc}}",
-					"Type": "Greens",
-					"Category": -81,
+					"Type": "Flower",
+					"Category": -80,
 					"Price": 150,
 					"Edibility": 0,
-					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_CrystalRose",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 10,
 					"ContextTags": [
 						"color_white",
-						"tht_forage"
+						"tht_forage",
+						"forage_item"
 					]
 				}
 			}
@@ -454,11 +465,12 @@
 					"Category": -81,
 					"Price": 150,
 					"Edibility": -50,
-					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_SnakePlant",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 11,
 					"ContextTags": [
 						"color_green",
-						"tht_forage"
+						"tht_forage",
+						"forage_item"
 					]
 				}
 			}
@@ -490,11 +502,12 @@
 					"Category": -81,
 					"Price": 150,
 					"Edibility": 13,
-					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_Mandacaru",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 12,
 					"ContextTags": [
 						"color_lime",
-						"tht_forage"
+						"tht_forage",
+						"forage_item"
 					]
 				}
 			}
@@ -526,11 +539,12 @@
 					"Category": -81,
 					"Price": 170,
 					"Edibility": 21,
-					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_PindoRamaNut",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 13,
 					"ContextTags": [
 						"color_sand",
-						"tht_forage"
+						"tht_forage",
+						"forage_item"
 					]
 				}
 			}
@@ -562,11 +576,12 @@
 					"Category": -81,
 					"Price": 150,
 					"Edibility": 20,
-					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_Chicory",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 14,
 					"ContextTags": [
 						"color_lime",
-						"tht_forage"
+						"tht_forage",
+						"forage_item"
 					]
 				}
 			}
@@ -598,11 +613,12 @@
 					"Category": -81,
 					"Price": 150,
 					"Edibility": 20,
-					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_WildPeanut",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 15,
 					"ContextTags": [
 						"color_sand",
-						"tht_forage"
+						"tht_forage",
+						"forage_item"
 					]
 				}
 			}
@@ -634,11 +650,12 @@
 					"Category": -81,
 					"Price": 110,
 					"Edibility": 9,
-					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_YerbaMate",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 16,
 					"ContextTags": [
 						"color_green",
-						"tht_forage"
+						"tht_forage",
+						"forage_item"
 					]
 				}
 			}
@@ -670,11 +687,12 @@
 					"Category": -81,
 					"Price": 210,
 					"Edibility": 27,
-					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_PineNut",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 17,
 					"ContextTags": [
 						"color_brown",
-						"tht_forage"
+						"tht_forage",
+						"forage_item"
 					]
 				}
 			}
@@ -694,13 +712,236 @@
 				}
 			]
 		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Cabeludinha": {
+					"Name": "{{ModId}}_Cabeludinha",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Forage19}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Forage19Desc}}",
+					"Type": "Greens",
+					"Category": -81,
+					"Price": 90,
+					"Edibility": 21,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 18,
+					"ContextTags": [
+						"color_orange",
+						"tht_forage",
+						"forage_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_Cabeludinha",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_MossRose": {
+					"Name": "{{ModId}}_MossRose",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Forage20}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Forage20Desc}}",
+					"Type": "Flower",
+					"Category": -80,
+					"Price": 130,
+					"Edibility": 17,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 19,
+					"ContextTags": [
+						"color_dark_red",
+						"tht_forage",
+						"forage_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_MossRose",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Grumixama": {
+					"Name": "{{ModId}}_Grumixama",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Forage21}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Forage21Desc}}",
+					"Type": "Greens",
+					"Category": -81,
+					"Price": 110,
+					"Edibility": 19,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 20,
+					"ContextTags": [
+						"color_sand",
+						"tht_forage",
+						"forage_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_Grumixama",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_JellyEarMushroom": {
+					"Name": "{{ModId}}_JellyEarMushroom",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Forage22}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Forage22Desc}}",
+					"Type": "Greens",
+					"Category": -81,
+					"Price": 160,
+					"Edibility": 10,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 21,
+					"ContextTags": [
+						"color_red",
+						"tht_forage",
+						"edible_mushroom",
+						"forage_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_JellyEarMushroom",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_FortnightLily": {
+					"Name": "{{ModId}}_FortnightLily",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Forage23}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Forage23Desc}}",
+					"Type": "Flower",
+					"Category": -80,
+					"Price": 160,
+					"Edibility": 10,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 22,
+					"ContextTags": [
+						"color_white",
+						"tht_forage",
+						"forage_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_FortnightLily",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Pansy": {
+					"Name": "{{ModId}}_Pansy",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Forage24}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Forage24Desc}}",
+					"Type": "Flower",
+					"Category": -80,
+					"Price": 135,
+					"Edibility": 1,
+					"Texture": "Mods/{{ModId}}/assets/Items/Forage/{{ModId}}_ForageSprites",
+					"SpriteIndex": 23,
+					"ContextTags": [
+						"color_purple",
+						"tht_forage",
+						"forage_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_Pansy",
+					"Delimiter": " "
+				}
+			]
+		},
 		//
 		//Dishes
 		//
 		{
 			"LogName": "Load dishes",
 			"Action": "Load",
-			"Target": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_CompleteBento, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_PartyKit, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_SugarCaneJuice, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Coxinha, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_CondensedMilk, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Brigadeiro, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Beijinho, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_BichoDePe, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_HoneyedPicanha, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Manjar, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Acaraje, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_CarrotCake, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_CheeseTapioca, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_CookedBlackEyedPeas, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Feijoada, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_FreshRice, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_HomemadeFarofa, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_JatobaBread, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Manicoba, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_MoricheIceCream, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Omolocum, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Pamonha, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_RomeoAndJuliet, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_StirFryBurrGherkin, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_CupuassuCream, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_AcaiBowl, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_AcaiMilkShake, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Chimarrao, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_BaiaoDeDois, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Moqueca, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_ChocolateMilk, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_OrangeCaipirinha, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Tacaca, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_WindPastel, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_MariaMole, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_MocotoCandy, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Cocada, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Rapadura, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Vatapa, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Quentao, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Quindim, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_BalaBaiana, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Pave, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Suspiro, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Cheesebread, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Cuscuz, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DulceDeLeche, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Abara, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Aberem, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_CarreteiroRice, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_ShrimpBobo, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_RollCake, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_PiranhaSoup, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_TropeiroBeans, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_FriedTucunare, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_GreenCornCanjica, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_PeDeMoleque, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_PintadoNaTelha, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_PirarucuDeCasaca, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_TutuBeans, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_VacaAtolada, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_BlackPacuPirao, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_PururucaPig, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Pacoquinha, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Caramel, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_CondensedMilkFlan, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_BreadedDogfishShark, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_CupuassuFlan, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_PindoramaNutCake, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_AnythingBurger, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DuckOnTucupi, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_JatobaCocktail, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_CakeBatter, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_MorangoDoAmor, Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_HazelnutChocolateWithPowderedMilkSwirl",
+			"Target": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
 			"FromFile": "assets/Items/Dishes/{{TargetWithoutPath}}.png"
 		},
 		//Complete bento
@@ -719,7 +960,7 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_CompleteBento",
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
 					"SpriteIndex": 0,
 					"Buffs": [
 						{
@@ -792,8 +1033,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_PartyKit",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 1,
 					"Buffs": [
 						{
 							"Duration": 1200,
@@ -866,8 +1107,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Coxinha",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 2,
 					"ContextTags": [
 						"allergen_meat",
 						"tht_food"
@@ -895,7 +1136,7 @@
 			"Action": "EditData",
 			"Target": "Data/CookingRecipes",
 			"Entries": {
-				"{{ModId}}_Coxinha": "(O)247 1 (O)246 1 (O){{ModID}}_CannedMeat 1 (O)176 1/10 10/{{ModId}}_Coxinha/null/{{i18n: CheshiresAtelier.THTexpansion_Food3}}"
+				"{{ModId}}_Coxinha": "(O)247 1 (O)246 1 (O){{ModID}}_CannedMeat 1 -5 1/10 10/{{ModId}}_Coxinha/null/{{i18n: CheshiresAtelier.THTexpansion_Food3}}"
 			}
 		},
 		//Condensed milk
@@ -920,8 +1161,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_CondensedMilk",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 3,
 					"ContextTags": [
 						"allergen_dairy",
 						"food_sweet",
@@ -975,8 +1216,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Brigadeiro",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 4,
 					"Buffs": [
 						{
 							"Duration": 200,
@@ -1049,8 +1290,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Beijinho",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 5,
 					"Buffs": [
 						{
 							"Duration": 200,
@@ -1123,8 +1364,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_BichoDePe",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 6,
 					"Buffs": [
 						{
 							"Duration": 200,
@@ -1197,8 +1438,8 @@
 					"IsDrink": true,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_SugarCaneJuice",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 7,
 					"Buffs": [
 						{
 							"Duration": 500,
@@ -1270,8 +1511,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_HoneyedPicanha",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 8,
 					"Buffs": [
 						{
 							"Duration": 500,
@@ -1344,8 +1585,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Manjar",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 9,
 					"Buffs": [
 						{
 							"Duration": 500,
@@ -1418,8 +1659,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Acaraje",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 10,
 					"Buffs": [
 						{
 							"Duration": 500,
@@ -1491,8 +1732,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_CarrotCake",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 11,
 					"Buffs": [
 						{
 							"Duration": 500,
@@ -1546,7 +1787,7 @@
 			"Action": "EditData",
 			"Target": "Data/CookingRecipes",
 			"Entries": {
-				"{{ModId}}_CarrotCake": "(O)176 1 (O)245 1 (O)246 1 (O)Carrot 1 (O){{ModId}}_Brigadeiro/10 10/{{ModId}}_CarrotCake/null/{{i18n: CheshiresAtelier.THTexpansion_Food12}}"
+				"{{ModId}}_CarrotCake": "-5 1 (O)245 1 (O)246 1 (O)Carrot 1 (O){{ModId}}_Brigadeiro/10 10/{{ModId}}_CarrotCake/null/{{i18n: CheshiresAtelier.THTexpansion_Food12}}"
 			}
 		},
 		//Cheese tapioca
@@ -1565,8 +1806,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_CheeseTapioca",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 12,
 					"Buffs": [
 						{
 							"Duration": 500,
@@ -1638,8 +1879,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_CookedBlackEyedPeas",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 13,
 					"Buffs": [
 						{
 							"Duration": 500,
@@ -1712,8 +1953,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Feijoada",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 14,
 					"Buffs": [
 						{
 							"Duration": 500,
@@ -1787,8 +2028,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_FreshRice",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 15,
 					"Buffs": [
 						{
 							"Duration": 530,
@@ -1859,8 +2100,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_HomemadeFarofa",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 16,
 					"Buffs": [
 						{
 							"Duration": 300,
@@ -1933,8 +2174,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_JatobaBread",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 17,
 					"Buffs": [
 						{
 							"Duration": 500,
@@ -2006,8 +2247,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Manicoba",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 18,
 					"Buffs": [
 						{
 							"Duration": 400,
@@ -2078,8 +2319,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_MoricheIceCream",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 19,
 					"Buffs": [
 						{
 							"Duration": 400,
@@ -2152,8 +2393,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Omolocum",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 20,
 					"Buffs": [
 						{
 							"Duration": 400,
@@ -2226,8 +2467,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Pamonha",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 21,
 					"Buffs": [
 						{
 							"Duration": 350,
@@ -2299,8 +2540,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_RomeoAndJuliet",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 22,
 					"Buffs": [
 						{
 							"Duration": 400,
@@ -2373,8 +2614,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_StirFryBurrGherkin",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 23,
 					"Buffs": [
 						{
 							"Duration": 500,
@@ -2445,8 +2686,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_CupuassuCream",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 24,
 					"Buffs": [
 						{
 							"Duration": 350,
@@ -2519,8 +2760,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_AcaiBowl",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 25,
 					"Buffs": [
 						{
 							"Duration": 600,
@@ -2592,8 +2833,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_AcaiMilkShake",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 26,
 					"Buffs": [
 						{
 							"Duration": 600,
@@ -2667,8 +2908,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Chimarrao",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 27,
 					"Buffs": [
 						{
 							"Duration": 600,
@@ -2739,8 +2980,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_BaiaoDeDois",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 28,
 					"Buffs": [
 						{
 							"Duration": 600,
@@ -2815,8 +3056,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Moqueca",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 29,
 					"Buffs": [
 						{
 							"Duration": 600,
@@ -2888,8 +3129,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_ChocolateMilk",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 30,
 					"Buffs": [
 						{
 							"Duration": 200,
@@ -2962,8 +3203,8 @@
 					"IsDrink": true,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_OrangeCaipirinha",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 31,
 					"Buffs": [
 						{
 							"Duration": 200,
@@ -3036,8 +3277,8 @@
 					"IsDrink": true,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Tacaca",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 32,
 					"Buffs": [
 						{
 							"Duration": 200,
@@ -3109,8 +3350,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_WindPastel",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 33,
 					"Buffs": [
 						{
 							"Duration": 200,
@@ -3182,8 +3423,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_MariaMole",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 34,
 					"Buffs": [
 						{
 							"Duration": 200,
@@ -3256,8 +3497,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_MocotoCandy",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 35,
 					"Buffs": [
 						{
 							"Duration": 220,
@@ -3331,8 +3572,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Cocada",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 36,
 					"Buffs": [
 						{
 							"Duration": 220,
@@ -3405,8 +3646,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Rapadura",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 37,
 					"Buffs": [
 						{
 							"Duration": 220,
@@ -3478,8 +3719,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Vatapa",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 38,
 					"Buffs": [
 						{
 							"Duration": 614,
@@ -3552,8 +3793,8 @@
 					"IsDrink": true,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Quentao",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 39,
 					"Buffs": [
 						{
 							"Duration": 380,
@@ -3626,8 +3867,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Quindim",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 40,
 					"Buffs": [
 						{
 							"Duration": 400,
@@ -3681,7 +3922,7 @@
 			"Action": "EditData",
 			"Target": "Data/CookingRecipes",
 			"Entries": {
-				"{{ModId}}_Quindim": "(O)176 3 (O)88 1 (O)245 1/10 10/{{ModId}}_Quindim/null/{{i18n: CheshiresAtelier.THTexpansion_Food41}}"
+				"{{ModId}}_Quindim": "-5 3 (O)88 1 (O)245 1/10 10/{{ModId}}_Quindim/null/{{i18n: CheshiresAtelier.THTexpansion_Food41}}"
 			}
 		},
 		//Bala baiana
@@ -3700,8 +3941,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_BalaBaiana",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 41,
 					"Buffs": [
 						{
 							"Duration": 400,
@@ -3774,8 +4015,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Pave",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 42,
 					"Buffs": [
 						{
 							"Duration": 400,
@@ -3848,8 +4089,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Suspiro",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 43,
 					"Buffs": [
 						{
 							"Duration": 400,
@@ -3903,7 +4144,7 @@
 			"Action": "EditData",
 			"Target": "Data/CookingRecipes",
 			"Entries": {
-				"{{ModId}}_Suspiro": "(O)245 1 (O)176 1/10 10/{{ModId}}_Suspiro/null/{{i18n: CheshiresAtelier.THTexpansion_Food44}}"
+				"{{ModId}}_Suspiro": "(O)245 1 -5 1/10 10/{{ModId}}_Suspiro/null/{{i18n: CheshiresAtelier.THTexpansion_Food44}}"
 			}
 		},
 		//Cuscuz
@@ -3922,8 +4163,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Cuscuz",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 44,
 					"Buffs": [
 						{
 							"Duration": 610,
@@ -3995,8 +4236,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Cheesebread",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 45,
 					"Buffs": [
 						{
 							"Duration": 400,
@@ -4050,7 +4291,7 @@
 			"Action": "EditData",
 			"Target": "Data/CookingRecipes",
 			"Entries": {
-				"{{ModId}}_Cheesebread": "(O)176 1 (O)184 1 (O)242 1/10 10/{{ModId}}_Cheesebread/null/{{i18n: CheshiresAtelier.THTexpansion_Food46}}"
+				"{{ModId}}_Cheesebread": "-5 1 (O)184 1 (O)242 1/10 10/{{ModId}}_Cheesebread/null/{{i18n: CheshiresAtelier.THTexpansion_Food46}}"
 			}
 		},
 		//Dulce de leche
@@ -4069,8 +4310,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DulceDeLeche",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 46,
 					"Buffs": [
 						{
 							"Duration": 400,
@@ -4143,8 +4384,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Abara",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 47,
 					"Buffs": [
 						{
 							"Duration": 600,
@@ -4218,8 +4459,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Aberem",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 48,
 					"Buffs": [
 						{
 							"Duration": 600,
@@ -4293,8 +4534,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_CarreteiroRice",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 49,
 					"Buffs": [
 						{
 							"Duration": 600,
@@ -4368,8 +4609,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_ShrimpBobo",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 50,
 					"Buffs": [
 						{
 							"Duration": 600,
@@ -4442,8 +4683,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_RollCake",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 51,
 					"Buffs": [
 						{
 							"Duration": 300,
@@ -4497,7 +4738,7 @@
 			"Action": "EditData",
 			"Target": "Data/CookingRecipes",
 			"Entries": {
-				"{{ModId}}_RollCake": "(O){{ModId}}_Goiabada 1 (O)176 1 (O)245 1 (O)246 1/10 10/{{ModId}}_RollCake/null/{{i18n: CheshiresAtelier.THTexpansion_Food52}}"
+				"{{ModId}}_RollCake": "(O){{ModId}}_Goiabada 1 -5 1 (O)245 1 (O)246 1/10 10/{{ModId}}_RollCake/null/{{i18n: CheshiresAtelier.THTexpansion_Food52}}"
 			}
 		},
 		//Caldo de piranha
@@ -4516,8 +4757,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_PiranhaSoup",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 52,
 					"Buffs": [
 						{
 							"Duration": 700,
@@ -4589,8 +4830,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_TropeiroBeans",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 53,
 					"Buffs": [
 						{
 							"Duration": 450,
@@ -4664,8 +4905,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_FriedTucunare",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 54,
 					"Buffs": [
 						{
 							"Duration": 450,
@@ -4738,8 +4979,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_GreenCornCanjica",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 55,
 					"Buffs": [
 						{
 							"Duration": 800,
@@ -4812,8 +5053,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_PeDeMoleque",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 56,
 					"Buffs": [
 						{
 							"Duration": 600,
@@ -4886,8 +5127,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_PintadoNaTelha",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 57,
 					"Buffs": [
 						{
 							"Duration": 600,
@@ -4960,8 +5201,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_PirarucuDeCasaca",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 58,
 					"Buffs": [
 						{
 							"Duration": 700,
@@ -5033,8 +5274,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_TutuBeans",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 59,
 					"Buffs": [
 						{
 							"Duration": 700,
@@ -5110,8 +5351,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_VacaAtolada",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 60,
 					"Buffs": [
 						{
 							"Duration": 700,
@@ -5184,8 +5425,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_BlackPacuPirao",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 61,
 					"Buffs": [
 						{
 							"Duration": 1100,
@@ -5258,8 +5499,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_PururucaPig",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 62,
 					"Buffs": [
 						{
 							"Duration": 700,
@@ -5327,8 +5568,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Pacoquinha",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 63,
 					"Buffs": [
 						{
 							"Duration": 700,
@@ -5402,8 +5643,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_Caramel",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 64,
 					"Buffs": [
 						{
 							"Duration": 700,
@@ -5476,8 +5717,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_CondensedMilkFlan",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 65,
 					"Buffs": [
 						{
 							"Duration": 900,
@@ -5533,7 +5774,7 @@
 			"Action": "EditData",
 			"Target": "Data/CookingRecipes",
 			"Entries": {
-				"{{ModId}}_CondensedMilkFlan": "(O)245 1 (O){{ModId}}_Caramel 1 (O){{ModId}}_CondensedMilk 1 (O)176 1/10 10/{{ModId}}_CondensedMilkFlan/null/{{i18n: CheshiresAtelier.THTexpansion_Food66}}"
+				"{{ModId}}_CondensedMilkFlan": "(O)245 1 (O){{ModId}}_Caramel 1 (O){{ModId}}_CondensedMilk 1 -5 1/10 10/{{ModId}}_CondensedMilkFlan/null/{{i18n: CheshiresAtelier.THTexpansion_Food66}}"
 			}
 		},
 		//_BreadedDogfishShark
@@ -5552,8 +5793,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_BreadedDogfishShark",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 66,
 					"Buffs": [
 						{
 							"Duration": 900,
@@ -5607,7 +5848,7 @@
 			"Action": "EditData",
 			"Target": "Data/CookingRecipes",
 			"Entries": {
-				"{{ModId}}_BreadedDogfishShark": "(O)246 1 (O)176 1/10 10/{{ModId}}_BreadedDogfishShark/null/{{i18n: CheshiresAtelier.THTexpansion_Food67}}"
+				"{{ModId}}_BreadedDogfishShark": "(O)246 1 -5 1/10 10/{{ModId}}_BreadedDogfishShark/null/{{i18n: CheshiresAtelier.THTexpansion_Food67}}"
 			}
 		},
 		//Cupuassu flan
@@ -5626,8 +5867,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_CupuassuFlan",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 67,
 					"Buffs": [
 						{
 							"Duration": 900,
@@ -5683,7 +5924,7 @@
 			"Action": "EditData",
 			"Target": "Data/CookingRecipes",
 			"Entries": {
-				"{{ModId}}_CupuassuFlan": "(O)245 1 (O){{ModId}}_Caramel 1 (O){{ModId}}_CondensedMilk 1 (O)176 1 (O){{ModId}}_Cupuassu 1/10 10/{{ModId}}_CupuassuFlan/null/{{i18n: CheshiresAtelier.THTexpansion_Food68}}"
+				"{{ModId}}_CupuassuFlan": "(O)245 1 (O){{ModId}}_Caramel 1 (O){{ModId}}_CondensedMilk 1 -5 1 (O){{ModId}}_Cupuassu 1/10 10/{{ModId}}_CupuassuFlan/null/{{i18n: CheshiresAtelier.THTexpansion_Food68}}"
 			}
 		},
 		//Pindorama nut cake
@@ -5702,8 +5943,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_PindoramaNutCake",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 68,
 					"Buffs": [
 						{
 							"Duration": 900,
@@ -5758,7 +5999,7 @@
 			"Action": "EditData",
 			"Target": "Data/CookingRecipes",
 			"Entries": {
-				"{{ModId}}_PindoramaNutCake": "(O)245 1 (O)246 1 (O)176 1 (O){{ModId}}_PindoRamaNut 1/10 10/{{ModId}}_PindoramaNutCake/null/{{i18n: CheshiresAtelier.THTexpansion_Food69}}"
+				"{{ModId}}_PindoramaNutCake": "(O)245 1 (O)246 1 -5 1 (O){{ModId}}_PindoRamaNut 1/10 10/{{ModId}}_PindoramaNutCake/null/{{i18n: CheshiresAtelier.THTexpansion_Food69}}"
 			}
 		},
 		//X-Tudão
@@ -5777,8 +6018,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_AnythingBurger",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 69,
 					"Buffs": [
 						{
 							"Duration": 900,
@@ -5855,8 +6096,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DuckOnTucupi",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 70,
 					"Buffs": [
 						{
 							"Duration": 900,
@@ -5929,8 +6170,8 @@
 					"IsDrink": true,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_JatobaCocktail",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 71,
 					"Buffs": [
 						{
 							"Duration": 900,
@@ -6004,8 +6245,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_HazelnutChocolateWithPowderedMilkSwirl",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 72,
 					"Buffs": [
 						{
 							"Duration": 900,
@@ -6079,8 +6320,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_MorangoDoAmor",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 73,
 					"Buffs": [
 						{
 							"Duration": 900,
@@ -6154,8 +6395,8 @@
 					"IsDrink": false,
 					"ExcludeFromRandomSale": true,
 					"ExcludeFromShippingCollection": true,
-					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_CakeBatter",
-					"SpriteIndex": 0,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 74,
 					"Buffs": [
 						{
 							"Duration": 900,
@@ -6213,6 +6454,594 @@
 					"Delimiter": " "
 				}
 			]
+		},
+		//Baked Pine Nut
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_BakedPineNut": {
+					"Name": "{{ModId}}_BakedPineNut",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Food76}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Food76Desc}}",
+					"Type": "Cooking",
+					"Category": -7,
+					"Price": 75,
+					"Edibility": 43,
+					"IsDrink": false,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 75,
+					"Buffs": [
+						{
+							"Duration": 500,
+							"CustomAttributes": {
+								"CombatLevel": 0,
+								"FarmingLevel": 0,
+								"FishingLevel": 0,
+								"MiningLevel": 2,
+								"LuckLevel": 0,
+								"ForagingLevel": 1,
+								"MaxStamina": 0,
+								"MagneticRadius": 0,
+								"Speed": 0,
+								"Defense": 0,
+								"Attack": 0,
+								"AttackMultiplier": 0,
+								"Immunity": 0,
+								"KnockbackMultiplier": 0,
+								"WeaponSpeedMultiplier": 0,
+								"CriticalChanceMultiplier": 0,
+								"CriticalPowerMultiplier": 0,
+								"WeaponPrecisionMultiplier": 0
+							}
+						}
+					],
+					"ContextTags": [
+						"tht_food"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_BakedPineNut",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"LogName": "Baked Pine Nut recipe",
+			"Action": "EditData",
+			"Target": "Data/CookingRecipes",
+			"Entries": {
+				"{{ModId}}_BakedPineNut": "(O){{ModId}}_PineNut 5/10 10/{{ModId}}_BakedPineNut/null/{{i18n: CheshiresAtelier.THTexpansion_Food76}}"
+			}
+		},
+		//Quibebe
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Quibebe": {
+					"Name": "{{ModId}}_Quibebe",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Food77}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Food77Desc}}",
+					"Type": "Cooking",
+					"Category": -7,
+					"Price": 230,
+					"Edibility": 89,
+					"IsDrink": false,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 76,
+					"Buffs": [
+						{
+							"Duration": 900,
+							"CustomAttributes": {
+								"CombatLevel": 0,
+								"FarmingLevel": 0,
+								"FishingLevel": 2,
+								"MiningLevel": 0,
+								"LuckLevel": 2,
+								"ForagingLevel": 0,
+								"MaxStamina": 0,
+								"MagneticRadius": 0,
+								"Speed": 0,
+								"Defense": 0,
+								"Attack": 0,
+								"AttackMultiplier": 0,
+								"Immunity": 0,
+								"KnockbackMultiplier": 0,
+								"WeaponSpeedMultiplier": 0,
+								"CriticalChanceMultiplier": 0,
+								"CriticalPowerMultiplier": 0,
+								"WeaponPrecisionMultiplier": 0
+							}
+						}
+					],
+					"ContextTags": [
+						"tht_food"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_Quibebe",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"LogName": "Quibebe recipe",
+			"Action": "EditData",
+			"Target": "Data/CookingRecipes",
+			"Entries": {
+				"{{ModId}}_Quibebe": "(O){{ModId}}_PalmOil 1 (O)276 1 (O)248 1/10 10/{{ModId}}_Quibebe/null/{{i18n: CheshiresAtelier.THTexpansion_Food77}}"
+			}
+		},
+		//Barreado
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Barreado": {
+					"Name": "{{ModId}}_Barreado",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Food78}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Food78Desc}}",
+					"Type": "Cooking",
+					"Category": -7,
+					"Price": 210,
+					"Edibility": 72,
+					"IsDrink": false,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 77,
+					"Buffs": [
+						{
+							"Duration": 900,
+							"CustomAttributes": {
+								"CombatLevel": 0,
+								"FarmingLevel": 1,
+								"FishingLevel": 0,
+								"MiningLevel": 0,
+								"LuckLevel": 1,
+								"ForagingLevel": 1,
+								"MaxStamina": 0,
+								"MagneticRadius": 0,
+								"Speed": 0,
+								"Defense": 0,
+								"Attack": 0,
+								"AttackMultiplier": 0,
+								"Immunity": 0,
+								"KnockbackMultiplier": 0,
+								"WeaponSpeedMultiplier": 0,
+								"CriticalChanceMultiplier": 0,
+								"CriticalPowerMultiplier": 0,
+								"WeaponPrecisionMultiplier": 0
+							}
+						}
+					],
+					"ContextTags": [
+						"tht_food"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_Barreado",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"LogName": "Barreado recipe",
+			"Action": "EditData",
+			"Target": "Data/CookingRecipes",
+			"Entries": {
+				"{{ModId}}_Barreado": "(O){{ModId}}_CannedMeat 1 (O)91 1 (O)248 1/10 10/{{ModId}}_Barreado/null/{{i18n: CheshiresAtelier.THTexpansion_Food78}}"
+			}
+		},
+		//Tridax Daisy Tea
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_TridaxDaisyTea": {
+					"Name": "{{ModId}}_TridaxDaisyTea",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Food79}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Food79Desc}}",
+					"Type": "Cooking",
+					"Category": -7,
+					"Price": 110,
+					"Edibility": 32,
+					"IsDrink": true,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 78,
+					"Buffs": [
+						{
+							"Duration": 600,
+							"CustomAttributes": {
+								"CombatLevel": 0,
+								"FarmingLevel": 0,
+								"FishingLevel": 0,
+								"MiningLevel": 0,
+								"LuckLevel": 2,
+								"ForagingLevel": 0,
+								"MaxStamina": 0,
+								"MagneticRadius": 0,
+								"Speed": 0,
+								"Defense": 0,
+								"Attack": 0,
+								"AttackMultiplier": 0,
+								"Immunity": 0,
+								"KnockbackMultiplier": 0,
+								"WeaponSpeedMultiplier": 0,
+								"CriticalChanceMultiplier": 0,
+								"CriticalPowerMultiplier": 0,
+								"WeaponPrecisionMultiplier": 0
+							}
+						}
+					],
+					"ContextTags": [
+						"tht_drink"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_TridaxDaisyTea",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"LogName": "Barreado recipe",
+			"Action": "EditData",
+			"Target": "Data/CookingRecipes",
+			"Entries": {
+				"{{ModId}}_TridaxDaisyTea": "(O){{ModId}}_TridaxDaisy 3/10 10/{{ModId}}_TridaxDaisyTea/null/{{i18n: CheshiresAtelier.THTexpansion_Food79}}"
+			}
+		},
+		//Red berries cake
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_RedBerriesCake": {
+					"Name": "{{ModId}}_RedBerriesCake",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Food80}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Food80Desc}}",
+					"Type": "Cooking",
+					"Category": -7,
+					"Price": 290,
+					"Edibility": 91,
+					"IsDrink": false,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 79,
+					"Buffs": [
+						{
+							"Duration": 900,
+							"CustomAttributes": {
+								"CombatLevel": 0,
+								"FarmingLevel": 1,
+								"FishingLevel": 0,
+								"MiningLevel": 0,
+								"LuckLevel": 0,
+								"ForagingLevel": 0,
+								"MaxStamina": 0,
+								"MagneticRadius": 0,
+								"Speed": 0,
+								"Defense": 0,
+								"Attack": 0,
+								"AttackMultiplier": 0,
+								"Immunity": 0,
+								"KnockbackMultiplier": 0,
+								"WeaponSpeedMultiplier": 0,
+								"CriticalChanceMultiplier": 0,
+								"CriticalPowerMultiplier": 0,
+								"WeaponPrecisionMultiplier": 0
+							}
+						}
+					],
+					"ContextTags": [
+						"tht_food",
+						"allergen_egg",
+						"tht_sweet",
+						"food_party"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_RedBerriesCake",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"LogName": "Barreado recipe",
+			"Action": "EditData",
+			"Target": "Data/CookingRecipes",
+			"Entries": {
+				"{{ModId}}_RedBerriesCake": "(O){{ModId}}_BarbadosCherry 1 (O)296 1 (O)400 1 (O)410 1 (O)246 1 -5 1/10 10/{{ModId}}_RedBerriesCake/null/{{i18n: CheshiresAtelier.THTexpansion_Food80}}"
+			}
+		},
+		//Mané Pelado
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_ManePelado": {
+					"Name": "{{ModId}}_ManePelado",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Food81}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Food81Desc}}",
+					"Type": "Cooking",
+					"Category": -7,
+					"Price": 220,
+					"Edibility": 60,
+					"IsDrink": false,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 80,
+					"Buffs": [
+						{
+							"Duration": 550,
+							"CustomAttributes": {
+								"CombatLevel": 0,
+								"FarmingLevel": 0,
+								"FishingLevel": 0,
+								"MiningLevel": 0,
+								"LuckLevel": 2,
+								"ForagingLevel": 3,
+								"MaxStamina": 0,
+								"MagneticRadius": 0,
+								"Speed": 0,
+								"Defense": 0,
+								"Attack": 0,
+								"AttackMultiplier": 0,
+								"Immunity": 0,
+								"KnockbackMultiplier": 0,
+								"WeaponSpeedMultiplier": 0,
+								"CriticalChanceMultiplier": 0,
+								"CriticalPowerMultiplier": 0,
+								"WeaponPrecisionMultiplier": 0
+							}
+						}
+					],
+					"ContextTags": [
+						"tht_food",
+						"allergen_egg",
+						"tht_sweet",
+						"food_party"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_ManePelado",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"LogName": "Mané pelado recipe",
+			"Action": "EditData",
+			"Target": "Data/CookingRecipes",
+			"Entries": {
+				"{{ModId}}_ManePelado": "(O){{ModId}}_CassavaFlour 1 (O)88 1 -5 1 (O)424/10 10/{{ModId}}_ManePelado/null/{{i18n: CheshiresAtelier.THTexpansion_Food81}}"
+			}
+		},
+		//Paleta mexicana de pitanga
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_SurinamCherryPaleta": {
+					"Name": "{{ModId}}_SurinamCherryPaleta",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Food82}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Food82Desc}}",
+					"Type": "Cooking",
+					"Category": -7,
+					"Price": 70,
+					"Edibility": 40,
+					"IsDrink": false,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 81,
+					"Buffs": [
+						{
+							"Duration": 550,
+							"CustomAttributes": {
+								"CombatLevel": 0,
+								"FarmingLevel": 0,
+								"FishingLevel": 0,
+								"MiningLevel": 0,
+								"LuckLevel": 1,
+								"ForagingLevel": 1,
+								"MaxStamina": 0,
+								"MagneticRadius": 0,
+								"Speed": 0,
+								"Defense": 0,
+								"Attack": 0,
+								"AttackMultiplier": 0,
+								"Immunity": 0,
+								"KnockbackMultiplier": 0,
+								"WeaponSpeedMultiplier": 0,
+								"CriticalChanceMultiplier": 0,
+								"CriticalPowerMultiplier": 0,
+								"WeaponPrecisionMultiplier": 0
+							}
+						}
+					],
+					"ContextTags": [
+						"tht_food",
+						"allergen_dairy",
+						"tht_sweet",
+						"food_party"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_SurinamCherryPaleta",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"LogName": "Paleta Mexicana de pitanga recipe",
+			"Action": "EditData",
+			"Target": "Data/CookingRecipes",
+			"Entries": {
+				"{{ModId}}_SurinamCherryPaleta": "-6 1 (O){{ModId}}_WildSurinamCherry 3/10 10/{{ModId}}_SurinamCherryPaleta/null/{{i18n: CheshiresAtelier.THTexpansion_Food82}}"
+			}
+		},
+		//Jabuticaba cake
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_JabuticabaCake": {
+					"Name": "{{ModId}}_JabuticabaCake",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Food83}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Food83Desc}}",
+					"Type": "Cooking",
+					"Category": -7,
+					"Price": 300,
+					"Edibility": 102,
+					"IsDrink": false,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Dishes/{{ModId}}_DishesSprites",
+					"SpriteIndex": 82,
+					"Buffs": [
+						{
+							"Duration": 550,
+							"CustomAttributes": {
+								"CombatLevel": 0,
+								"FarmingLevel": 0,
+								"FishingLevel": 0,
+								"MiningLevel": 0,
+								"LuckLevel": 0,
+								"ForagingLevel": 0,
+								"MaxStamina": 0,
+								"MagneticRadius": 0,
+								"Speed": 0,
+								"Defense": 0,
+								"Attack": 0,
+								"AttackMultiplier": 0,
+								"Immunity": 0,
+								"KnockbackMultiplier": 0,
+								"WeaponSpeedMultiplier": 0,
+								"CriticalChanceMultiplier": 0,
+								"CriticalPowerMultiplier": 0,
+								"WeaponPrecisionMultiplier": 0
+							}
+						}
+					],
+					"ContextTags": [
+						"tht_food",
+						"allergen_egg",
+						"tht_sweet",
+						"food_party"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Like"
+					],
+					"Value": "{{ModId}}_JabuticabaCake",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"LogName": "Jabuticaba cake recipe",
+			"Action": "EditData",
+			"Target": "Data/CookingRecipes",
+			"Entries": {
+				"{{ModId}}_JabuticabaCake": "-5 1 (O)246 1 (O){{ModId}}_Jabuticaba 3/10 10/{{ModId}}_JabuticabaCake/null/{{i18n: CheshiresAtelier.THTexpansion_Food83}}"
+			}
 		},
 		//Crops
 		{
@@ -7907,21 +8736,21 @@
 			//trees sprites
 			"LogName": "Load textures",
 			"Action": "Load",
-			"Target": "Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_PalmOilTree, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_MorichePalmTree, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_PindoRamaCacaoTree, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_JatobaTree, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_GuavaTree, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_JabuticabaTree",
+			"Target": "Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_PalmOilTree, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_MorichePalmTree, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_PindoRamaCacaoTree, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_JatobaTree, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_GuavaTree, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_JabuticabaTree, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_PassionFruitTree",
 			"FromFile": "assets/Trees/{{TargetWithoutPath}}.png"
 		},
 		//Saplings
 		{
 			"LogName": "Load textures",
 			"Action": "Load",
-			"Target": "Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_PalmOilFruitSapling, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_MorichePalmFruitSapling, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_PindoRamaCacaoSapling, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_JatobaSapling, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_GuavaSapling, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_JabuticabaSapling",
+			"Target": "Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_PalmOilFruitSapling, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_MorichePalmFruitSapling, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_PindoRamaCacaoSapling, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_JatobaSapling, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_GuavaSapling, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_JabuticabaSapling, Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_PassionFruitSapling",
 			"FromFile": "assets/Trees/{{TargetWithoutPath}}.png"
 		},
 		//Fruits
 		{
 			"LogName": "Load textures",
 			"Action": "Load",
-			"Target": "Mods/{{ModId}}/assets/Items/Fruits/CheshiresAtelier.THTexpansion_PalmOilFruit, Mods/{{ModId}}/assets/Items/Fruits/CheshiresAtelier.THTexpansion_MorichePalmFruit, Mods/{{ModId}}/assets/Items/Fruits/CheshiresAtelier.THTexpansion_PindoRamaCacao, Mods/{{ModId}}/assets/Items/Fruits/CheshiresAtelier.THTexpansion_Jatoba, Mods/{{ModId}}/assets/Items/Fruits/CheshiresAtelier.THTexpansion_Guava, Mods/{{ModId}}/assets/Items/Fruits/CheshiresAtelier.THTexpansion_Jabuticaba",
+			"Target": "Mods/{{ModId}}/assets/Items/Fruits/CheshiresAtelier.THTexpansion_PalmOilFruit, Mods/{{ModId}}/assets/Items/Fruits/CheshiresAtelier.THTexpansion_MorichePalmFruit, Mods/{{ModId}}/assets/Items/Fruits/CheshiresAtelier.THTexpansion_PindoRamaCacao, Mods/{{ModId}}/assets/Items/Fruits/CheshiresAtelier.THTexpansion_Jatoba, Mods/{{ModId}}/assets/Items/Fruits/CheshiresAtelier.THTexpansion_Guava, Mods/{{ModId}}/assets/Items/Fruits/CheshiresAtelier.THTexpansion_Jabuticaba, Mods/{{ModId}}/assets/Items/Fruits/CheshiresAtelier.THTexpansion_PassionFruit",
 			"FromFile": "assets/Items/Fruits/{{TargetWithoutPath}}.png"
 		},
 		//Palm Oil/Dende
@@ -8244,6 +9073,61 @@
 						}
 					],
 					"Texture": "Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_JabuticabaTree",
+					"TextureSpriteRow": 0
+				}
+			}
+		},
+		//Passion Fruit
+		{
+			"LogName": "Add Passion fruit and sapling to objects",
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_PassionFruit": {
+					"Name": "{{ModId}}_PassionFruit",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Fruit6}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Fruit6Desc}}",
+					"Type": "Basic",
+					"Category": -79,
+					"Price": 150,
+					"Texture": "Mods/{{ModId}}/assets/Items/Fruits/CheshiresAtelier.THTexpansion_PassionFruit",
+					"SpriteIndex": 0,
+					"Edibility": 32,
+					"ContextTags": [
+						"color_yellow"
+					]
+				},
+				"{{ModId}}_PassionFruitSapling": {
+					"Name": "{{ModId}}_PassionFruitSapling",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Fruit6Sapling}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Fruit6SaplingDesc}}",
+					"Type": "Basic",
+					"Category": -74,
+					"Price": 1000,
+					"Texture": "Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_PassionFruitSapling",
+					"SpriteIndex": 0,
+					"Edibility": -300
+				}
+			}
+		},
+		{
+			"LogName": "Add fruit trees",
+			"Action": "EditData",
+			"Target": "Data/FruitTrees",
+			"Entries": {
+				"{{ModId}}_PassionFruitSapling": {
+					"DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_Fruit6}}",
+					"Seasons": [
+						"Spring",
+						"Summer"
+					],
+					"Fruit": [
+						{
+							"ID": "{{ModId}}_PassionFruit",
+							"ItemId": "{{ModId}}_PassionFruit"
+						}
+					],
+					"Texture": "Mods/{{ModId}}/assets/Trees/CheshiresAtelier.THTexpansion_PassionFruitTree",
 					"TextureSpriteRow": 0
 				}
 			}

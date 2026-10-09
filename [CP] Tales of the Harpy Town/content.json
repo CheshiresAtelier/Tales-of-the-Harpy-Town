@@ -366,7 +366,8 @@
 							"ID": "{{ModId}}_SpawnSpringForage6",
 							"RandomItemId": [
 								"(O){{ModId}}_SnakePlant",
-								"{{ModId}}_Chicory"
+								"(O){{ModId}}_Chicory",
+								"(O){{ModId}}_Cabeludinha"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Spring"
@@ -375,7 +376,8 @@
 							"ID": "{{ModId}}_SpawnSummerForage6",
 							"RandomItemId": [
 								"(O){{ModId}}_Mandacaru",
-								"{{ModId}}_WildPeanut"
+								"(O){{ModId}}_WildPeanut",
+								"(O){{ModId}}_MossRose"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Summer"
@@ -384,7 +386,8 @@
 							"ID": "{{ModId}}_SpawnFallForage6",
 							"RandomItemId": [
 								"(O){{ModId}}_PindoRamaNut",
-								"(O){{ModId}}_Chicory"
+								"(O){{ModId}}_JellyEar",
+								"(O){{ModId}}_Grumixama"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Fall"
@@ -392,8 +395,9 @@
 						{
 							"ID": "{{ModId}}_SpawnWinterForage6",
 							"RandomItemId": [
-								"(O){{ModId}}_WildRosemary",
-								"(O){{ModId}}_CrystalRose"
+								"(O){{ModId}}_Pansy",
+								"(O){{ModId}}_CrystalRose",
+								"(O){{ModId}}_FortnightLily"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Winter"
@@ -605,37 +609,41 @@
 					},
 					"Forage": [
 						{
-							"ID": "{{ModId}}_SpawnSpringForage7",
+							"ID": "{{ModId}}_SpawnSpringForage6",
 							"RandomItemId": [
 								"(O){{ModId}}_SnakePlant",
-								"{{ModId}}_Chicory"
+								"(O){{ModId}}_Chicory",
+								"(O){{ModId}}_Cabeludinha"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Spring"
 						},
 						{
-							"ID": "{{ModId}}_SpawnSummerForage7",
+							"ID": "{{ModId}}_SpawnSummerForage6",
 							"RandomItemId": [
 								"(O){{ModId}}_Mandacaru",
-								"{{ModId}}_WildPeanut"
+								"(O){{ModId}}_WildPeanut",
+								"(O){{ModId}}_MossRose"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Summer"
 						},
 						{
-							"ID": "{{ModId}}_SpawnFallForage7",
+							"ID": "{{ModId}}_SpawnFallForage6",
 							"RandomItemId": [
 								"(O){{ModId}}_PindoRamaNut",
-								"(O){{ModId}}_Chicory"
+								"(O){{ModId}}_JellyEar",
+								"(O){{ModId}}_Grumixama"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Fall"
 						},
 						{
-							"ID": "{{ModId}}_SpawnWinterForage7",
+							"ID": "{{ModId}}_SpawnWinterForage6",
 							"RandomItemId": [
-								"(O){{ModId}}_WildRosemary",
-								"(O){{ModId}}_CrystalRose"
+								"(O){{ModId}}_Pansy",
+								"(O){{ModId}}_CrystalRose",
+								"(O){{ModId}}_FortnightLily"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Winter"
@@ -757,41 +765,41 @@
 					},
 					"Forage": [
 						{
-							"ID": "{{ModId}}_SpawnSpringForage10",
+							"ID": "{{ModId}}_SpawnSpringForage6",
 							"RandomItemId": [
-								"(O){{ModId}}_BarbadosCherry",
-								"(O){{ModId}}_LilacTasselflower",
-								"(O){{ModId}}_TridaxDaisy"
+								"(O){{ModId}}_SnakePlant",
+								"(O){{ModId}}_Chicory",
+								"(O){{ModId}}_Cabeludinha"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Spring"
 						},
 						{
-							"ID": "{{ModId}}_SpawnSummerForage10",
+							"ID": "{{ModId}}_SpawnSummerForage6",
 							"RandomItemId": [
-								"(O){{ModId}}_BengalDayflower",
-								"(O){{ModId}}_BlackNightshade",
-								"(O){{ModId}}_GlobeAmaranth"
+								"(O){{ModId}}_Mandacaru",
+								"(O){{ModId}}_WildPeanut",
+								"(O){{ModId}}_MossRose"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Summer"
 						},
 						{
-							"ID": "{{ModId}}_SpawnFallForage10",
+							"ID": "{{ModId}}_SpawnFallForage6",
 							"RandomItemId": [
-								"(O){{ModId}}_CosmoFlower",
-								"(O){{ModId}}_WildCoquinho",
-								"(O){{ModId}}_WildSurinamCherry"
+								"(O){{ModId}}_PindoRamaNut",
+								"(O){{ModId}}_JellyEar",
+								"(O){{ModId}}_Grumixama"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Fall"
 						},
 						{
-							"ID": "{{ModId}}_SpawnWinterForage10",
+							"ID": "{{ModId}}_SpawnWinterForage6",
 							"RandomItemId": [
-								"(O){{ModId}}_WildRosemary",
-								"(O){{ModId}}_YerbaMate",
-								"(O){{ModId}}_PineNut"
+								"(O){{ModId}}_Pansy",
+								"(O){{ModId}}_CrystalRose",
+								"(O){{ModId}}_FortnightLily"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Winter"
@@ -809,46 +817,56 @@
 					},
 					"Forage": [
 						{
-							"ID": "{{ModId}}_SpawnSpringForage11",
+							"ID": "{{ModId}}_SpawnSpringForage6",
 							"RandomItemId": [
-								"(O){{ModId}}_BarbadosCherry",
-								"(O){{ModId}}_LilacTasselflower",
-								"(O){{ModId}}_TridaxDaisy"
+								"(O){{ModId}}_SnakePlant",
+								"(O){{ModId}}_Chicory",
+								"(O){{ModId}}_Cabeludinha"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Spring"
 						},
 						{
-							"ID": "{{ModId}}_SpawnSummerForage11",
+							"ID": "{{ModId}}_SpawnSummerForage6",
 							"RandomItemId": [
-								"(O){{ModId}}_BengalDayflower",
-								"(O){{ModId}}_BlackNightshade",
-								"(O){{ModId}}_GlobeAmaranth"
+								"(O){{ModId}}_Mandacaru",
+								"(O){{ModId}}_WildPeanut",
+								"(O){{ModId}}_MossRose"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Summer"
 						},
 						{
-							"ID": "{{ModId}}_SpawnFallForage11",
+							"ID": "{{ModId}}_SpawnFallForage6",
 							"RandomItemId": [
-								"(O){{ModId}}_CosmoFlower",
-								"(O){{ModId}}_WildCoquinho",
-								"(O){{ModId}}_WildSurinamCherry"
+								"(O){{ModId}}_PindoRamaNut",
+								"(O){{ModId}}_JellyEar",
+								"(O){{ModId}}_Grumixama"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Fall"
 						},
 						{
-							"ID": "{{ModId}}_SpawnWinterForage11",
+							"ID": "{{ModId}}_SpawnWinterForage6",
 							"RandomItemId": [
-								"(O){{ModId}}_WildRosemary",
-								"(O){{ModId}}_YerbaMate",
-								"(O){{ModId}}_PineNut"
+								"(O){{ModId}}_Pansy",
+								"(O){{ModId}}_CrystalRose",
+								"(O){{ModId}}_FortnightLily"
 							],
 							"Chance": 1,
 							"Condition": "SEASON Winter"
 						}
 					]
+				},
+				"{{ModId}}_THTJoja2": {
+					"CreateOnLoad": {
+						"MapPath": "Maps/{{ModId}}_THTJoja2"
+					},
+					"DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_Map36}}",
+					"DefaultArrivalTile": {
+						"X": 29,
+						"Y": 35
+					}
 				}
 			}
 		},
@@ -1086,6 +1104,12 @@
 			"Action": "Load",
 			"Target": "Maps/{{ModID}}_THTsecretPlace2Path3",
 			"FromFile": "assets/maps/{{ModID}}_THTsecretPlace2Path3.tmx"
+		},
+		{
+			"LogName": "Load Joja 2",
+			"Action": "Load",
+			"Target": "Maps/{{ModID}}_THTJoja2",
+			"FromFile": "assets/maps/{{ModID}}_THTJoja2.tmx"
 		},
 		//Festival maps
 		{

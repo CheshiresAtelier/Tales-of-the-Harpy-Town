@@ -196,7 +196,9 @@
                 "THTMuseum.57": "{{i18n:CheshiresAtelier.THTexpansion_MapString187}}",
                 "THTMuseum.58": "{{i18n:CheshiresAtelier.THTexpansion_MapString188}}",
                 "THTMuseum.59": "{{i18n:CheshiresAtelier.THTexpansion_MapString189}}",
+
                 "THTMuseum.60": "{{i18n:CheshiresAtelier.THTexpansion_MapString190}}",
+                
                 "THTMuseum.61": "{{i18n:CheshiresAtelier.THTexpansion_MapString191}}",
                 "THTMuseum.62": "{{i18n:CheshiresAtelier.THTexpansion_MapString192}}",
                 "THTMuseum.63": "{{i18n:CheshiresAtelier.THTexpansion_MapString193}}",
@@ -264,7 +266,46 @@
                 "THTLilicasHouse.1": "{{i18n:CheshiresAtelier.THTexpansion_MapString255}}",
                 "THTLilicasHouse.2": "{{i18n:CheshiresAtelier.THTexpansion_MapString256}}",
                 "THTLilicasHouse.3": "{{i18n:CheshiresAtelier.THTexpansion_MapString257}}",
-                "THTLucaosHouse.1": "{{i18n:CheshiresAtelier.THTexpansion_MapString258}}"
+                "THTLucaosHouse.1": "{{i18n:CheshiresAtelier.THTexpansion_MapString258}}",
+
+                //
+                //Joja 2
+                //
+                "THTjoja2.1": "{{i18n:CheshiresAtelier.THTexpansion_MapString259}}",
+                "THTjoja2.2": "{{i18n:CheshiresAtelier.THTexpansion_MapString260}}",
+                "THTjoja2.3": "{{i18n:CheshiresAtelier.THTexpansion_MapString261}}",
+                "THTjoja2.4": "{{i18n:CheshiresAtelier.THTexpansion_MapString262}}",
+                "THTjoja2.5": "{{i18n:CheshiresAtelier.THTexpansion_MapString263}}",
+                "THTjoja2.6": "{{i18n:CheshiresAtelier.THTexpansion_MapString264}}",
+                "THTjoja2.7": "{{i18n:CheshiresAtelier.THTexpansion_MapString265}}",
+                "THTjoja2.8": "{{i18n:CheshiresAtelier.THTexpansion_MapString266}}",
+                "THTjoja2.9": "{{i18n:CheshiresAtelier.THTexpansion_MapString267}}",
+                "THTjoja2.10": "{{i18n:CheshiresAtelier.THTexpansion_MapString268}}",
+                "THTjoja2.11": "{{i18n:CheshiresAtelier.THTexpansion_MapString269}}",
+                "THTjoja2.12": "{{i18n:CheshiresAtelier.THTexpansion_MapString270}}",
+                "THTjoja2.13": "{{i18n:CheshiresAtelier.THTexpansion_MapString271}}",
+                "THTjoja2.14": "{{i18n:CheshiresAtelier.THTexpansion_MapString272}}",
+                "THTjoja2.15": "{{i18n:CheshiresAtelier.THTexpansion_MapString273}}",
+                "THTjoja2.16": "{{i18n:CheshiresAtelier.THTexpansion_MapString274}}",
+                "THTjoja2.17": "{{i18n:CheshiresAtelier.THTexpansion_MapString275}}",
+                "THTjoja2.18": "{{i18n:CheshiresAtelier.THTexpansion_MapString276}}",
+                "THTjoja2.19": "{{i18n:CheshiresAtelier.THTexpansion_MapString277}}",
+                "THTjoja2.20": "{{i18n:CheshiresAtelier.THTexpansion_MapString278}}",
+                "THTjoja2.21": "{{i18n:CheshiresAtelier.THTexpansion_MapString279}}",
+                "THTjoja2.22": "{{i18n:CheshiresAtelier.THTexpansion_MapString280}}",
+                "THTjoja2.23": "{{i18n:CheshiresAtelier.THTexpansion_MapString281}}",
+                "THTjoja2.24": "{{i18n:CheshiresAtelier.THTexpansion_MapString282}}",
+                "THTjoja2.25": "{{i18n:CheshiresAtelier.THTexpansion_MapString283}}",
+                "THTjoja2.26": "{{i18n:CheshiresAtelier.THTexpansion_MapString284}}",
+                "THTjoja2.27": "{{i18n:CheshiresAtelier.THTexpansion_MapString285}}",
+                "THTjoja2.28": "{{i18n:CheshiresAtelier.THTexpansion_MapString286}}",
+
+                "THTjoja2.29": "{{i18n:CheshiresAtelier.THTexpansion_MapString287}}",
+
+                "THTjoja2.30": "{{i18n:CheshiresAtelier.THTexpansion_MapString288}}",
+                "THTjoja2.31": "{{i18n:CheshiresAtelier.THTexpansion_MapString289}}",
+                "THTjoja2.32": "{{i18n:CheshiresAtelier.THTexpansion_MapString290}}"
+
             }
         }
     ]
