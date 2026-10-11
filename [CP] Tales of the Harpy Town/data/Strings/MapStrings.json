@@ -299,12 +299,14 @@
                 "THTjoja2.26": "{{i18n:CheshiresAtelier.THTexpansion_MapString284}}",
                 "THTjoja2.27": "{{i18n:CheshiresAtelier.THTexpansion_MapString285}}",
                 "THTjoja2.28": "{{i18n:CheshiresAtelier.THTexpansion_MapString286}}",
-
                 "THTjoja2.29": "{{i18n:CheshiresAtelier.THTexpansion_MapString287}}",
-
                 "THTjoja2.30": "{{i18n:CheshiresAtelier.THTexpansion_MapString288}}",
                 "THTjoja2.31": "{{i18n:CheshiresAtelier.THTexpansion_MapString289}}",
-                "THTjoja2.32": "{{i18n:CheshiresAtelier.THTexpansion_MapString290}}"
+                "THTjoja2.32": "{{i18n:CheshiresAtelier.THTexpansion_MapString290}}",
+
+                //Lore strings
+
+                "THTloreString.1": "{{i18n:CheshiresAtelier.THTexpansion_LoreString1}}"
 
             }
         }
