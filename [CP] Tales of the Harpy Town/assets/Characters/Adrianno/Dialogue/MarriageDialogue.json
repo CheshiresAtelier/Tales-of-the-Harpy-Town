@@ -7,10 +7,52 @@
             "Entries": {
                 "{{ModId}}_Adrianno0": "{{i18n: CheshiresAtelier.THTexpansion_EngagementAdrianno1}}",
                 "{{ModId}}_Adrianno1": "{{i18n: CheshiresAtelier.THTexpansion_EngagementAdrianno2}}"
-            }
+            },
+            "When": {
+            "PlayerGender": "Male",
+            "HasMod: |contains=Hana.GenderNeutralityMod": false
+            },
+            "Update": "OnLocationChange, OnTimeChange"
         },
+        {
+            "LogName": "Engaged Dialogue",
+            "Action": "EditData",
+            "Target": "data/EngagementDialogue",
+            "Entries": {
+                "{{ModId}}_Adrianno0": "{{i18n: CheshiresAtelier.THTexpansion_EngagementAdrianno1}}",
+                "{{ModId}}_Adrianno1": "{{i18n: CheshiresAtelier.THTexpansion_EngagementAdrianno2}}"
+            },
+            "When": {
+            "HasMod": "Hana.GenderNeutralityMod"
+            },
+            "Update": "OnLocationChange, OnTimeChange"
+        },
+    {
+      "Action": "EditData",
+      "Target": "Strings/StringsFromCSFiles",
+      "Entries": {
+        "{{ModId}}_Adrianno_EngagedRoommate": "{{i18n: CheshiresAtelier.THTexpansion_EngagementAdriannoRoommate}}"
+      },
+            "When": {
+            "PlayerGender": "Female",
+            "HasMod: |contains=Hana.GenderNeutralityMod": false
+            },
+        "Update": "OnLocationChange, OnTimeChange"
+    },
 {
-                "LogName": "Marriage Dialogue - Base",
+      "Action": "EditData",
+      "Target": "Data/EngagementDialogue",
+      "Entries": {
+        "{{ModId}}_AdriannoRoommate0": "{{i18n: CheshiresAtelier.THTexpansion_EngagementAdriannoRoommate1}}",
+        "{{ModId}}_AdriannoRoommate1": "{{i18n: CheshiresAtelier.THTexpansion_EngagementAdriannoRoommate2}}"
+      },
+            "When": {
+            "PlayerGender": "Female",
+            "HasMod: |contains=Hana.GenderNeutralityMod": false
+            }
+    },
+{
+                "LogName": "Adrianno's Marriage Dialogue - Base - M farmer",
             "Action": "EditData",
             "Target": "Characters/Dialogue/MarriageDialogue{{ModId}}_Adrianno",
             "Entries":{
@@ -92,19 +134,101 @@
                 "Bad_7": "{{i18n: CheshiresAtelier.THTexpansion_Bad7Adrianno}}",
                 "Bad_8": "{{i18n: CheshiresAtelier.THTexpansion_Bad8Adrianno}}",
                 "Bad_9": "{{i18n: CheshiresAtelier.THTexpansion_Bad9Adrianno}}"
-            }
-        },
-        {
-            "LogName": "Engaged Dialogue",
-            "Action": "EditData",
-            "Target": "data/EngagementDialogue",
-            "Entries": {
-                "{{ModId}}_Adrianno0": "{{i18n: CheshiresAtelier.THTexpansion_EngagementAdriannoFemFarmer}}",
-                "{{ModId}}_Adrianno1": "{{i18n: CheshiresAtelier.THTexpansion_EngagementAdriannoFemFarmer}}"
             },
-	"When": {
-        "PlayerGender": "Female"
-            }
+            "When": {
+            "PlayerGender": "Male",
+            "HasMod: |contains=Hana.GenderNeutralityMod": false
+            },
+            "Update": "OnLocationChange, OnTimeChange"
+        },
+{
+                "LogName": "Adrianno's Marriage Dialogue - Base - NB farmer",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue{{ModId}}_Adrianno",
+            "Entries":{
+                "Spring_{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_MDspringAdrianno}}",
+                "Summer_{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_MDsummerAdrianno}}",
+                "Fall_{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_MDfallAdrianno}}",
+                "Winter_{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_MDwinterAdrianno}}",
+                "patio_{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_PatioAdrianno}}",
+                "Rainy_Day_0": "{{i18n: CheshiresAtelier.THTexpansion_RainyDay0Adrianno}}",
+                "Rainy_Day_1": "{{i18n: CheshiresAtelier.THTexpansion_RainyDay1Adrianno}}",
+                "Rainy_Day_2": "{{i18n: CheshiresAtelier.THTexpansion_RainyDay2Adrianno}}",
+                "Rainy_Day_3": "{{i18n: CheshiresAtelier.THTexpansion_RainyDay3Adrianno}}",
+                "Rainy_Day_4": "{{i18n: CheshiresAtelier.THTexpansion_RainyDay4Adrianno}}",
+                "Rainy_Day_5": "{{i18n: CheshiresAtelier.THTexpansion_RainyDay5Adrianno}}",
+                "Indoor_Day_0": "{{i18n: CheshiresAtelier.THTexpansion_IndoorDay0Adrianno}}",
+                "Indoor_Day_1": "{{i18n: CheshiresAtelier.THTexpansion_IndoorDay1Adrianno}}",
+                "Indoor_Day_2": "{{i18n: CheshiresAtelier.THTexpansion_IndoorDay2Adrianno}}",
+                "Indoor_Day_3": "{{i18n: CheshiresAtelier.THTexpansion_IndoorDay3Adrianno}}",
+                "Indoor_Day_4": "{{i18n: CheshiresAtelier.THTexpansion_IndoorDay4Adrianno}}",
+                "Indoor_Day_5": "{{i18n: CheshiresAtelier.THTexpansion_IndoorDay5Adrianno}}",
+                "Rainy_Night_0": "{{i18n: CheshiresAtelier.THTexpansion_RainyNight0Adrianno}}",
+                "Rainy_Night_1": "{{i18n: CheshiresAtelier.THTexpansion_RainyNight1Adrianno}}",
+                "Rainy_Night_2": "{{i18n: CheshiresAtelier.THTexpansion_RainyNight2Adrianno}}",
+                "Rainy_Night_3": "{{i18n: CheshiresAtelier.THTexpansion_RainyNight3Adrianno}}",
+                "Rainy_Night_4": "{{i18n: CheshiresAtelier.THTexpansion_RainyNight4Adrianno}}",
+                "Rainy_Night_5": "{{i18n: CheshiresAtelier.THTexpansion_RainyNight5Adrianno}}",
+                "Indoor_Night_0": "{{i18n: CheshiresAtelier.THTexpansion_IndoorNight0Adrianno}}",
+                "Indoor_Night_1": "{{i18n: CheshiresAtelier.THTexpansion_IndoorNight1Adrianno}}",
+                "Indoor_Night_2": "{{i18n: CheshiresAtelier.THTexpansion_IndoorNight2Adrianno}}",
+                "Indoor_Night_3": "{{i18n: CheshiresAtelier.THTexpansion_IndoorNight3Adrianno}}",
+                "Indoor_Night_4": "{{i18n: CheshiresAtelier.THTexpansion_IndoorNight4Adrianno}}",
+                "Indoor_Night_5": "{{i18n: CheshiresAtelier.THTexpansion_IndoorNight5Adrianno}}",
+                "funLeave_{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_FunLeaveAdrianno}}",
+                "funReturn_{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_FunReturnAdrianno}}",
+                "Outdoor_{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_OutdoorAdrianno}}",
+                "Outdoor_0": "{{i18n: CheshiresAtelier.THTexpansion_Outdoor0Adrianno}}",
+                "Outdoor_1": "{{i18n: CheshiresAtelier.THTexpansion_Outdoor1Adrianno}}",
+                "Outdoor_2": "{{i18n: CheshiresAtelier.THTexpansion_Outdoor2Adrianno}}",
+                "Outdoor_3": "{{i18n: CheshiresAtelier.THTexpansion_Outdoor3Adrianno}}",
+                "Outdoor_4": "{{i18n: CheshiresAtelier.THTexpansion_Outdoor4Adrianno}}",
+                "spouseRoom_{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_SRAdrianno}}",
+                "OneKid_0": "{{i18n: CheshiresAtelier.THTexpansion_OneKid0Adrianno}}",
+                "OneKid_1": "{{i18n: CheshiresAtelier.THTexpansion_OneKid1Adrianno}}",
+                "OneKid_2": "{{i18n: CheshiresAtelier.THTexpansion_OneKid2Adrianno}}",
+                "OneKid_3": "{{i18n: CheshiresAtelier.THTexpansion_OneKid3Adrianno}}",
+                "OneKid_4": "{{i18n: CheshiresAtelier.THTexpansion_OneKid4Adrianno}}",
+                "TwoKids_0": "{{i18n: CheshiresAtelier.THTexpansion_TwoKids0Adrianno}}",
+                "TwoKids_1": "{{i18n: CheshiresAtelier.THTexpansion_TwoKids1Adrianno}}",
+                "TwoKids_2": "{{i18n: CheshiresAtelier.THTexpansion_TwoKids2Adrianno}}",
+                "TwoKids_3": "{{i18n: CheshiresAtelier.THTexpansion_TwoKids3Adrianno}}",
+                "TwoKids_4": "{{i18n: CheshiresAtelier.THTexpansion_TwoKids4Adrianno}}",
+                "Good_0": "{{i18n: CheshiresAtelier.THTexpansion_Good0Adrianno}}",
+                "Good_1": "{{i18n: CheshiresAtelier.THTexpansion_Good1Adrianno}}",
+                "Good_2": "{{i18n: CheshiresAtelier.THTexpansion_Good2Adrianno}}",
+                "Good_3": "{{i18n: CheshiresAtelier.THTexpansion_Good3Adrianno}}",
+                "Good_4": "{{i18n: CheshiresAtelier.THTexpansion_Good4Adrianno}}",
+                "Good_5": "{{i18n: CheshiresAtelier.THTexpansion_Good5Adrianno}}",
+                "Good_6": "{{i18n: CheshiresAtelier.THTexpansion_Good6Adrianno}}",
+                "Good_7": "{{i18n: CheshiresAtelier.THTexpansion_Good7Adrianno}}",
+                "Good_8": "{{i18n: CheshiresAtelier.THTexpansion_Good8Adrianno}}",
+                "Good_9": "{{i18n: CheshiresAtelier.THTexpansion_Good9Adrianno}}",
+                "Neutral_0": "{{i18n: CheshiresAtelier.THTexpansion_Neutral0Adrianno}}",
+                "Neutral_1": "{{i18n: CheshiresAtelier.THTexpansion_Neutral1Adrianno}}",
+                "Neutral_2": "{{i18n: CheshiresAtelier.THTexpansion_Neutral2Adrianno}}",
+                "Neutral_3": "{{i18n: CheshiresAtelier.THTexpansion_Neutral3Adrianno}}",
+                "Neutral_4": "{{i18n: CheshiresAtelier.THTexpansion_Neutral4Adrianno}}",
+                "Neutral_5": "{{i18n: CheshiresAtelier.THTexpansion_Neutral5Adrianno}}",
+                "Neutral_6": "{{i18n: CheshiresAtelier.THTexpansion_Neutral6Adrianno}}",
+                "Neutral_7": "{{i18n: CheshiresAtelier.THTexpansion_Neutral7Adrianno}}",
+                "Neutral_8": "{{i18n: CheshiresAtelier.THTexpansion_Neutral8Adrianno}}",
+                "Neutral_9": "{{i18n: CheshiresAtelier.THTexpansion_Neutral9Adrianno}}",
+                "Bad_0": "{{i18n: CheshiresAtelier.THTexpansion_Bad0Adrianno}}",
+                "Bad_1": "{{i18n: CheshiresAtelier.THTexpansion_Bad1Adrianno}}",
+                "Bad_2": "{{i18n: CheshiresAtelier.THTexpansion_Bad2Adrianno}}",
+                "Bad_3": "{{i18n: CheshiresAtelier.THTexpansion_Bad3Adrianno}}",
+                "Bad_4": "{{i18n: CheshiresAtelier.THTexpansion_Bad4Adrianno}}",
+                "Bad_5": "{{i18n: CheshiresAtelier.THTexpansion_Bad5Adrianno}}",
+                "Bad_6": "{{i18n: CheshiresAtelier.THTexpansion_Bad6Adrianno}}",
+                "Bad_7": "{{i18n: CheshiresAtelier.THTexpansion_Bad7Adrianno}}",
+                "Bad_8": "{{i18n: CheshiresAtelier.THTexpansion_Bad8Adrianno}}",
+                "Bad_9": "{{i18n: CheshiresAtelier.THTexpansion_Bad9Adrianno}}"
+            },
+            "When": {
+            "HasMod": "Hana.GenderNeutralityMod"
+            },
+            "Update": "OnLocationChange, OnTimeChange"
         },
 {
                 "LogName": "Marriage Dialogue - Base",
@@ -191,8 +315,102 @@
                 "Bad_9": "{{i18n: CheshiresAtelier.THTexpansion_Bad9AdriannoFemFarmer}}"
             },
 	"When": {
-        "PlayerGender": "Female"
-            }
+         "PlayerGender": "Female",
+         "HasMod: |contains=Hana.GenderNeutralityMod": false,
+         "Relationship:{{ModId}}_Adrianno": "Married"
+            },
+            "Update": "OnLocationChange, OnTimeChange"
+        },
+        //THTexpansion_MDAdriannoRoommateBad0
+{
+                "LogName": "Marriage Dialogue - Base",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue{{ModId}}_Adrianno",
+            "Entries":{
+                "Spring_{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_MDspringAdriannoRoommate}}",
+                "Summer_{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_MDsummerAdriannoRoommate}}",
+                "Fall_{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_MDfallAdriannoRoommate}}",
+                "Winter_{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_MDwinterAdriannoRoommate}}",
+                "patio_{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_PatioAdriannoRoommate}}",
+                "Rainy_Day_0": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateRainyDay0}}",
+                "Rainy_Day_1": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateRainyDay1}}",
+                "Rainy_Day_2": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateRainyDay2}}",
+                "Rainy_Day_3": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateRainyDay3}}",
+                "Rainy_Day_4": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateRainyDay4}}",
+                "Rainy_Day_5": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateRainyDay5}}",
+                "Indoor_Day_0": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateIndoorDay0}}",
+                "Indoor_Day_1": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateIndoorDay1}}",
+                "Indoor_Day_2": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateIndoorDay2}}",
+                "Indoor_Day_3": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateIndoorDay3}}",
+                "Indoor_Day_4": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateIndoorDay4}}",
+                "Indoor_Day_5": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateIndoorDay5}}",
+                "Rainy_Night_0": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateRainyNight0}}",
+                "Rainy_Night_1": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateRainyNight1}}",
+                "Rainy_Night_2": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateRainyNight2}}",
+                "Rainy_Night_3": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateRainyNight3}}",
+                "Rainy_Night_4": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateRainyNight4}}",
+                "Rainy_Night_5": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateRainyNight5}}",
+                "Indoor_Night_0": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateIndoorNight0}}",
+                "Indoor_Night_1": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateIndoorNight1}}",
+                "Indoor_Night_2": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateIndoorNight2}}",
+                "Indoor_Night_3": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateIndoorNight3}}",
+                "Indoor_Night_4": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateIndoorNight4}}",
+                "Indoor_Night_5": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateIndoorNight5}}",
+                "funLeave_{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_FunLeaveAdriannoRoommate}}",
+                "funReturn_{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_FunReturnAdriannoRoommate}}",
+                "Outdoor_{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_OutdoorAdriannoRoommate}}",
+                "Outdoor_0": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateOutdoor0}}",
+                "Outdoor_1": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateOutdoor1}}",
+                "Outdoor_2": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateOutdoor2}}",
+                "Outdoor_3": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateOutdoor3}}",
+                "Outdoor_4": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateOutdoor4}}",
+                "spouseRoom_{{ModId}}_Adrianno": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateSpouseRoom}}",
+                "OneKid_0": "{{i18n: CheshiresAtelier.THTexpansion_Buggy}}",
+                "OneKid_1": "{{i18n: CheshiresAtelier.THTexpansion_Buggy}}",
+                "OneKid_2": "{{i18n: CheshiresAtelier.THTexpansion_Buggy}}",
+                "OneKid_3": "{{i18n: CheshiresAtelier.THTexpansion_Buggy}}",
+                "OneKid_4": "{{i18n: CheshiresAtelier.THTexpansion_Buggy}}",
+                "TwoKids_0": "{{i18n: CheshiresAtelier.THTexpansion_Buggy}}",
+                "TwoKids_1": "{{i18n: CheshiresAtelier.THTexpansion_Buggy}}",
+                "TwoKids_2": "{{i18n: CheshiresAtelier.THTexpansion_Buggy}}",
+                "TwoKids_3": "{{i18n: CheshiresAtelier.THTexpansion_Buggy}}",
+                "TwoKids_4": "{{i18n: CheshiresAtelier.THTexpansion_Buggy}}",
+                "Good_0": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateGood0}}",
+                "Good_1": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateGood1}}",
+                "Good_2": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateGood2}}",
+                "Good_3": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateGood3}}",
+                "Good_4": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateGood4}}",
+                "Good_5": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateGood5}}",
+                "Good_6": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateGood6}}",
+                "Good_7": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateGood7}}",
+                "Good_8": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateGood8}}",
+                "Good_9": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateGood9}}",
+                "Neutral_0": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateNeutral0}}",
+                "Neutral_1": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateNeutral1}}",
+                "Neutral_2": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateNeutral2}}",
+                "Neutral_3": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateNeutral3}}",
+                "Neutral_4": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateNeutral4}}",
+                "Neutral_5": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateNeutral5}}",
+                "Neutral_6": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateNeutral6}}",
+                "Neutral_7": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateNeutral7}}",
+                "Neutral_8": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateNeutral8}}",
+                "Neutral_9": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateNeutral9}}",
+                "Bad_0": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateBad0}}",
+                "Bad_1": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateBad1}}",
+                "Bad_2": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateBad2}}",
+                "Bad_3": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateBad3}}",
+                "Bad_4": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateBad4}}",
+                "Bad_5": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateBad5}}",
+                "Bad_6": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateBad6}}",
+                "Bad_7": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateBad7}}",
+                "Bad_8": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateBad8}}",
+                "Bad_9": "{{i18n: CheshiresAtelier.THTexpansion_MDAdriannoRoommateBad9}}"
+            },
+	"When": {
+         "PlayerGender": "Female",
+         "HasMod: |contains=Hana.GenderNeutralityMod": false
+            },
+            "Update": "OnLocationChange, OnTimeChange"
         }
     ]
 }

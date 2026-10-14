@@ -240,7 +240,32 @@
 "When":{
 "PlayerGender": "Female",
 "HasMod: |contains=Hana.GenderNeutralityMod": false
-}
+},
+ "Update": "OnLocationChange, OnTimeChange"
+},
+{
+"Action": "EditData",
+"Target": "Characters/Dialogue/{{ModId}}_Adrianno",
+"Entries": {
+"RejectItem_(O){{ModId}}_AdriannosClamBouquet": "{{i18n: CheshiresAtelier.THTexpansion_RejectRoommateProposalAdrianno}}"
+},
+"When":{
+"PlayerGender": "Male",
+"HasMod: |contains=Hana.GenderNeutralityMod": false
+},
+ "Update": "OnLocationChange, OnTimeChange"
+},
+{
+"Action": "EditData",
+"Target": "Characters/Dialogue/{{ModId}}_Adrianno",
+"Entries": {
+"RejectItem_(O){{ModId}}_AdriannosClamBouquet": "{{i18n: CheshiresAtelier.THTexpansion_RejectRoommateProposalAdrianno}}"
+},
+"When":{
+"PlayerGender": "Male",
+"HasMod": "Hana.GenderNeutralityMod"
+},
+ "Update": "OnLocationChange, OnTimeChange"
 },
 {
 "Action": "EditData",

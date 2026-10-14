@@ -16,10 +16,6 @@
       "IsRequired": true
     },
     {
-      "UniqueID": "mistyspring.ItemExtensions",
-      "IsRequired": true
-    },
-    {
       "UniqueID": "DLX.Bundles",
       "IsRequired": true
     },
@@ -30,6 +26,23 @@
     {
       "UniqueID": "spacechase0.SpaceCore",
       "IsRequired": true
+    },
+    {
+      "UniqueID": "Esca.EMP",
+      "IsRequired": true
+    },
+    //Optionals :)
+    {
+      "UniqueID": "Astraios.BroadcastAPI",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "CozyPsychologist.RecurringPayments",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "leclair.morenightlyevents",
+      "IsRequired": false
     }
   ]
 }

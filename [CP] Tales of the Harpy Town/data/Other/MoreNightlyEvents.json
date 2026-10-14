@@ -1,0 +1,20 @@
+{
+    "Changes":[{
+            "Action": "EditData",
+            "Target": "Mods/leclair.morenightlyevents/Events",
+            "Entries":{
+                "{{ModId}}_SaciOnFarm":{
+                    "Id": "{{ModId}}_SaciOnFarm",
+                    "Type": "Script",
+                    "Message": "{{i18n: CheshiresAtelier.THTexpansion_THTNightlyEvent1}}",
+                    "MessageDelay": 15000,
+                    "Priority": 5,
+                    "Script": "",
+                    "When": {
+                    "HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+                    }
+                }
+            }
+        }
+    ]
+}

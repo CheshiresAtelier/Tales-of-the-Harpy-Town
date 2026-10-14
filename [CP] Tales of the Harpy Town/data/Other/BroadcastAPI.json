@@ -1,0 +1,849 @@
+{
+  "Changes": [
+    {
+	  "LogName": "Load Custom Channel",
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+      "FromFile": "assets/Tilesheets/Channels/{{TargetWithoutPath}}.png"
+    },
+    //
+    //
+    //Broadcast Odd Year
+    //
+    //
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayOddYear": {
+          "Name": "{{ModID}}_PRpersonOfTheDayOddYear", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName1}}", 
+          "Dialogues": [
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay", 
+          "SpriteRegion": { "X": 0, "Y": 0, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0,
+          "HideFromMenu": true,
+          "Conditions": 
+          [
+            "DAY_OF_WEEK Monday, PLAYER_STAT Current {{ModId}}_OddYearEvenYear 1 1"
+          ],
+          "NextChannel":
+         [ "If SEASON_DAY Spring 1 ## {{ModID}}_PRpersonOfTheDayPerson1.1",
+           "If SEASON_DAY Spring 8 ## {{ModID}}_PRpersonOfTheDayPerson2.1",
+           "If SEASON_DAY Spring 15 ## {{ModID}}_PRpersonOfTheDayPerson3.1",
+           "If SEASON_DAY Spring 22 ## {{ModID}}_PRpersonOfTheDayPerson4.1",
+           "If SEASON_DAY Summer 1 ## {{ModID}}_PRpersonOfTheDayPerson5.1",
+           "If SEASON_DAY Summer 8 ## {{ModID}}_PRpersonOfTheDayPerson6.1",
+           "If SEASON_DAY Summer 15 ## {{ModID}}_PRpersonOfTheDayPerson7.1",
+           "If SEASON_DAY Summer 22 ## {{ModID}}_PRpersonOfTheDayPerson8.1",
+           "If SEASON_DAY Fall 1 ## {{ModID}}_PRpersonOfTheDayPerson9.1",
+           "If SEASON_DAY Fall 8 ## {{ModID}}_PRpersonOfTheDayPerson10.1",
+           "If SEASON_DAY Fall 15 ## {{ModID}}_PRpersonOfTheDayPerson11.1",
+           "If SEASON_DAY Fall 22 ## {{ModID}}_PRpersonOfTheDayPerson12.1",
+           "If SEASON_DAY Winter 1 ## {{ModID}}_PRpersonOfTheDayPerson13.1",
+           "If SEASON_DAY Winter 8 ## {{ModID}}_PRpersonOfTheDayPerson14.1",
+           "If SEASON_DAY Winter 15 ## {{ModID}}_PRpersonOfTheDayPerson15.1",
+           "If SEASON_DAY Winter 22 ## {{ModID}}_PRpersonOfTheDayPerson16.1"
+         
+         ],
+         "When":{
+              "{{ModId}}_OddYear": true,
+              "DayOfWeek": "Monday"
+         }
+        }
+      }
+    },
+    //Person 1 Year 1
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson1.1": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson1.1", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName1.1}}",
+          "Dialogues": [ //Clarice Lispector
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue1.1.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue1.1.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 84, "Y": 0, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_OddYear": true
+            }
+        }
+      }
+    },
+    //Person 2 Year 1
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson2.1": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson2.1", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName1.2}}",
+          "Dialogues": [ //Zumbi dos Palmares
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue2.1.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue2.1.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 168, "Y": 0, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_OddYear": true
+            }
+        }
+      }
+    },
+    //Person 3 Year 1
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson3.1": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson3.1", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName1.3}}",
+          "Dialogues": [ //Erika Hilton
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue3.1.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue3.1.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 252, "Y": 0, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_OddYear": true
+            }
+        }
+      }
+    },
+    //Person 4 Year 1
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson4.1": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson4.1", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName1.4}}",
+          "Dialogues": [ //Machado de Assis
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue4.1.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue4.1.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 336, "Y": 0, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_OddYear": true
+            }
+        }
+      }
+    },
+    //Person 5 Year 1
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson5.1": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson5.1", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName1.5}}",
+          "Dialogues": [ //Chico Xavier
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue5.1.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue5.1.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 420, "Y": 0, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_OddYear": true
+            }
+        }
+      }
+    },
+    //Person 6 Year 1
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson6.1": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson6.1", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName1.6}}",
+          "Dialogues": [ //Santos Dumond
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue6.1.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue6.1.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 504, "Y": 0, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_OddYear": true
+            }
+        }
+      }
+    },
+    //Person 7 Year 1
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson7.1": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson7.1", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName1.7}}",
+          "Dialogues": [ //Dandara dos Palmares
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue7.1.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue7.1.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 588, "Y": 0, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_OddYear": true
+            }
+        }
+      }
+    },
+    //Person 8 Year 1
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson8.1": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson8.1", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName1.8}}",
+          "Dialogues": [ //Anita Malfati
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue8.1.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue8.1.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 672, "Y": 0, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_OddYear": true
+            }
+        }
+      }
+    },
+    //Person 9 Year 1
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson9.1": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson9.1", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName1.9}}",
+          "Dialogues": [ //Aleijadinho
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue9.1.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue9.1.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 756, "Y": 0, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_OddYear": true
+            }
+        }
+      }
+    },
+    //Person 10 Year 1
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson10.1": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson10.1", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName1.10}}",
+          "Dialogues": [ //Xica Manicongo
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue10.1.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue10.1.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 0, "Y": 28, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_OddYear": true
+            }
+        }
+      }
+    },
+    //Person 11 Year 1
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson11.1": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson11.1", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName1.11}}",
+          "Dialogues": [ //Maria Quitéria
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue11.1.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue11.1.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 84, "Y": 28, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_OddYear": true
+            }
+        }
+      }
+    },
+    //Person 12 Year 1
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson12.1": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson12.1", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName1.12}}",
+          "Dialogues": [ //Rita Lee
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue12.1.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue12.1.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 168, "Y": 28, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_OddYear": true
+            }
+        }
+      }
+    },
+    //Person 13 Year 1
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson13.1": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson13.1", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName1.13}}",
+          "Dialogues": [ //Mauricio de Sousa
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue13.1.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue13.1.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 252, "Y": 28, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_OddYear": true
+            }
+        }
+      }
+    },
+    //Person 14 Year 1
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson14.1": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson14.1", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName1.14}}",
+          "Dialogues": [ //Maria da Penha
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue14.1.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue14.1.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 336, "Y": 28, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_OddYear": true
+            }
+        }
+      }
+    },
+    //Person 15 Year 1
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson15.1": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson15.1", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName1.15}}",
+          "Dialogues": [ //Cruz e Souza
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue15.1.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue15.1.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 420, "Y": 28, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_OddYear": true
+            }
+        }
+      }
+    },
+    //Person 16 Year 1
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson16.1": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson16.1", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName1.16}}",
+          "Dialogues": [ //Tarsila do Amaral
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue16.1.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue16.1.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 504, "Y": 28, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_OddYear": true
+            }
+        }
+      }
+    },
+    //
+    //
+    //Broadcast Even Year
+    //
+    //
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayEvenYear": {
+          "Name": "{{ModID}}_PRpersonOfTheDayEvenYear", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName1}}", 
+          "Dialogues": [
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay", 
+          "SpriteRegion": { "X": 0, "Y": 0, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0,
+          "HideFromMenu": true,
+          "Conditions": 
+          [
+            "DAY_OF_WEEK Monday, PLAYER_STAT Current {{ModId}}_OddYearEvenYear 2 2",
+            "DAY_OF_WEEK Monday, PLAYER_STAT Current {{ModId}}_OddYearEvenYear 0 0"
+          ],
+          "NextChannel":
+         [ "If SEASON_DAY Spring 1 ## {{ModID}}_PRpersonOfTheDayPerson1.2",
+           "If SEASON_DAY Spring 8 ## {{ModID}}_PRpersonOfTheDayPerson2.2",
+           "If SEASON_DAY Spring 15 ## {{ModID}}_PRpersonOfTheDayPerson3.2",
+           "If SEASON_DAY Spring 22 ## {{ModID}}_PRpersonOfTheDayPerson4.2",
+           "If SEASON_DAY Summer 1 ## {{ModID}}_PRpersonOfTheDayPerson5.2",
+           "If SEASON_DAY Summer 8 ## {{ModID}}_PRpersonOfTheDayPerson6.2",
+           "If SEASON_DAY Summer 15 ## {{ModID}}_PRpersonOfTheDayPerson7.2",
+           "If SEASON_DAY Summer 22 ## {{ModID}}_PRpersonOfTheDayPerson8.2",
+           "If SEASON_DAY Fall 1 ## {{ModID}}_PRpersonOfTheDayPerson9.2",
+           "If SEASON_DAY Fall 8 ## {{ModID}}_PRpersonOfTheDayPerson10.2",
+           "If SEASON_DAY Fall 15 ## {{ModID}}_PRpersonOfTheDayPerson11.2",
+           "If SEASON_DAY Fall 22 ## {{ModID}}_PRpersonOfTheDayPerson12.2",
+           "If SEASON_DAY Winter 1 ## {{ModID}}_PRpersonOfTheDayPerson13.2",
+           "If SEASON_DAY Winter 8 ## {{ModID}}_PRpersonOfTheDayPerson14.2",
+           "If SEASON_DAY Winter 15 ## {{ModID}}_PRpersonOfTheDayPerson15.2",
+           "If SEASON_DAY Winter 22 ## {{ModID}}_PRpersonOfTheDayPerson16.2"
+         
+         ],
+         "When":{
+              "{{ModId}}_EvenYear": true,
+              "DayOfWeek": "Monday"
+         }
+        }
+      }
+    },
+    //Person 1 Year 2
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson1.2": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson1.2", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName2.1}}",
+          "Dialogues": [ //Carmen Miranda
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue1.2.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue1.2.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 588, "Y": 28, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_EvenYear": true
+            }
+        }
+      }
+    },
+    //Person 2 Year 2
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson2.2": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson2.2", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName2.2}}",
+          "Dialogues": [ //Chico Buarque
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue2.2.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue2.2.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 672, "Y": 28, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_EvenYear": true
+            }
+        }
+      }
+    },
+    //Person 3 Year 2
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson3.2": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson3.2", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName2.3}}",
+          "Dialogues": [ //Marta Vieira da Silva
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue3.2.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue3.2.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 756, "Y": 28, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_EvenYear": true
+            }
+        }
+      }
+    },
+    //Person 4 Year 2
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson4.2": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson4.2", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName2.4}}",
+          "Dialogues": [ //Cartola
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue4.2.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue4.2.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 0, "Y": 56, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_EvenYear": true
+            }
+        }
+      }
+    },
+    //Person 5 Year 2
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson5.2": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson5.2", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName2.5}}",
+          "Dialogues": [ //Marina Silva
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue5.2.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue5.2.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 84, "Y": 56, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_EvenYear": true
+            }
+        }
+      }
+    },
+    //Person 5 Year 2
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson6.2": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson6.2", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName2.6}}",
+          "Dialogues": [ //Dilma Rousseff
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue6.2.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue6.2.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 168, "Y": 56, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_EvenYear": true
+            }
+        }
+      }
+    },
+    //Person 5 Year 2
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson7.2": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson7.2", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName2.7}}",
+          "Dialogues": [ //Eunice Paiva
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue7.2.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue7.2.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 252, "Y": 56, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_EvenYear": true
+            }
+        }
+      }
+    },
+    //Person 5 Year 2
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson8.2": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson8.2", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName2.8}}",
+          "Dialogues": [ //Lula
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue8.2.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue8.2.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 336, "Y": 56, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_EvenYear": true
+            }
+        }
+      }
+    },
+    //Person 5 Year 2
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson9.2": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson9.2", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName2.9}}",
+          "Dialogues": [ //Zuzu Angel
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue9.2.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue9.2.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 420, "Y": 56, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_EvenYear": true
+            }
+        }
+      }
+    },
+    //Person 5 Year 2
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson10.2": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson10.2", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName2.10}}",
+          "Dialogues": [ //Erasmo Carlos
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue10.2.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue10.2.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 504, "Y": 56, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_EvenYear": true
+            }
+        }
+      }
+    },
+    //Person 5 Year 2
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson11.2": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson11.2", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName2.11}}",
+          "Dialogues": [ //Ailton Krenak
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue11.2.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue11.2.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 588, "Y": 56, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_EvenYear": true
+            }
+        }
+      }
+    },
+    //Person 5 Year 2
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson12.2": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson12.2", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName2.12}}",
+          "Dialogues": [ //Alice Pataxó
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue12.2.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue12.2.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 672, "Y": 56, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_EvenYear": true
+            }
+        }
+      }
+    },
+    //Person 5 Year 2
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson13.2": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson13.2", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName2.13}}",
+          "Dialogues": [ //Ana Elisa
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue13.2.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue13.2.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 756, "Y": 56, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_EvenYear": true
+            }
+        }
+      }
+    },
+    //Person 5 Year 2
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson14.2": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson14.2", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName2.14}}",
+          "Dialogues": [ //Maria Firmina dos Reis
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue14.2.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue14.2.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 0, "Y": 84, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_EvenYear": true
+            }
+        }
+      }
+    },
+    //Person 5 Year 2
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson15.2": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson15.2", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName2.15}}",
+          "Dialogues": [ //Sônia Guajajara
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue15.2.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue15.2.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 84, "Y": 84, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_EvenYear": true
+            }
+        }
+      }
+    },
+    //Person 5 Year 2
+    {
+      "Action": "EditData",
+      "Target": "Astraios.BroadcastAPI/CustomChannels",
+      "Entries": {
+        "{{ModID}}_PRpersonOfTheDayPerson16.2": {
+          "Name": "{{ModID}}_PRpersonOfTheDayPerson16.2", 
+          "Displayname": "{{i18n: CheshiresAtelier.THTexpansion_ChannelName2.16}}",
+          "Dialogues": [ //Carolina Maria de Jesus
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue16.2.1}}",
+            "{{i18n: CheshiresAtelier.THTexpansion_ChannelDialogue16.2.2}}"
+          ],
+          "Texture": "Mods/{{ModId}}/assets/Tilesheets/Channels/CheshiresAtelier.THTexpansion_THTPindoRamanPersonOfTheDay",
+          "SpriteRegion": { "X": 168, "Y": 84, "Width": 42, "Height": 28 }, 
+          "AnimationLength": 2, 
+          "AnimationInterval": 150.0, 
+          "HideFromMenu": true,
+            "When": {
+              "{{ModId}}_EvenYear": true
+            }
+        }
+      }
+    }
+  ]
+}

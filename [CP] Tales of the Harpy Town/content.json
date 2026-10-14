@@ -1,5 +1,24 @@
 {
 	"Format": "2.9.0",
+	"DynamicTokens":
+    [   
+        {
+            "Name": "{{ModId}}_EvenYear",
+            "Value": "{{ModId}}_EvenYear",
+            "When":
+            {
+                "Query: {{Year}} % 2 = 0": true
+            }
+        },
+        {
+            "Name": "{{ModId}}_OddYear",
+            "Value": "{{ModId}}_OddYear",
+            "When":
+            {
+                "Query: {{Year}} % 2 = 1": true
+            }
+        }
+    ],
 	"Changes": [
 		{
 			"LogName": "Add custom locations",
@@ -867,6 +886,18 @@
 						"X": 29,
 						"Y": 35
 					}
+				},
+				"{{ModId}}_THTAdriannosSpouseRoom": {
+					"CreateOnLoad": {
+						"MapPath": "Maps/{{ModId}}_THTAdriannosSpouseRoom"
+					},
+					"DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_Map37}}"
+				},
+				"{{ModId}}_THTAdriannosPatio": {
+					"CreateOnLoad": {
+						"MapPath": "Maps/{{ModId}}_THTAdriannosSpouseRoom"
+					},
+					"DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_Map37}}"
 				}
 			}
 		},
@@ -1111,6 +1142,18 @@
 			"Target": "Maps/{{ModID}}_THTJoja2",
 			"FromFile": "assets/maps/{{ModID}}_THTJoja2.tmx"
 		},
+		{
+			"LogName": "Load Adrianno's Spouse room",
+			"Action": "Load",
+			"Target": "Maps/{{ModID}}_THTAdriannosSpouseRoom",
+			"FromFile": "assets/maps/{{ModID}}_THTAdriannosSpouseRoom.tmx"
+		},
+		{
+			"LogName": "Load Adrianno's Patio",
+			"Action": "Load",
+			"Target": "Maps/{{ModID}}_THTAdriannosPatio",
+			"FromFile": "assets/maps/{{ModID}}_THTAdriannosPatio.tmx"
+		},
 		//Festival maps
 		{
 			"LogName": "Add THT FF to FF map",
@@ -1321,6 +1364,20 @@
 			"Action": "Include",
 			"FromFile": "data/Other/TrashCans.json"
 		},
+		{
+			"Action": "Include",
+			"FromFile": "data/Other/BroadcastAPI.json",
+			"When": {
+				"HasMod": "Astraios.BroadcastAPI"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "data/Other/MoreNightlyEvents.json",
+			"When": {
+				"HasMod": "leclair.morenightlyevents"
+			}
+		},
 		//Events blank load
 		{
 			"LogName": "Custom Locations Events Blank",
@@ -1425,6 +1482,13 @@
 			"Target": "Characters/Dialogue/{{ModId}}_Duda, Characters/schedules/{{ModId}}_Duda",
 			"FromFile": "assets/blank.json"
 		},
+		{
+			"LogName": "Blank JSON load",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/{{ModId}}_Raoni, Characters/schedules/{{ModId}}_Raoni",
+			"FromFile": "assets/blank.json"
+		},
+		//Other characters
 		{
 			"LogName": "Blank JSON load",
 			"Action": "Load",

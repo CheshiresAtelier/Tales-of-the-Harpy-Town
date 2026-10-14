@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="left-down" width="6" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="1">
+ <editorsettings>
+  <export target="CheshiresAtelier.THTexpansion_THTAdriannosSpouseRoom.tmx" format="tmx"/>
+ </editorsettings>
  <tileset firstgid="1" name="CheshiresAtelier.THTexpansion_IndoorsTilesheets" tilewidth="16" tileheight="16" tilecount="400" columns="20">
   <image source="CheshiresAtelier.THTexpansion_IndoorsTilesheets.png" width="320" height="320"/>
  </tileset>
@@ -19,8 +22,8 @@
   <data encoding="csv">
 2261,2261,2261,2261,2261,2261,
 2261,2261,2261,2261,2261,2261,
-2261,2261,2261,2261,2261,2261,
-2224,2225,2224,2225,2224,2225,
+2256,2257,2256,2257,2256,2257,
+2288,2289,2288,2289,2288,2289,
 2256,2257,2256,2470,2471,2472,
 2288,2289,2288,2502,2503,2504,
 2256,2257,2256,2257,2256,2257,
@@ -30,9 +33,9 @@
  </layer>
  <layer id="3" name="Buildings" width="6" height="9">
   <data encoding="csv">
-0,2427,0,2333,0,2336,
-0,3274,3275,2237,2335,0,
-162,162,162,162,162,162,
+1588,1588,1588,1588,1588,1588,
+1604,1604,1604,1604,1604,1604,
+1620,1620,1620,1620,1620,1620,
 0,0,2734,2735,3337,3338,
 0,0,0,0,0,2720,
 0,0,0,0,2751,2752,
@@ -56,8 +59,8 @@
  </layer>
  <layer id="4" name="Front" width="6" height="9">
   <data encoding="csv">
-0,0,0,0,0,0,
-0,0,0,0,0,0,
+0,2427,0,2333,0,2336,
+0,3274,3275,2237,2335,0,
 0,0,2702,2703,3305,3306,
 0,0,0,0,0,2688,
 0,0,0,0,2719,0,

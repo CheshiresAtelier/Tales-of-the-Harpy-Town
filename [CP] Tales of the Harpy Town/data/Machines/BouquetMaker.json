@@ -426,6 +426,26 @@
 								}
 							],
 							"MinutesUntilReady": 10
+						},
+						//Mandacaru Cactus
+						{
+							"Id": "{{ModId}}_MandacaruCactusToBouquet",
+							"Triggers": [
+								{
+									"Id": "{{ModId}}_MandacaruCactusInputBouquet",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O){{ModId}}_Mandacaru",
+									"RequiredCount": 3
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "{{ModId}}_MandacaruCactusBouquetOutput",
+									"ItemId": "(O){{ModId}}_MandacaruCactusBouquet",
+									"MinStack": 1
+								}
+							],
+							"MinutesUntilReady": 10
 						}
 					],
 					"AdditionalConsumedItems": [
@@ -1161,6 +1181,197 @@
 						"Universal_Neutral"
 					],
 					"Value": "{{ModId}}_CosmoFlowerBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_MandacaruCactusBouquet": {
+					"Name": "{{ModId}}_MandacaruCactusBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet20}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet20Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 920,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 19,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_MandacaruCactusBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_MossRoseBouquet": {
+					"Name": "{{ModId}}_MossRoseBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet21}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet21Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 860,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 20,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_MossRoseBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_FortnightLilyBouquet": {
+					"Name": "{{ModId}}_FortnightLilyBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet22}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet22Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 950,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 21,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_FortnightLilyBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_PansyBouquet": {
+					"Name": "{{ModId}}_PansyBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet23}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet23Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 875,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 22,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_PansyBouquet",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_AdriannosClamBouquet": {
+					"Name": "{{ModId}}_AdriannosClamBouquet",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet24}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Bouquet24Desc}}",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 5470,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromShippingCollection": true,
+					"Texture": "Mods/{{ModId}}/assets/Items/Artisan Goods/{{ModId}}_BouquetsSprites",
+					"SpriteIndex": 22,
+					"ContextTags": [
+						"tht_bouquet_item",
+						"bouquet_item",
+						"propose_roommate_{{ModId}}_Adrianno"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Neutral"
+					],
+					"Value": "{{ModId}}_AdriannosClamBouquet",
 					"Delimiter": " "
 				}
 			]

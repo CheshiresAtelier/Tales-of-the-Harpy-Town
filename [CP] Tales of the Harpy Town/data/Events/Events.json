@@ -35,17 +35,6 @@
             "Entries": {
                 "CheshiresAtelier.THTexpansion_THTjosesAndfamilyArrival/t 600 2600/LocalMail CheshiresAtelier.THTexpansion_JoseMovedIn": "continue/-1000 -1000/farmer 0 0 0/skippable/pause 1000/globalFade/viewport -1000 -1000/stopMusic/end"
             }
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/Events/Forest",
-            "Entries": {
-                "CheshiresAtelier.THTexpansion_EventAdriannoDumped/t 600 2600": "continue/-1000 -1000/farmer 0 0 0/skippable/pause 1000/globalFade/viewport -1000 -1000/stopMusic/end"
-            },
-            "When": {
-                "PlayerGender": "Female",
-                "Relationship:{{ModId}}_Adrianno": "Married"
-            }
         }
     ]
 }

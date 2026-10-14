@@ -1,18 +1,406 @@
 {
     "Changes": [
+        //SMAPI checking for dependencies
+
+        //Content Patcher
+                    
+                {
+                "Action": "EditData",
+                "Target": "Data/TriggerActions",
+                "Entries": {
+                    "{{ModId}}_NoContentPatcherLogMessage": {
+                        "Id": "{{ModId}}_NoContentPatcherLogMessage",
+                        "Trigger": "Esca.EMP_GameLaunched",
+                        "Action": "Esca.EMP_LogMessage Error {{i18n: CheshiresAtelier.THTexpansion_LogWarnNoContentPatcher}}",
+                        "MarkActionApplied": false
+                    }
+                },
+                "When": {
+                    "HasMod: |contains=Pathoschild.ContentPatcher": false
+                }
+                },
+        //Unlockable Bundles
+
+                {
+                "Action": "EditData",
+                "Target": "Data/TriggerActions",
+                "Entries": {
+                    "{{ModId}}_NoUBLogMessage": {
+                        "Id": "{{ModId}}_NoUBLogMessage",
+                        "Trigger": "Esca.EMP_GameLaunched",
+                        "Action": "Esca.EMP_LogMessage Error {{i18n: CheshiresAtelier.THTexpansion_LogWarnNoUnlockableBundles}}",
+                        "MarkActionApplied": false
+                    }
+                },
+                "When": {
+                    "HasMod: |contains=DLX.Bundles": false
+                }
+                },
+        //BETAS
+
+                {
+                "Action": "EditData",
+                "Target": "Data/TriggerActions",
+                "Entries": {
+                    "{{ModId}}_NoBETASLogMessage": {
+                        "Id": "{{ModId}}_NoBETASLogMessage",
+                        "Trigger": "Esca.EMP_GameLaunched",
+                        "Action": "Esca.EMP_LogMessage Error {{i18n: CheshiresAtelier.THTexpansion_LogWarnNoBETAS}}",
+                        "MarkActionApplied": false
+                    }
+                },
+                "When": {
+                    "HasMod: |contains=Spiderbuttons.BETAS": false
+                }
+                },
+        //Spacecore
+
+                {
+                "Action": "EditData",
+                "Target": "Data/TriggerActions",
+                "Entries": {
+                    "{{ModId}}_NoSpacecoreLogMessage": {
+                        "Id": "{{ModId}}_NoSpacecoreLogMessage",
+                        "Trigger": "Esca.EMP_GameLaunched",
+                        "Action": "Esca.EMP_LogMessage Error {{i18n: CheshiresAtelier.THTexpansion_LogWarnNoSpacecore}}",
+                        "MarkActionApplied": false
+                    }
+                },
+                "When": {
+                    "HasMod: |contains=DLX.Bundles": false
+                }
+                },
+        //Esca's Moding Plugins
+        //Everything is fine
+        
+                {
+                "Action": "EditData",
+                "Target": "Data/TriggerActions",
+                "Entries": {
+                    "{{ModId}}_NoDependenciesMissingLogMessage": {
+                        "Id": "{{ModId}}_NoDependenciesMissingLogMessage",
+                        "Trigger": "Esca.EMP_GameLaunched",
+                        "Action": "Esca.EMP_LogMessage Trace {{i18n: CheshiresAtelier.THTexpansion_NoDependenciesMissing}}",
+                        "MarkActionApplied": false
+                    }
+                },
+                "When": {
+                    "HasMod |contains=Pathoschild.ContentPatcher": true,
+                    "HasMod |contains=DLX.Bundles": true,
+                    "HasMod |contains=Spiderbuttons.BETAS": true,
+                    "HasMod |contains=spacechase0.SpaceCore": true,
+                    "HasMod |contains=Esca.EMP": true
+                }
+                },
+
+        //Adrianno's Homossexuality toggles
         {
             "Action": "EditData",
             "Target": "Data/TriggerActions",
             "Entries": {
-                "{{ModId}}_AdriannoDumped": {
+                "{{ModId}}_AdriannoDatingDumped": {
                     "MarkActionApplied": false,
-                    "Id": "{{ModId}}_AdriannoDumped",
-                    "Trigger": "Spiderbuttons.BETAS_GenderChanged",
+                    "Id": "{{ModId}}_AdriannoDatingDumped",
+                    "Trigger": "Spiderbuttons.BETAS_TransGendered",
+                    "Condition": "PLAYER_NPC_RELATIONSHIP Current {{ModId}}_Adrianno Dating, PLAYER_GENDER Current Female",
+                    "Actions": [
+                        "Spiderbuttons.BETAS_ChangeRelationship {{ModID}}_Adrianno friendly false 3",
+                        "Spiderbuttons.BETAS_Message \"{{i18n: CheshiresAtelier.THTexpansion_THTAdriannoDatingDumpedMessage}}\" true",
+                        "Esca.EMP_LogMessage Warn {{i18n: CheshiresAtelier.THTexpansion_THTAdriannoDatingDumpedMessage}}"
+                    ],
+                    "When":{
+                    "PlayerGender": "Female",
+                    "HasMod: |contains=Hana.GenderNeutralityMod": false
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_AdriannoEngagedDumped": {
+                    "MarkActionApplied": false,
+                    "Id": "{{ModId}}_AdriannoEngagedDumped",
+                    "Trigger": "Spiderbuttons.BETAS_TransGendered",
+                    "Condition": "PLAYER_NPC_RELATIONSHIP Current {{ModId}}_Adrianno Engaged, PLAYER_GENDER Current Female",
+                    "Actions": [
+                        "Spiderbuttons.BETAS_ChangeRelationship {{ModID}}_Adrianno friendly true 3",
+                        "Spiderbuttons.BETAS_Message \"{{i18n: CheshiresAtelier.THTexpansion_THTAdriannoEngagedDumpedMessage}}\" true",
+                        "Esca.EMP_LogMessage Warn {{i18n: CheshiresAtelier.THTexpansion_THTAdriannoEngagedDumpedMessage}}"
+                    ],
+                    "When":{
+                    "PlayerGender": "Female",
+                    "HasMod: |contains=Hana.GenderNeutralityMod": false
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_AdriannoMarriedDumped": {
+                    "MarkActionApplied": false,
+                    "Id": "{{ModId}}_AdriannoMarriedDumped",
+                    "Trigger": "Spiderbuttons.BETAS_TransGendered",
                     "Condition": "PLAYER_NPC_RELATIONSHIP Current {{ModId}}_Adrianno Married, PLAYER_GENDER Current Female",
                     "Actions": [
-                        "IncrementStat SwappedGenders",
-                        "spacechase0.SpaceCore_PlayEvent {{ModId}}_EventAdriannoDumped false",
-                        "Spiderbuttons.BETAS_ChangeRelationship {{ModID}}_Adrianno friendly false 3"
+                        "Spiderbuttons.BETAS_ChangeRelationship {{ModID}}_Adrianno friendly true 3",
+                        "Spiderbuttons.BETAS_Message \"{{i18n: CheshiresAtelier.THTexpansion_THTAdriannoMarriageDumpedMessage}}\" true",
+                        "Esca.EMP_LogMessage Warn {{i18n: CheshiresAtelier.THTexpansion_THTAdriannoMarriageDumpedMessage}}"
+                    ],
+                    "When":{
+                    "PlayerGender": "Female",
+                    "HasMod: |contains=Hana.GenderNeutralityMod": false
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_AdriannoMfarmerRoommate": {
+                    "MarkActionApplied": false,
+                    "Id": "{{ModId}}_AdriannoMfarmerRoommate",
+                    "Trigger": "Spiderbuttons.BETAS_TransGendered",
+                    "Condition": "PLAYER_NPC_RELATIONSHIP Current {{ModId}}_Adrianno Roommate, PLAYER_GENDER Current Male",
+                    "Actions": [
+                        "Spiderbuttons.BETAS_ChangeRelationship {{ModID}}_Adrianno married false 3",
+                        "Spiderbuttons.BETAS_Message \"{{i18n: CheshiresAtelier.THTexpansion_THTAdriannoNBorMfarmerRoommateMessage}}\" true",
+                        "Esca.EMP_LogMessage Warn {{i18n: CheshiresAtelier.THTexpansion_THTAdriannoNBorMfarmerRoommateMessage}}"
+                    ],
+                    "When":{
+                    "PlayerGender": "Male",
+                    "HasMod: |contains=Hana.GenderNeutralityMod": false
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_AdriannoNBfarmerRoommate": {
+                    "MarkActionApplied": false,
+                    "Id": "{{ModId}}_AdriannoNBfarmerRoommate",
+                    "Trigger": "Spiderbuttons.BETAS_TransGendered",
+                    "Condition": "PLAYER_NPC_RELATIONSHIP Current {{ModId}}_Adrianno Roommate",
+                    "Actions": [
+                        "Spiderbuttons.BETAS_ChangeRelationship {{ModID}}_Adrianno married false 3",
+                        "Spiderbuttons.BETAS_Message \"{{i18n: CheshiresAtelier.THTexpansion_THTAdriannoNBorMfarmerRoommateMessage}}\" true",
+                        "Esca.EMP_LogMessage Warn {{i18n: CheshiresAtelier.THTexpansion_THTAdriannoNBorMfarmerRoommateMessage}}"
+                    ],
+                    "When":{
+                     "HasMod": "Hana.GenderNeutralityMod"
+                    }
+                }
+            }
+        },
+        //(Adrianno) In case the player downloads Hana's gender neutrality mod AFTER downloading this mod AND is roommates with Adrianno:
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_NBmodAFTERthtAdrianno": {
+                    "MarkActionApplied": false,
+                    "Id": "{{ModId}}_NBmodAFTERthtAdrianno",
+                    "Trigger": "Spiderbuttons.BETAS_SaveLoaded",
+                    "Condition": "PLAYER_NPC_RELATIONSHIP Current {{ModId}}_Adrianno Roommate",
+                    "Actions": [
+                        "IncrementStat {{ModId}}_DownloadedNBmodAfterTHT 1"
+                    ],
+                    "When":{
+                    "PlayerGender": "Female",
+                     "HasMod": "Hana.GenderNeutralityMod"
+                    }
+                }
+            }
+        },
+        //(Adrianno) Transitions from FEM farmer to NB farmer after downloading the mod:
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_AdriannoFEMfarmerToNBfarmer": {
+                    "MarkActionApplied": false,
+                    "Id": "{{ModId}}_AdriannoFEMfarmerToNBfarmer",
+                    "Trigger": "Spiderbuttons.BETAS_SaveLoaded",
+                    "Condition": "PLAYER_NPC_RELATIONSHIP Current {{ModId}}_Adrianno Roommate, PLAYER_STAT Current {{ModId}}_DownloadedNBmodAfterTHT 1",
+                    "Actions": [
+                        "Spiderbuttons.BETAS_ChangeRelationship {{ModID}}_Adrianno married false 3",
+                        "Spiderbuttons.BETAS_Message \"{{i18n: CheshiresAtelier.THTexpansion_THTAdriannoFEMfarmerToNBfarmerMessage}}\" true",
+                        "Esca.EMP_LogMessage Warn {{i18n: CheshiresAtelier.THTexpansion_THTAdriannoFEMfarmerToNBfarmerMessage}}"
+                    ],
+                    "When":{
+                    "PlayerGender": "Female",
+                     "HasMod": "Hana.GenderNeutralityMod"
+                    }
+                }
+            }
+        },
+        //(Adrianno) Increment stat and remain 1
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_AdriannoIncreaseStats": {
+                    "MarkActionApplied": false,
+                    "Id": "{{ModId}}_AdriannoIncreaseStats",
+                    "Trigger": "Spiderbuttons.BETAS_SaveLoaded",
+                    "Condition": "PLAYER_NPC_RELATIONSHIP Current {{ModId}}_Adrianno Married",
+                    "Actions": [
+                        "IncrementStat {{ModId}}_DownloadedNBmodAfterTHT 1"
+                    ],
+                    "When":{
+                    "PlayerGender": "Female",
+                     "HasMod": "Hana.GenderNeutralityMod"
+                    }
+                }
+            }
+        },
+        //(Adrianno) This will decrement the stat and prevent it from acumulating and the message to appear everytime, the stat remaining 1
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_AdriannoDecreaseStats": {
+                    "MarkActionApplied": false,
+                    "Id": "{{ModId}}_AdriannoDecreaseStats",
+                    "Trigger": "Spiderbuttons.BETAS_SaveLoaded",
+                    "Condition": "PLAYER_NPC_RELATIONSHIP Current {{ModId}}_Adrianno Married",
+                    "Actions": [
+                        "IncrementStat {{ModId}}_DownloadedNBmodAfterTHT -1"
+                    ],
+                    "When":{
+                    "PlayerGender": "Female",
+                     "HasMod": "Hana.GenderNeutralityMod"
+                    }
+                }
+            }
+        },
+        //(Adrianno) In case the player removes Hana's gender neutrality mod AFTER dowloading it after dowloading THT:
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_NBmodREMOVEDAdrianno": {
+                    "MarkActionApplied": false,
+                    "Id": "{{ModId}}_NBmodREMOVEDAdrianno",
+                    "Trigger": "Spiderbuttons.BETAS_SaveLoaded",
+                    "Condition": "PLAYER_NPC_RELATIONSHIP Current {{ModId}}_Adrianno Married, PLAYER_STAT Current {{ModId}}_DownloadedNBmodAfterTHT 1",
+                    "Actions": [
+                        "IncrementStat {{ModId}}_DownloadedNBmodAfterTHT -1",
+                        "Spiderbuttons.BETAS_ChangeRelationship {{ModID}}_Adrianno friendly true 3"
+                    ],
+                    "When":{
+                    "PlayerGender": "Female",
+                    "HasMod: |contains=Hana.GenderNeutralityMod": false
+                    }
+                }
+            }
+        },
+
+            //Narciso's Homossexuality toggles
+            //Bianca's Homossexuality toggles
+            //Bernardo's Homossexuality toggles
+            //Alamanda's Homossexuality toggles
+            //Vitória's Homossexuality toggles
+
+            //Odd Year Even Year
+
+{
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_OddYear": {
+                    "MarkActionApplied": false,
+                    "Id": "{{ModId}}_OddYear",
+                    "Trigger": "Spiderbuttons.BETAS_MorningStarted",
+                    "Condition": "SEASON_DAY Spring 1",
+                    "Actions": [
+                        "IncrementStat {{ModId}}_OddYearEvenYear 1"
+                    ]
+                }
+            }
+        },
+{
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_OddYearReset": {
+                    "MarkActionApplied": false,
+                    "Id": "{{ModId}}_OddYearReset",
+                    "Trigger": "Spiderbuttons.BETAS_MorningStarted",
+                    "Condition": "SEASON_DAY Spring 1, PLAYER_STAT Current {{ModId}}_OddYearEvenYear 3",
+                    "Actions": [
+                        "IncrementStat {{ModId}}_OddYearEvenYear -2"
+                    ]
+                }
+            }
+        },
+
+            {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_CleaningDebris": {
+                "MarkActionApplied": false,
+                "Id": "{{ModId}}_CleaningDebris",
+                "Trigger": "DayStarted",
+                "Actions": [
+                    //Clear terrain features
+                    "SpiderButtons.BETAS_ClearTerrainFeatures {{ModId}}_THTsecretPlace2Path2 All 1 7 38 27",
+                    "SpiderButtons.BETAS_ClearTerrainFeatures {{ModId}}_THTbackwoods All 0 0 27 44",
+                    "SpiderButtons.BETAS_ClearTerrainFeatures {{ModId}}_THTBackwoodsStairs All 1 4 48 27",
+                    "SpiderButtons.BETAS_ClearTerrainFeatures {{ModId}}_THTbeach All 0 0 33 33",
+                    "SpiderButtons.BETAS_ClearTerrainFeatures {{ModId}}_THTbeachPath All 0 0 39 26",
+                    "SpiderButtons.BETAS_ClearTerrainFeatures {{ModId}}_THTFF1 All 0 0 29 22",
+                    "SpiderButtons.BETAS_ClearTerrainFeatures {{ModId}}_THTFF1SVE All 0 0 29 22",
+                    "SpiderButtons.BETAS_ClearTerrainFeatures {{ModId}}_THTforest All 0 0 44 40",
+                    "SpiderButtons.BETAS_ClearTerrainFeatures {{ModId}}_THTGraveyard All 0 0 31 27",
+                    "SpiderButtons.BETAS_ClearTerrainFeatures {{ModId}}_THTLilicasHouse All 0 0 18 14",
+                    "SpiderButtons.BETAS_ClearTerrainFeatures {{ModId}}_THTsecretPlace1 All 0 0 20 27",
+                    "SpiderButtons.BETAS_ClearTerrainFeatures {{ModId}}_THTsecretPlace2 All 0 0 38 42",
+                    "SpiderButtons.BETAS_ClearTerrainFeatures {{ModId}}_THTsecretPlace2Path1 All 0 0 37 28",
+                    "SpiderButtons.BETAS_ClearTerrainFeatures {{ModId}}_THTsecretPlace4 All 0 0 38 23",
+                    "SpiderButtons.BETAS_ClearTerrainFeatures {{ModId}}_THTtown All 0 0 89 74",
+                    "SpiderButtons.BETAS_ClearTerrainFeatures {{ModId}}_THTLucaosHouse All 0 0 20 22",
+                    //Regenerate Paths Layer
+                    "SpiderButtons.BETAS_RegeneratePathsLayer {{ModId}}_THTsecretPlace2Path2 1 7 38 21",
+                    "SpiderButtons.BETAS_RegeneratePathsLayer {{ModId}}_THTbackwoods 0 0 27 44",
+                    "SpiderButtons.BETAS_RegeneratePathsLayer {{ModId}}_THTBackwoodsStairs 1 4 47 23",
+                    "SpiderButtons.BETAS_RegeneratePathsLayer {{ModId}}_THTbeach 0 0 33 33",
+                    "SpiderButtons.BETAS_RegeneratePathsLayer {{ModId}}_THTbeachPath 0 0 39 26",
+                    "SpiderButtons.BETAS_RegeneratePathsLayer {{ModId}}_THTFF1 0 0 29 22",
+                    "SpiderButtons.BETAS_RegeneratePathsLayer {{ModId}}_THTFF1SVE 0 0 29 22",
+                    "SpiderButtons.BETAS_RegeneratePathsLayer {{ModId}}_THTforest 0 0 44 40",
+                    "SpiderButtons.BETAS_RegeneratePathsLayer {{ModId}}_THTGraveyard 0 0 31 27",
+                    "SpiderButtons.BETAS_RegeneratePathsLayer {{ModId}}_THTLilicasHouse 0 0 18 14",
+                    "SpiderButtons.BETAS_RegeneratePathsLayer {{ModId}}_THTsecretPlace1 0 0 20 27",
+                    "SpiderButtons.BETAS_RegeneratePathsLayer {{ModId}}_THTsecretPlace2 0 0 38 42",
+                    "SpiderButtons.BETAS_RegeneratePathsLayer {{ModId}}_THTsecretPlace2Path1 0 0 37 28",
+                    "SpiderButtons.BETAS_RegeneratePathsLayer {{ModId}}_THTsecretPlace4 0 0 38 23",
+                    "SpiderButtons.BETAS_RegeneratePathsLayer {{ModId}}_THTtown 0 0 89 74",
+                    "SpiderButtons.BETAS_RegeneratePathsLayer {{ModId}}_THTLucaosHouse 0 0 20 22",
+                    //Clear Objects
+                    "SpiderButtons.BETAS_ClearObjects {{ModId}}_THTsecretPlace2Path2 All 1 7 38 27",
+                    "SpiderButtons.BETAS_ClearObjects {{ModId}}_THTbackwoods All 0 0 27 44",
+                    "SpiderButtons.BETAS_ClearObjects {{ModId}}_THTBackwoodsStairs All 1 4 48 27",
+                    "SpiderButtons.BETAS_ClearObjects {{ModId}}_THTbeach All 0 0 33 33",
+                    "SpiderButtons.BETAS_ClearObjects {{ModId}}_THTbeachPath All 0 0 39 26",
+                    "SpiderButtons.BETAS_ClearObjects {{ModId}}_THTFF1 All 0 0 29 22",
+                    "SpiderButtons.BETAS_ClearObjects {{ModId}}_THTFF1SVE All 0 0 29 22",
+                    "SpiderButtons.BETAS_ClearObjects {{ModId}}_THTforest All 0 0 44 40",
+                    "SpiderButtons.BETAS_ClearObjects {{ModId}}_THTGraveyard All 0 0 31 27",
+                    "SpiderButtons.BETAS_ClearObjects {{ModId}}_THTLilicasHouse All 0 0 18 14",
+                    "SpiderButtons.BETAS_ClearObjects {{ModId}}_THTsecretPlace1 All 0 0 20 27",
+                    "SpiderButtons.BETAS_ClearObjects {{ModId}}_THTsecretPlace2 All 0 0 38 42",
+                    "SpiderButtons.BETAS_ClearObjects {{ModId}}_THTsecretPlace2Path1 All 0 0 37 28",
+                    "SpiderButtons.BETAS_ClearObjects {{ModId}}_THTsecretPlace4 All 0 0 38 23",
+                    "SpiderButtons.BETAS_ClearObjects {{ModId}}_THTtown All 0 0 89 74",
+                    "SpiderButtons.BETAS_ClearObjects {{ModId}}_THTLucaosHouse All 0 0 20 22"
                     ]
                 }
             }

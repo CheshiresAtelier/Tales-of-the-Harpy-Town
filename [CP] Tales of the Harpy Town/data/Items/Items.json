@@ -2,7 +2,7 @@
 	"Changes": [
 		//Monster loot
 		{
-			"LogName": "Load forage",
+			"LogName": "Load Monster Loot",
 			"Action": "Load",
 			"Target": "Mods/{{ModId}}/assets/Items/Monster Loot/CheshiresAtelier.THTexpansion_CannedMeat",
 			"FromFile": "assets/Items/Monster Loot/{{TargetWithoutPath}}.png"
@@ -38,6 +38,39 @@
 					"Delimiter": " "
 				}
 			]
+		},
+
+		//Load Warp Totem
+		
+		{
+			"LogName": "Load Warp Totem",
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/assets/Items/Craftables/CheshiresAtelier.THTexpansion_WarpTotemTHT",
+			"FromFile": "assets/Items/Craftables/{{TargetWithoutPath}}.png"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_WarpTotemTHT": {
+					"Name": "{{ModId}}_WarpTotemTHT",
+					"Displayname": "{{i18n: CheshiresAtelier.THTexpansion_Craftables1}}",
+					"Description": "{{i18n: CheshiresAtelier.THTexpansion_Craftables1desc}}",
+					"Type": "basic",
+					"Category": -8,
+					"Price": 20,
+					"Edibility": -300,
+					"Texture": "Mods/{{ModId}}/assets/Items/Monster Loot/{{ModId}}_WarpTotemTHT",
+					"SpriteIndex": 0,
+					"ContextTags": [
+						"not_placeable",
+						"totem_item"
+					],
+					"When": {
+						"HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+					}
+				}
+			}
 		},
 		//Forage
 		{

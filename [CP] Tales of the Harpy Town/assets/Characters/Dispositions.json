@@ -526,6 +526,7 @@
 "IsDarkSkinned": true,
 "HomeRegion": "Other",
 "CanBeRomanced": false,
+"SpouseWantsChildren": true,
 "CanVisitIsland": true,
 "IntroductionsQuest": false,
 "ItemDeliveryQuests": true,
@@ -561,7 +562,25 @@
     "RandomItemId": ["(O){{ModId}}_BrigadeiroJarCake", "(O){{ModId}}_AppleIcePop", "(O){{ModId}}_CloudCoffee"],
 	"MinStack": 3
    }
-]
+],
+"SpouseRoom": {
+					"MapAsset": "{{ModId}}_THTAdriannosSpouseRoom",
+					"MapSourceRect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 6,
+						"Height": 9
+					}
+				 },
+				 "SpousePatio": {
+					"MapAsset": "{{ModId}}_THTAdriannosPatio",
+					"MapSourceRect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 4,
+						"Height": 4
+					}
+				 }
  }
 }
 },
@@ -585,6 +604,23 @@
 	"When": {
  "HasMod": "Hana.GenderNeutralityMod"
  }
+},
+{
+ "Action": "EditData",
+ "Target": "Data/Characters",
+ "TargetField": ["{{ModId}}_Adrianno"],
+ "Entries": {"SpouseWantsChildren": false},
+ "Update": "OnLocationChange, OnTimeChange",
+	"When": {
+ "PlayerGender": "Female",
+ "HasMod: |contains=Hana.GenderNeutralityMod": false
+ }
+},
+{
+ "Action": "EditData",
+ "Target": "spacechase0.SpaceCore/NpcExtensionData",
+ "TargetField": ["{{ModId}}_Adrianno"],
+ "Entries": {"SeparateDatability": true}
 },
 //Julieta Ps: Her name was supposed to be Emilia, but I changed that
 	{
@@ -980,6 +1016,48 @@
 "Y": 24
 },
 "Direction": "right"
+}
+],
+"When": {
+"HasSeenEvent": "CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone"
+}
+}
+}
+},
+//Other characters
+//Saci
+{
+"Action": "EditData",
+"Target": "Data/Characters",
+"Entries": {
+"{{ModId}}_Saci": {
+"DisplayName": "{{i18n: CheshiresAtelier.THTexpansion_OtherCharName1}}",
+"Gender": "Male",
+"IsDarkSkinned": true,
+"HomeRegion": "Other",
+"CanBeRomanced": false,
+"CanVisitIsland": false,
+"IntroductionsQuest": false,
+"ItemDeliveryQuests": false,
+"WinterStarParticipant": false,
+"CanSocialize": false,
+"CanRecieveGifts": false,
+"Calendar": "HiddenAlways",
+"SocialTab": "HiddenAlways",
+"CanCommentOnPurchasedShopItems": false,
+"CanGreetNearbyCharacters": false,
+"FlowerDanceCanDance": false,
+"UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any CheshiresAtelier.THTexpansion_THTstairsDebrisQuestDone",
+"SpawnIfMissing": true,
+"Home": [
+{
+"Id": "{{ModId}}_SaciSpawn",
+"Location": "{{ModId}}_NonAccessibleMap",
+"Tile": {
+"X": 2,
+"Y": 4
+},
+"Direction": "down"
 }
 ],
 "When": {
